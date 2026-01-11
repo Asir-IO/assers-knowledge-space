@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "quartz run",
+            "type": "shell",
+            "command": "npx",
+            "args": [
+                "quartz",
+                "build",
+                "--serve"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

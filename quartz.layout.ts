@@ -38,7 +38,13 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // Edit this list to include the exact names of folders you want to hide
+        const omit = new Set(["z2-Meta", "tags"])
+        return !omit.has(node.displayName)
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +68,13 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // Edit this list to include the exact names of folders you want to hide
+        const omit = new Set(["z2-Meta"])
+        return !omit.has(node.displayName)
+      },
+    }),
   ],
   right: [],
 }
