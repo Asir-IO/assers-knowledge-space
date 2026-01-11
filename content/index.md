@@ -3,16 +3,16 @@ title: Asser's Knowledge Space
 layout: page
 ---
 
-# Welcome to My Knowledge Space
-> [!quote] What's this?
+## What's this?
+> [!quote] ...
 > After three yrs of university, I asked myself: **"How many of the concepts I've learned so far do I recall right now?"**
-> 
-> I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
->
-> This is a living collection of the work that usually gets lost after the finals week:
-> * **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
-> * **[[Concepts/index|Abstract concepts]]** I have visualized.
-> * **[[Diagrams/index|Textbook diagrams]]** I have taken the time to re-create in a different way.
+
+I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
+
+This is a living collection of the work that usually gets lost after the finals week:
+* **[[Concepts/index|Abstract concepts]]** I have visualized.
+* **[[Diagrams/index|Textbook diagrams]]** I have taken the time to re-create in a different way.
+* **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
 
 > [!Abstract]- A Word for CU Undergrads
 > If you're a CU undergrad, I've got a few words to tell u (bear with me).

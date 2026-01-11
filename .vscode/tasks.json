@@ -12,6 +12,17 @@
             ],
             "group": "build",
             "problemMatcher": []
+        },
+        {
+            "label": "quartz sync",
+            "type": "shell",
+            "command": "npx",
+            "args": [
+                "quartz",
+                "sync",
+            ],
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }
