@@ -1,16 +1,11 @@
 ---
-title:
-  "{ title }":
-date:
-  "{ date }":
+title: "{{title}}"
+date: "{{date}}"
 tags:
   - type/concept
   - topic/
 draft: true
 ---
-
-# {{title}}
-
 ## Intuition
 *(Explain this concept simply. If you were explaining it to a first-year student, what analogy would you use?)*
 
@@ -23,7 +18,3 @@ draft: true
 ## Connections
 - **Related to:** [[Link to other concept]]
 - **Prerequisite for:** [[Link to advanced concept]]
-
----
-**References:**
-- Course: [[Course Name]]

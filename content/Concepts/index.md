@@ -1,5 +1,5 @@
 ---
-title: Visualized Concepts
+title: Concepts
 ---
 
 I believe any concept can have a visual form; I haven't fully proven it yet. These notes are my ongoing attempt to do so =)

@@ -41,7 +41,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({
       filterFn: (node) => {
         // Edit this list to include the exact names of folders you want to hide
-        const omit = new Set(["z2-Meta", "tags"])
+        const omit = new Set(["z2-Meta", "tags", "Excalidraw"])
         return !omit.has(node.displayName)
       },
     }),

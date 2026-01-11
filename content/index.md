@@ -27,7 +27,7 @@ layout: page
 
 > [!warning]  Do NOT use this if you're cramming for an exam and need anything to help u pass (go solve exams mman).
 ## What this garden contains (so far)
-### [[Concepts/index|Visualized Concepts]]
+### [[Concepts/index|Concepts]]
 Concepts that I successfully found a visual form live here.
 ### [[Problems/index|Problem Strategies]]
 I placed here Strategies that I devised/borrowed to help me survive exams/solve problems in general.
@@ -37,9 +37,8 @@ You'll find here (mostly university) diagrams that I've recreated in a way that 
 ---
 ## University Courses 
 I've grouped [[university map|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
+
+---
 ## About Me
 I am **Asser**, a 3rd-year Computer Science student at Cairo University (AI Department).
 I'm the one who created this (with generous assistance from my buddy Gemmy)
-* **GitHub**: [Your GitHub Link Here]
-* **LinkedIn**: [Your LinkedIn Link Here]
-* **Email**: [Your Email Here]
