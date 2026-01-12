@@ -10,6 +10,8 @@ draft: true
 ## Reference/s used
 (image)
 description.
+
+
+---
 ## Connections
-- [[Link to other concept]]
-- ...
+- **Related to:** [[...]]
