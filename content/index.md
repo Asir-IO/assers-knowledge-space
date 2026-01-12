@@ -28,7 +28,7 @@ This is a living collection of the work that usually gets lost after the finals 
 > [!warning]  Do NOT use this if you're cramming for an exam and need anything to help u pass (go solve exams mman).
 ## What this garden contains (so far)
 ### [[Concepts/index|Concepts]]
-Concepts that I successfully found a visual form live here.
+Concepts that I successfully found a visual form for live here.
 ### [[Problems/index|Problem Strategies]]
 I placed here Strategies that I devised/borrowed to help me survive exams/solve problems in general.
 ### [[Diagrams/index|Diagrams Gallery]]
