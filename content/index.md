@@ -14,8 +14,8 @@ This is a living collection of the work that usually gets lost after the finals 
 * **[[Diagrams/index|Textbook diagrams]]** I have taken the time to re-create in a different way.
 * **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
 
-> [!Abstract]- A Word for CU Undergrads
-> If you're a CU undergrad, I've got a few words to tell u (bear with me).
+> [!Abstract]- A Word for FCAI-CU Undergrads
+> If you're an FCAI-CU undergrad, I've got a few words to tell u (bear with me).
 > 
 > Computer Science concepts are genuinely beautiful; I like to believe they are a form of art that deserves to be truly understood and appreciated.
 > 
@@ -40,5 +40,5 @@ I've grouped [[university map|here]] content for each FCAI-CU course I experienc
 
 ---
 ## About Me
-I am **Asser**, a 3rd-year Computer Science student at Cairo University (AI Department).
+This is **Asser**, a 3rd-year Computer Science student at Cairo University (AI Department).
 I'm the one who created this (with generous assistance from my buddy Gemmy)

@@ -14,7 +14,7 @@ You'll either:
 ## Before you begin
 In both cases, going through each given node, u should:
 1. place it in its correct position in the current tree, and color it red.
-2. mark it as Z, its parent as P, its uncle as U, and its grandparent as G.![[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw]]
+2. mark it as Z, its parent as P, its uncle as U, and its grandparent as G.![[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg]]
 3. follow the strategy below.
 ## The keys
 ### Symbols Key
@@ -24,11 +24,11 @@ In both cases, going through each given node, u should:
 ## The Strategy
 
 > [!NOTE]
-> I let P and U be the right and left children of G respectively while showing the startegy.
+> I let P and U be the right and left children of G respectively while showing the strategy.
 > However, this strategy will work just as well if they were reversed.
 
-![[Insertion in a RB Tree 2026-01-12 15.18.35.excalidraw|100%]]
+![[Insertion in a RB Tree 2026-01-12 15.18.35.excalidraw.svg|100%]]
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[Deletion in a RB Tree]]

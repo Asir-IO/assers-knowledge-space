@@ -24,8 +24,12 @@ Going through each to-be-deleted node, u should:
 ### Arrows/lines Key
 ![[Insertion in a RB Tree 2026-01-12 17.10.02.excalidraw.svg]]
 ## The Strategy
+> [!NOTE]
+> I let Z be the left child of P while showing the strategy.
+> However, this strategy will work just as well it was reversed.
+
 ![[Deletion in a RB Tree 2026-01-13 18.43.06.excalidraw.svg|100%]]
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[Insertion in a RB Tree]]
