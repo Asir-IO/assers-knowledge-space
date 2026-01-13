@@ -1,0 +1,31 @@
+---
+title: Deletion in a RB Tree
+date: 2026-01-13
+tags:
+  - type/strategy
+  - topic/
+  - course/CS321
+draft: false
+---
+## What is the problem
+You'll be given a RB Tree and asked to delete a set of (to-be-deleted) nodes from it.
+## Before you begin
+Going through each to-be-deleted node, u should:
+1. perform the regular BST node deletion (but DON'T get rid of the node yet) => this will make the *to-be-deleted* node a leaf node.
+2. If it's red, u may delete it **(you're done)**. 
+	
+	Otherwise, mark it as Z and turn it into a DB node, mark its parent as P, its sibling as S, its sibling's near child as NC, and its sibling's far child as FC.
+	
+	![[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg]]
+3. follow the strategy below.
+## The keys
+### Symbols Key
+![[Deletion in a RB Tree 2026-01-13 20.30.16.excalidraw.svg]]
+### Arrows/lines Key
+![[Insertion in a RB Tree 2026-01-12 17.10.02.excalidraw.svg]]
+## The Strategy
+![[Deletion in a RB Tree 2026-01-13 18.43.06.excalidraw.svg|100%]]
+
+---
+## Connections
+- **Related to:** [[...]]
