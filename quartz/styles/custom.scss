@@ -33,3 +33,26 @@
 //   background-color: var(--highlight) !important; /* The transparent yellow/green */
 //   text-decoration: none !important;
 // }
+/* Mobile-specific fix for the Page Title */
+/* Mobile-specific fix for the Page Title */
+@media all and (max-width: 600px) {
+  /* 1. Position the whole title block */
+  .page-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* This pushes the text right so it doesn't hit the menu button */
+    margin-left: 1rem; 
+  }
+
+  /* 2. Shrink "Asser's" specifically for mobile */
+  .title-first {
+    font-size: 1.6rem; /* Much smaller than the Desktop 2.75rem */
+    line-height: 1;
+  }
+
+  /* 3. Shrink "Knowledge Space" */
+  .title-rest {
+    font-size: 0.9rem; /* Small subtitle size */
+    line-height: 1.2;
+  }
+}
