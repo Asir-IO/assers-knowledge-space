@@ -10,9 +10,9 @@ displayTitle: Welcome to my Place =)
 I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
 
 This is a living collection of the work that usually gets lost after the finals week:
-* **[[Concepts/index|Abstract concepts]]** I have visualized.
-* **[[Diagrams/index|Textbook diagrams]]** I have taken the time to re-create in a different way.
+* **[[Concepts/index|Concepts]]** I have visualized.
 * **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
+*  **[[Diagrams/index|Textbook diagrams]]** I took the time to create in a different way.
 
 > [!Abstract]- A word for FCAI-CU undergrads
 > If you're an FCAI-CU undergrad, I've got a few words to tell u (bear with me).
@@ -36,7 +36,7 @@ This is a living collection of the work that usually gets lost after the finals 
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
-      <a href="/Concepts" class="internal" style="font-weight: bold; font-size: 1.1em;">Concepts</a>
+      <a href="/Concepts/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Concepts</a>
       <span style="font-size: 0.9em; opacity: 0.7;">Concepts that I successfully found a visual form for live here.</span>
     </div>
   </div>
@@ -46,7 +46,7 @@ This is a living collection of the work that usually gets lost after the finals 
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
-      <a href="/Problems" class="internal" style="font-weight: bold; font-size: 1.1em;">Problem Strategies</a>
+      <a href="/Problems/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Problem Strategies</a>
       <span style="font-size: 0.9em; opacity: 0.7;">I placed here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
     </div>
   </div>
@@ -56,7 +56,7 @@ This is a living collection of the work that usually gets lost after the finals 
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
-      <a href="/Diagrams" class="internal" style="font-weight: bold; font-size: 1.1em;">Diagrams Gallery</a>
+      <a href="/Diagrams/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Diagrams</a>
       <span style="font-size: 0.9em; opacity: 0.7;">You’ll find here (mostly university) diagrams that I’ve recreated in a way that I found more clear.</span>
     </div>
   </div>
@@ -69,7 +69,7 @@ I've grouped [[university map|here]] content for each FCAI-CU course I experienc
 
 ---
 ## Who am I
-This is **Asser**, a junior Computer Science student at Cairo University (AI Department).
+This is **Asser**, a junior Computer Science student at Cairo University (AI Department). <br>
 I'm the one who created this (with generous assistance from my buddy Gemmy). <br>
 <span style="font-size: 0.9em; opacity: 0.8;"><em> (Gemmy thinks i'm a narcissist for mentioning my name this many times, I sure hope I'm not ='))</em></span> 
 ### Where to find me
