@@ -13,17 +13,20 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
+
+        {/* 1. Your Custom Section (Top) */}
+        <div style={{ marginBottom: "1rem", lineHeight: "1.5", opacity: 0.8 }}>
+          <p style={{ margin: "0 0 5px 0", fontWeight: "bold" }}>
+            Created by Asser © {new Date().getFullYear()}
+          </p>
+          <p style={{ margin: 0, fontSize: "0.9rem" }}>
+            (You may share content here with anyone, just kindly don't claim it as your own)
+          </p>
+        </div>
         <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
+
       </footer>
     )
   }

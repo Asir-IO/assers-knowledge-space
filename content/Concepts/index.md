@@ -2,8 +2,11 @@
 title: Concepts
 ---
 
-I believe any concept can have a visual form; I haven't fully proven it yet. These notes are my ongoing attempt to do so =)
-*(I've grouped them by the domain they most likely belong to)*
+I believe any concept can have a visual form; I haven't fully proven it yet.  <br>
+These notes are my ongoing attempt to do so =)
+
+>[!QUESTION] How are they grouped?
+>I've added every concept to the domain it (most likely) belongs to
 ## Computer Science (Theory)
 (Algorithms, Data Structures, Discrete Math, ...)
 * ...

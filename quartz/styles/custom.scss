@@ -1,3 +1,35 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// // put your custom CSS here!
+// @use "themes";
+
+// /* Fix callout icon spacing */
+// .callout-title {
+//   /* Adds space between the icon and the text */
+//   gap: 12px !important; 
+  
+//   /* Optional: Ensures they align nicely vertically */
+//   align-items: center; 
+// }
+
+// /* Safety backup: If gap doesn't work, push the icon specifically */
+// .callout-icon {
+//   margin-right: 8px !important;
+// }
+
+// a.internal, a.external {
+//   text-decoration: none !important;
+//   color: var(--secondary) !important;
+  
+//   /* These two lines create the "Rectangle" shape */
+//   padding: 0 0.2em;  /* Adds breathing room left & right */
+//   border-radius: 4px; /* Rounds the corners slightly */
+  
+//   transition: background-color 0.2s ease;
+// }
+
+// /* On hover, fill that rectangle with color */
+// a.internal:hover, a.external:hover {
+//   background-color: var(--highlight) !important; /* The transparent yellow/green */
+//   text-decoration: none !important;
+// }
