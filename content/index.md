@@ -3,13 +3,13 @@ title: Asser's Knowledge Space
 layout: page
 displayTitle: Welcome to my Place =)
 ---
-## What's this?
+## What's this
 > [!quote] ...
 > After three yrs of university, I asked myself: **"How many of the concepts you've learned so far do u recall right now?"**
 
 I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
 
-This is a living collection of the work that usually gets lost after the finals week:
+This is a living collection of the work that usually gets lost after the finals week
 * **[[Concepts/index|Concepts]]** I have visualized.
 * **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
 *  **[[Diagrams/index|Textbook diagrams]]** I took the time to create in a different way.
