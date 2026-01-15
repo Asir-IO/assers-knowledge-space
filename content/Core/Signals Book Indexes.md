@@ -100,7 +100,7 @@ I want smth to help me navigate the topics within the Signals book and a general
 >### Block Diagram Representation (:g-book_2:`p. 706`)
 >I don't think using the book as a reference would help here.
 
->[!abstract] Conversion from the original book to Prof. Reda's
+>[!abstract] Conversion from the original book to Prof. Refaey's
 >Pages: 1 => 422 (no mod)
 >
 >Pages: 433 => The END (-= 231)
