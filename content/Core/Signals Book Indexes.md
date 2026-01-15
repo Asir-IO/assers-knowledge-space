@@ -23,11 +23,13 @@ I want smth to help me navigate the topics within the Signals book and a general
 >### Continuous-Time and Discrete-Time Signals (:g-book_2:`p. 1`)
 >...
 >### Transformations of the Independent Variable (:g-book_2:`p. 7`)
->Even and Odd signals + Periodicity (:g-book_2:`lec #3`)
->### Exponential and Sinusoidal Signals (:g-book_2:`p. 14`)
->... (:g-book_2:`lec #4`)
+>Even and Odd signals + Periodicity 
+>
+>&emsp; - (:g-slideshow:`lec #3`)
+>### Exponential and Sinusoidal Signals(:g-book_2:`p. 14`)
+>... (:g-slideshow:`lec #4`)
 >### The Unit Impulse and Unit Step Functions (:g-book_2:`p. 30`)
->... (:g-book_2:`lec #5`)
+>... (:g-slideshow:`lec #5`)
 >### Continuous-Time and Discrete-Time Systems (:g-book_2:`p. 38`)
 >... 
 >### Basic System Properties (:g-book_2:`p. 44`)
@@ -42,12 +44,18 @@ I want smth to help me navigate the topics within the Signals book and a general
 >## CH3 - Fourier Series (for Periodic signals) (:g-book_2:`p. 177`)
 >### The Response of LTI Systems to Complex Exponentials
 >... (:g-book_2:`p. 182-184` | :g-draw:`p. 2`)
->### Representation of Continuous-Time Periodic signals (:g-book_2:`p. 186`)
->Fourier's Claim + its proof (:g-book_2:`p. 190, 191` | :g-draw:`p. 2-4` | :g-slideshow:`lec #16`)
->### Convergence of the Fourier Series
->Dirichlet's conditions (:g-book_2:`p. 197` | :g-draw:`p. 6`)
+>### Representation of Continuous-Time Periodic signals
+>Fourier's Claim + its proof 
 >
->Gibb's Phenomenon (:g-book_2:`p. 200` | :g-draw:`p. 7`)
+>&emsp; - (:g-book_2:`p. 190, 191` | :g-draw:`p. 2-4` | :g-slideshow:`lec #16`)
+>### Convergence of the Fourier Series
+>Dirichlet's conditions 
+>
+>&emsp; - (:g-book_2:`p. 197` | :g-draw:`p. 6`)
+>
+>Gibb's Phenomenon 
+>
+>&emsp; - (:g-book_2:`p. 200` | :g-draw:`p. 7`)
 >### Properties of the CT Fourier Series
 >... (:g-book_2:`p. 202-206` | :g-draw:`p. 7-11` | :g-slideshow:`lec #16`)
 >### Representation of Discrete-Time Periodic signals 
@@ -73,38 +81,28 @@ I want smth to help me navigate the topics within the Signals book and a general
 >### The Convolution Property
 >...
 >## CH9 - Laplace Transform (:g-book_2:`p.654`)
->### Region of Convergence (:g-book_2:`p. 662`)
->everything covered (:g-slideshow:`lec #13, 14`)\[`slide 7`\]
->### Inverse Laplace Transform (:g-book_2:`p. 670`)
->everything covered (:g-slideshow:`lec #13, 14`)\[`slide 16`\]
->### Properties of Laplace Transform (:g-book_2:`p. 682`)
->(:g-slideshow:`lec #13, 14`)\[`slide 23`\]
+>### Region of Convergence
+>everything covered 
 >
->Linearity (:g-book_2:`p. 683` | :g-draw:`p. 8`)
+>&emsp; - (:g-book_2:`p. 662` | :g-slideshow:`lec #13, 14`)\[`slide 7`\]
+>### Inverse Laplace Transform
+>everything covered 
 >
->Time-Shift (:g-book_2:`p. 684` | :g-draw:`p. 8`)
+>&emsp; - (:g-book_2:`p. 670` | :g-slideshow:`lec #13, 14`)\[`slide 16`\]
+>### Properties of Laplace Transform
 >
->Shifting in S-Domain (:g-book_2:`p. 685` | :g-draw:`p. 9`)
->
->Time-Scaling (:g-book_2:`p. 685` | :g-draw:`p. 9`)
->
->Conjugation (:g-book_2:`p.686` | :g-draw:`p. 10`)
->
->Convolution (:g-book_2:`p. 686` | :g-draw:`p. 10`)
->
->Diff. in Time-Domain (:g-book_2:`p. 687` | :g-draw:`p .11`)
->
->Diff. in S-Domain (:g-book_2:`p. 687` | :g-draw:`p. 11`)
->
->Integration in the time domain (:g-book_2:`p.690` | :g-draw:`p.11`)
+>&emsp; - (:g-book_2:`p. 683-690` | :g-draw:`p. 8-11` | :g-slideshow:`lec #13, 14`)
 >
 >### Analysis and Characterization of LTI Systems Using the Laplace Transform (:g-book_2:`p. 693`)
->Causality and Stability ONLY (:g-book_2:`p. 693, 695` | :g-draw:`p.15, 15`)
+>Causality and Stability ONLY 
+>
+>&emsp; - (:g-book_2:`p. 693, 695` | :g-draw:`p.15, 15`)
 >### Block Diagram Representation (:g-book_2:`p. 706`)
 >I don't think using the book as a reference would help here.
 
->[!abstract] Conversion from the original book to Prof. Reda's one
+>[!abstract] Conversion from the original book to Prof. Reda's
 >Pages: 1 => 422 (no mod)
+>
 >Pages: 433 => The END (-= 231)
 
 - you need to remember how to do partial fractions decomp.
