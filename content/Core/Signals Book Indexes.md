@@ -3,45 +3,58 @@ title: Signals Book Indexes
 date: 2026-01-15
 tags:
   - topic/
-  - course/
+  - course/IT341
 draft: false
 ---
 ## The Trigger
 I want smth to help me navigate the topics within the Signals book and a general Bird's Eye view of the Course's content.
-## The Dump
->[!timeline] The view
->## Signals and Systems
->### Continuous-Time and Discrete-Time Signals
+
+---
+## The Course's content tree
+> [!info] Reference Key
+> :g-book_2: => from the Book
+> 
+> :g-draw: => from the prof's handwritten notes
+> 
+> :g-slideshow: => from the prof's slides
+
+>[!timeline] The Tree
+>## CH1 - Signals and Systems
+>### Continuous-Time and Discrete-Time Signals (:g-book_2:`p. 1`)
 >...
->### Transformations of the Independent Variable
->...
->### Exponential and Sinusoidal Signals
->...
->### The Unit Impulse and Unit Step Functions
->...
->### Continuous-Time and Discrete-Time Systems
->...
->### Basic System Properties
->...
->## LTI Systems
+>### Transformations of the Independent Variable (:g-book_2:`p. 7`)
+>Even and Odd signals + Periodicity (:g-book_2:`lec #3`)
+>### Exponential and Sinusoidal Signals (:g-book_2:`p. 14`)
+>... (:g-book_2:`lec #4`)
+>### The Unit Impulse and Unit Step Functions (:g-book_2:`p. 30`)
+>... (:g-book_2:`lec #5`)
+>### Continuous-Time and Discrete-Time Systems (:g-book_2:`p. 38`)
+>... 
+>### Basic System Properties (:g-book_2:`p. 44`)
+>... (:g-slideshow:`lec #6, 7`)
+>## CH2 - LTI Systems (:g-book_2:`p. 74`)
 >### Discrete-Time LTI Systems: The Convolution Sum
->...
+>... (:g-slideshow:`lec #8, 9`)
 >### Continuous-Time LTI Systems: The Convolution Integral
->...
+>... (:g-slideshow:`lec #10, 11`)
 >### Properties of LTI systems
->...
->## Fourier Series for Periodic signals
+>... (:g-slideshow:`lec #12`)
+>## CH3 - Fourier Series (for Periodic signals) (:g-book_2:`p. 177`)
 >### The Response of LTI Systems to Complex Exponentials
->...
->### Representation of Continuous-Time Periodic signals 
->...
+>... (:g-book_2:`p. 182-184` | :g-draw:`p. 2`)
+>### Representation of Continuous-Time Periodic signals (:g-book_2:`p. 186`)
+>Fourier's Claim + its proof (:g-book_2:`p. 190, 191` | :g-draw:`p. 2-4` | :g-slideshow:`lec #16`)
+>### Convergence of the Fourier Series
+>Dirichlet's conditions (:g-book_2:`p. 197` | :g-draw:`p. 6`)
+>
+>Gibb's Phenomenon (:g-book_2:`p. 200` | :g-draw:`p. 7`)
 >### Properties of the CT Fourier Series
->...
+>... (:g-book_2:`p. 202-206` | :g-draw:`p. 7-11` | :g-slideshow:`lec #16`)
 >### Representation of Discrete-Time Periodic signals 
->...
+>... (:g-book_2:`p. 211-214` | :g-draw:`p. 14`)
 >### Properties of the DT Fourier Series
->...
->## Fourier Transform for CT Signals
+>... (:g-book_2:`p. 221-223` | :g-draw:`p. 17-19`)
+>## CH4 - Fourier Transform for CT Signals (Periodic + Aperiodic) (:g-book_2:`p. 284` | :g-draw:`p. 21`)
 >### The FT for Aperiodic Signals
 >...
 >### The FT of Periodic signals
@@ -50,7 +63,7 @@ I want smth to help me navigate the topics within the Signals book and a general
 >...
 >### The Convolution Property
 >...
->## Fourier Transform for DT Signals
+>## CH5 - Fourier Transform for DT Signals (:g-book_2:`p. 358` | :g-draw:`p. 22-23`)
 >### The FT for Aperiodic Signals
 >...
 >### The FT of Periodic signals
@@ -59,6 +72,46 @@ I want smth to help me navigate the topics within the Signals book and a general
 >...
 >### The Convolution Property
 >...
+>## CH9 - Laplace Transform (:g-book_2:`p.654`)
+>### Region of Convergence (:g-book_2:`p. 662`)
+>everything covered (:g-slideshow:`lec #13, 14`)\[`slide 7`\]
+>### Inverse Laplace Transform (:g-book_2:`p. 670`)
+>everything covered (:g-slideshow:`lec #13, 14`)\[`slide 16`\]
+>### Properties of Laplace Transform (:g-book_2:`p. 682`)
+>(:g-slideshow:`lec #13, 14`)\[`slide 23`\]
+>
+>Linearity (:g-book_2:`p. 683` | :g-draw:`p. 8`)
+>
+>Time-Shift (:g-book_2:`p. 684` | :g-draw:`p. 8`)
+>
+>Shifting in S-Domain (:g-book_2:`p. 685` | :g-draw:`p. 9`)
+>
+>Time-Scaling (:g-book_2:`p. 685` | :g-draw:`p. 9`)
+>
+>Conjugation (:g-book_2:`p.686` | :g-draw:`p. 10`)
+>
+>Convolution (:g-book_2:`p. 686` | :g-draw:`p. 10`)
+>
+>Diff. in Time-Domain (:g-book_2:`p. 687` | :g-draw:`p .11`)
+>
+>Diff. in S-Domain (:g-book_2:`p. 687` | :g-draw:`p. 11`)
+>
+>Integration in the time domain (:g-book_2:`p.690` | :g-draw:`p.11`)
+>
+>### Analysis and Characterization of LTI Systems Using the Laplace Transform (:g-book_2:`p. 693`)
+>Causality and Stability ONLY (:g-book_2:`p. 693, 695` | :g-draw:`p.15, 15`)
+>### Block Diagram Representation (:g-book_2:`p. 706`)
+>I don't think using the book as a reference would help here.
+
+>[!abstract] Conversion from the original book to Prof. Reda's one
+>Pages: 1 => 422 (no mod)
+>Pages: 433 => The END (-= 231)
+
+- you need to remember how to do partial fractions decomp.
+- you'll (isa) create a problem strategy for solving block diagram questions.
+- 
+
+
 
 ---
 ## Connections
