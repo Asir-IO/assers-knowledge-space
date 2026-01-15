@@ -4,7 +4,6 @@ layout: page
 displayTitle: Welcome to my Place =)
 ---
 ## What's this
-> [!quote] ...
 > After three yrs of university, I asked myself: **"How many of the concepts you've learned so far do u recall right now?"**
 
 I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
@@ -60,8 +59,12 @@ This is a living collection of the work that usually gets lost after the finals 
       <span style="font-size: 0.9em; opacity: 0.7;">You’ll find here (mostly university) diagrams that I’ve recreated in a way that I found more clear.</span>
     </div>
   </div>
-
 </div>
+
+---
+## The Core
+You may have noticed a folder named [[Core/index|Core]] in the explorer. This is my thoughts dump. You'll find there thoughts that aren't exactly a concept, a strategy, or a diagram. <br>
+You're welcome to scroll through stuff there ofc, but yeah, you do this at your *own risk* (I'm a highly choatic being)
 
 ---
 ## University Courses 

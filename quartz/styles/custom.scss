@@ -56,3 +56,144 @@
     line-height: 1.2;
   }
 }
+
+/* TIMELINE as Callout (Quartz Port)*/
+.callout[data-callout="timeline"] {
+  /* Reset Default Callout Styles */
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+
+  /* Hide the default "Timeline" header so we just see the content */
+  .callout-title {
+    display: none;
+  }
+
+  /* --- CONTENT STYLING --- */
+  .callout-content {
+    padding: 2rem 0;
+    
+    /* 1. LINKS styling */
+    a {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+      background: none;
+      padding-inline: 0;
+
+      /* Hashtags styling */
+      &.internal.tag-link, &[href^="#"] {
+        text-decoration: none;
+        padding-inline: 0.4rem;
+        background-color: var(--lightgray); /* subtle background for tags */
+        border-radius: 4px;
+        color: var(--dark);
+      }
+
+      /* Hover effect */
+      &:hover {
+        text-decoration: underline solid;
+        color: var(--secondary);
+      }
+    }
+
+    /* 2. H1: The Horizontal Separator (e.g. "2024") */
+    h1 {
+      font-weight: 400; /* --font-normal */
+      font-size: 1rem;  /* --font-text-size */
+      color: var(--dark) !important; /* --text-normal */
+      
+      padding: 0 !important;
+      margin-right: 1rem !important;
+      text-align: right;
+      
+      /* The Dotted Line across the top */
+      border-top: dotted 0.1rem var(--gray);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* 3. H2: The Boxed Label (e.g. "Milestone") */
+    /* 3. H2: The Boxed Label */
+    /* 3. H2: The Boxed Label */
+    h2 {
+      font-weight: 400 !important;
+      font-size: 1rem;
+      color: var(--gray);
+      text-align: left !important;
+      
+      margin: 0 1rem;
+      padding: 0.2rem 1rem;
+      
+      border: solid 0.1rem var(--gray);
+      border-radius: 0.4rem;
+      background-color: var(--light);
+
+      /* 🟢 THE FIX: These 3 lines combined will force it to shrink */
+      display: inline-block !important;
+      width: fit-content !important; 
+      align-self: flex-start !important; /* overrides flex-stretch */
+    }
+    h2 > a, h1 > a, h3 > a {
+        display: none !important;
+    }
+
+    /* 4. THE VERTICAL LINE (The Spine) */
+    /* Applies to H1, H3, P, UL, OL to create the continuous line */
+    :is(h1, h3, p, ul, ol) {
+      margin: 0 0 0 3.2rem; /* Indent everything */
+      border-left: solid 0.1rem var(--gray); /* --text-muted */
+      padding: 0 1rem;
+      
+      color: var(--dark); /* --text-normal */
+      font-size: 1rem;
+
+      /* Fix Spacing before headers so line looks continuous */
+      &:has(+ h1) {
+        padding-bottom: 1rem;
+      }
+      &:has(+ h2) {
+        padding-bottom: 1.5rem;
+      }
+    }
+
+    /* 5. H3: The Bullet Point / Event Title */
+    /* The square/dot on the line */
+    h3::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      
+      /* Create the box shape using borders */
+      border: 0.4rem solid var(--gray); /* --text-muted */
+      border-radius: 0.4rem;
+      
+      /* Position it exactly on the vertical line */
+      position: relative;
+      left: -1.45rem; 
+      top: 1rem; 
+      z-index: 1;
+      background-color: var(--light); 
+    }
+
+    h3 {
+      color: var(--dark); /* --text-normal */
+      margin-top: 0; /* Reset margin to align with dot */
+    }
+
+    /* 6. Body Text & Lists */
+    :is(p, ol, ul, li) {
+      color: var(--gray); /* --text-faint */
+      opacity: 0.9;
+    }
+
+    /* 7. Images */
+    img {
+      padding: 1rem;
+      background: none;
+    }
+  }
+}
+

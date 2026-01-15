@@ -46,9 +46,9 @@ PageTitle.css = `
 }
 
 .title-rest {
-color: var(--dark);
+color: var(--darkgray);
 font-size: 1.25rem;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 `
 
