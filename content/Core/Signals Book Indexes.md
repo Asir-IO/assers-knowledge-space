@@ -25,11 +25,15 @@ I want smth to help me navigate the topics within the Signals book and a general
 >
 >&emsp; - (:g-slideshow:`lec #1`)
 >### Continuous-Time and Discrete-Time Signals
->... (:g-book_2:`p. 1-5` | :g-slideshow:`lec #2`)
+>Signal Classification and Power and Energy Signals (:g-book_2:`p. 1-7` | :g-slideshow:`lec #2`)
 >### Transformations of the Independent Variable
+>Signal Transformation (Independant + Dependant variable) 
+>
+>&emsp; - (:g-book_2:`p. 7-9` | :g-slideshow:`lec #2, 3`)
+>
 >Even and Odd signals + Periodicity 
 >
->&emsp; - (:g-book_2:`p. 7-14` | :g-slideshow:`lec #3`)
+>&emsp; - (:g-book_2:`p. 11-14` | :g-slideshow:`lec #3`)
 >### Exponential and Sinusoidal Signals
 >The prof's slides include a nice introduction to complex signals 
 >
