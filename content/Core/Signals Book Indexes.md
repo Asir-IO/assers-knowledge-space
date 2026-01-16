@@ -20,27 +20,33 @@ I want smth to help me navigate the topics within the Signals book and a general
 
 >[!timeline] The Tree
 >## CH1 - Signals and Systems
->### Continuous-Time and Discrete-Time Signals (:g-book_2:`p. 1`)
->...
->### Transformations of the Independent Variable (:g-book_2:`p. 7`)
+>### A Review on Complex Numbers
+>Only included within the prof's slides 
+>
+>&emsp; - (:g-slideshow:`lec #1`)
+>### Continuous-Time and Discrete-Time Signals
+>... (:g-book_2:`p. 1-5` | :g-slideshow:`lec #2`)
+>### Transformations of the Independent Variable
 >Even and Odd signals + Periodicity 
 >
->&emsp; - (:g-slideshow:`lec #3`)
->### Exponential and Sinusoidal Signals(:g-book_2:`p. 14`)
->... (:g-slideshow:`lec #4`)
->### The Unit Impulse and Unit Step Functions (:g-book_2:`p. 30`)
->... (:g-slideshow:`lec #5`)
->### Continuous-Time and Discrete-Time Systems (:g-book_2:`p. 38`)
->... 
->### Basic System Properties (:g-book_2:`p. 44`)
->... (:g-slideshow:`lec #6, 7`)
+>&emsp; - (:g-book_2:`p. 7-14` | :g-slideshow:`lec #3`)
+>### Exponential and Sinusoidal Signals
+>The prof's slides include a nice introduction to complex signals 
+>
+>&emsp; - (:g-book_2:`p. 14-29` | :g-slideshow:`lec #4`)
+>### The Unit Impulse and Unit Step Functions
+>... (:g-book_2:`p. 30-36` | :g-slideshow:`lec #5`)
+>### Continuous-Time and Discrete-Time Systems
+>... (:g-book_2:`p. 38`)
+>### Basic System Properties
+>... (:g-book_2:`p. 44-54` | :g-slideshow:`lec #6, 7`)
 >## CH2 - LTI Systems (:g-book_2:`p. 74`)
 >### Discrete-Time LTI Systems: The Convolution Sum
->... (:g-slideshow:`lec #8, 9`)
+>... (:g-book_2:`p. 75-79` | :g-slideshow:`lec #8, 9`)
 >### Continuous-Time LTI Systems: The Convolution Integral
->... (:g-slideshow:`lec #10, 11`)
+>... (:g-book_2:`p. 90-97` | :g-slideshow:`lec #10, 11`)
 >### Properties of LTI systems
->... (:g-slideshow:`lec #12`)
+>... (:g-book_2:`p. 103-114` | :g-slideshow:`lec #12`)
 >## CH3 - Fourier Series (for Periodic signals) (:g-book_2:`p. 177`)
 >### The Response of LTI Systems to Complex Exponentials
 >... (:g-book_2:`p. 182-184` | :g-draw:`p. 2`)
