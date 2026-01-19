@@ -64,7 +64,7 @@ You can use this tool to actually *"see"* what a signal that you've been solving
 Have fun. 
 
 <div style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; overflow: hidden;">
-    <iframe src="/tools/fourier.html" style="width: 100%; aspect-ratio: 1 / 1.2; border: none; display: block;"></iframe>
+    <iframe src="/static/tools/fourier.html" style="width: 100%; aspect-ratio: 1 / 1.2; border: none; display: block;"></iframe>
 </div>
  
  
