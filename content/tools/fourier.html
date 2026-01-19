@@ -1,0 +1,1763 @@
+<html>
+
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="//ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+
+    <script type="text/javascript">
+
+        var settings = {
+
+            canvas: {
+                width: 0,       // autodetected
+                height: 0,
+            },
+
+            // Vertical Layout Centers (scaled up to fill canvas)
+            circle_radius: 95,
+            circle_center_x: 170,
+            circle_center_y: 180,
+
+            // Bounding Box for Complex Plane
+            plane_box_x: 20,
+            plane_box_y: 30,
+            plane_box_size: 300,
+
+            // Real Graph (Vertical, moving down)
+            timegraph_center_x: 170,
+            timegraph_center_y: 350,
+            timegraph_height: 400,
+            timegraph_width: 95,
+
+            // Imaginary Graph (Horizontal, moving right)
+            imggraph_center_x: 340,
+            imggraph_center_y: 180,
+            imggraph_width: 450,
+            imggraph_height: 95,
+
+            axis_margin_left: 20,
+            axis_margin_top: 20,
+            axis_margin_bottom: 20,
+            axis_margin_right: 30,
+
+            refresh: 50,    // interval refresh in ms
+            steps: 60,      // # of intervals to divide wave into
+
+            cyclegraph_dot: {
+                strokeStyle: "#ccc",
+                lineWidth: 2.5,
+                radius: 5,
+                fillStyle: "Orange"
+            },
+
+            timegraph_dot: {
+                strokeStyle: "#ccccff",
+                lineWidth: 1.8,
+                radius: 3.5,
+                fillStyle: "Orange"
+            },
+
+            axes: {
+                strokeStyle: "#000", // Default, overridden by theme logic
+                lineWidth: 2
+            },
+
+            wave: {
+                fillStyle: "rgba(0,0,0,0)",
+                strokeStyle: "#C2A7DD",
+                lineWidth: 1.2
+            },
+
+            // Combined wave is Purple
+            combined: {
+                color: "#9B59B6",
+                lineWidth: 3
+            },
+
+            interval: {
+                dotcolor: "rgba(255, 165, 0, 0.8)",
+                lineStyle: "rgba(255, 165, 0, 0.5)",
+                lineWidth: 2.5,
+            },
+
+            unitcircle: {
+                fillStyle: "rgba(0,0,0,0)",
+                strokeStyle: "#999",
+                lineWidth: 1.2
+            },
+
+            cycle: {
+                poscolor: "#37B610",
+                negcolor: "#E95C59",
+                zerocolor: "#999"
+            },
+
+            cross: {
+                radius: 5
+            },
+
+            text: {
+                font: "normal 12px Courier",
+                fillStyle: "#888"
+            }
+        };
+
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+        }
+
+        function roundTo(n, digits) {
+            return Math.round(n * Math.pow(10, digits)) / Math.pow(10, digits);
+        }
+
+        var cachedCanvas = {};
+        function getCachedCanvas(key) {
+            return cachedCanvas[key] || null;
+        }
+
+        function setCachedCanvas(key, ctx) {
+            if (_(cachedCanvas).keys().length > 25) {
+                cachedCanvas = {};
+            }
+            cachedCanvas[key] = ctx;
+        }
+
+        function generateCanvas() {
+            var canvas = document.createElement('canvas');
+            canvas.width = settings.canvas.width;
+            canvas.height = settings.canvas.height;
+            return canvas;
+        }
+
+        function cachedRender(key, ctx, renderfn) {
+            key = JSON.stringify(key);
+            var cachedCanvas = getCachedCanvas(key);
+
+            if (!cachedCanvas) {
+                cachedCanvas = generateCanvas();
+                cached_ctx = cachedCanvas.getContext("2d");
+                resetCanvas(cached_ctx);
+                renderfn(cached_ctx);
+                setCachedCanvas(key, cachedCanvas);
+            }
+
+            ctx.drawImage(cachedCanvas, 0, 0);
+        }
+
+        // --- REAL PART (Vertical Graph) ---
+        function timegraph_path(ctx, cycleFn, strokeStyle, cycleObj, lineWidth) {
+            var N = settings.timegraph_height;
+            var dx = 2 * (Math.PI) / N;
+
+            ctx.beginPath();
+            ctx.lineWidth = lineWidth || settings.wave.lineWidth;
+            ctx.strokeStyle = strokeStyle || settings.wave.strokeStyle;
+
+            for (var i = 0; i <= N; i++) {
+                var t = i * (360 / settings.timegraph_height) * (Math.PI / 180);
+                var amp = cycleFn(t);
+                var px = settings.timegraph_center_x + amp * settings.timegraph_width;
+                var py = settings.timegraph_center_y + i;
+
+                if (i == 0) {
+                    ctx.moveTo(px, py);
+                }
+                else {
+                    ctx.lineTo(px, py);
+                }
+            }
+
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        // --- IMAGINARY PART (Horizontal Graph) ---
+        function imggraph_path(ctx, cycleFn, strokeStyle, cycleObj, lineWidth) {
+            var N = settings.imggraph_width;
+
+            ctx.beginPath();
+            ctx.lineWidth = lineWidth || settings.wave.lineWidth;
+            ctx.strokeStyle = strokeStyle || settings.wave.strokeStyle;
+
+            for (var i = 0; i <= N; i++) {
+                var t = i * (360 / settings.imggraph_width) * (Math.PI / 180);
+                var amp = cycleFn(t); // This returns the Imaginary component
+
+                // Time maps to X (flowing right)
+                var px = settings.imggraph_center_x + i;
+                // Amplitude maps to Y (Up/Down)
+                // Minus because Canvas Y is inverted vs Math Y
+                var py = settings.imggraph_center_y - amp * settings.imggraph_height;
+
+                if (i == 0) {
+                    ctx.moveTo(px, py);
+                }
+                else {
+                    ctx.lineTo(px, py);
+                }
+            }
+
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function path_circ(ctx, x, y, r) {
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI * 2, true);
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function path_line(ctx, x0, y0, x1, y1) {
+            ctx.beginPath();
+            ctx.moveTo(x0, y0);
+            ctx.lineTo(x1, y1);
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function path_dot(ctx, x, y, radius) {
+            radius = radius || 3.5;
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function path_cross(ctx, x, y, radius) {
+            radius = radius || 3.5;
+            ctx.beginPath();
+            ctx.moveTo(x - radius, y - radius);
+            ctx.lineTo(x + radius, y + radius);
+            ctx.moveTo(x + radius, y - radius);
+            ctx.lineTo(x - radius, y + radius);
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function cyclegraph_dot(ctx, x, y, fillStyle) {
+            var x = settings.circle_center_x + settings.circle_radius * x;
+            var y = settings.circle_center_y - settings.circle_radius * y;
+
+            ctx.strokeStyle = settings.cyclegraph_dot.strokeStyle;
+            ctx.lineWidth = settings.cyclegraph_dot.lineWidth;
+
+            path_line(ctx, settings.circle_center_x, settings.circle_center_y, x, y);
+
+            ctx.fillStyle = fillStyle || settings.cyclegraph_dot.fillStyle;
+            path_dot(ctx, x, y, settings.cyclegraph_dot.radius);
+        }
+
+        function cyclegraph_cross(ctx, x, y, strokeStyle) {
+            var x = settings.circle_center_x + settings.circle_radius * x;
+            var y = settings.circle_center_y - settings.circle_radius * y;
+
+            ctx.strokeStyle = strokeStyle || settings.interval.dotcolor;
+            ctx.lineWidth = settings.interval.lineWidth;
+            path_cross(ctx, x, y, settings.cross.radius);
+        }
+
+        function cyclegraph_interval(ctx, x, y, color) {
+            var x = settings.circle_center_x + settings.circle_radius * x;
+            var y = settings.circle_center_y - settings.circle_radius * y;
+
+            ctx.strokeStyle = color || settings.interval.fillStyle;
+            ctx.lineWidth = settings.interval.lineWidth;
+
+            path_line(ctx, settings.circle_center_x, settings.circle_center_y, x, y);
+        }
+
+        function timegraph_interval(ctx, t, color) {
+            var y = settings.timegraph_center_y + t * 180 / Math.PI * settings.timegraph_height / 360;
+            var min_x = settings.timegraph_center_x - 10;
+            var max_x = settings.timegraph_center_x + 10;
+
+            ctx.fillStyle = color || settings.interval.fillStyle;
+            ctx.lineWidth = settings.interval.lineWidth;
+            path_line(ctx, min_x, y, max_x, y);
+        }
+
+        function imggraph_interval(ctx, t, color) {
+            var x = settings.imggraph_center_x + t * 180 / Math.PI * settings.imggraph_width / 360;
+            var min_y = settings.imggraph_center_y - 10;
+            var max_y = settings.imggraph_center_y + 10;
+
+            ctx.fillStyle = color || settings.interval.fillStyle;
+            ctx.lineWidth = settings.interval.lineWidth;
+            path_line(ctx, x, min_y, x, max_y);
+        }
+
+        function timegraph_dot(ctx, t, value, fillStyle) {
+            var y = settings.timegraph_center_y + t * 180 / Math.PI * settings.timegraph_height / 360;
+            var x = settings.timegraph_center_x + value * settings.timegraph_width;
+
+            ctx.fillStyle = fillStyle || settings.timegraph_dot.fillStyle;
+            path_dot(ctx, x, y, settings.timegraph_dot.radius);
+
+            ctx.strokeStyle = settings.timegraph_dot.strokeStyle;
+            ctx.lineWidth = settings.timegraph_dot.lineWidth;
+        }
+
+        function imggraph_dot(ctx, t, value, fillStyle) {
+            var x = settings.imggraph_center_x + t * 180 / Math.PI * settings.imggraph_width / 360;
+            var y = settings.imggraph_center_y - value * settings.imggraph_height; // Invert Y
+
+            ctx.fillStyle = fillStyle || settings.timegraph_dot.fillStyle;
+            path_dot(ctx, x, y, settings.timegraph_dot.radius);
+
+            ctx.strokeStyle = settings.timegraph_dot.strokeStyle;
+            ctx.lineWidth = settings.timegraph_dot.lineWidth;
+        }
+
+        function timegraph_cross(ctx, t, value, strokeStyle) {
+            var y = settings.timegraph_center_y + t * 180 / Math.PI * settings.timegraph_height / 360;
+            var x = settings.timegraph_center_x + value * settings.timegraph_width;
+
+            ctx.strokeStyle = strokeStyle || settings.interval.dotcolor;
+            ctx.lineWidth = settings.interval.lineWidth;
+            path_cross(ctx, x, y, settings.cross.radius);
+        }
+
+        function imggraph_cross(ctx, t, value, strokeStyle) {
+            var x = settings.imggraph_center_x + t * 180 / Math.PI * settings.imggraph_width / 360;
+            var y = settings.imggraph_center_y - value * settings.imggraph_height;
+
+            ctx.strokeStyle = strokeStyle || settings.interval.dotcolor;
+            ctx.lineWidth = settings.interval.lineWidth;
+            path_cross(ctx, x, y, settings.cross.radius);
+        }
+
+        function getCycles() {
+            var cycles = [];
+
+            function parseCycleString(str) {
+                return _(str.split(/[\s,]+/)).reject(function (i) { return i == null || i == ""; });
+            }
+
+            function parseCycleData(str, freq) {
+                var matches = str.split(/[@:]/);
+                return {
+                    freq: freq,
+                    amp: parseFloat(matches[0]),
+                    phase: parseFloat(matches[1] || 0)
+                };
+            }
+
+            // 1. Parse Zero Freq (Logic updated to force 0 if empty)
+            var zeroStr = $('input[name=freq-zero]').val();
+            if (zeroStr === "") zeroStr = "0"; // Treat empty as 0 internally for calculation
+
+            var c = parseCycleData(zeroStr, 0);
+            if (!_.isNaN(c.amp)) cycles.push(c);
+
+            var posStr = $('input[name=freq-pos]').val();
+            var posArr = parseCycleString(posStr);
+            _(posArr).each(function (val, i) {
+                var c = parseCycleData(val, i + 1);
+                if (!_.isNaN(c.amp)) cycles.push(c);
+            });
+
+            var negStr = $('input[name=freq-neg]').val();
+            var negArr = parseCycleString(negStr);
+            _(negArr).each(function (val, i) {
+                var c = parseCycleData(val, -(i + 1));
+                if (!_.isNaN(c.amp)) cycles.push(c);
+            });
+
+            return cycles;
+        }
+
+        function resetCanvas(ctx) {
+            ctx.clearRect(0, 0, settings.canvas.width, settings.canvas.height);
+        }
+
+        function drawAxes(ctx, scale) {
+
+            // Check for Dark Mode
+            var isDark = $('.fourierchart').hasClass('theme-dark');
+            var axisColor = isDark ? "rgba(255,255,255,0.4)" : "#000000";
+
+            ctx.strokeStyle = axisColor;
+            ctx.lineWidth = settings.axes.lineWidth;
+
+            // Bounding Box
+            ctx.save();
+            ctx.beginPath();
+            ctx.rect(settings.plane_box_x, settings.plane_box_y, settings.plane_box_size, settings.plane_box_size);
+            ctx.strokeStyle = "#888888";
+            ctx.setLineDash([5, 5]);
+            ctx.stroke();
+            ctx.restore();
+
+            // Circle Axes
+            path_line(ctx,
+                settings.circle_center_x - settings.circle_radius - 20,
+                settings.circle_center_y,
+                settings.circle_center_x + settings.circle_radius + 20,
+                settings.circle_center_y);
+
+            path_line(ctx,
+                settings.circle_center_x,
+                settings.circle_center_y - settings.circle_radius - 20,
+                settings.circle_center_x,
+                settings.circle_center_y + settings.circle_radius + 20);
+
+            // Perpendicular ticks at axis ends (complex plane)
+            // Right end of real axis
+            path_line(ctx,
+                settings.circle_center_x + settings.circle_radius + 20,
+                settings.circle_center_y - 10,
+                settings.circle_center_x + settings.circle_radius + 20,
+                settings.circle_center_y + 10);
+            // Left end of real axis
+            path_line(ctx,
+                settings.circle_center_x - settings.circle_radius - 20,
+                settings.circle_center_y - 10,
+                settings.circle_center_x - settings.circle_radius - 20,
+                settings.circle_center_y + 10);
+            // Top end of imaginary axis
+            path_line(ctx,
+                settings.circle_center_x - 10,
+                settings.circle_center_y - settings.circle_radius - 20,
+                settings.circle_center_x + 10,
+                settings.circle_center_y - settings.circle_radius - 20);
+            // Bottom end of imaginary axis
+            path_line(ctx,
+                settings.circle_center_x - 10,
+                settings.circle_center_y + settings.circle_radius + 20,
+                settings.circle_center_x + 10,
+                settings.circle_center_y + settings.circle_radius + 20);
+
+            // Real Axis (Vertical Down)
+            if ($('#toggle-real').is(':checked')) {
+                path_line(ctx,
+                    settings.timegraph_center_x,
+                    settings.timegraph_center_y,
+                    settings.timegraph_center_x,
+                    settings.timegraph_center_y + settings.timegraph_height);
+
+                // Match the width of the complex-plane real axis (circle radius + 20 padding)
+                var halfReal = settings.circle_radius + 20;
+                path_line(ctx,
+                    settings.timegraph_center_x - halfReal,
+                    settings.timegraph_center_y,
+                    settings.timegraph_center_x + halfReal,
+                    settings.timegraph_center_y);
+
+                // Perpendicular tick at the end of real axis (bottom)
+                path_line(ctx,
+                    settings.timegraph_center_x - 10,
+                    settings.timegraph_center_y + settings.timegraph_height,
+                    settings.timegraph_center_x + 10,
+                    settings.timegraph_center_y + settings.timegraph_height);
+
+                // Perpendicular ticks at the ends of amplitude axis (vertical, since axis is horizontal)
+                path_line(ctx,
+                    settings.timegraph_center_x - halfReal,
+                    settings.timegraph_center_y - 10,
+                    settings.timegraph_center_x - halfReal,
+                    settings.timegraph_center_y + 10);
+                path_line(ctx,
+                    settings.timegraph_center_x + halfReal,
+                    settings.timegraph_center_y - 10,
+                    settings.timegraph_center_x + halfReal,
+                    settings.timegraph_center_y + 10);
+            }
+
+            // Imaginary Axis (Horizontal Right)
+            if ($('#toggle-imag').is(':checked')) {
+                path_line(ctx,
+                    settings.imggraph_center_x,
+                    settings.imggraph_center_y,
+                    settings.imggraph_center_x + settings.imggraph_width,
+                    settings.imggraph_center_y);
+
+                // Match the height of the complex-plane imaginary axis (circle radius + 20 padding)
+                var halfImag = settings.circle_radius + 20;
+                path_line(ctx,
+                    settings.imggraph_center_x,
+                    settings.imggraph_center_y - halfImag,
+                    settings.imggraph_center_x,
+                    settings.imggraph_center_y + halfImag);
+
+                // Perpendicular tick at the end of imaginary axis (right)
+                path_line(ctx,
+                    settings.imggraph_center_x + settings.imggraph_width,
+                    settings.imggraph_center_y - 10,
+                    settings.imggraph_center_x + settings.imggraph_width,
+                    settings.imggraph_center_y + 10);
+
+                // Perpendicular ticks at the ends of amplitude axis (horizontal, since axis is vertical)
+                path_line(ctx,
+                    settings.imggraph_center_x - 10,
+                    settings.imggraph_center_y - halfImag,
+                    settings.imggraph_center_x + 10,
+                    settings.imggraph_center_y - halfImag);
+                path_line(ctx,
+                    settings.imggraph_center_x - 10,
+                    settings.imggraph_center_y + halfImag,
+                    settings.imggraph_center_x + 10,
+                    settings.imggraph_center_y + halfImag);
+            }
+
+            ctx.fillStyle = settings.unitcircle.fillStyle;
+            ctx.strokeStyle = settings.unitcircle.strokeStyle;
+            ctx.lineWidth = settings.unitcircle.lineWidth;
+            path_circ(ctx, settings.circle_center_x, settings.circle_center_y, settings.circle_radius * scale);
+        }
+
+        function drawFourier(ctx, options) {
+            var start = new Date();
+            options = options || {};
+
+            var r = (step / settings.steps) * 2.0 * Math.PI;
+
+            var cycles = getCycles();
+            var N = cycles.length;
+
+            $('#time').attr('max', N);
+
+            var timeseries = Fourier.InverseTransform(cycles);
+            var combined = Fourier.totalValue(r, cycles);
+            var max_amplitude_time = _(_(timeseries).pluck('amp')).max();
+
+            if (!$('#showcombined').is(':checked')) {
+                max_amplitude = _(_(cycles).pluck('amp')).max();
+            }
+
+            var scale = max_amplitude_time > 0 ? 1 / max_amplitude_time : 1;
+            if (scale > 1) {
+                scale = 1;
+            }
+
+            resetCanvas(ctx);
+            drawAxes(ctx, scale);
+
+            // Dark Mode Check for component lines and text
+            var isDark = $('.fourierchart').hasClass('theme-dark');
+            var componentLineColor = isDark ? "rgba(255,255,255,0.8)" : "#000000";
+            var textColor = isDark ? "#cccccc" : "#555555";
+
+            // UPDATED: Dynamic Projection Colors
+            var partProjectionColor = isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)";
+            var combinedProjectionColor = isDark ? "rgba(255,255,255,0.4)" : "rgba(100,100,100,0.5)";
+
+            function getSpectralColor(index, total) {
+                if (index === 0) return "#999999";
+                if (total <= 2) return "hsl(0, 80%, 60%)";
+                var hue = ((index - 1) / (total - 2)) * 240;
+                return "hsl(" + hue + ", 80%, 60%)";
+            }
+
+            function drawStatus(text, color) {
+                ctx.font = settings.text.font;
+                ctx.fillStyle = color || settings.text.fillStyle;
+                ctx.fillText(text, 10, canvas.height - 10);
+            }
+
+            function drawIntervals() {
+                _(timeseries).each(function (point) {
+                    var val = Fourier.totalValue(point.x, { freq: 1, phase: 0, amp: 1 });
+
+                    if (point.x > 0) {
+                        if ($('#toggle-real').is(':checked')) timegraph_interval(ctx, point.x, settings.interval.lineStyle);
+                        if ($('#toggle-imag').is(':checked')) imggraph_interval(ctx, point.x, settings.interval.lineStyle);
+                    }
+                    cyclegraph_interval(ctx, val.real * scale, val.im * scale, settings.interval.lineStyle);
+                });
+            }
+
+            // --- UPDATED: Higher Precision for Input Display ---
+            if (!$('input[name=data-time]').is(':focus')) {
+                // Round to 3 decimal places to prevent drift on round-trip
+                var str = _(timeseries).map(function (point) { return roundTo(point.real, 3); }).join(" ");
+                $('input[name=data-time]').val(str);
+            }
+
+            if ($('#showparts').is(':checked')) {
+                _(cycles).each(function (cycle, index) {
+                    var color = getSpectralColor(index, cycles.length);
+                    var cycleTotal = Fourier.totalValue(r, cycle);
+
+                    var cx = settings.circle_center_x + settings.circle_radius * cycleTotal.real * scale;
+                    var cy = settings.circle_center_y - settings.circle_radius * cycleTotal.im * scale;
+
+                    // --- REAL GRAPH PROJECTION ---
+                    if ($('#toggle-real').is(':checked')) {
+                        var wx = settings.timegraph_center_x + cycleTotal.real * scale * settings.timegraph_width;
+                        var wy = settings.timegraph_center_y + r * 180 / Math.PI * settings.timegraph_height / 360;
+
+                        ctx.beginPath();
+                        ctx.moveTo(cx, cy);
+                        ctx.lineTo(wx, wy);
+                        ctx.strokeStyle = partProjectionColor; // UPDATED
+                        ctx.stroke();
+
+                        // UPDATED: Use dynamic componentLineColor
+                        timegraph_path(ctx, function (x) { return Fourier.totalValue(x, cycle).real * scale; }, componentLineColor, cycle, settings.wave.lineWidth);
+                        timegraph_dot(ctx, r, cycleTotal.real * scale, color);
+                    }
+
+                    // --- IMAGINARY GRAPH PROJECTION ---
+                    if ($('#toggle-imag').is(':checked')) {
+                        var ix = settings.imggraph_center_x + r * 180 / Math.PI * settings.imggraph_width / 360;
+                        var iy = settings.imggraph_center_y - cycleTotal.im * scale * settings.imggraph_height;
+
+                        ctx.beginPath();
+                        ctx.moveTo(cx, cy);
+                        ctx.lineTo(ix, iy);
+                        ctx.strokeStyle = partProjectionColor; // UPDATED
+                        ctx.stroke();
+
+                        // UPDATED: Use dynamic componentLineColor
+                        imggraph_path(ctx, function (x) { return Fourier.totalValue(x, cycle).im * scale; }, componentLineColor, cycle, settings.wave.lineWidth);
+                        imggraph_dot(ctx, r, cycleTotal.im * scale, color);
+                    }
+
+                    cyclegraph_dot(ctx, cycleTotal.real * scale, cycleTotal.im * scale, color);
+                });
+            }
+
+            if ($('#showdiscrete').is(':checked')) {
+                drawIntervals();
+            }
+
+            if ($('#showcombined').is(':checked')) {
+                var cx = settings.circle_center_x + settings.circle_radius * combined.real * scale;
+                var cy = settings.circle_center_y - settings.circle_radius * combined.im * scale;
+
+                // --- REAL GRAPH ---
+                if ($('#toggle-real').is(':checked')) {
+                    var wx = settings.timegraph_center_x + combined.real * scale * settings.timegraph_width;
+                    var wy = settings.timegraph_center_y + r * 180 / Math.PI * settings.timegraph_height / 360;
+
+                    ctx.strokeStyle = combinedProjectionColor; // UPDATED
+                    ctx.lineWidth = 1;
+                    path_line(ctx, cx, cy, wx, wy);
+
+                    timegraph_path(ctx, function (x) { return Fourier.totalValue(x, cycles).real * scale; }, settings.combined.color, cycles, settings.combined.lineWidth);
+                    timegraph_dot(ctx, r, combined.real * scale, settings.combined.color);
+
+                    if ($('#showcrosses').is(':checked')) {
+                        _(timeseries).each(function (point) {
+                            timegraph_cross(ctx, point.x, point.real * scale, settings.interval.dotcolor);
+                        });
+                    }
+                }
+
+                // --- IMAGINARY GRAPH ---
+                if ($('#toggle-imag').is(':checked')) {
+                    var ix = settings.imggraph_center_x + r * 180 / Math.PI * settings.imggraph_width / 360;
+                    var iy = settings.imggraph_center_y - combined.im * scale * settings.imggraph_height;
+
+                    ctx.strokeStyle = combinedProjectionColor; // UPDATED
+                    ctx.lineWidth = 1;
+                    path_line(ctx, cx, cy, ix, iy);
+
+                    imggraph_path(ctx, function (x) { return Fourier.totalValue(x, cycles).im * scale; }, settings.combined.color, cycles, settings.combined.lineWidth);
+                    imggraph_dot(ctx, r, combined.im * scale, settings.combined.color);
+
+                    if ($('#showcrosses').is(':checked')) {
+                        _(timeseries).each(function (point) {
+                            imggraph_cross(ctx, point.x, point.im * scale, settings.interval.dotcolor);
+                        });
+                    }
+                }
+
+                // Draw Circle Dot
+                cyclegraph_dot(ctx, combined.real * scale, combined.im * scale, settings.combined.color);
+                if ($('#showcrosses').is(':checked')) {
+                    _(timeseries).each(function (point) {
+                        cyclegraph_cross(ctx, point.real * scale, point.im * scale, settings.interval.dotcolor);
+                    });
+                }
+            }
+
+            if ($('#running').is(':checked') == false) {
+                var text = "t: " + roundTo(r, 1) + " re: " + roundTo(combined.real, 1) + " im: " + roundTo(combined.im, 1);
+
+                // UPDATED: Use dynamic textColor
+                drawStatus(text, textColor);
+            }
+        }
+
+        function init() {
+            var canvas = $('#canvas').get(0);
+            var ctx = canvas.getContext("2d");
+            var timer = null;
+
+            settings.canvas.width = canvas.width;
+            settings.canvas.height = canvas.height;
+
+            function updateSpeed() {
+                if (timer) clearInterval(timer);
+                var speedVal = parseInt($('.speed-btn.active').data('speed')) || 50;
+                var delay = 210 - (speedVal * 2);
+
+                timer = setInterval(function () {
+                    if ($('#running').is(':checked')) {
+                        drawFourier(ctx);
+                        advanceTime();
+                        // Update progress bar during animation
+                        var percent = (step / settings.steps) * 100;
+                        $('.scrubber-wrapper')[0].style.setProperty('--progress', percent + '%');
+                    }
+                }, delay);
+            }
+
+            updateSpeed();
+
+            // Speed button handlers
+            $('.speed-btn').on('click', function (e) {
+                e.preventDefault();
+                var speedVal = parseInt($(this).data('speed'));
+                $('.speed-btn').removeClass('active');
+                $(this).addClass('active');
+                updateSpeed();
+            });
+
+            step = 0;
+            function advanceTime() {
+                step++;
+
+                if (step > settings.steps) {
+                    step = 0;
+                }
+            }
+
+            $('#reset').click(function (e) {
+                e.preventDefault();
+                step = 0;
+                drawFourier(ctx);
+            });
+
+            // Listen to NEW inputs
+            $('input[name=freq-zero], input[name=freq-pos], input[name=freq-neg]').change(function () {
+                drawFourier(ctx);
+                renderFeedback();
+            }).keyup(function () {
+                drawFourier(ctx);
+                renderFeedback();
+            });
+
+            // New Toggles Listeners
+            $('#toggle-real, #toggle-imag, #showcrosses').change(function () {
+                drawFourier(ctx);
+            });
+
+            // --- UPDATED: Validation logic for 0Hz ---
+            $('input[name=freq-zero]').blur(function () {
+                if (!$(this).val().trim()) {
+                    $(this).val('0');
+                    drawFourier(ctx);
+                }
+            });
+
+            $('#time').css('visibility', 'hidden').on('input change', function () {
+                var k = parseFloat($(this).val());
+                var N = parseFloat($(this).attr('max')) || 100;
+                var percent = (k / N) * 100;
+                $(this).closest('.scrubber-wrapper')[0].style.setProperty('--progress', percent + '%');
+                step = (k / N) * settings.steps;
+                drawFourier(ctx);
+            });
+
+            $('#running').change(function () {
+                $('#time').css('visibility', $(this).is(':checked') ? 'hidden' : '');
+                $('#time').val(Math.round((step / settings.steps) * $('#time').attr('max')));
+            });
+
+            if (!Modernizr.inputtypes.range) {
+                $('#time').css('width', '30px');
+            }
+
+            // Updated Data-Time Logic to Populate 3 Fields
+            $('input[name=data-time]').keyup(function () {
+                var timeseries = Fourier.parseTimeSeries($(this).val());
+                var transform = Fourier.Transform(timeseries);
+                var newCycles = Fourier.getCyclesFromData(transform);
+
+                var N = newCycles.length;
+                var zeroC = _.find(newCycles, function (c) { return c.freq == 0 });
+                var zeroStr = zeroC ? Fourier.formatCycle(zeroC) : "0";
+
+                var posStr = "";
+                var negStr = "";
+
+                for (var i = 1; i < N / 2 + 0.5; i++) {
+                    if (i < N) {
+                        posStr += Fourier.formatCycle(newCycles[i]) + " ";
+                    }
+                }
+
+                for (var i = 1; i < N / 2 + 0.5; i++) {
+                    var negIndex = N - i;
+                    if (negIndex > 0 && negIndex < N && negIndex != i) {
+                        negStr += Fourier.formatCycle(newCycles[negIndex]) + " ";
+                    }
+                    // Removed else block to prevent dummy cycles
+                }
+
+                $('input[name=freq-zero]').val(zeroStr);
+                $('input[name=freq-pos]').val(posStr);
+                $('input[name=freq-neg]').val(negStr);
+
+                drawFourier(ctx, { dataupdate: false });
+            });
+
+            $('#canvas').click(function () {
+                $('#running').click();
+            })
+            $('input[type="text"]').on('input keyup change', function () {
+                renderFeedback();
+            });
+
+            // 2. Also trigger it immediately so chips show on load
+            renderFeedback();
+
+            $('#dark-mode-toggle').click(function (e) {
+                e.preventDefault();
+                $('.fourierchart').toggleClass('theme-dark');
+
+                // Toggle icon visibility
+                if ($('.fourierchart').hasClass('theme-dark')) {
+                    $('.light-icon').hide();
+                    $('.dark-icon').show();
+                } else {
+                    $('.light-icon').show();
+                    $('.dark-icon').hide();
+                }
+
+                // Immediately redraw to apply new colors
+                drawFourier(ctx);
+            });
+
+            // Drawer toggle handlers
+            $('#settings-toggle').on('click', function (e) {
+                e.stopPropagation();
+                $('#drawer').toggleClass('open');
+            });
+
+            $('.close-btn').on('click', function (e) {
+                e.stopPropagation();
+                $('#drawer').removeClass('open');
+            });
+
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('#drawer, #settings-toggle').length) {
+                    $('#drawer').removeClass('open');
+                }
+            });
+
+            $(document).on('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    $('#drawer').removeClass('open');
+                }
+            });
+            // --- RENDER VISUAL FEEDBACK ---
+            // --- RENDER VISUAL FEEDBACK ---
+            // --- RENDER VISUAL FEEDBACK (Fixed Negative Exponents) ---
+            function renderFeedback() {
+                var cycles = getCycles();
+                var $container = $('#equation-feedback');
+                $container.empty();
+
+                if (cycles.length === 0) {
+                    $container.html('<span style="font-size:0.8rem; color:var(--text-sub); margin-left:5px;">No active frequencies</span>');
+                    return;
+                }
+
+                // Helper for colors
+                function getSpectralColor(index, total) {
+                    if (index === 0) return "#999999";
+                    if (total <= 2) return "hsl(0, 80%, 60%)";
+                    var hue = ((index - 1) / (total - 2)) * 240;
+                    return "hsl(" + hue + ", 80%, 60%)";
+                }
+
+                // Draw chips
+                _(cycles).each(function (c, index) {
+                    var color = getSpectralColor(index, cycles.length);
+
+                    // 1. Border-only color (Previous fix)
+                    var html = '<div class="math-chip" style="border-color:' + color + ';">';
+
+                    // Amplitude
+                    html += '<span class="amp-val">' + c.amp + '</span>';
+
+                    // Exponential
+                    if (c.freq === 0) {
+                        html += ' (DC)';
+                    } else {
+                        html += 'e<sup>';
+
+                        // 2. THE FIX: Handle Negative Sign
+                        var sign = (c.freq < 0) ? '-' : '';
+                        var f = Math.abs(c.freq);
+
+                        // Construct string: sign + j + 2pi + freq + t
+                        // e.g. "-j2πt" or "j2π3t"
+                        html += '<sup>' + sign + 'j' + (f !== 1 ? f : '') + 'ωt';
+
+                        // Phase
+                        if (c.phase !== 0) {
+                            var pSign = c.phase > 0 ? '+' : '';
+                            html += pSign + c.phase + '°';
+                        }
+
+                        html += '</sup>';
+                    }
+
+                    html += '</div>';
+                    $container.append(html);
+                });
+            }
+        };
+
+        $(function () {
+            init();
+            $('#running').trigger('click');
+        });
+
+
+        var Fourier = {};
+
+        Fourier.Transform = function (data) {
+            var N = data.length;
+            var frequencies = [];
+
+            for (var freq = 0; freq < N; freq++) {
+                var re = 0;
+                var im = 0;
+
+                for (var t = 0; t < N; t++) {
+                    var rate = -1 * (2 * Math.PI) * freq;
+                    var time = t / N;
+                    var distance = rate * time;
+                    var re_part = data[t] * Math.cos(distance);
+                    var im_part = data[t] * Math.sin(distance);
+                    re += re_part;
+                    im += im_part;
+                }
+
+                if (Math.abs(re) < 1e-10) { re = 0; }
+                if (Math.abs(im) < 1e-10) { im = 0; }
+
+                re = re / N;
+                im = im / N;
+
+                frequencies[freq] = {
+                    re: re,
+                    im: im,
+                    freq: freq,
+                    amp: Math.sqrt(re * re + im * im),
+                    phase: Math.atan2(im, re) * 180 / Math.PI
+                };
+            }
+
+            return frequencies;
+        }
+
+        Fourier.totalValue = function (x, cycles) {
+            cycles = _.isArray(cycles) ? cycles : [cycles];
+
+            var real = 0;
+            var im = 0;
+
+            _(cycles).each(function (cycle) {
+                real += cycle.amp * Math.cos(x * cycle.freq + cycle.phase * Math.PI / 180);
+                im += cycle.amp * Math.sin(x * cycle.freq + cycle.phase * Math.PI / 180);
+            });
+
+            return {
+                x: x,
+                real: real,
+                im: im,
+                amp: Math.sqrt(real * real + im * im)
+            };
+        };
+
+        Fourier.realValue = function (x, cycle) {
+            return Fourier.totalValue(x, cycle).real;
+        };
+
+        Fourier.imaginaryValue = function (x, cycle) {
+            return Fourier.totalValue(x, cycle).im;
+        };
+
+        Fourier.InverseTransform = function (cycles) {
+
+            var timeseries = [];
+            var len = cycles.length;
+            for (var i = 0; i < len; i++) {
+                var pos = i / len * 2 * Math.PI;
+                var total = Fourier.totalValue(pos, cycles);
+                timeseries.push(total);
+            }
+            return timeseries;
+        };
+
+        // --- UPDATED: Higher Precision for Frequency Calculation ---
+        Fourier.getCyclesFromData = function (data, rounding) {
+            rounding = rounding || 4; // Increased from 2 to 4
+            return _(data).map(function (i) {
+                return {
+                    freq: i.freq,
+                    phase: Math.round(i.phase * Math.pow(10, 1)) / Math.pow(10, 1),
+                    amp: Math.round(i.amp * Math.pow(10, rounding)) / Math.pow(10, rounding)
+                };
+            });
+        };
+
+        Fourier.formatCycle = function (i) {
+            var str = i.amp;
+            if (i.phase != 0 && i.amp != 0) {
+                str += ":" + i.phase;
+            }
+            return str;
+        }
+
+        Fourier.getStringFromCycles = function (cycles) {
+            var str = "";
+            _(cycles).each(function (i) {
+                str += Fourier.formatCycle(i) + " ";
+            });
+            return str;
+        }
+
+        Fourier.parseTimeSeries = function (text) {
+            var strings = _(text.split(/[\s,]+/)).reject(function (i) { return i == null || i == ""; });
+            return _(strings).map(function (i) { return parseFloat(i); });
+        }
+    </script>
+</head>
+
+<style>
+    /* --- 1. VARIABLES & RESET --- */
+    :root {
+        --bg-app: #ffffff;
+        --bg-drawer: rgba(255, 255, 255, 0.9);
+        --backdrop: blur(12px);
+        --text-main: #2c3e50;
+        --text-sub: #6c757d;
+        --border: #e9ecef;
+        --accent: #4d955b;
+        --radius: 12px;
+        --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        --font-mono: "SF Mono", "Monaco", "Inconsolata", monospace;
+        --fab-size: 40px;
+    }
+
+    .fourierchart.theme-dark {
+        --bg-app: #0d1117;
+        --bg-drawer: rgba(22, 27, 34, 0.9);
+        --text-main: #c9d1d9;
+        --text-sub: #8b949e;
+        --border: #30363d;
+        --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: transparent;
+        font-family: var(--font-ui);
+        color: var(--text-main);
+    }
+
+    .fourierchart {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: var(--bg-app);
+        overflow: hidden;
+        transition: background 0.3s;
+    }
+
+    /* --- 2. CANVAS --- */
+    .canvas-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80px;
+        /* Make room for bottom bar */
+        box-sizing: border-box;
+    }
+
+    #canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* --- 3. SETTINGS TOGGLE (Bottom Right) --- */
+    #settings-toggle {
+        position: absolute;
+        bottom: 190px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    #dark-mode-toggle {
+        position: absolute;
+        bottom: 140px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    #settings-toggle,
+    #dark-mode-toggle {
+        height: var(--fab-size);
+        padding: 0 14px 0 16px;
+        border-radius: 20px;
+        background: var(--bg-drawer);
+        color: var(--text-main);
+        border: 1px solid var(--border);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        backdrop-filter: var(--backdrop);
+        transition: transform 0.2s;
+    }
+
+    #settings-toggle:hover,
+    #dark-mode-toggle:hover {
+        transform: scale(1.05);
+    }
+
+    #settings-toggle:active,
+    #dark-mode-toggle:active {
+        transform: scale(0.98);
+    }
+
+    .fab-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        white-space: nowrap;
+        letter-spacing: 0.3px;
+    }
+
+    .fab-icon {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* --- 4. BOTTOM PLAYER BAR (Redesigned) --- */
+    .bottom-player {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-drawer);
+        backdrop-filter: var(--backdrop);
+        border-top: 1px solid var(--border);
+        padding: 12px 20px;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Row 1: Playback Controls */
+    .player-row-main {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* Play Button Styling */
+    .play-btn-wrapper input {
+        display: none;
+    }
+
+    .play-btn {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--accent);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(77, 149, 91, 0.4);
+        transition: transform 0.1s;
+        flex-shrink: 0;
+    }
+
+    .play-btn:active {
+        transform: scale(0.95);
+    }
+
+    .play-icon,
+    .pause-icon {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Toggle logic handled via JS classes usually, or CSS adjacent selector */
+    input:checked+.play-btn .play-icon {
+        display: none;
+    }
+
+    input:not(:checked)+.play-btn .pause-icon {
+        display: none;
+    }
+
+    /* Time Slider (The Scrubber) */
+    .scrubber-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 16px;
+        background: var(--border);
+        border-radius: 510px;
+    }
+
+    .scrubber-wrapper::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 6px;
+        border-radius: 3px;
+        background: var(--accent);
+        width: var(--progress, 0%);
+        pointer-events: none;
+        z-index: 2;
+        transition: width 0.05s linear;
+    }
+
+    input[type=range] {
+        width: 100%;
+        height: 6px;
+        border-radius: 3px;
+        background: transparent;
+        outline: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        margin-top: -5px;
+        /* Alignment fix */
+    }
+
+    input[type=range]::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type=range]::-moz-range-track {
+        background: transparent;
+        border: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        background: transparent;
+        border: none;
+    }
+
+    /* Row 2: Options Chips */
+    .player-row-options {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow-x: auto;
+        /* Allow scrolling on tiny screens */
+        padding-bottom: 2px;
+    }
+
+    /* Hide scrollbar */
+    .player-row-options::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Chip Styling */
+    .chip-wrapper {
+        position: relative;
+    }
+
+    .chip-wrapper input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 12px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.05);
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-sub);
+        border: 1px solid transparent;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+        user-select: none;
+    }
+
+    /* Active Chip State */
+    .chip-wrapper input:checked+.chip {
+        background: rgba(77, 149, 91, 0.15);
+        color: var(--text-main);
+        border-color: rgba(77, 149, 91, 0.3);
+    }
+
+    /* Speed Control (Buttons with Label) */
+    .speed-control {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: auto;
+        /* Push to right */
+    }
+
+    .speed-label {
+        font-size: 0.65rem;
+        font-weight: 800;
+        color: var(--text-sub);
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
+
+    .speed-buttons {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .speed-btn {
+        background: rgba(0, 0, 0, 0.05);
+        border: 1px solid transparent;
+        color: var(--text-sub);
+        padding: 6px 8px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+        user-select: none;
+    }
+
+    .speed-btn:hover {
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+    .speed-btn.active {
+        background: rgba(77, 149, 91, 0.15);
+        color: var(--accent);
+        border-color: rgba(77, 149, 91, 0.3);
+    }
+
+    /* --- 5. THE DRAWER (Inputs Only) --- */
+    .drawer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+        background: var(--bg-drawer);
+        backdrop-filter: var(--backdrop);
+        z-index: 100;
+        padding: 20px;
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-top: 1px solid var(--border);
+        overflow-y: auto;
+    }
+
+    .drawer.open {
+        transform: translateY(0);
+    }
+
+    .drawer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .drawer-title {
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: var(--text-sub);
+        letter-spacing: 1px;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--text-main);
+        cursor: pointer;
+    }
+
+    /* Input Styling */
+    .input-row {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input-row label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-main);
+    }
+
+    input[type="text"] {
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        padding: 10px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        /* Default (Light): Very faint grey */
+        background: rgba(0, 0, 0, 0.04);
+        color: var(--text-main);
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        border-color: var(--accent);
+        /* Focus (Light): White */
+        background: rgba(255, 255, 255, 1);
+    }
+
+    /* --- Dark Mode Overrides for Inputs --- */
+    .fourierchart.theme-dark input[type="text"] {
+        /* Dark Mode: Faint white overlay */
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .fourierchart.theme-dark input[type="text"]:focus {
+        /* Dark Mode Focus: Slightly brighter */
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* --- Coefficients Group --- */
+    .coefficients-heading {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin: 0 0 0 0;
+    }
+
+    .coefficients-callout {
+        font-size: 0.8rem;
+        color: var(--text-sub);
+        background: rgba(77, 149, 91, 0.08);
+        border-left: 3px solid var(--accent);
+        padding: 10px 12px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .coefficients-callout .callout-header {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: var(--accent);
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: rgba(77, 149, 91, 0.18);
+        margin-bottom: 6px;
+    }
+
+    .coefficients-callout code {
+        background: rgba(77, 149, 91, 0.15);
+        color: var(--accent);
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .coefficients-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 16px;
+        border-left: 2px solid var(--accent);
+        position: relative;
+    }
+
+    .coefficients-group .input-row {}
+
+    /* --- MOBILE OPTIMIZATIONS --- */
+    @media (max-width: 600px) {
+        .bottom-player {
+            padding: 10px 15px;
+            gap: 8px;
+        }
+
+        .play-btn {
+            width: 36px;
+            height: 36px;
+        }
+
+        .drawer {
+            width: 90%;
+            right: 0;
+            left: 0;
+        }
+
+        .drawer-title {
+            font-size: 0.75rem;
+        }
+
+        .input-row label {
+            font-size: 0.7rem;
+        }
+
+        input[type="text"] {
+            font-size: 0.85rem;
+            padding: 8px;
+        }
+
+        /* On very small screens, make options scroll horizontally cleanly */
+        .player-row-options {
+            gap: 8px;
+        }
+
+        .chip {
+            padding: 5px 10px;
+            font-size: 0.7rem;
+        }
+    }
+
+    /* --- Math Feedback Chips --- */
+    /* --- Math Feedback Chips --- */
+    #equation-feedback {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 15px;
+        min-height: 20px;
+
+        /* CHANGE IS HERE: */
+        width: 100%;
+        /* Explicitly set width instead */
+        flex-shrink: 0;
+        /* Prevent the container from collapsing */
+        /* Removed flex-basis: 100% (because that sets Height in a column layout) */
+    }
+
+    .math-chip {
+        display: inline-flex;
+        align-items: center;
+        background: var(--bg-drawer);
+        border: 1px solid var(--accent);
+        color: var(--text-main);
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-family: "Times New Roman", serif;
+        font-style: italic;
+        font-size: 0.9rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        animation: popIn 0.2s ease-out;
+    }
+
+    .math-chip sup {
+        font-size: 0.7em;
+        margin-left: 2px;
+    }
+
+    .math-chip .amp-val {
+        font-weight: bold;
+        font-family: var(--font-mono);
+        font-style: normal;
+        margin-right: 4px;
+        color: var(--text-main);
+        /* Fixed: Uses theme variable instead of hardcoded black */
+    }
+
+    @keyframes popIn {
+        from {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* Styling for inline code snippets in labels */
+    code {
+        font-family: var(--font-mono);
+        background: rgba(0, 0, 0, 0.06);
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        color: var(--text-main);
+        /* Makes it pop with the green color */
+        vertical-align: middle;
+    }
+
+    /* Dark Mode support for the inline code */
+    .fourierchart.theme-dark code {
+        background: rgba(255, 255, 255, 0.15);
+    }
+</style>
+
+<body>
+    <div class="fourierchart">
+
+        <div class="canvas-wrapper">
+            <canvas id="canvas" width="800" height="800">Browser not supported.</canvas>
+        </div>
+
+        <button id="settings-toggle" aria-label="Settings">
+            <span class="fab-label">Settings</span>
+            <span class="fab-icon">⚙</span>
+        </button>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+            <span class="fab-label">Theme</span>
+            <span class="fab-icon light-icon">☀</span>
+            <span class="fab-icon dark-icon" style="display:none;">☾</span>
+        </button>
+
+        <div id="drawer" class="drawer">
+            <div class="drawer-header">
+                <span class="drawer-title">Components Settings</span>
+                <button class="close-btn">×</button>
+            </div>
+            <div id="equation-feedback"></div>
+
+            <h3 class="coefficients-heading">Coefficients Of</h3>
+            <div class="coefficients-callout">
+                <div class="callout-header">INPUT FORMAT</div>
+                <div class="format-row">
+                    <span class="label">• Amplitude only:</span>
+                    <code>1.5</code>
+                </div>
+                <div class="format-row">
+                    <span class="label">• Amp + Phase (°):</span>
+                    <code>1.5:45</code> <span>or</span> <code>1.5@45</code>
+                </div>
+                <div class="callout-note"><em>(Separate multiple values with spaces)</em></div>
+            </div>
+            <div class="coefficients-group">
+                <div class="input-row">
+                    <label>DC Component (<code>k = 0</code>)</label>
+                    <input type="text" name="freq-zero" value="0">
+                </div>
+                <div class="input-row">
+                    <label>Positive Harmonics (<code>k is +ve</code>)</label>
+                    <input type="text" name="freq-pos" value="" placeholder="(ex): 1 1">
+                </div>
+                <div class="input-row">
+                    <label>Negative Harmonics (<code>k is -ve</code>)</label>
+                    <input type="text" name="freq-neg" value="" placeholder="(ex): 1 1">
+                </div>
+            </div>
+            <div class="input-row" style="margin-top:20px; border-top:1px solid var(--border); padding-top:20px;">
+                <label>Time Domain Input (<code>ignore this pls</code>)</label>
+                <input type="text" name="data-time" placeholder="Auto-calculated...">
+            </div>
+        </div>
+
+        <div class="bottom-player">
+
+            <div class="player-row-main">
+                <div class="play-btn-wrapper">
+                    <input type="checkbox" id="running" checked="checked">
+                    <label for="running" class="play-btn">
+                        <span class="play-icon">▶</span>
+                        <span class="pause-icon">||</span>
+                    </label>
+                </div>
+
+                <div class="scrubber-wrapper">
+                    <input type="range" id="time" min="0" max="100">
+                </div>
+            </div>
+
+            <div class="player-row-options">
+
+                <div class="chip-wrapper">
+                    <input type="checkbox" id="showcombined" checked="checked">
+                    <label for="showcombined" class="chip">x(t)</label>
+                </div>
+                <div class="chip-wrapper">
+                    <input type="checkbox" id="showparts" checked="checked">
+                    <label for="showparts" class="chip">Components</label>
+                </div>
+                <div class="chip-wrapper">
+                    <input type="checkbox" id="toggle-real" checked="checked">
+                    <label for="toggle-real" class="chip">Real Part (↓)</label>
+                </div>
+                <div class="chip-wrapper">
+                    <input type="checkbox" id="toggle-imag" checked="checked">
+                    <label for="toggle-imag" class="chip">Imag. Part (→)</label>
+                </div>
+                <div class="chip-wrapper">
+                    <input type="checkbox" id="showcrosses" checked="checked">
+                    <label for="showcrosses" class="chip">Timestamps</label>
+                </div>
+
+                <div class="speed-control">
+                    <span class="speed-label">Speed</span>
+                    <div class="speed-buttons">
+                        <button class="speed-btn" data-speed="5" title="0.5x - Slowest">0.5×</button>
+                        <button class="speed-btn" data-speed="20" title="1x - Slow">1×</button>
+                        <button class="speed-btn" data-speed="50" title="2x - Normal">2×</button>
+                        <button class="speed-btn active" data-speed="80" title="4x - Fast">4×</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
