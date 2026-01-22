@@ -1,5 +1,5 @@
 ---
-title: Block Diagram Feedback Loops
+title: Block Diagram Feedback Connection
 date: 2026-01-22
 tags:
   - type/strategy
@@ -7,7 +7,7 @@ tags:
   - course/IT341
 draft: false
 ---
-# The Strategy
+## The Strategy
 ### Drawing it
 Given, (as an example)
 $$
