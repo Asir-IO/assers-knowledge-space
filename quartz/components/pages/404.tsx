@@ -11,6 +11,16 @@ const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
       <h1>404</h1>
       <p>{i18n(cfg.locale).pages.error.notFound}</p>
       <a href={baseDir}>{i18n(cfg.locale).pages.error.home}</a>
+      <script dangerouslySetInnerHTML={{
+        __html: `
+        const path = window.location.pathname;
+        const lowerPath = path.toLowerCase();
+        
+        // If the current path has uppercase letters, redirect to the lowercase version
+        if (path !== lowerPath) {
+          window.location.replace(lowerPath + window.location.hash);
+        }
+      `}} />
     </article>
   )
 }
