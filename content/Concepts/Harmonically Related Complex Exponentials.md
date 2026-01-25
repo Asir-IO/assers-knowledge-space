@@ -29,7 +29,7 @@ $$
 > [!info] What a Periodic Complex Exponential is
 > **Algebraic Form**: $x(t) = C \cdot e^{j\omega t}$, where $\omega$ is its frequency and $C$ is a complex constant ($C = r e^{j\phi}$)
 > 
-> $C$ stores both its length and starting/phase angle:
+> $C$ stores both its length and starting/phase angle (u can think of it as its "initial position"):
 > * $r = |C|$ (radius)
 > * $\phi = \angle C$ (phase angle)
 >

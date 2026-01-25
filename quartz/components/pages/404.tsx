@@ -11,6 +11,7 @@ const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
       <h1>404</h1>
       <p>{i18n(cfg.locale).pages.error.notFound}</p>
       <a href={baseDir}>{i18n(cfg.locale).pages.error.home}</a>
+      <p>(I may have changed this page's URL too =/)</p>
       <script dangerouslySetInnerHTML={{
         __html: `
         const path = window.location.pathname;
