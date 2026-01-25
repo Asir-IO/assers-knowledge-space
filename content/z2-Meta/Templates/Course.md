@@ -1,5 +1,5 @@
 ---
-title: {{title}}
+title: "<% tp.file.title %>"
 ---
 **Semester:** ...
 ## My Batch's Study Materials (for reference)
