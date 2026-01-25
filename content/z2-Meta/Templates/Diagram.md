@@ -6,7 +6,17 @@ tags:
   - type/diagram
 draft: true
 ---
-(The diagram)
+## The Diagram
+...
+## The keys
+> [!abstract] Symbols Key
+> ...
+
+> [!abstract] Arrows/Lines Key
+> ...
+
+> [!abstract] Notation Key
+> ...
 ## Reference/s used
 (image)
 description.

@@ -1,5 +1,5 @@
 ---
-title: Quickly placing ticks Evenly on a line
+title: Single-cycle Uarch Diagram
 date: 2026-01-25
 tags:
   - type/strategy
@@ -15,8 +15,8 @@ To minimize error, we use *Prime Factorization*. This ensures the largest "guess
 ## Before you begin
 1. Draw the line on which you'd place your ticks, 2 of the ticks will be placed at the very start and end. ![[Quickly placing ticks evenly on a line 2026-01-25 15.38.08.excalidraw.svg|100%]]
 ## The Strategy
-To place $n$ ticks, you'll subdivide the line using the prime factors of $n-1$.
-Why not $n$?
+To place $n$ ticks, you'll subdivide the line using the prime factors of $n-1$.<br>
+*Why not $n$*?<br>
 Since creating $n-1$ divisions is equivalent to placing $n$ ticks
 1. Find the prime factors of $n-1$ (also include their exponent) and highlight the largest factor.![[Quickly placing ticks evenly on a line 2026-01-25 16.28.06.excalidraw.svg]]
 2. Divide the line recursively from the largest factor to the smallest.
@@ -30,7 +30,8 @@ Since creating $n-1$ divisions is equivalent to placing $n$ ticks
 > 
 > But don't forget to remove the last $k$ ticks, since working with the prime factors of $n-1+k$ produces $n+k$ ticks, not $n$.
 > 
-> **Why switch?** Because sometimes $n-1+k$ has a *lower LP* than $n-1$.<br>
+> **Why switch?** <br>
+> Because sometimes $n-1+k$ has a *lower LP* than $n-1$.<br>
 >  A smaller LP means the *largest guess u ever have to make* is smaller than what a larger LP would force u to do.
 ## Example
 Placing 7 Ticks ($n=7$)

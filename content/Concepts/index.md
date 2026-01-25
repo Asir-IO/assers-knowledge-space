@@ -15,7 +15,7 @@ These notes are my ongoing attempt to do so =)
 - ...
 ## Artificial Intelligence
 (ML, Neural Networks, Logic, ...)
-* [[Backpropagation]]
+* [[Backpropagation in a Neural Network]]
 ## Mathematics
 (Linear Algebra, Discrete Mathematics, Probability, ...)
 - ...
