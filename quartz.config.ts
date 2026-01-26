@@ -30,24 +30,24 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#f3f9f4",      // Your Background (Minty White)
+          light: "#ffffff",      // Your Background (Minty White)
           lightgray: "#e5e5e5",  // PRESERVED DEFAULT (Grey background for code/blocks)
           gray: "#a0b2ce",       // Your Secondary (Blue-ish Grey -> Graph lines & borders)
           darkgray: "#0b140d",   // Your Text (Body text)
           dark: "#0b140d",       // Your Text (Headers)
-          secondary: "#4d955b",  // Your Primary (Green -> Links & Titles)
-          tertiary: "#8789c1",   // Your Accent (Purple -> Hover states)
+          secondary: "hsl(132, 20%, 44%)",  // Your Primary (Green -> Links & Titles)
+          tertiary: "hsl(238, 20%, 64%)",   // Your Accent (Purple -> Hover states)
           highlight: "rgba(103, 176, 117, 0.15)", // Your Primary with transparency
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",      // PRESERVED DEFAULT (Dark Mode Background)
+          light: "#1e1e1e",      // PRESERVED DEFAULT (Dark Mode Background)
           lightgray: "#393639",  // PRESERVED DEFAULT (Dark Mode block background)
           gray: "#646464",       // PRESERVED DEFAULT (Dark Mode borders)
           darkgray: "#d4d4d4",   // PRESERVED DEFAULT (Dark Mode text)
           dark: "#ebebec",       // PRESERVED DEFAULT (Dark Mode headers)
-          secondary: "#67b075",  // Your Primary applied to Dark Mode links
-          tertiary: "#8789c1",   // Your Accent applied to Dark Mode hovers
+          secondary: "hsl(132, 20%, 55%)",  // Your Primary applied to Dark Mode links
+          tertiary: "hsl(238, 20%, 64%)",   // Your Accent applied to Dark Mode hovers
           highlight: "rgba(103, 176, 117, 0.15)", // Your Primary with transparency
           textHighlight: "#b3aa0288",
         },
