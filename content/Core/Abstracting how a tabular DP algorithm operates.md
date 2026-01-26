@@ -1,5 +1,5 @@
 ---
-title: Abstracting how a DP algorithm operates
+title: Abstracting how a tabular DP algorithm operates
 date: 2026-01-26
 tags:
   - topic/
