@@ -8,7 +8,7 @@ displayTitle: Welcome to my Place =)
 
 I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
 
-This is a living collection of the work that usually gets lost after the finals week
+This is *(mostly)* a living collection of the work that usually gets lost after the finals week
 * **[[Concepts/index|Concepts]]** I have visualized.
 * **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
 *  **[[Diagrams/index|Textbook diagrams]]** I took the time to create in a different way.
@@ -31,7 +31,7 @@ This is a living collection of the work that usually gets lost after the finals 
 <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
 
   <div style="display: flex; align-items: start; gap: 12px;">
-    <div style="color: #8789c1; margin-top: 2px;">
+    <div style="color: #ffffff; margin-top: 2px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
@@ -41,7 +41,7 @@ This is a living collection of the work that usually gets lost after the finals 
   </div>
 
   <div style="display: flex; align-items: start; gap: 12px;">
-    <div style="color: #ffb74d; margin-top: 2px;">
+    <div style="color: #ffffff; margin-top: 2px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
@@ -51,7 +51,7 @@ This is a living collection of the work that usually gets lost after the finals 
   </div>
 
   <div style="display: flex; align-items: start; gap: 12px;">
-    <div style="color: #67b075; margin-top: 2px;">
+    <div style="color: #ffffff; margin-top: 2px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
@@ -64,7 +64,7 @@ This is a living collection of the work that usually gets lost after the finals 
 ---
 ## The Core
 You may have noticed a folder named [[Core/index|Core]] in the explorer. This is my thoughts dump. You'll find there thoughts that aren't exactly a concept, a strategy, or a diagram. <br>
-You're welcome to scroll through stuff there ofc, but yeah, you do this at your *own risk* (I'm a highly choatic being)
+You're welcome to scroll through stuff there ofc, but yeah, you do this at your *own risk* (I'm a highly chaotic being)
 
 ---
 ## University Courses 
