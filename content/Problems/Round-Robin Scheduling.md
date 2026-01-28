@@ -16,17 +16,17 @@ Based on that, you'll be asked questions about a process.<br>
 *(Ex): What's the turnabout time for P2?*
 ## Before you begin
 >[!example] I'll demonstrate on this example
->$$\begin{array}{|c|c|c|} \hline \text{Process} & \text{Arrival Time} & \text{Burst Time} \\ \hline P1 & 0 & 6 \\ \hline P2 & 2 & 8 \\ \hline P3 & 5 & 7 \\ \hline P4 & 7 & 3 \\ \hline \end{array}$$
+>$$\begin{array}{|c|c|c|} \hline \text{Process} & \text{Arrival Time} & \text{Burst Time} \\ \hline P1 & 0 & 6 \\ \hline P2 & 2 & 8 \\ \hline P3 & 5 & 7 \\ \hline P4 & 7 & 2 \\ \hline \end{array}$$
 >
 >*Time Quantum* ($Q$) = 2
 
 ^49aece
 
 1. draw a straight line that'll act as the time axis, and place ticks on it in multiples of Q and until the scheduling ends (the sum of the burst time of each process). <br>
-(`Q=2` | `ends at t=6+8+7+3=24`)<br>
+(`Q=2` | `ends at t=6+8+7+3=23`)<br>
 ![[Round-Robin Scheduling 2026-01-26 01.26.27.excalidraw.svg]]
 >[!warning] Note
->Make sure u leave generous space between each tick.
+>Make sure u leave *generous* space between each tick.
 
 2. for every process, add it below the timestamp at which it arrived. (add ticks when needed) <br>
 ![[Round-Robin Scheduling 2026-01-26 01.42.15.excalidraw.svg]]

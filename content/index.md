@@ -4,7 +4,7 @@ layout: page
 displayTitle: Welcome to my Place =)
 ---
 ## What's this
-> After three yrs of university, I asked myself: **"How many of the concepts you've learned so far do u recall right now?"**
+> After three yrs of college, I asked myself: **"How many of the concepts you've learned so far do u recall right now?"**
 
 I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
 
