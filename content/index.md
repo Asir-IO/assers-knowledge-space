@@ -10,7 +10,7 @@ I blanked. I could barely recall one or two. That is why I created this knowledg
 
 This is *(mostly)* a living collection of the work that usually gets lost after the finals week
 * **[[Concepts/index|Concepts]]** I have visualized.
-* **[[Problems/index|Strategies]]** I devised to solve (mostly) exam problems.
+* **[[Strategies/index|Strategies]]** I devised to solve (mostly) exam problems.
 *  **[[Diagrams/index|Textbook diagrams]]** I took the time to create in a different way.
 
 > [!Abstract]- A word for FCAI-CU undergrads
