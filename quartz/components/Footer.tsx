@@ -24,9 +24,8 @@ export default ((opts?: Options) => {
           Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>
 
-      {/* dynamic excalidraw theme toggle */}
+      {/* --- DYNAMIC THEME SCRIPT (EXISTENCE CHECKER) --- */}
         <script dangerouslySetInnerHTML={{ __html: `
-          // Flag to prevent multiple observers running at once
           if (!window.hasInitializedThemeSwap) {
             window.hasInitializedThemeSwap = true;
 
@@ -34,50 +33,65 @@ export default ((opts?: Options) => {
               const theme = document.documentElement.getAttribute('saved-theme')
               const isDark = theme === 'dark'
               
-              // Select all SVGs that end in .svg (and ignore already-processed .dark.svg ones)
+              // Target ONLY .excalidraw.svg files
+              // (Selector matches anything ending in .svg, we filter inside)
               document.querySelectorAll('img[src$=".svg"]').forEach(img => {
                 const src = img.getAttribute('src')
-                if (!src) return
+                if (!src || !src.includes('.excalidraw')) return
 
-                // Check if this is already a dark version to avoid double-swapping
-                const isAlreadyDark = src.includes('.dark.svg')
+                // 1. Establish the "Base" (Light) Source
+                // If we are already dark, we need to calculate what the light version was
+                let lightSrc = img.getAttribute('data-light-src')
+                if (!lightSrc) {
+                   // Assume current src is light, unless it's already dark
+                   lightSrc = src.includes('.dark.svg') 
+                     ? src.replace('.dark.svg', '.svg') 
+                     : src
+                   img.setAttribute('data-light-src', lightSrc)
+                }
 
                 if (isDark) {
-                  // === SWITCH TO DARK ===
-                  // Only swap if we are currently looking at the light version
-                  if (!isAlreadyDark) {
-                     img.setAttribute('data-light-src', src) // Save backup
-                     // Robust Replace: Insert .dark before the last .svg
-                     // "image.excalidraw.svg" -> "image.excalidraw.dark.svg"
-                     img.setAttribute('src', src.replace(/\.svg$/, '.dark.svg'))
+                  // === SWITCH TO DARK (IF EXISTS) ===
+                  const darkSrc = lightSrc.replace('.excalidraw.svg', '.excalidraw.dark.svg')
+                  
+                  // Optimization: If already swapped, do nothing
+                  if (img.src.includes(darkSrc)) return;
+
+                  // PROBE: Try to load the dark image in memory first
+                  const tester = new Image()
+                  tester.onload = () => {
+                    // Success! The file exists. Perform the swap.
+                    img.setAttribute('src', darkSrc)
                   }
+                  tester.onerror = () => {
+                    // Failed (404). File doesn't exist.
+                    // Ensure we stick to (or revert to) the light version
+                    img.setAttribute('src', lightSrc)
+                  }
+                  tester.src = darkSrc
+                  
                 } else {
                   // === SWITCH TO LIGHT ===
-                  // Restore from backup if it exists
-                  const lightSrc = img.getAttribute('data-light-src')
-                  if (lightSrc) {
-                     img.setAttribute('src', lightSrc)
-                  } else if (isAlreadyDark) {
-                     // Fallback: Strip .dark from the filename
-                     img.setAttribute('src', src.replace('.dark.svg', '.svg'))
+                  // Always safe to revert to light
+                  if (img.src !== lightSrc) {
+                    img.setAttribute('src', lightSrc)
                   }
                 }
               })
             }
 
-            // 1. Run on Navigation (SPA support)
+            // Listeners
             document.addEventListener('nav', swapSvgToTheme)
             
-            // 2. Observer for Theme Toggle (Instant switch)
-            // We debounce slightly to prevent lag if attributes change rapidly
+            // Observer (Debounced)
             let timeout;
             const observer = new MutationObserver(() => {
               clearTimeout(timeout);
-              timeout = setTimeout(swapSvgToTheme, 10);
+              timeout = setTimeout(swapSvgToTheme, 20);
             })
             observer.observe(document.documentElement, { attributes: true, attributeFilter: ['saved-theme'] })
             
-            // 3. Initial Run
+            // Initial Run
             swapSvgToTheme()
           }
         `}} />
