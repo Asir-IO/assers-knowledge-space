@@ -15,7 +15,7 @@ try {
     const BG_DARK_HEX  = "#1e1e1e"; // Your Dark Mode Background
     
     const INK_BLACK = "#000000";
-    const INK_WHITE = "#ced4da"; // Light Grey for Dark Mode
+    const INK_WHITE = "#ffffff"; // Light Grey for Dark Mode
 
     // Tokens to detect
     const BLACK_TOKENS = ["#000000", "#1e1e1e", "#121212", "#343a40", "#212529"];

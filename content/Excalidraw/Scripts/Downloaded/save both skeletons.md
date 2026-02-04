@@ -25,7 +25,7 @@ try {
     const BG_DARK_HEX  = "#1e1e1e"; 
     
     const INK_BLACK = "#000000"; 
-    const INK_WHITE = "#ced4da"; 
+    const INK_WHITE = "#ffffff"; 
 
     const BLACK_TOKENS = ["#000000", "#1e1e1e", "#121212", "#343a40", "#212529"];
     const WHITE_TOKENS = ["#ffffff", "#ced4da", "#f8f9fa", "#e9ecef", "transparent"];

@@ -45,7 +45,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
-      <a href="/Problems/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Problem Strategies</a>
+      <a href="/Strategies/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Problem Strategies</a>
       <span style="font-size: 0.9em; opacity: 0.7;">I placed here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
     </div>
   </div>
