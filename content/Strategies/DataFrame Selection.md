@@ -1,19 +1,17 @@
 ---
-title: Pandas DataFrames
-date: 2026-02-03
+title: DataFrame Selection
+date: 2026-02-05
 tags:
-  - type/concept
+  - type/strategy
   - topic/
 draft: false
 ---
-## Mental Model
-![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg]]
+### The Structure of a DataFrame
+![[DataFrame Structure#^bead-diagram]]
 
-A DataFrame consists of two distinct parts: the *index* column and the *data* columns. <br>
-The *index* column is what identifies each row and defaults to the initial integer indicies (shown above on the very left). <br>
-The data columns, well, contain the actual data.
-
----
+I'll demonstrate on this example.
+![[DataFrame Structure#Example]]
+## The Strategy
 ### Column Selection
 To select column(s), u do the following:
 1. determine the selector
@@ -24,7 +22,7 @@ To select column(s), u do the following:
 	- select by column name (a string).
 ``` python
 # an example
-selector = 'type'
+selector = 'Team'
 ```
 ![[Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg]] 
 
@@ -47,14 +45,14 @@ To select row(s), u do the following:
 	- select by its index label
 ``` python
 # an example
-selector = 'ID_20230655'
+selector = 'P_01'
 ```
 ![[Pandas DataFrames 2026-02-04 01.23.43.excalidraw.svg]]
 
 2. use that selector
 	- used on the `.loc` operator.
 ``` python
-row = df.loc['ID_20230655'] 
+row = df.loc['P_01'] 
 ```
 #### Case B
 (*direct lookup*)
@@ -69,7 +67,7 @@ selector = 1
 2. use that selector
 	- used on the `.iloc` operator.
 ``` python
-row = df.loc[1] 
+row = df.iloc[1] 
 ```
 #### Case C
 (*lookup based on some "criteria")
@@ -77,7 +75,7 @@ row = df.loc[1]
 	- select by a boolean mask.
 ``` python
 # an example
-selector = df['population'] > 1_000_000
+selector = df['Team'] == 'Red'
 ```
 ![[Pandas DataFrames 2026-02-04 01.33.30.excalidraw.svg]]
 
@@ -99,19 +97,6 @@ rows = df[selector]
 > result = df.loc[row_selector, column_selector]
 > ```
 
-## The keys
-> [!abstract] Symbols Key
-> ...
-
-> [!abstract] Arrows/Lines Key
-> ...
-
-> [!abstract] Notation Key
-> ...
-## Formal Definition
-...
-
-
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[DataFrame Structure]]
