@@ -12,7 +12,7 @@ draft: true
 ## Visual
 ...
 
-## The keys
+## Keys
 > [!abstract] Symbols Key
 > ...
 

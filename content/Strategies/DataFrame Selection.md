@@ -6,11 +6,19 @@ tags:
   - topic/
 draft: false
 ---
-### The Structure of a DataFrame
-![[DataFrame Structure#^bead-diagram]]
+## What is the problem 
+U have a DataFrame and u need to select specific slices, maybe: 
+- whole columns
+- specific rows by their *index* or order
+- or rows that share a common value
+## Before you begin
+*Recall the structure of a DataFrame*
 
-I'll demonstrate on this example.
-![[DataFrame Structure#Example]]
+![[DataFrame Diagram#^diagram]]
+
+*I'll demonstrate on the example below*
+
+![[DataFrame Diagram#Example]]
 ## The Strategy
 ### Column Selection
 To select column(s), u do the following:
@@ -99,4 +107,4 @@ rows = df[selector]
 
 ---
 ## Connections
-- **Related to:** [[DataFrame Structure]]
+- **Related to:** [[DataFrame Diagram]]

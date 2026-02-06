@@ -7,15 +7,15 @@ tags:
   - course/AI321
 draft: false
 ---
-## Intuition
+## Mental Model
 Think of a Neural Network as a line of layers, where every neuron in a layer is wired to the ones in the layer before it. Every single one of those wires (connections) has a **weight** attached to it.
 
 These weights are basically the "knobs" that control the final output when u feed the network an input.
 
 When u start, all these weights are *totally random* (the network knows nothing). The *goal* of backpropagation is to tweak/update these weights, in some way, such that they fit your training samples as much as possible.
-## Recall: The Structure of a Neural Network
+## The Structure of a Neural Network
 ![[Neural Network Diagram#The Diagram]]
-## The keys
+## Keys
 > [!abstract] Notation Key
 > -  $y$ $\equiv$ the training output vector
 > - $^{(l)}$ $\equiv$ the layer index.

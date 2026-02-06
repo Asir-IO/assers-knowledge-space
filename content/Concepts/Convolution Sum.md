@@ -7,7 +7,7 @@ tags:
   - course/IT341
 draft: false
 ---
-## Intuition
+## Mental Model
 You've got a linear system (that given an input signal, spits out an output one), but u don't have an explicit formula to compute the output from the input, the system is like a black box to u.
 How do u then get an explicit input/output formula?
 
@@ -39,7 +39,7 @@ Once u acquire the impulse response knowledge, u can compute the system's output
 
 To get the overall system output of an input signal $x[n]$,
 ![[Convolution Sum 2026-01-24 23.17.40.excalidraw.svg|100%]]
-### The Strategy
+### How it works
 1. Iterate through every sample of the input $x$ at time $k$.
 	1. grab the system's unit impulse response at that time $h_k[n]$.
 		(The reaction signal triggered by the input impulse at time $k$) = $x[k]\cdot h_k[n]$
