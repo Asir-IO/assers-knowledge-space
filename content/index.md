@@ -11,7 +11,7 @@ I blanked. I could barely recall one or two. That is why I created this knowledg
 This is *(mostly)* a living collection of the work that usually gets lost after the finals week
 * **[[Concepts/index|Concepts]]** I have visualized.
 * **[[Strategies/index|Strategies]]** I devised to solve (mostly) exam problems.
-*  **[[Diagrams/index|Textbook diagrams]]** I took the time to create in a different way.
+*  **[[Diagrams/index|Diagrams]]** This is mostly text-book diagrams I took the time to create in a different way.
 
 > [!Abstract]- A word for FCAI-CU undergrads
 > If you're an FCAI-CU undergrad, I've got a few words to tell u (bear with me).
@@ -56,7 +56,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
       <a href="/Diagrams/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Diagrams</a>
-      <span style="font-size: 0.9em; opacity: 0.7;">You’ll find here (mostly university) diagrams that I’ve recreated in a way that I found more clear.</span>
+      <span style="font-size: 0.9em; opacity: 0.7;">You’ll find here diagrams; Some are text-book ones that I’ve recreated in a way that I found more clear, and others were built from scratch.</span>
     </div>
   </div>
 </div>

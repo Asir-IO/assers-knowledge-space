@@ -21,7 +21,7 @@ Each level of aligned beads/row can be accessed using a unique <mark style="back
 
 ---
 ## Example
-**The Tabular Form**
+**Its Tabular/Pythonic Form
 
 |     | (index) | Team | Score |
 | :-- | :------ | :--- | :---- |
@@ -29,7 +29,7 @@ Each level of aligned beads/row can be accessed using a unique <mark style="back
 | 1   | P_01    | Blue | 10    |
 | 2   | P_02    | Red  | 15    |
 
-**The visual form**
+**Its visual form**
 
 ![[Pandas DataFrames 2026-02-05 21.01.36.excalidraw.svg|100%]]
 
@@ -41,4 +41,4 @@ Each level of aligned beads/row can be accessed using a unique <mark style="back
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[DataFrame Selection]]

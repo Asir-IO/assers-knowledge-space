@@ -8,10 +8,10 @@ draft: false
 ---
 ## What is the problem
 You need to place $n$ ticks evenly on a line (including the start and end points) but do not have a ruler.
-## The Core Insight
+
 The difficulty of manually dividing a line is proportional to the size of the gap you have to "guess." Dividing a line into 2 or 3 parts by eye is easy; dividing it into 7 or 11 is hard.
 
-To minimize error, we use *Prime Factorization*. This ensures the largest "guess" you ever make is equal to the *Largest Prime factor* ($LP$) of the number you are working with.
+Using *prime factorization* ensures the largest "guess" you ever make is equal to the *Largest Prime factor* ($LP$) of the number you are working with.
 ## Before you begin
 1. Draw the line on which you'd place your ticks, 2 of the ticks will be placed at the very start and end. ![[Quickly placing ticks evenly on a line 2026-01-25 15.38.08.excalidraw.svg|100%]]
 ## The Strategy

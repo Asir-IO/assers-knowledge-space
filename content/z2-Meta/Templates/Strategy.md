@@ -11,7 +11,7 @@ You'll either:
 - ...
 ## Before you begin
 1. ...
-## The keys
+## Keys
 > [!abstract] Symbols Key
 > ...
 
@@ -20,7 +20,10 @@ You'll either:
 
 > [!abstract] Notation Key
 > ...
-## The Strategy
+## Strategy
+...
+
+## Example
 ...
 
 ---
