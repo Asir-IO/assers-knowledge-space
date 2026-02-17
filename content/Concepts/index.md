@@ -16,8 +16,8 @@ These notes are my ongoing attempt to do so =)
 - [Harmonically Related Complex Exponentials](Harmonically%20Related%20Complex%20Exponentials.md.md)  
 ## Artificial Intelligence  
 %%(ML, Neural Networks, Logic, ...)%%  
-- [Bias in Machine Learning](Bias%20in%20Machine%20Learning.md.md)  
-- [Backpropagation in a Neural Network](Backpropagation%20in%20a%20Neural%20Network.md.md)  
+- [Bias in Machine Learning](Concepts/Bias in Machine Learning)  
+- [Backpropagation in a Neural Network](Concepts/Backpropagation in a Neural Network)  
   
 ...  
 ## Mathematics  
