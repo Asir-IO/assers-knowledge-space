@@ -1,5 +1,5 @@
 ---
-title: Convolution Sum
+title: Convolution Sum in LTI systems
 date: 2026-01-24
 tags:
   - type/concept
@@ -57,7 +57,11 @@ Here's a GIF illustrating how this works as an input signal gets processed.
 	$y[n] = \sum_{k=-\infty}^{+\infty} x[k] \cdot h_k[n]$
 	- *(the System is also time-invariant)*
 
-		$h_k[n] = h_[n-k]$
+		$h_k[n] = h[n-k]$
+## TL;DR
+An LTI system's total output is its reaction to _each_ individual input sample, added together.
+
+This output is obtained by computing the convolution sum between its impulse response and input signal.
 
 ---
 ## Connections

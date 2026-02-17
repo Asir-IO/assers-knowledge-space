@@ -5,6 +5,7 @@ tags:
   - type/concept
   - topic/
   - course/AI321
+  - domain/ai
 draft: false
 ---
 ## Mental Model

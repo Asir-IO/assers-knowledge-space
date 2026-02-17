@@ -22,7 +22,7 @@ Based on that, you'll be asked questions about a process.<br>
 
 ^49aece
 
-1. draw a straight line that'll act as the time axis, and place ticks on it in multiples of Q and until the scheduling ends (the sum of the burst time of each process). <br>
+1. draw a straight line that'll act as the time axis, and place [[Quickly placing ticks Evenly on a line|ticks]] on it in multiples of Q and until the scheduling ends (the sum of the burst time of each process). <br>
 (`Q=2` | `ends at t=6+8+7+3=23`)<br>
 ![[Round-Robin Scheduling 2026-01-26 01.26.27.excalidraw.svg]]
 >[!warning] Note
