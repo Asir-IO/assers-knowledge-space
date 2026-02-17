@@ -18,10 +18,10 @@ These notes are my ongoing attempt to do so =)
 ```dataview
 list from #domain/ai 
 ```
-
+...
 ## Mathematics
 %%(Linear Algebra, Discrete Mathematics, Probability, ...)%%
-- ...
+- .......
 ---
 ## General View
 Below is a bird's eye view of everything.
