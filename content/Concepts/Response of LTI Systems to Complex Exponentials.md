@@ -1,15 +1,11 @@
 ---
-publish: true
-title: Response of LTI Systems to Complex Exponentials
-draft: true
-created: 2026-01-22
-modified: 2026-01-22T23:19:45.076+02:00
+title: "Response of LTI Systems to Complex Exponentials"
+date: "2026-01-22"
 tags:
   - type/concept
   - topic/
-cssclasses: ""
+draft: true
 ---
-
 ## Intuition
 **Why are these special?**
 Usually, systems are messy. If you feed a square wave into a circuit, you might get a weird, curvy, shark-fin shape out. The system fundamentally changes the _nature_ of the signal.
@@ -78,7 +74,7 @@ Imagine the signal as a clock hand rotating (and possibly growing/shrinking).
 - **The Output ($y$)**: The exact same clock motion, but the hand is now longer/shorter and set to a different time zone.
     
 
-![[LTI Response to Complex Exponential.excalidraw.svg\|100%]]
+![[LTI Response to Complex Exponential.excalidraw.svg|100%]]
 
 _(Note: In your Excalidraw, you can draw two circles side-by-side. The left one has a vector $C$. The right one has a vector $C \cdot H(s)$, which is longer and rotated by $\phi_H$. The "spin" arrow $\omega$ remains identical on both.)_
 ## Intuition

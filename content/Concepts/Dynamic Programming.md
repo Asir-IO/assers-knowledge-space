@@ -1,16 +1,12 @@
 ---
-publish: true
 title: Dynamic Programming
-draft: true
-created: 2026-01-12
-modified: 2026-01-13T20:26:21.835+02:00
+date: 2026-01-12
 tags:
   - type/concept
   - topic/
   - course/CS321
-cssclasses: ""
+draft: true
 ---
-
 ## Intuition
 At each step, a DP algorithm has to choose between either picking an item or not. It chooses to **not make** an immediate local decision. Instead, it spawns parallel timelines to simulate both possibilities: 
 - it **whitelists** the item in one reality. 
@@ -19,7 +15,7 @@ It records both outcomes and eventually decides which decision was the better on
 
 ## Visual
 (ex)
-![[Excalidraw/Dynamic Programming 2026-01-13 00.47.30.excalidraw\|100%]]
+![[Dynamic Programming 2026-01-13 00.47.30.excalidraw|100%]]
 
 ## Formal Definition
 ...

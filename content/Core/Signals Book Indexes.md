@@ -1,14 +1,11 @@
 ---
-publish: true
 title: Signals Book Indexes
-created: 2026-01-15
-modified: 2026-02-18T00:06:46.501+02:00
+date: 2026-01-15
 tags:
   - topic/
   - course/IT341
-cssclasses: ""
+draft: false
 ---
-
 ## The Trigger
 I want smth to help me navigate the topics within the Signals book and a general Bird's Eye view of the Course's content.
 

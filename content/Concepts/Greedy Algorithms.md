@@ -1,15 +1,11 @@
 ---
-publish: true
 title: Greedy Algorithms
-draft: true
-created: 2026-01-12
-modified: 2026-01-13T20:26:19.337+02:00
+date: 2026-01-12
 tags:
   - type/concept
   - topic/
-cssclasses: ""
+draft: true
 ---
-
 ## Intuition
 At each step, a greedy algorithm has to choose between either selecting/removing an item or not. It chooses to make an **immediate** local decision and:
 - **whitelists** the best candidate (adds it permanently to the solution)

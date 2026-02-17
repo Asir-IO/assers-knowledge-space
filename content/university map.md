@@ -1,11 +1,6 @@
 ---
-publish: true
 title: University Courses
-created: 2026-02-17T23:52:22.814+02:00
-modified: 2026-01-26T02:47:50.037+02:00
-cssclasses: ""
 ---
-
 ## Level 3 (Current)
 ### Semester 1
 * [CS321: Algorithms Analysis and Design](tags/course/CS321) 

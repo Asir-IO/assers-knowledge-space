@@ -1,14 +1,11 @@
 ---
-publish: true
-title: <% tp.file.title %>
-created: <% tp.date.now('YYYY-MM-DD') %>
-modified: 2026-02-18T00:07:01.767+02:00
+title: "<% tp.file.title %>"
+date: "<% tp.date.now('YYYY-MM-DD') %>"
 tags:
   - topic/
   - type/diagram
-cssclasses: ""
+draft: true
 ---
-
 ## The Diagram
 ...
 ## The keys

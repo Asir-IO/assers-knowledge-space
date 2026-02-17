@@ -1,20 +1,17 @@
 ---
-publish: true
 title: Asser's Knowledge Space
-created: 2026-02-17T23:52:22.747+02:00
-modified: 2026-02-07T15:29:42.840+02:00
-cssclasses: ""
+layout: page
+displayTitle: Welcome to my Place =)
 ---
-
 ## What's this
 > After three yrs of college, I asked myself: **"How many of the concepts you've learned so far do u recall right now?"**
 
 I blanked. I could barely recall one or two. That is why I created this knowledge space or digital garden (I'm not sure what to call it, but that's not the point).
 
 This is *(mostly)* a living collection of the work that usually gets lost after the finals week
-* **[[Concepts/index\|Concepts]]** I have visualized.
-* **[[Strategies/index\|Strategies]]** I devised to solve (mostly) exam problems.
-*  **[[Diagrams/index\|Diagrams]]** This is mostly text-book diagrams I took the time to create in a different way.
+* **[[Concepts/index|Concepts]]** I have visualized.
+* **[[Strategies/index|Strategies]]** I devised to solve (mostly) exam problems.
+*  **[[Diagrams/index|Diagrams]]** This is mostly text-book diagrams I took the time to create in a different way.
 
 > [!Abstract]- A word for FCAI-CU undergrads
 > If you're an FCAI-CU undergrad, I've got a few words to tell u (bear with me).
@@ -66,12 +63,12 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 ## The Core
-You may have noticed a folder named [[Core/index\|Core]] in the explorer. This is my thoughts dump. You'll find there thoughts that aren't exactly a concept, a strategy, or a diagram. <br>
+You may have noticed a folder named [[Core/index|Core]] in the explorer. This is my thoughts dump. You'll find there thoughts that aren't exactly a concept, a strategy, or a diagram. <br>
 You're welcome to scroll through stuff there ofc, but yeah, you do this at your *own risk* (I'm a highly chaotic being)
 
 ---
 ## University Courses 
-I've grouped [[university map\|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
+I've grouped [[university map|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
 
 ---
 ## Who am I
