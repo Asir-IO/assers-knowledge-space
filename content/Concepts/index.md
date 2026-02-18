@@ -6,6 +6,8 @@ These notes are my ongoing attempt to do so =)
 
 >[!QUESTION] How are they grouped?
 >I've added every concept to the domain it (most likely) belongs to
+
+---
 ## Computer Science (Theory)
 %%(Algorithms, Data Structures, ...)%%
 <!-- QueryToSerialize: list from #domain/cs-theory -->
@@ -17,16 +19,16 @@ These notes are my ongoing attempt to do so =)
 %%(Operating Systems, Computer Arch, Networks, ...)%%
 <!-- QueryToSerialize: list from #domain/systems -->
 <!-- SerializedQuery: list from #domain/systems -->
-- [[Convolution Sum in LTI systems]]
 - [[Harmonically Related Complex Exponentials]]
+- [[Convolution Sum in LTI systems]]
 
 <!-- SerializedQuery END -->
 ## Artificial Intelligence
 %%(ML, Neural Networks, Logic, ...)%%
 <!-- QueryToSerialize: list from #domain/ai -->
 <!-- SerializedQuery: list from #domain/ai -->
-- [[Backpropagation in a Neural Network]]
 - [[Bias in Machine Learning]]
+- [[Backpropagation in a Neural Network]]
 
 <!-- SerializedQuery END -->
 ...

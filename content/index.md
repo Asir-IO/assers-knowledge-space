@@ -68,7 +68,7 @@ You're welcome to scroll through stuff there ofc, but yeah, you do this at your 
 
 ---
 ## University Courses 
-I've grouped [[university map|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
+I've grouped [[university courses|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
 
 ---
 ## Who am I
