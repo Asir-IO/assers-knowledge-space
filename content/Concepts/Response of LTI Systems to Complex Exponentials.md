@@ -1,6 +1,6 @@
 ---
-title: "Response of LTI Systems to Complex Exponentials"
-date: "2026-01-22"
+title: Response of LTI Systems to Complex Exponentials
+date: 2026-01-22
 tags:
   - type/concept
   - topic/

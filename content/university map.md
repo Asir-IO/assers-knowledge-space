@@ -1,15 +1,36 @@
 ---
 title: University Courses
 ---
-## Level 3 (Current)
+## Level 3
 ### Semester 1
-* [CS321: Algorithms Analysis and Design](tags/course/CS321) 
-* [IT341: Signals and Systems](tags/course/IT341)
-* [CS341: Operating Systems](tags/course/CS341)
-* [AI321: Theoretical Foundations of Machine Learning](tags/course/AI321)
-* [CS331: Computer Organization and Architecture](tags/course/CS331)
+<!-- QueryToSerialize: list title from "tags/course" WHERE level = 3 AND semester = 1 SORT file.name ASC -->
+<!-- SerializedQuery: list title from "tags/course" WHERE level = 3 AND semester = 1 SORT file.name ASC -->
+- [[AI321]]: Theoretical Foundations of Machine Learning
+- [[CS321]]: Algorithms Analysis and Design
+- [[CS331]]: Computer Organization and Architecture
+- [[CS341]]: Operating Systems
+- [[IT341]]: Signals and Systems
+
+<!-- SerializedQuery END -->
 ### Semester 2
-* ...
+<!-- QueryToSerialize: list title from "tags/course" WHERE level = 3 AND semester = 2 SORT file.name ASC -->
+
+---
 ## Level 2
 ### Semester 1
-* [CS214: Data Structures](tags/course/CS214)
+<!-- QueryToSerialize: list title from "tags/course" WHERE level = 2 AND semester = 1 SORT file.name ASC -->
+### Semester 2
+<!-- QueryToSerialize: list title from "tags/course" WHERE level = 2 AND semester = 2 SORT file.name ASC -->
+<!-- SerializedQuery: list title from "tags/course" WHERE level = 2 AND semester = 2 SORT file.name ASC -->
+- [[CS214]]: CS214: Data Structures
+
+<!-- SerializedQuery END -->
+
+---
+## Level 1
+### Semester 1
+<!-- QueryToSerialize: list title from "tags/course" WHERE level = 1 AND semester = 1 SORT file.name ASC -->
+### Semester 2
+<!-- QueryToSerialize: list title from "tags/course" WHERE level = 1 AND semester = 2 SORT file.name ASC -->
+
+---

@@ -3,8 +3,8 @@ title: Abstracting how a tabular DP algorithm operates
 date: 2026-01-26
 tags:
   - topic/
-  - course/
   - course/CS321
+  - domain/cs-theory
 draft: false
 ---
 ## The Trigger

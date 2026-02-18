@@ -5,6 +5,7 @@ tags:
   - type/concept
   - topic/
   - course/IT341
+  - domain/systems
 draft: false
 ---
 ## Mental Model
