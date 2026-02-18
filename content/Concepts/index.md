@@ -15,9 +15,12 @@ These notes are my ongoing attempt to do so =)
 - [[Harmonically Related Complex Exponentials]]
 ## Artificial Intelligence
 %%(ML, Neural Networks, Logic, ...)%%
-```dataview
-list from #domain/ai 
-```
+<!-- QueryToSerialize: list from #domain/ai -->
+<!-- SerializedQuery: list from #domain/ai -->
+- [[Bias in Machine Learning]]
+- [[Backpropagation in a Neural Network]]
+
+<!-- SerializedQuery END -->
 ...
 ## Mathematics
 %%(Linear Algebra, Discrete Mathematics, Probability, ...)%%
