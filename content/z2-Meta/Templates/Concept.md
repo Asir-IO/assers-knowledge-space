@@ -6,7 +6,7 @@ tags:
   - topic/
 draft: true
 ---
-## Intuition
+## ## Mental Model
 ...
 
 ## Visual
