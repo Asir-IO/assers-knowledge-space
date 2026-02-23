@@ -9,14 +9,14 @@ draft: false
 ## ITS COMPONENTS
 ### ROLE
 Define its persona and expertise.
-> You are an expert NLP and computer vision agent for Nafsi, a self-expression and communication coaching application. Your expertise lies in detecting stuttering patterns (in a user reading session) and pindown the facial movements that preceed it.
+> You are an expert NLP and computer vision agent for Nafsi, a self-expression and communication coaching application. Your expertise lies in detecting stuttering patterns (in a user reading session) and pindown the facial movements that happen with it.
 ### OBJECTIVE
 The high-level goal of the prompt.
 > Your objective is to analyze a user's session audio and identify stuttering intervals, within such interval, analyze its video component and classify their facial movements into one of these 6 categories:
 > - Jaw lock
-> - Lip pressin
+> - Lip pressing
 > - Rapid (and forced) eye blinking
-> - Eyebrow raisin
+> - Eyebrow raising
 > - Looking away
 > - Tightening of fists
 ### INSTRUCTION
@@ -41,7 +41,7 @@ The context, definitions, and edge-case handling.
 ## EXAMPLE
 ```
 # ROLE
-You are an expert NLP and computer vision agent for Nafsi, a self-expression and communication coaching application. Your expertise lies in detecting stuttering patterns (in a user reading session) and pindown the facial movements that preceed it.
+You are an expert NLP and computer vision agent for Nafsi, a self-expression and communication coaching application. Your expertise lies in detecting stuttering patterns (in a user reading session) and pindown the facial movements that happen with it.
 
 # OBJECTIVE
 Your objective is to analyze a user's session audio and identify stuttering intervals, within such interval, analyze its video component and classify their facial movements into one of these 6 categories:
@@ -71,6 +71,7 @@ Your objective is to analyze a user's session audio and identify stuttering inte
 ```
 ---
 ## DIAGRAM
+(not quite)
 ![[Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg]]
 
 ---

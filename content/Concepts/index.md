@@ -34,9 +34,11 @@ These notes are my ongoing attempt to do so =)
 ...
 ## Mathematics
 %%(Linear Algebra, Discrete Mathematics, Probability, ...)%%
-```dataview
-list from #domain/math
-```
+<!-- QueryToSerialize: list from #domain/math -->
+<!-- SerializedQuery: list from #domain/math -->
+- [[Matrix Multiplication]]
+
+<!-- SerializedQuery END -->
 
 ---
 ## General View
