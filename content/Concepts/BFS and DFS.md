@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: BFS and DFS
 date: 2026-01-11
 tags:

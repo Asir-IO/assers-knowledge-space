@@ -1,4 +1,5 @@
 ---
+isNote: false
 title: Core
 ---
 Where my fraction-baked dear thoughts live. <br>

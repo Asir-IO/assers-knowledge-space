@@ -1,4 +1,5 @@
 ---
+isNote: false
 title: University Courses
 ---
 ## Level 3

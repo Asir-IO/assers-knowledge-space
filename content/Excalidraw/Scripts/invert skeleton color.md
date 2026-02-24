@@ -1,3 +1,6 @@
+---
+isNote: false
+---
 /* SCRIPT 1: INVERT SKELETON COLOR
    - Toggles the active view between Light and Dark.
    - Preserves vivid colors (Red/Blue) by forcing "light" theme.

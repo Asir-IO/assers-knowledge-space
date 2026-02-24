@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Harmonically Related Complex Exponentials
 date: 2026-01-16
 tags:

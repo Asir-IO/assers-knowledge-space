@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Multi-Cycle Uarch Diagram
 date: 2026-01-25
 tags:

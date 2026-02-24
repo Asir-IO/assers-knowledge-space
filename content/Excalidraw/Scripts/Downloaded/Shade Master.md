@@ -1,3 +1,6 @@
+---
+isNote: false
+---
 /*
 This is an experimental script. If you find bugs, please consider debugging yourself then submitting a PR on github with the fix, instead of raising an issue. Thank you!
 

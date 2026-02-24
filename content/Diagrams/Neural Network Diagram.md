@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Neural Network Diagram
 date: 2026-01-25
 tags:
@@ -22,4 +23,4 @@ draft: false
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[Neural Networks as an Input Refinery]]

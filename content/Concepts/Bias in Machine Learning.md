@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Bias in Machine Learning
 date: 2026-02-17
 tags:

@@ -1,3 +1,6 @@
+---
+isNote: false
+---
 /* SCRIPT 2: SAVE BOTH SKELETONS
    - Generates 'filename.svg' (Light Mode).
    - Generates 'filename.dark.svg' (Dark Mode).

@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Linked List Diagram
 date: 2026-01-11
 tags:

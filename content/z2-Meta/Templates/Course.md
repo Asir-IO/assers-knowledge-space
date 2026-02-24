@@ -1,4 +1,5 @@
 ---
+isNote: false
 title: "<% tp.file.title %>"
 ---
 **Semester:** ...

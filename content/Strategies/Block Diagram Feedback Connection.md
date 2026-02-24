@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Block Diagram Feedback Connection
 date: 2026-01-22
 tags:

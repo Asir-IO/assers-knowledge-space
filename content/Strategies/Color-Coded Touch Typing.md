@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Color-Coded Touch Typing
 date: 2026-01-29
 tags:

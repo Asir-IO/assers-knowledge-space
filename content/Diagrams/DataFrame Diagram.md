@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: DataFrame Diagram
 date: 2026-02-06
 tags:

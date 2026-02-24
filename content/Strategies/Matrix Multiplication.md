@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Matrix Multiplication
 date: 2026-02-24
 tags:

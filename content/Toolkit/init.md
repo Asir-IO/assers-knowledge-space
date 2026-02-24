@@ -1,3 +1,4 @@
 ---
+isNote: false
 draft: true
 ---

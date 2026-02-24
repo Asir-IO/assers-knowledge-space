@@ -1,4 +1,5 @@
 ---
+isNote: true
 title: Single-Cycle Uarch Diagram
 date: 2026-01-25
 tags:
