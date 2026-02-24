@@ -5,6 +5,8 @@ date: 2026-02-20
 tags:
   - type/concept
   - topic/
+  - domain/ai
+  - course/
 draft: false
 ---
 Or the k-nearest neighbors algorithm.

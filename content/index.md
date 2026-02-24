@@ -64,7 +64,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 ## Recent Notes
-<!-- QueryToSerialize: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote SORT date DESC LIMIT 5 -->
+<!-- QueryToSerialize: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote SORT date DESC LIMIT 5 -->
 
 | Note                                                                                       | Added             |

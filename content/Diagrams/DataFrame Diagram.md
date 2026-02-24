@@ -5,6 +5,8 @@ date: 2026-02-06
 tags:
   - topic/
   - type/diagram
+  - domain/ai
+  - course/
 draft: false
 ---
 ## The Diagram

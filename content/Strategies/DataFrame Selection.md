@@ -5,6 +5,7 @@ date: 2026-02-05
 tags:
   - type/strategy
   - topic/
+  - domain/ai
 draft: false
 ---
 ## What is the problem 

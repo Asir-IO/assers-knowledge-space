@@ -1,10 +1,12 @@
 ---
-isNote: false
-title: "<% tp.file.title %>"
-date: "<% tp.date.now('YYYY-MM-DD') %>"
+isNote: true
+title: <% tp.file.title %>
+date: <% tp.date.now('YYYY-MM-DD') %>
 tags:
   - topic/
   - type/diagram
+  - domain/
+  - course/
 draft: true
 ---
 ## The Diagram

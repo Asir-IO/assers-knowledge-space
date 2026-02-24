@@ -5,6 +5,8 @@ date: 2026-01-12
 tags:
   - type/concept
   - topic/
+  - domain/cs-theory
+  - course/CS321
 draft: true
 ---
 ## Intuition

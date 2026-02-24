@@ -6,6 +6,7 @@ tags:
   - topic/
   - type/diagram
   - course/AI321
+  - domain/ai
 draft: false
 ---
 ## The Diagram

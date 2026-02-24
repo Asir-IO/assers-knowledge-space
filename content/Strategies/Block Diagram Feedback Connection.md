@@ -6,6 +6,7 @@ tags:
   - type/strategy
   - topic/
   - course/IT341
+  - domain/systems
 draft: false
 ---
 ## The Strategy

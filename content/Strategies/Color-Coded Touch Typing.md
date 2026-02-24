@@ -5,6 +5,7 @@ date: 2026-01-29
 tags:
   - topic/touch-typing
   - type/strategy
+  - domain/
 draft: false
 ---
 ## What is the problem

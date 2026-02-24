@@ -5,6 +5,8 @@ date: 2026-01-19
 tags:
   - type/concept
   - topic/
+  - domain/math
+  - course/
 draft: false
 ---
 ## Intuition

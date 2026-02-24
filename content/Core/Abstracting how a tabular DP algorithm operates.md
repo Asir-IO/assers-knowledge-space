@@ -6,6 +6,7 @@ tags:
   - topic/
   - course/CS321
   - domain/cs-theory
+  - type/
 draft: false
 ---
 ## The Trigger

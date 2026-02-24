@@ -6,6 +6,7 @@ tags:
   - type/strategy
   - topic/
   - course/CS321
+  - domain/cs-theory
 draft: true
 ---
 ## What is the problem

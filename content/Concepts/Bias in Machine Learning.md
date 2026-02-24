@@ -6,6 +6,7 @@ tags:
   - type/concept
   - topic/
   - domain/ai
+  - course/
 draft: false
 ---
 ## What is it

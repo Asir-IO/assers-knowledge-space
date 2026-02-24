@@ -5,6 +5,8 @@ date: 2026-02-21
 tags:
   - topic/
   - course/
+  - domain/ai
+  - type/
 draft: false
 ---
 ## ITS COMPONENTS
