@@ -9,11 +9,11 @@ tags:
 draft: false
 ---
 ## What is the problem
-Given 2 matrices A, and B
+Given 2 matrices $A^T$, and $B$.
 %%
 > [!example] Example
 > $$
-> A = \begin{bmatrix}
+> A^T = \begin{bmatrix}
 > a_{00} & a_{01} \\
 > a_{10} & a_{11} \\
 > \end{bmatrix}
@@ -25,18 +25,16 @@ Given 2 matrices A, and B
 > $$
 
 %%
-*Multiply* them: Compute $A * B$. 
+*Multiply* them: Compute $A^T * B$. 
 ## Before you begin
-1. view $A$ as a bunch of row vectors.
-
+1. view $A^T$ as a bunch of row vectors.    
 $$
-A = \begin{bmatrix}
+A^T = \begin{bmatrix}
 \leftarrow & \vec{a}_0 & \rightarrow \\
 \leftarrow & \vec{a}_1 & \rightarrow\\
 \end{bmatrix}
-$$
-
-2. view $B$ as a bunch of column vectors.
+$$    
+2. view $B$ as a bunch of column vectors.    
 
 $$
 B = \begin{bmatrix}
@@ -53,4 +51,4 @@ $$
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[Transposing a Matrix]]

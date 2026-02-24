@@ -34,7 +34,8 @@ I've grouped here notes that belong to the same domain.
 ## Mathematics
 %%(Linear Algebra, Discrete Mathematics, Probability, ...)%%
 <!-- QueryToSerialize: list from #domain/math SORT date DESC-->
-<!-- SerializedQuery: list from #domain/math -->
+<!-- SerializedQuery: list from #domain/math SORT date DESC -->
+- [[Transposing a Matrix]]
 - [[Matrix Multiplication]]
 
 <!-- SerializedQuery END -->

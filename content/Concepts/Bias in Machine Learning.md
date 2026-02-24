@@ -24,9 +24,11 @@ You might assume that we should always find the *perfect* hypothesis space for o
 Since new data will never have the exact same shape or specific quirks as the training data, a model with *no* wrong bias (which fits the training data perfectly) will *overfit* and fail to *generalize*.
 
 That is why the goal is balance: minimizing wrong bias too much (overly <mark style="background: #ADCCFFA6;">low</mark> wrong bias) leads to *overfitting*, while ignoring it (overly <mark style="background: #FF5582A6;">high</mark> wrong bias) leads to *underfitting*.
-### Overly low wrong bias <span style="font-weight:normal">(overfitting)</span>
+### Overly low wrong bias
+(*overfitting*)
 Occurs when u put too much thought into picking a fitting hypothesis space to the training data.
-### Overly high wrong bias <span style="font-weight:normal">(underfitting)</span>
+### Overly high wrong bias
+(*underfitting*)
 Occurs when u hardly put any thought into picking a fitting hypothesis space to training data.
 
 ![[Bias in Machine Learning 2026-02-17 21.41.17.excalidraw.svg]]

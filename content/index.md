@@ -71,9 +71,9 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 | ------------------------------------------------------------------------------------------ | ----------------- |
 | [[Neural Networks as an Input Refinery]] | February 24, 2026 |
 | [[Matrix Multiplication]]                             | February 24, 2026 |
+| [[Transposing a Matrix]]                               | February 24, 2026 |
 | [[System Prompt Schema]]                                     | February 21, 2026 |
 | [[KNN Algorithm]]                                               | February 20, 2026 |
-| [[Bias in Machine Learning]]                         | February 17, 2026 |
 
 <!-- SerializedQuery END -->
 

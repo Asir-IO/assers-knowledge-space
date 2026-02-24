@@ -13,7 +13,8 @@ title: University Courses
 - [[IT341]]: Signals and Systems
 
 <!-- SerializedQuery END -->
-### Semester 2 <span style="font-weight:normal">(Current)</span>
+### Semester 2
+(*current*)
 <!-- QueryToSerialize: list title from "tags/course" WHERE level = 3 AND semester = 2 SORT file.name ASC -->
 
 ---
