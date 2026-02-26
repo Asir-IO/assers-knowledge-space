@@ -10,7 +10,7 @@ tags:
 draft: false
 ---
 ## What is it
-Bias isn't a wrong thing, it's the assumptions that follow picking a hypothesis space (type) for a machine learning model, it's what minimizes the model's randomness after training.
+Bias isn't a bad thing, it's the assumptions that follow picking a hypothesis space (type) for a machine learning model, it's what minimizes the model's randomness after training.
 > [!question] What's a hypothesis space?
 > It's the family of models you make your model choose from when training.
 > > [!example] An example
@@ -36,4 +36,4 @@ Occurs when u hardly put any thought into picking a fitting hypothesis space to 
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[]]

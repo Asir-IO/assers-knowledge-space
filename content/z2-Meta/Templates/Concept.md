@@ -9,7 +9,7 @@ tags:
   - domain/
 draft: true
 ---
-## ## Mental Model
+## Mental Model
 ...
 
 ## Visual
@@ -30,4 +30,4 @@ draft: true
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- **Related to:** [[]]
