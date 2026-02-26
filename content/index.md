@@ -65,15 +65,15 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 ---
 ## Recent Notes
 <!-- QueryToSerialize: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
-<!-- SerializedQuery: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
 | Note                                                                                       | Added             |
 | ------------------------------------------------------------------------------------------ | ----------------- |
+| [[Neural Networks as a Squiggle Fitter]] | February 26, 2026 |
 | [[Neural Networks as an Input Refinery]] | February 24, 2026 |
 | [[Matrix Multiplication]]                             | February 24, 2026 |
 | [[Transposing a Matrix]]                               | February 24, 2026 |
 | [[System Prompt Schema]]                                     | February 21, 2026 |
-| [[KNN Algorithm]]                                               | February 20, 2026 |
 
 <!-- SerializedQuery END -->
 
