@@ -9,6 +9,7 @@ I've grouped here notes that belong to the same domain.
 %%(Algorithms, Data Structures, ...)%%
 <!-- QueryToSerialize: LIST FROM #domain/cs-theory where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: LIST FROM #domain/cs-theory where !draft AND isNote SORT date DESC -->
+- [[Round-Robin Scheduling]]
 - [[Abstracting how a tabular DP algorithm operates]]
 - [[Deletion in a RB Tree]]
 - [[Insertion in a RB Tree]]
@@ -32,6 +33,7 @@ I've grouped here notes that belong to the same domain.
 %%(ML, Neural Networks, Logic, ...)%%
 <!-- QueryToSerialize: list from #domain/ai where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: list from #domain/ai where !draft AND isNote SORT date DESC -->
+- [[Hypothesis Space Selection]]
 - [[Neural Networks as a Squiggle Fitter]]
 - [[Neural Networks as an Input Refinery]]
 - [[System Prompt Schema]]

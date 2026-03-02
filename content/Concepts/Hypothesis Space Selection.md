@@ -12,7 +12,7 @@ draft: false
 ## Mental Model
 ![[Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg]]
 ![[Hypothesis Space Selection 2026-03-01 00.43.26.excalidraw.svg]]
-
+![[Hypothesis Space Selection 2026-03-02 21.42.17.excalidraw]]
 ---
 ## Connections
 - **Related to:** [[]]
