@@ -391,15 +391,26 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     let oldLabelOpacity = 0
     const isTagNode = nodeId.startsWith("tags/")
+    const radius = nodeRadius(n)
     const gfx = new Graphics({
       interactive: true,
       label: nodeId,
       eventMode: "static",
-      hitArea: new Circle(0, 0, nodeRadius(n)),
+      hitArea: new Circle(0, 0, radius),
       cursor: "pointer",
     })
-      .circle(0, 0, nodeRadius(n))
-      .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
+
+    if (isTagNode && (nodeId === "tags/type" || nodeId.startsWith("tags/type/") || nodeId.endsWith("/type"))) {
+      const points = [0, -radius, radius * 0.866, radius * 0.5, -radius * 0.866, radius * 0.5].map(p => p * 1.2)
+      gfx.poly(points)
+    } else if (isTagNode && (nodeId === "tags/domain" || nodeId.startsWith("tags/domain/") || nodeId.endsWith("/domain"))) {
+      const side = 1.42 * radius * 1.2
+      gfx.rect(-side / 2, -side / 2, side, side)
+    } else {
+      gfx.circle(0, 0, radius)
+    }
+
+    gfx.fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
       .on("pointerover", (e) => {
         updateHoverInfo(e.target.label)
         oldLabelOpacity = label.alpha
