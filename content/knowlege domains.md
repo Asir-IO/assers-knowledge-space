@@ -19,9 +19,9 @@ I've grouped here notes that belong to the same domain.
 ## Systems & Architecture
 %%(Operating Systems, Computer Arch, Networks, ...)%%
 <!-- QueryToSerialize: LIST FROM #domain/systems where !draft AND isNote SORT date DESC -->
-<!-- SerializedQuery: LIST FROM #domain/systems where !draft SORT date DESC -->
-- [[Single-Cycle Uarch Diagram]]
+<!-- SerializedQuery: LIST FROM #domain/systems where !draft AND isNote SORT date DESC -->
 - [[Multi-Cycle Uarch Diagram]]
+- [[Single-Cycle Uarch Diagram]]
 - [[Convolution Sum in LTI systems]]
 - [[Block Diagram Feedback Connection]]
 - [[Harmonically Related Complex Exponentials]]
@@ -33,8 +33,8 @@ I've grouped here notes that belong to the same domain.
 %%(ML, Neural Networks, Logic, ...)%%
 <!-- QueryToSerialize: list from #domain/ai where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: list from #domain/ai where !draft AND isNote SORT date DESC -->
-- [[LangChain Operation]]
-- [[LangGraph Operation]]
+- [[LangChain Diagram]]
+- [[LangGraph Diagram]]
 - [[Hypothesis Space Selection]]
 - [[Neural Networks as a Squiggle Fitter]]
 - [[Neural Networks as an Input Refinery]]
