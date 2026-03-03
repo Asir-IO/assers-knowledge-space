@@ -10,9 +10,9 @@ tags:
 draft: false
 ---
 ## Without Memory
-![[LangGraph Operation 2026-03-03 02.20.41.excalidraw.SVG]]
+![[LangGraph Operation 2026-03-03 02.20.41.excalidraw.svg]]
 ## With Memory
-![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.SVG]]
+![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg]]
 
 ---
 ## Connections

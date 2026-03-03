@@ -10,7 +10,7 @@ tags:
 draft: false
 ---
 ## Without Memory
-![[LangChain Operation 2026-03-03 01.47.01.excalidraw.sVG]]
+![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg]]
 ## With Memory
 ![[LangChain Operation 2026-03-03 15.26.17.excalidraw.svg]]
 # Example
