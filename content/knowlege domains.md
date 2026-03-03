@@ -33,6 +33,8 @@ I've grouped here notes that belong to the same domain.
 %%(ML, Neural Networks, Logic, ...)%%
 <!-- QueryToSerialize: list from #domain/ai where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: list from #domain/ai where !draft AND isNote SORT date DESC -->
+- [[LangChain Operation]]
+- [[LangGraph Operation]]
 - [[Hypothesis Space Selection]]
 - [[Neural Networks as a Squiggle Fitter]]
 - [[Neural Networks as an Input Refinery]]

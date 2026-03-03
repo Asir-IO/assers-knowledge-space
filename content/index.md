@@ -69,11 +69,11 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 | Note                                                                                       | Added             |
 | ------------------------------------------------------------------------------------------ | ----------------- |
+| [[LangChain Operation]]                                   | March 03, 2026    |
+| [[LangGraph Operation]]                                   | March 03, 2026    |
 | [[Hypothesis Space Selection]]                     | March 01, 2026    |
 | [[Neural Networks as a Squiggle Fitter]] | February 26, 2026 |
 | [[Neural Networks as an Input Refinery]] | February 24, 2026 |
-| [[Matrix Multiplication]]                             | February 24, 2026 |
-| [[Transposing a Matrix]]                               | February 24, 2026 |
 
 <!-- SerializedQuery END -->
 
