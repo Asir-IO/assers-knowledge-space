@@ -67,13 +67,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Note                                                                                       | Added             |
-| ------------------------------------------------------------------------------------------ | ----------------- |
-| [[LangGraph Diagram]]                                       | March 03, 2026    |
-| [[LangChain Diagram]]                                       | March 03, 2026    |
-| [[Hypothesis Space Selection]]                     | March 01, 2026    |
-| [[Neural Networks as a Squiggle Fitter]] | February 26, 2026 |
-| [[Neural Networks as an Input Refinery]] | February 24, 2026 |
+| Note                                                                                                 | Added          |
+| ---------------------------------------------------------------------------------------------------- | -------------- |
+| [[Vectors Outer Product]]                                         | March 09, 2026 |
+| [[Matrix Multiplications as Outer Products]] | March 09, 2026 |
+| [[LangChain Diagram]]                                                 | March 03, 2026 |
+| [[LangGraph Diagram]]                                                 | March 03, 2026 |
+| [[Hypothesis Space Selection]]                               | March 01, 2026 |
 
 <!-- SerializedQuery END -->
 

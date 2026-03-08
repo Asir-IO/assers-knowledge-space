@@ -16,4 +16,5 @@ A NN can be thought of as an object that, given a set of <mark style="background
 
 ---
 ## Connections
-- **Related to:** [[Neural Network Diagram]] | [[Neural Networks as a Squiggle Fitter]]
+- [[Neural Network Diagram]]
+- [[Neural Networks as a Squiggle Fitter]]

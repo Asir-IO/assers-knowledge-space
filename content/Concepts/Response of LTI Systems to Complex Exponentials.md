@@ -92,4 +92,4 @@ _(Note: In your Excalidraw, you can draw two circles side-by-side. The left one 
 
 ---
 ## Connections
-- **Related to:** [[...]]
+- [[]]
