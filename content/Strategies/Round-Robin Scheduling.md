@@ -68,4 +68,4 @@ Based on that, you'll be asked questions about a process.<br>
 
 ---
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

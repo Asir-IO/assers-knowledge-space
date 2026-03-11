@@ -31,4 +31,4 @@ You'll either:
 
 ---
 ## Connections
-- **Related to:** [[]]
+-  [[]]

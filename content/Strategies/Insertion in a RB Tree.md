@@ -35,4 +35,4 @@ In both cases, going through each given node, u should:
 
 ---
 ## Connections
-- **Related to:** [[Deletion in a RB Tree]]
+-  [[Deletion in a RB Tree]]

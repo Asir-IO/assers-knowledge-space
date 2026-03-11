@@ -24,4 +24,4 @@ draft: false
 
 ---
 ## Connections
-- **Related to:** [[Neural Networks as an Input Refinery]]
+-  [[Neural Networks as an Input Refinery]]

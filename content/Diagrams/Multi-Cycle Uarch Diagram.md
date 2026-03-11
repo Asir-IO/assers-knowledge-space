@@ -28,4 +28,4 @@ The Professor's diagram (week 6, slide 62)
 
 ---
 ## Connections
-- **Related to:** [[Single-Cycle Uarch Diagram]]
+-  [[Single-Cycle Uarch Diagram]]

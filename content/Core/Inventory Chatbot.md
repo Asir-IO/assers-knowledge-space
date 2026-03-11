@@ -40,4 +40,4 @@ Here is the SQL Server DDL Data Schema:
 
 ---
 ## Connections
-- **Related to:** [[System Prompt Schema]]
+-  [[System Prompt Schema]]

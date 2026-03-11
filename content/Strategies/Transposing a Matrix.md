@@ -34,4 +34,4 @@ Starting from the farthest/rightmost vector:
 5. Finally, Squish them all into a row vector.    
 ![[Transposing a Matrix 2026-02-24 16.26.41.excalidraw.svg]]
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

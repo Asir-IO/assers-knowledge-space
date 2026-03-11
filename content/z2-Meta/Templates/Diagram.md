@@ -29,4 +29,4 @@ description.
 
 ---
 ## Connections
-- **Related to:** [[]]
+-  [[]]

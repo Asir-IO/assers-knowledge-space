@@ -21,4 +21,4 @@ The Professor's diagram (week 6, slide 62)
 
 ---
 ## Connections
-- **Related to:** [[Multi-Cycle Uarch Diagram]]
+-  [[Multi-Cycle Uarch Diagram]]

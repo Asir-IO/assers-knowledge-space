@@ -86,4 +86,4 @@ Have fun.
 
 ---
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

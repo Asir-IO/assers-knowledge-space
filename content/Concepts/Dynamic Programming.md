@@ -25,4 +25,4 @@ It records both outcomes and eventually decides which decision was the better on
 
 ---
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

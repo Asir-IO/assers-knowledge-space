@@ -34,4 +34,4 @@ Going through each to-be-deleted node, u should:
 
 ---
 ## Connections
-- **Related to:** [[Insertion in a RB Tree]]
+-  [[Insertion in a RB Tree]]

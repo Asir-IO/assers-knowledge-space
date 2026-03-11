@@ -21,4 +21,4 @@ draft: false
 
 ---
 ## Connections
-- **Related to:** [[LangChain Diagram]]
+-  [[LangChain Diagram]]

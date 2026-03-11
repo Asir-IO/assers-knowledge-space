@@ -15,4 +15,4 @@ draft: false
 
 ---
 ## Connections
-- **Related to:** [[]]
+-  [[]]

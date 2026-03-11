@@ -3,38 +3,6 @@
 // // put your custom CSS here!
 // @use "themes";
 
-// /* Fix callout icon spacing */
-// .callout-title {
-//   /* Adds space between the icon and the text */
-//   gap: 12px !important; 
-  
-//   /* Optional: Ensures they align nicely vertically */
-//   align-items: center; 
-// }
-
-// /* Safety backup: If gap doesn't work, push the icon specifically */
-// .callout-icon {
-//   margin-right: 8px !important;
-// }
-
-// a.internal, a.external {
-//   text-decoration: none !important;
-//   color: var(--secondary) !important;
-  
-//   /* These two lines create the "Rectangle" shape */
-//   padding: 0 0.2em;  /* Adds breathing room left & right */
-//   border-radius: 4px; /* Rounds the corners slightly */
-  
-//   transition: background-color 0.2s ease;
-// }
-
-// /* On hover, fill that rectangle with color */
-// a.internal:hover, a.external:hover {
-//   background-color: var(--highlight) !important; /* The transparent yellow/green */
-//   text-decoration: none !important;
-// }
-/* Mobile-specific fix for the Page Title */
-/* Mobile-specific fix for the Page Title */
 @media all and (max-width: 600px) {
   /* 1. Position the whole title block */
   .page-title {
@@ -57,24 +25,20 @@
   }
 }
 
-/* TIMELINE as Callout (Quartz Port)*/
+/* timeline callout */
 .callout[data-callout="timeline"] {
-  /* Reset Default Callout Styles */
   background-color: transparent !important;
   border: none !important;
   padding: 0 !important;
   box-shadow: none !important;
 
-  /* Hide the default "Timeline" header so we just see the content */
   .callout-title {
     display: none;
   }
 
-  /* --- CONTENT STYLING --- */
   .callout-content {
     padding: 2rem 0;
     
-    /* 1. LINKS styling */
     a {
       color: inherit;
       font-weight: inherit;
@@ -198,10 +162,7 @@
 }
 
 /* Google Symbols Setup (Outlined Version) */
-
-/* 1. Map the class to the "Outlined" font family you loaded */
 .material-symbols-outlined {
-  /* 🟢 This must match the <link> in your Head.tsx exactly */
   font-family: 'Material Symbols Outlined' !important; 
   font-weight: normal;
   font-style: normal;
@@ -214,14 +175,11 @@
   white-space: nowrap;
   direction: ltr;
   
-  /* WebKit Browsers */
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
 }
-
-/* 2. Your Custom Tweaks */
 .material-symbols-outlined.custom-symbol {
   font-size: 1.2em;      
   vertical-align: -0.25em; 
@@ -233,20 +191,21 @@
 [saved-theme="dark"] body {
   position: relative;
 }
+
 [saved-theme="dark"] body::before {
   content: "";
   position: fixed; 
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-image: url('/static/chalkboard.jpg'); 
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
   
-  opacity: 0.04; 
+  opacity: 0.06; 
 
-  z-index: -1;
+  z-index: 9999;
   pointer-events: none;
 }

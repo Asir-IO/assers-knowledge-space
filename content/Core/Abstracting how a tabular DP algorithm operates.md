@@ -65,4 +65,4 @@ $$
 
 ---
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

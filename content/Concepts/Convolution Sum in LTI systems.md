@@ -67,4 +67,4 @@ This output is obtained by computing the convolution sum between its impulse res
 
 ---
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

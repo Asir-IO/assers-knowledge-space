@@ -18,4 +18,4 @@ draft: false
 
 ---
 ## Connections
-- **Related to:** [[LangGraph Diagram]]
+-  [[LangGraph Diagram]]

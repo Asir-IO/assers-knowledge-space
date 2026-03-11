@@ -126,4 +126,4 @@ I want smth to help me navigate the topics within the Signals book and a general
 
 ---
 ## Connections
-- **Related to:** [[...]]
+-  [[...]]

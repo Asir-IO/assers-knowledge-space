@@ -119,4 +119,4 @@ rows = df[selector]
 
 ---
 ## Connections
-- **Related to:** [[DataFrame Diagram]]
+-  [[DataFrame Diagram]]
