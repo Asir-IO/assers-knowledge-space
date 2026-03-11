@@ -30,7 +30,7 @@ try {
             elements: elements,
             appState: {
                 ...appState,
-                exportBackground: true
+                exportBackground: false
             },
             files: files,
             exportPadding: 10,
