@@ -30,7 +30,7 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",      // Your Background (Minty White)
+          light: "#faf8f8",      
           lightgray: "#e5e5e5",  // PRESERVED DEFAULT (Grey background for code/blocks)
           gray: "#b8b8b8",       // Your Secondary (Blue-ish Grey -> Graph lines & borders)
           darkgray: "#0b140d",   // Your Text (Body text)
