@@ -3,10 +3,10 @@ isNote: true
 title: Matrix Multiplications as Outer Products
 date: 2026-03-09
 tags:
-  - type/strategy
   - topic/
   - course/
   - domain/math
+  - type/concept
 draft: false
 ---
 ## What is the problem
@@ -37,4 +37,4 @@ Their <mark style="background: #CACFD9A6;">multiplication</mark> matrix is then 
 ## Connections
 - [[Vectors Outer Product]]
 - [[Transposing a Matrix]]
-- [[Matrix Multiplication as Dot Products]]
+- [[Matrix Multiplication as Inner Products]]

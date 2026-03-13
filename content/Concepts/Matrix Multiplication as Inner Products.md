@@ -1,11 +1,11 @@
 ---
 isNote: true
-title: Matrix Multiplication as Dot Products
+title: Matrix Multiplication as Inner Products
 date: 2026-02-24
 tags:
-  - type/strategy
   - topic/
   - domain/math
+  - type/concept
 draft: false
 ---
 ## What is the problem
@@ -29,15 +29,15 @@ You want to Compute $A^T * B$.
 2. highlight each column vector in $B$ by a <mark style="background: #CACFD9A6;">line</mark> that also shows its index.       
 	![[Matrix Multiplication 2026-02-24 17.19.00.excalidraw.svg]]
 
-Their <mark style="background: #CACFD9A6;">multiplication</mark> matrix is then constructed by computing the <a href="https://www.geeksforgeeks.org/dot-product-of-two-vectors/" target="_blank">dot product</a> at every intersection.    
+Their <mark style="background: #CACFD9A6;">multiplication</mark> matrix is then constructed by computing the <a href="https://www.geeksforgeeks.org/maths/inner-product-on-vector/" target="_blank">Inner product</a> at every intersection.    
 ![[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg]]   
 
 ---
 ## Strategy
-1. calculate the intersection dot products of the 0th row in $A^T$.    
+1. calculate the intersection inner products of the 0th row in $A^T$.    
 	![[Matrix Multiplication 2026-02-24 17.39.10.excalidraw.svg]]    
 	![[Matrix Multiplication 2026-02-24 17.45.11.excalidraw.svg]]   
-2.  calculate the intersection dot products of the 1st row in $A^T$.    
+2.  calculate the intersection inner products of the 1st row in $A^T$.    
 	![[Matrix Multiplication 2026-02-24 17.49.54.excalidraw.svg]]    
 	![[Matrix Multiplication 2026-02-24 17.51.40.excalidraw.svg]]
 

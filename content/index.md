@@ -68,13 +68,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Note                                                                                                 | Added          |
-| ---------------------------------------------------------------------------------------------------- | -------------- |
-| [[Vectors Outer Product]]                                         | March 09, 2026 |
-| [[Matrix Multiplications as Outer Products]] | March 09, 2026 |
-| [[LangChain Diagram]]                                                 | March 03, 2026 |
-| [[LangGraph Diagram]]                                                 | March 03, 2026 |
-| [[Hypothesis Space Selection]]                               | March 01, 2026 |
+| Note                                                                                                       | Added          |
+| ---------------------------------------------------------------------------------------------------------- | -------------- |
+| [[Matrix Multiplication]]                                               | March 13, 2026 |
+| [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
+| [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
+| [[Neo4j Knowledge Graph]]                                                   | March 12, 2026 |
+| [[Vectors Outer Product]]                                               | March 09, 2026 |
 
 <!-- SerializedQuery END -->
 

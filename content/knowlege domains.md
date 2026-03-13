@@ -51,10 +51,13 @@ I've grouped here notes that belong to the same domain.
 %%(Linear Algebra, Discrete Mathematics, Probability, ...)%%
 <!-- QueryToSerialize: list from #domain/math where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: list from #domain/math where !draft AND isNote SORT date DESC -->
-- [[Vectors Outer Product]]
+- [[Matrix Multiplication as Column Combinations]]
+- [[Matrix Multiplication]]
+- [[Matrix Multiplication as Row Combinations]]
 - [[Matrix Multiplications as Outer Products]]
+- [[Vectors Outer Product]]
 - [[Transposing a Matrix]]
-- [[Matrix Multiplication as Dot Products]]
+- [[Matrix Multiplication as Inner Products]]
 - [[Implication]]
 
 <!-- SerializedQuery END -->
@@ -62,7 +65,8 @@ I've grouped here notes that belong to the same domain.
 ---
 ## The Rest of The Notes
 <!-- QueryToSerialize: LIST WHERE econtains(file.etags, "#domain/") AND !draft AND isNote SORT date DESC-->
-<!-- SerializedQuery: LIST WHERE econtains(file.etags, "#domain/") AND !draft SORT date DESC -->
+<!-- SerializedQuery: LIST WHERE econtains(file.etags, "#domain/") AND !draft AND isNote SORT date DESC -->
+- [[Neo4j Knowledge Graph]]
 - [[Color-Coded Touch Typing]]
 - [[Quickly placing ticks Evenly on a line]]
 - [[Signals Book Indexes]]
