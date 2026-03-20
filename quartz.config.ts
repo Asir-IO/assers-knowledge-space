@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "asir-io.github.io/assers-knowledge-space",
-    ignorePatterns: ["private", "templates", ".obsidian", "z2-Meta", "**/*.excalidraw.md"],
+    ignorePatterns: ["private", "templates", ".obsidian", "z2-Meta", "**/*.excalidraw.md", "./export"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

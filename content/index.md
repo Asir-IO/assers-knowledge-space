@@ -70,11 +70,11 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 | Note                                                                                                                             | Added          |
 | -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [[Bayesian Networks]]                                                                             | March 18, 2026 |
 | [[Assignment One Report]]                                                                         | March 14, 2026 |
 | [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               | March 13, 2026 |
 | [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
 | [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
-| [[Neo4j Knowledge Graph]]                                                                         | March 12, 2026 |
 
 <!-- SerializedQuery END -->
 

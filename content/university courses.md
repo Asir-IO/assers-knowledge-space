@@ -16,6 +16,13 @@ title: University Courses
 ### Semester 2
 (*current*)
 <!-- QueryToSerialize: list title from "tags/course" WHERE level = 3 AND semester = 2 SORT file.name ASC -->
+<!-- SerializedQuery: list title from "tags/course" WHERE level = 3 AND semester = 2 SORT file.name ASC -->
+- [[AI313]]: Autonomous Multiagent Systems
+- [[AI322]]: Supervised Learning
+- [[AI332]]: Computational Cognitive Sciences
+- [[IT443]]: Image Processing
+
+<!-- SerializedQuery END -->
 
 ---
 ## Level 2
