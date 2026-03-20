@@ -36,4 +36,4 @@ You decide how ties are resolved.
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

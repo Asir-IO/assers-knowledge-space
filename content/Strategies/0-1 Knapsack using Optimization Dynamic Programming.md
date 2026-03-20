@@ -35,4 +35,4 @@ They can be divided into 3 types:
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

@@ -51,4 +51,4 @@ I'll demonstrate this on the final left-hand visual.
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

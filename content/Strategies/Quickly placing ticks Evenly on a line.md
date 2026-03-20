@@ -46,4 +46,4 @@ Placing 7 Ticks ($n=7$)
 4. you're done =) (u now have 7 ticks)
 ---
 ## Connections
--  [[...]]
+-  [[]]

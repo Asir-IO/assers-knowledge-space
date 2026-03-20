@@ -18,4 +18,4 @@ draft: true
 ...
 
 ## Connections
--  [[...]]
+-  [[]]

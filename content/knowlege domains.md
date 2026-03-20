@@ -10,7 +10,7 @@ I've grouped here notes that belong to the same domain.
 <!-- QueryToSerialize: LIST FROM #domain/cs-theory where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: LIST FROM #domain/cs-theory where !draft AND isNote SORT date DESC -->
 - [[Round-Robin Scheduling]]
-- [[Abstracting how a tabular DP algorithm operates]]
+- [[Abstracting a Tabular DP algorithm]]
 - [[Deletion in a RB Tree]]
 - [[Insertion in a RB Tree]]
 - [[Linked List Diagram]]
@@ -33,8 +33,9 @@ I've grouped here notes that belong to the same domain.
 %%(ML, Neural Networks, Logic, ...)%%
 <!-- QueryToSerialize: list from #domain/ai where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: list from #domain/ai where !draft AND isNote SORT date DESC -->
-- [[LangGraph Diagram]]
+- [[Assignment One Report]]
 - [[LangChain Diagram]]
+- [[LangGraph Diagram]]
 - [[Hypothesis Space Selection]]
 - [[Neural Networks as a Squiggle Fitter]]
 - [[Neural Networks as an Input Refinery]]
@@ -51,11 +52,11 @@ I've grouped here notes that belong to the same domain.
 %%(Linear Algebra, Discrete Mathematics, Probability, ...)%%
 <!-- QueryToSerialize: list from #domain/math where !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: list from #domain/math where !draft AND isNote SORT date DESC -->
-- [[Matrix Multiplication as Column Combinations]]
-- [[Matrix Multiplication]]
 - [[Matrix Multiplication as Row Combinations]]
-- [[Matrix Multiplications as Outer Products]]
+- [[Matrix Multiplication as Column Combinations]]
+- [[Concepts/Matrix Multiplication/index.md|index]]
 - [[Vectors Outer Product]]
+- [[Matrix Multiplications as Outer Products]]
 - [[Transposing a Matrix]]
 - [[Matrix Multiplication as Inner Products]]
 - [[Implication]]

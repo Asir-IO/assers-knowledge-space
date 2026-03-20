@@ -1,6 +1,6 @@
 ---
 isNote: true
-title: Abstracting how a tabular DP algorithm operates
+title: Abstracting a Tabular DP algorithm
 date: 2026-01-26
 tags:
   - topic/
@@ -65,4 +65,4 @@ $$
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

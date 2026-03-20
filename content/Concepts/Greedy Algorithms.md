@@ -24,4 +24,4 @@ This never guarantees that it eventually reaches a **global** optimum solution, 
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

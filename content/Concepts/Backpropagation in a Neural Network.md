@@ -47,4 +47,4 @@ When u start, all these weights are *totally random* (the network knows nothing)
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

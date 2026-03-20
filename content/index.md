@@ -65,16 +65,16 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 ## Recent Notes
-<!-- QueryToSerialize: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
-<!-- SerializedQuery: TABLE WITHOUT ID file.link AS "Note", date AS "Added" FROM "" WHERE file.name != this.file.name AND file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- QueryToSerialize: TABLE WITHOUT ID link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Note                                                                                                       | Added          |
-| ---------------------------------------------------------------------------------------------------------- | -------------- |
-| [[Matrix Multiplication]]                                               | March 13, 2026 |
+| Note                                                                                                                             | Added          |
+| -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [[Assignment One Report]]                                                                         | March 14, 2026 |
+| [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               | March 13, 2026 |
 | [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
 | [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
-| [[Neo4j Knowledge Graph]]                                                   | March 12, 2026 |
-| [[Vectors Outer Product]]                                               | March 09, 2026 |
+| [[Neo4j Knowledge Graph]]                                                                         | March 12, 2026 |
 
 <!-- SerializedQuery END -->
 

@@ -25,4 +25,4 @@ draft: false
 
 ---
 ## Connections
--  [[...]]
+-  [[]]

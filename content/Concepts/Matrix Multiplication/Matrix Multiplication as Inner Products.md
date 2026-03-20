@@ -33,15 +33,6 @@ Their <mark style="background: #CACFD9A6;">multiplication</mark> matrix is then 
 ![[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg]]   
 
 ---
-## Strategy
-1. calculate the intersection inner products of the 0th row in $A^T$.    
-	![[Matrix Multiplication 2026-02-24 17.39.10.excalidraw.svg]]    
-	![[Matrix Multiplication 2026-02-24 17.45.11.excalidraw.svg]]   
-2.  calculate the intersection inner products of the 1st row in $A^T$.    
-	![[Matrix Multiplication 2026-02-24 17.49.54.excalidraw.svg]]    
-	![[Matrix Multiplication 2026-02-24 17.51.40.excalidraw.svg]]
-
----
 ## Connections
 - [[Transposing a Matrix]]
 - [[Matrix Multiplications as Outer Products]]
