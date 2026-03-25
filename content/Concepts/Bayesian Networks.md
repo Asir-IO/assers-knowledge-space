@@ -42,7 +42,8 @@ The Nodes in this example are,
 - **E**arthquake occurs
 - **A**larm rings
 - **J**ohn calls
-- **M**ary calls
+- **M**ary calls   
+
 This is the network with every node added.
 ![[Convolution Sum in LTI systems 2026-03-19 00.31.56.excalidraw.svg]]    
 The nodes in this example all have 2 possible observations, they can either occur or not occur.    
@@ -93,8 +94,8 @@ Remember that we mainly want it to, given a set of *observations* of some nodes,
 
 This is called *inference*.   
 
-*Predictive* inference occurs when we predict the probability of a child observation occurring, *given* that a parent one has occurred.   
-*Diagnostic* inference occurs when we evaluate the probability of a parent observation being the one that had *caused* a child one.   
+***Predictive*** inference occurs when we predict the probability of a child observation occurring, *given* that a parent one has occurred.   
+***Diagnostic*** inference occurs when we evaluate the probability of a parent observation being the one that had *caused* a child one.   
 ![[Bayesian Networks 2026-03-24 22.49.27.excalidraw.svg]]
 Predictive inference is done before diagnostic one.   
 
@@ -152,12 +153,11 @@ I like to imagine every observed node as an information source that tries its be
 	it affects every single node, nothing blocks its path.   
 	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg]]
 - (*Example #3*)    
-	Say both of them were observed, this will be their active Paths.    
+	Say both of them were observed, this will be their active paths.    
 	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.svg]]    
-	they'll affect all the nodes, [[#^a51978|except one another ofc]].    
 	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg]]
 - (*Example #4*)    
-	Here's an interesting one, say nodes A and M were observed, this will be their active Paths.    
+	Here's an interesting one, say nodes A and M were observed, this will be their active paths.    
 	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg]]    
 	The information stream of M [[#^a51978|can't cross A]] (to B or E) or [[#^c61007|move to its sibling]]. 
 	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg]]
