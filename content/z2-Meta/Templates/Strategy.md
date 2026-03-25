@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/
 draft: true
+thumbnail:
 ---
 ## What is the problem
 You'll either:

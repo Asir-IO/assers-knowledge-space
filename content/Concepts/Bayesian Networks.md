@@ -95,7 +95,7 @@ This is called *inference*.
 
 *Predictive* inference occurs when we predict the probability of a child observation occurring, *given* that a parent one has occurred.   
 *Diagnostic* inference occurs when we evaluate the probability of a parent observation being the one that had *caused* a child one.   
-![[Bayesian Networks 2026-03-24 22.49.27.excalidraw]]
+![[Bayesian Networks 2026-03-24 22.49.27.excalidraw.svg]]
 Predictive inference is done before diagnostic one.   
 
 Inferring a node usually requires inferring its parent/children nodes first, this is done until reaching nodes that were inferred.   
@@ -105,35 +105,43 @@ We basically move from the node that we want to infer towards observed nodes.
 ### One Parent
 Assume that R1 is a far ancestor of B and it was observed.   
 This is how $P(a|r1)$ is computed.
-![[Bayesian Networks 2026-03-24 23.07.32.excalidraw]]   
+![[Bayesian Networks 2026-03-24 23.07.32.excalidraw.svg]]   
 ### Multiple Parents
 Assume that R1, R2 is a far ancestor of B, E, and they were observed.   
 This is how $P(a|r1, r2)$ is computed.   
-![[Bayesian Networks 2026-03-24 23.18.14.excalidraw]]
+![[Bayesian Networks 2026-03-24 23.18.14.excalidraw.svg]]
 ## How Diagnostic Inference is done
 ### One child
-Assume that L1 is a far descender of J and it was observed.   
+Assume that L1 is a far descendant of J, and it was observed.   
 This is how $P(a|l1)$ is computed.   
-![[Bayesian Networks 2026-03-24 23.28.15.excalidraw]]
+![[Bayesian Networks 2026-03-24 23.28.15.excalidraw.svg]]
 ## Multiple children
-Assume that L1, L2 is a far descender of J, M, and they were observed.   
+Assume that L1, L2 is a far descendant of J, M, and they were observed.   
 This is how $P(a|l1, l2)$ is computed.   
-![[Bayesian Networks 2026-03-24 23.25.13.excalidraw]]
+![[Bayesian Networks 2026-03-24 23.25.13.excalidraw.svg]]   
+In the diagram below, each node outputs its inference given the current set of observations.   
 
-Before any specific observation combination is given, each node should output the general probability of its possible observations.    
+Before any specific observation combination is given, each node should output its inference given no evidence or the "general" probability of its possible observations.    
 (e.g., Node A outputs P(a) and P($\neg$a))
-![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg]]
-However, once an observation combination is given the following happens,
-- for every observed node,
-	- find out what nodes it influences, or its "active trails" (this is the standard term)
-	- the output of those nodes will change from the general one, to the one given this observation.
-## How to find a Node's Active Trails
-I like to imagine a water faucet at every node in the network, once a set of nodes are observed, they all open their faucets at the *same time*, whatever paths an observed node's stream reaches, this is its active trail.    
+![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg]]   
+However, once an observation combination is given, a node's inference may change.   
+It only changes if the observation has an "active" path to it.   
+
+To find what nodes are affected by each observation, we need another diagram that shows us what active paths are there for every observed node.   
+## How to create an Active Paths diagram
+I like to imagine every observed node as an information source that tries its best to reach as much nodes as possible, but its movement needs to follow the following *rules*,    
+*(suppose that A is the observed node whose active paths we're trying to draw)*
+- Information can't flow from a parent to another if the child is *not* observed.
+	![[Bayesian Networks 2026-03-25 20.34.14.excalidraw.svg]]    ^8b579f
+- Information can't flow from a sibling to another if the parent is *observed*.
+	![[Bayesian Networks 2026-03-25 20.39.16.excalidraw.svg]] ^c61007
+- Information can't cross another observed node.   
+	![[Bayesian Networks 2026-03-25 20.54.12.excalidraw.svg]] ^a51978
 ## Examples
 - (*Example #1*)    
-	Say the node B was observed, this will be its active trail.    
+	Say the node B was observed, this will be the diagram, showing the active paths of B.    
 	![[Bayesian Networks 2026-03-20 23.14.39.excalidraw.svg]]    
-	it affects every single node.    
+	it affects every single node, [[#^8b579f|except its spouse]].    
 	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]    
 >[!question] *Where* did the CPTs go?
 > I draw the very final diagram this way, since adding the CPTs would add too much visual clutter.
@@ -141,17 +149,17 @@ I like to imagine a water faucet at every node in the network, once a set of nod
 - (*Example #2*)    
 	Say node M was observed, this will be its active trail.    
 	![[Bayesian Networks 2026-03-20 23.29.35.excalidraw.svg]]    
-	it also affects every single node.    
+	it affects every single node, nothing blocks its path.   
 	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg]]
 - (*Example #3*)    
-	Say both of them were observed, this will be their active trails.    
+	Say both of them were observed, this will be their active Paths.    
 	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.svg]]    
-	they'll affect all the nodes, except one another ofc.    
+	they'll affect all the nodes, [[#^a51978|except one another ofc]].    
 	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg]]
 - (*Example #4*)    
-	Here's an interesting one, say nodes A and M were observed, this will be their active trails.    
+	Here's an interesting one, say nodes A and M were observed, this will be their active Paths.    
 	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg]]    
-	A's faucet completely blocked the path of M's faucet, and thus M has *no* active trail.   
+	The information stream of M [[#^a51978|can't cross A]] (to B or E) or [[#^c61007|move to its sibling]]. 
 	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg]]
 
 

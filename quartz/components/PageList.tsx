@@ -1,4 +1,5 @@
-import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
+import { FullSlug, isFolderPath, resolveRelative, slugifyFilePath } from "../util/path"
+import { getTagRoute } from "./tagMap"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
@@ -70,6 +71,11 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
 
+        // add the thumbnail
+        const rawThumbnail = page.frontmatter?.thumbnail as string | undefined
+        const cleanName = rawThumbnail ? rawThumbnail.replace(/[\[\]]/g, '').split('|')[0].trim() : null
+
+        const thumbnailSlug = cleanName ? slugifyFilePath(cleanName as any) : "lab-temp-thumb.excalidraw.svg"
         return (
           <li class="section-li">
             <div class="section">
@@ -77,6 +83,14 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>
               <div class="desc">
+                {/* 2. Render the thumbnail (works for both real images and the fallback) */}
+                <div class="thumbnail-container">
+                  <img 
+                    src={`/z1-Assets/${encodeURI(thumbnailSlug)}`}
+                    alt={title} 
+                    class="note-thumbnail" 
+                  />
+                </div>
                 <h3>
                   <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                     {title}
@@ -84,16 +98,18 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 </h3>
               </div>
               <ul class="tags">
-                {tags.map((tag) => (
+                {tags.map((tag) => {
+                return (
                   <li>
                     <a
                       class="internal tag-link"
-                      href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                      href={resolveRelative(fileData.slug!, getTagRoute(tag) as FullSlug)}
                     >
                       {tag}
                     </a>
                   </li>
-                ))}
+                )
+              })}
               </ul>
             </div>
           </li>
@@ -111,4 +127,23 @@ PageList.css = `
 .section > .tags {
   margin: 0;
 }
+
+.desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 1rem; 
+}
+.section {
+  align-items: center; /* Forces the date, desc, and tags to center vertically */
+}
+.thumbnail-container {
+  flex-shrink: 0;
+  width: 100px; 
+  height: auto; /* Lets the image scale naturally */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+}
 `
+

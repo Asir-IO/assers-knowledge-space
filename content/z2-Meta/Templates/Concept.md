@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/
 draft: true
+thumbnail:
 ---
 ## Mental Model
 ...

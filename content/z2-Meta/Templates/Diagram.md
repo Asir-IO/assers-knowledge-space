@@ -8,6 +8,7 @@ tags:
   - domain/
   - course/
 draft: true
+thumbnail:
 ---
 ## The Diagram
 ...

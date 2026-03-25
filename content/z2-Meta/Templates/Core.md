@@ -8,6 +8,7 @@ tags:
   - domain/
   - type/
 draft: true
+thumbnail:
 ---
 ## The Trigger
 ...

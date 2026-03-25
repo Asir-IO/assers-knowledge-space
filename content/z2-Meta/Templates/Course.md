@@ -3,6 +3,7 @@ isNote: false
 title:
 semester:
 level:
+thumbnail:
 ---
 ## My Batch's Study Materials (for reference)
 * <a href="link" target="_blank">Google Drive Folder Link</a>

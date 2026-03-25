@@ -65,16 +65,16 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 ## Recent Notes
-<!-- QueryToSerialize: TABLE WITHOUT ID embed(thumbnail) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
-<!-- SerializedQuery: TABLE WITHOUT ID embed(thumbnail) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                    | Note                                                                                                                             | Added          |
-| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|100]]     | [[Bayesian Networks]]                                                                             | March 18, 2026 |
-| \-                                                                           | [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
-| \-                                                                           | [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               | March 13, 2026 |
-| \-                                                                           | [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
-| ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|100]] | [[Neo4j Knowledge Graph]]                                                                         | March 12, 2026 |
+| Thumbnail                                                                                                                              | Note                                                                                                                             | Added          |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]         | [[Bayesian Networks]]                                                                             | March 18, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                | [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               | March 13, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                | [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                | [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
+| ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|120]] | [[Neo4j Knowledge Graph]]                                                                         | March 12, 2026 |
 
 <!-- SerializedQuery END -->
 

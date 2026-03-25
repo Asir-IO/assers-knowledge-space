@@ -1,20 +1,15 @@
 import { FullSlug, resolveRelative } from "../util/path"
+import { getTagRoute } from "./tagMap"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 
 const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const tags = fileData.frontmatter?.tags
-  const tagMapping: Record<string, string> = {
-    "type/diagram": "diagrams",
-    "type/concept": "concepts",
-    "type/strategy": "strategies",
-  }
   if (tags && tags.length > 0) {
     return (
       <ul class={classNames(displayClass, "tags")}>
         {tags.map((tag) => {
-          const targetSlug = tagMapping[tag] ?? `tags/${tag}`
-          const linkDest = resolveRelative(fileData.slug!, targetSlug as FullSlug)
+          const linkDest = resolveRelative(fileData.slug!, getTagRoute(tag) as FullSlug)
           return (
             <li>
               <a href={linkDest} class="internal tag-link">
