@@ -86,7 +86,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 {/* 2. Render the thumbnail (works for both real images and the fallback) */}
                 <div class="thumbnail-container">
                   <img 
-                    src={`/z1-Assets/${encodeURI(thumbnailSlug)}`}
+                    src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
                     alt={title} 
                     class="note-thumbnail" 
                   />
