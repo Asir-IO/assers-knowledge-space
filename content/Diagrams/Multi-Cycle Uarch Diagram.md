@@ -8,6 +8,7 @@ tags:
   - course/CS331
   - domain/systems
 draft: false
+thumbnail: "[[Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg]]"
 ---
 ## The Diagram
 ![[Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg]]

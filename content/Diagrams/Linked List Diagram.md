@@ -7,6 +7,7 @@ tags:
   - type/diagram
   - course/CS214
   - domain/cs-theory
+thumbnail: "[[Linked List Diagram 2026-01-12 00.22.16.excalidraw.svg|100%]]"
 ---
 ## Singly linked list
 ![[Linked List Diagram 2026-01-12 00.21.18.excalidraw.svg|100%]]

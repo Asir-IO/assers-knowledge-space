@@ -7,6 +7,7 @@ tags:
   - domain/math
   - type/concept
 draft: false
+thumbnail: "[[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg]]"
 ---
 ## What is the problem
 You have a matrix $A^T$ that u view as a rows matrix, and want to multiply it by a columns matrix $B$.

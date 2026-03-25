@@ -8,6 +8,7 @@ tags:
   - course/CS321
   - domain/cs-theory
 draft: false
+thumbnail: "[[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg]]"
 ---
 ## What is the problem
 You'll be given a RB Tree and asked to delete a set of (to-be-deleted) nodes from it.

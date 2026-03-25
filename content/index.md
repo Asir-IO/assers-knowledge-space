@@ -65,16 +65,16 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 ## Recent Notes
-<!-- QueryToSerialize: TABLE WITHOUT ID link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
-<!-- SerializedQuery: TABLE WITHOUT ID link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- QueryToSerialize: TABLE WITHOUT ID embed(thumbnail) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID embed(thumbnail) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Note                                                                                                                             | Added          |
-| -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| [[Bayesian Networks]]                                                                             | March 18, 2026 |
-| [[Assignment One Report]]                                                                         | March 14, 2026 |
-| [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               | March 13, 2026 |
-| [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
-| [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
+| Thumbnail                                                                    | Note                                                                                                                             | Added          |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|100]]     | [[Bayesian Networks]]                                                                             | March 18, 2026 |
+| \-                                                                           | [[Matrix Multiplication as Column Combinations]] | March 13, 2026 |
+| \-                                                                           | [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               | March 13, 2026 |
+| \-                                                                           | [[Matrix Multiplication as Row Combinations]]       | March 13, 2026 |
+| ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|100]] | [[Neo4j Knowledge Graph]]                                                                         | March 12, 2026 |
 
 <!-- SerializedQuery END -->
 
@@ -85,7 +85,7 @@ You're welcome to scroll through stuff there ofc, but yeah, you do this at your 
 
 ---
 ## University Courses 
-I've grouped [[university courses|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
+I've grouped [[courses|here]] content for each FCAI-CU course I experienced (organized by Level & Semester).
 
 ---
 ## Who am I

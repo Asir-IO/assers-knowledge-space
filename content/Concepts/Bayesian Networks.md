@@ -8,12 +8,13 @@ tags:
   - domain/ai
   - course/AI332
 draft: false
+thumbnail: "[[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]"
 ---
 # Mental Model
 We have a bunch of events (say, **B**urglary, **A**larm, and **J**ohn Calling), we've run experiments and noted the probability of each event occurring.    
-This is great, we now have a way to tell how likely the Alarm is to ring on any random day. 
+This is great, we now have a way to tell how likely, say, the Alarm is to ring on any random day. 
 
-However, wouldn't it be much more *informative* to compute the probability of the **A**larm ringing given the current observation of a **B**urglary or **J**ohn's phone call? wouldn't the calculated probability 
+However, wouldn't it be much more *informative* to compute the probability of the **A**larm ringing given the current observation of, say, **J**ohn's phone call? wouldn't the calculated probability 
 > "The **A**larm is _this_ likely to ring _now that **J**ohn just called_" 
 
 be way more *tailored* to our current reality than a generic 
@@ -21,16 +22,20 @@ be way more *tailored* to our current reality than a generic
 
 Yup, it *would*.    
 
-But to be able to calculate those tailored probabilities for any possible configuration in the future, we need a map of how these events influence each other; by connecting these variables with *cause-and-effect* arrows, we build exactly that map.
+This tailored probability makes an assumption then that the probability of the Alarm ringing is affected by John calling, and that's why we should *start thinking* of the events as not isolated entities, but as ones that can affect the probability of one another.
 
-This structure is a *Bayesian Network*.
+We do this by building a network of how events/nodes affect one another, and in a *cause-and-effect* way.   
 
-> [!warning] *What if* we don't take the time to figure out the connections?
-> We'll naturally assume that everything generally influences one another, and this will work, but we'll create too much redundant connections.
+We start with an assumption that all nodes affect each other, and *remove the connection* between ones that hardly do.   
+
+This is a *Bayesian Network*.
+
+> [!warning] *What if* we don't take the time to remove connections?
+> We'll end up with redundant connections, the network will be usable, but it'll do redundant computations.
 
 ---
 # Building the Network
-The network will be composed of: nodes that are the events, the connections between them, and how strong each connection is.
+The network is composed of three things: the *nodes* (the events), the *connections* between them (the arrows), and *how strong* each connection is (the CPTs).
 ## The Nodes
 The Nodes in this example are,
 - **B**urglary happens
@@ -38,34 +43,33 @@ The Nodes in this example are,
 - **A**larm rings
 - **J**ohn calls
 - **M**ary calls
-
+This is the network with every node added.
 ![[Convolution Sum in LTI systems 2026-03-19 00.31.56.excalidraw.svg]]    
-The nodes in this example all have 2 observations, they can either occur or not occur.    
+The nodes in this example all have 2 possible observations, they can either occur or not occur.    
 They're all binary.
 > [!WARNING] NOTATION ALERT
-> For a given binary node (ex: A), I write its +ve observation (occured) as its lowercase version (ex: a), and just add a "$\neg$" to its -ve observation (ex: $\neg$a)
+> For a given binary node (e.g., A), I write its +ve observation (occured) as its lowercase version (e.g., a), and just add a "$\neg$" to its -ve observation (e.g., $\neg$a)
 
 # Define Connections
-We figured the following connections for each node,
+We ran experiments and figured the following connections for each node,
 - **B**
-	- is caused by: nothing (yet)
 	- causes: **A**
 - **E**
-	- is caused by: nothing (yet)
 	- causes: **A**
 - **A**
-	- is caused by: B, E
 	- causes: **J**, **M**
 - **J**
-	- is caused by: **A**
 	- causes: nothing (yet)
 - **M**
-	- is caused by: **A**
 	- causes: nothing (yet)
 
+This is the network with every connection added.
 ![[Bayesian Networks 2026-03-20 20.54.47.excalidraw.svg]]    
-# Quantify Connections
-We represent each connection by a CPT that *quantifies* the connections between a node and its parents.   
+# Measure Connections
+
+> "how much is <mark style="background: #CACFD9A6;">each observation</mark> in node A caused by its parent observations?"   
+
+This is what the CPT of node A tell us.
 
 > [!EXAMPLE] 
 > The CPT of A contains the probability of its observations (a, ¬a) given all the possible combinations of its parents' observations.    
@@ -73,20 +77,51 @@ We represent each connection by a CPT that *quantifies* the connections between 
 > 
 
 > [!NOTE] To make the diagram more compact
-> I only include entries for the +ve observation of a node (ex: a), and this is okay since each node has only 2 possible observations (ex: a or ¬a); its -ve observation is its complement:    
+> I only include entries for the +ve observation of a node (e.g.., a), and this is okay since each node has only 2 possible observations (e.g., a or ¬a); its -ve observation is its complement:    
 > $p(\neg a) = 1 - p(a)$
 
-To fill out each CPT table, we use methods like Maximum Likelihood Estimation.
+To fill out each CPT table, we use methods like Maximum Likelihood Estimation.   
+
+This is the network with every CPT added.
 ![[Bayesian Networks 2026-03-20 22.14.47.excalidraw.svg]]    
 
 ---
 # Using the Network
-Now that the network is now built, how is it used?
+Now that the network is built, how is it used?
 
-Remember that we want it to, given a specific *observation combination* of some nodes, to compute the probability of the *rest* of the nodes.
+Remember that we mainly want it to, given a set of *observations* of some nodes, to compute the probability of the *rest* of the nodes.
+
+This is called *inference*.   
+
+*Predictive* inference occurs when we predict the probability of a child observation occurring, *given* that a parent one has occurred.   
+*Diagnostic* inference occurs when we evaluate the probability of a parent observation being the one that had *caused* a child one.   
+![[Bayesian Networks 2026-03-24 22.49.27.excalidraw]]
+Predictive inference is done before diagnostic one.   
+
+Inferring a node usually requires inferring its parent/children nodes first, this is done until reaching nodes that were inferred.   
+
+We basically move from the node that we want to infer towards observed nodes.
+## How Predictive Inference is done
+### One Parent
+Assume that R1 is a far ancestor of B and it was observed.   
+This is how $P(a|r1)$ is computed.
+![[Bayesian Networks 2026-03-24 23.07.32.excalidraw]]   
+### Multiple Parents
+Assume that R1, R2 is a far ancestor of B, E, and they were observed.   
+This is how $P(a|r1, r2)$ is computed.   
+![[Bayesian Networks 2026-03-24 23.18.14.excalidraw]]
+## How Diagnostic Inference is done
+### One child
+Assume that L1 is a far descender of J and it was observed.   
+This is how $P(a|l1)$ is computed.   
+![[Bayesian Networks 2026-03-24 23.28.15.excalidraw]]
+## Multiple children
+Assume that L1, L2 is a far descender of J, M, and they were observed.   
+This is how $P(a|l1, l2)$ is computed.   
+![[Bayesian Networks 2026-03-24 23.25.13.excalidraw]]
 
 Before any specific observation combination is given, each node should output the general probability of its possible observations.    
-(ex: Node A outputs P(a) and P($\neg$a))
+(e.g., Node A outputs P(a) and P($\neg$a))
 ![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg]]
 However, once an observation combination is given the following happens,
 - for every observed node,
@@ -150,3 +185,10 @@ it goes up and down... the computations is going up and down... this movement sh
 ---
 # Connections
 - []
+---
+# After-Thoughts
+I've spent hours upon hours, days upon days, working on this. It's exhausting.    
+
+Making a visualization that makes sense and captures what a Bayesian network is and how it operates was extremely challenging, and Asser, I don't like how u pushed through a burnout and spent that much time completing it.
+
+But I still am gald u respected your thoughts this much =)

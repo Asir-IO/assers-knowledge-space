@@ -8,6 +8,7 @@ tags:
   - course/IT341
   - domain/systems
 draft: false
+thumbnail: "[[Convolution Sum 2026-01-24 23.41.52.excalidraw.svg]]"
 ---
 ## Mental Model
 You've got a linear system (that given an input signal, spits out an output one), but u don't have an explicit formula to compute the output from the input, the system is like a black box to u.

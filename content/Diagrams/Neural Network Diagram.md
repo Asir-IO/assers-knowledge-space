@@ -8,6 +8,7 @@ tags:
   - course/AI321
   - domain/ai
 draft: false
+thumbnail: "[[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg]]"
 ---
 ## The Diagram
 (the neurons don't contain a bias term)

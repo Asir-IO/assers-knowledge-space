@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/ai
 draft: false
+thumbnail: "[[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg]]"
 ---
 ## Without Memory
 ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg]]

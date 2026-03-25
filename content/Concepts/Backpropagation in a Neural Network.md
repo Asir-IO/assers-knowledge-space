@@ -8,6 +8,7 @@ tags:
   - course/AI321
   - domain/ai
 draft: false
+thumbnail: "[[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg]]"
 ---
 ## Mental Model
 Think of a Neural Network as a line of layers, where every neuron in a layer is wired to the ones in the layer before it. Every single one of those wires (connections) has a **weight** attached to it.

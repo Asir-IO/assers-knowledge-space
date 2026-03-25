@@ -8,6 +8,7 @@ tags:
   - domain/math
   - course/
 draft: false
+thumbnail: "[[Implication 2026-01-19 00.58.19.excalidraw.svg]]"
 ---
 ## Intuition
 ...

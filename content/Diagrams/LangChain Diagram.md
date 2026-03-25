@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/ai
 draft: false
+thumbnail: "[[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg]]"
 ---
 ## Without Memory
 ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg]]

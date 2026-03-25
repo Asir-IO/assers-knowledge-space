@@ -7,6 +7,7 @@ tags:
   - topic/
   - domain/
 draft: false
+thumbnail: "[[Quickly placing ticks evenly on a line 2026-01-25 16.28.06.excalidraw.svg]]"
 ---
 ## What is the problem
 You need to place $n$ ticks evenly on a line (including the start and end points) but do not have a ruler.

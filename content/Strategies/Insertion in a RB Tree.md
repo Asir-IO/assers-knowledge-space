@@ -8,6 +8,7 @@ tags:
   - course/CS321
   - domain/cs-theory
 draft: false
+thumbnail: "[[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg]]"
 ---
 ## What is the problem
 You'll either:

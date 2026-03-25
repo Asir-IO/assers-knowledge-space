@@ -7,6 +7,7 @@ tags:
   - type/strategy
   - domain/
 draft: false
+thumbnail: "[[Keys Map 2026-02-07 14.25.06.excalidraw.svg]]"
 ---
 ## What is the problem
 Getting into touch typing can be frustrating because the cognitive load is too high. You have to map 40+ keys to 8 fingers. It's easy to remember *which hand* to use for a key, but *which finger* to use in that hand? that's much harder.

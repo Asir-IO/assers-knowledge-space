@@ -5,9 +5,9 @@ import { classNames } from "../util/lang"
 const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const tags = fileData.frontmatter?.tags
   const tagMapping: Record<string, string> = {
-    "type/diagram": "Diagrams",
-    "type/concept": "Concepts",
-    "type/strategy": "Problems",
+    "type/diagram": "diagrams",
+    "type/concept": "concepts",
+    "type/strategy": "strategies",
   }
   if (tags && tags.length > 0) {
     return (

@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/ai
 draft: false
+thumbnail: "[[Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg]]"
 ---
 ## Mental Model
 ![[Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg]]

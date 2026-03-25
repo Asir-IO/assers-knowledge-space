@@ -8,6 +8,7 @@ tags:
   - domain/cs-theory
   - type/
 draft: false
+thumbnail: "[[Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg]]"
 ---
 ## The Trigger
 The formal definition of how a *tabular* DP algorithm operates is clear enough, but what if there is a visual way to quickly abstract it?

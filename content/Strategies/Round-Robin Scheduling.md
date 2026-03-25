@@ -8,6 +8,7 @@ tags:
   - course/CS341
   - domain/cs-theory
 draft: false
+thumbnail: "[[Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg]]"
 ---
 ## What is the problem
 You'll be given a list of processes (P1, P2, P3, ...), their arrival time, and burst time, and the RR time quantum (Q).
