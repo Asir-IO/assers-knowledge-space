@@ -141,7 +141,7 @@ I like to imagine every observed node as an information source that tries its be
 ## Examples
 - (*Example #1*)    
 	Say the node B was observed, this will be the diagram, showing the active paths of B.    
-	![[Bayesian Networks 2026-03-20 23.14.39.excalidraw.svg]]    
+	![[Bayesian Networks 2026-03-20 23.14.39.excalidraw.webm]]    
 	it affects every single node, [[#^8b579f|except its spouse]].    
 	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]    
 >[!question] *Where* did the CPTs go?
@@ -149,12 +149,12 @@ I like to imagine every observed node as an information source that tries its be
 
 - (*Example #2*)    
 	Say node M was observed, this will be its active trail.    
-	![[Bayesian Networks 2026-03-20 23.29.35.excalidraw.svg]]    
+	![[Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm]]    
 	it affects every single node, nothing blocks its path.   
 	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg]]
 - (*Example #3*)    
 	Say both of them were observed, this will be their active paths.    
-	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.svg]]    
+	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.webm]]    
 	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg]]
 - (*Example #4*)    
 	Here's an interesting one, say nodes A and M were observed, this will be their active paths.    
