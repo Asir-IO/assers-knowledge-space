@@ -94,6 +94,27 @@ export default ((opts?: Options) => {
             // Initial Run
             swapSvgToTheme()
           }
+
+          <!-- --- AUTOPLAY VIDEO ON SCROLL SCRIPT --- -->
+          const observerOptions = {
+            root: null,
+            threshold: 0.5 // 0.5 means 50% of the video must be visible
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.play();
+              } else {
+                entry.target.pause();
+              }
+            });
+          }, observerOptions);
+
+          // Target all videos with our special class
+          document.querySelectorAll('.autoplay-on-scroll').forEach((video) => {
+            observer.observe(video);
+          });
         `}} />
       </footer>
     )

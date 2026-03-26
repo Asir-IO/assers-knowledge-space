@@ -141,20 +141,45 @@ I like to imagine every observed node as an information source that tries its be
 ## Examples
 - (*Example #1*)    
 	Say the node B was observed, this will be the diagram, showing the active paths of B.    
-	![[Bayesian Networks 2026-03-20 23.14.39.excalidraw.webm]]    
+	<video 
+  src="./z1-assets/Bayesian Networks 2026-03-20 23.14.39.excalidraw.webm" 
+  playsinline 
+  loop 
+  muted 
+  class="autoplay-on-scroll"
+  style="cursor: pointer; max-width: 100%;" 
+  onclick="this.paused ? this.play() : this.pause()">
+</video>   
 	it affects every single node, [[#^8b579f|except its spouse]].    
 	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]    
 >[!question] *Where* did the CPTs go?
 > I draw the very final diagram this way, since adding the CPTs would add too much visual clutter.
 
 - (*Example #2*)    
-	Say node M was observed, this will be its active trail.    
-	![[Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm]]    
+	Say node M was observed, this will be its active path.    
+	<video 
+  src="./z1-assets/Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm" 
+  playsinline 
+  loop 
+  muted 
+  class="autoplay-on-scroll"
+  style="cursor: pointer; max-width: 100%;" 
+  onclick="this.paused ? this.play() : this.pause()">
+</video>   
 	it affects every single node, nothing blocks its path.   
 	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg]]
 - (*Example #3*)    
 	Say both of them were observed, this will be their active paths.    
-	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.webm]]    
+	<video 
+  src="./z1-assets/Bayesian Networks 2026-03-20 23.36.52.excalidraw.webm" 
+  playsinline 
+  loop 
+  muted 
+  class="autoplay-on-scroll"
+  style="cursor: pointer; max-width: 100%;" 
+  onclick="this.paused ? this.play() : this.pause()">
+</video>   
+
 	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg]]
 - (*Example #4*)    
 	Here's an interesting one, say nodes A and M were observed, this will be their active paths.    
