@@ -187,6 +187,7 @@ I like to imagine every observed node as an information source that tries its be
 - (*Example #4*)    
 	Here's an interesting one, say nodes A and M were observed, this will be their active paths.    
 	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg]]    
+	![[excalidraw-animate.svg]]
 	The information stream of M [[#^a51978|can't cross A]] (to B or E) or [[#^c61007|move to its sibling]]. 
 	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg]]
 
