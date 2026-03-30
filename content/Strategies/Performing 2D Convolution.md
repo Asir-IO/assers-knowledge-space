@@ -42,6 +42,7 @@ You'll be given an input 2D image and a 2D filter and be asked to show the resul
 	![[Performing 2D Convolution 2026-03-30 00.11.08.excalidraw.svg]]
 ## Example
 The following animation shows how the rest of the center pixel values are computed.  
+![[Performing 2D Convolution 2026-03-30 00.11.08.excalidraw.mp4]]
 
 ---
 ## Connections
