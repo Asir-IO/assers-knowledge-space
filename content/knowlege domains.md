@@ -8,15 +8,16 @@ I've grouped here notes that belong to the same domain.
 ## Computer Science (Theory)
 %%(Algorithms, Data Structures, ...)%%
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM #domain/cs-theory where !draft AND isNote SORT date DESC-->
-<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "-") AS "Thumbnail", link(file.path, title) AS "Note" FROM #domain/cs-theory where !draft AND isNote SORT date DESC -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM #domain/cs-theory where !draft AND isNote SORT date DESC -->
 
 | Thumbnail                                                                                                                                                                                  | Note                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| ![[Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg\|Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg\|120]]                                                   | [[Round-Robin Scheduling]]                   |
+| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|120]]                                 | [[Drawing a Complete Tree Quickly]]   |
 | ![[Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg\|Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg\|120]] | [[Abstracting a Tabular DP algorithm]] |
-| ![[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|120]]                                                    | [[Deletion in a RB Tree]]                     |
-| ![[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|120]]                                                  | [[Insertion in a RB Tree]]                   |
-| ![[Linked List Diagram 2026-01-12 00.22.16.excalidraw.svg\|100%\|120]]                                                                                                          | [[Linked List Diagram]]                           |
+| ![[Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg\|Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg\|120]]                                                   | [[Round-Robin Scheduling]]                   |
+| ![[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|120]]                                                     | [[Deletion in a RB Tree]]                     |
+| ![[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|120]]                                                   | [[Insertion in a RB Tree]]                   |
+| ![[Linked List Diagram 2026-01-12 00.22.16.excalidraw.svg\|100%\|120]]                                                                                                           | [[Linked List Diagram]]                           |
 
 <!-- SerializedQuery END -->
 ## Systems & Architecture

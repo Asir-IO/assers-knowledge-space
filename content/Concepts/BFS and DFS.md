@@ -11,10 +11,9 @@ draft: true
 ---
 ## Mental Model
 ...
-
+![[BFS and DFS 2026-03-30 19.50.24.excalidraw]]
+![[BFS and DFS 2026-03-30 20.01.29.excalidraw]]
 ## Visual
-...
-## Formal Definition
 ...
 
 ## Connections

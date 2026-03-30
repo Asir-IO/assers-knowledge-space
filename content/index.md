@@ -68,13 +68,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                                                                                      | Note                                                                         | Added          |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------- |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                        | [[Data Augmentation]]                         | March 29, 2026 |
-| ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]] | [[Performing 2D Convolution]]       | March 29, 2026 |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                        | [[Cognitive Assign 1 Report]]             | March 28, 2026 |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                        | [[Convolutional Neural Networks]] | March 27, 2026 |
-| ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]                 | [[Bayesian Networks]]                         | March 18, 2026 |
+| Thumbnail                                                                                                                                             | Note                                                                             | Added          |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------- |
+| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw\|120]] | [[Drawing a Complete Tree Quickly]] | March 30, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                               | [[Data Augmentation]]                             | March 29, 2026 |
+| ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]        | [[Performing 2D Convolution]]           | March 29, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                               | [[Cognitive Assign 1 Report]]                 | March 28, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                               | [[Convolutional Neural Networks]]     | March 27, 2026 |
 
 <!-- SerializedQuery END -->
 

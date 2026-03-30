@@ -11,7 +11,7 @@ tags:
 draft: false
 thumbnail: "[[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg]]"
 ---
-## What is the problem
+ ## What is the problem
 You'll be given an input 2D image and a 2D filter and be asked to show the resulting image after passing the filter over the 2D image (computing the convolution between the two).   
 ![[Performing 2D Convolution 2026-03-29 22.28.56.excalidraw.svg]]
 ## Before you begin
