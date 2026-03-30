@@ -38,10 +38,12 @@ I've grouped here notes that belong to the same domain.
 ## Artificial Intelligence
 %%(ML, Neural Networks, Logic, ...)%%
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" from #domain/ai where !draft AND isNote SORT date DESC-->
-<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "-") AS "Thumbnail", link(file.path, title) AS "Note" from #domain/ai where !draft AND isNote SORT date DESC -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" from #domain/ai where !draft AND isNote SORT date DESC -->
 
 | Thumbnail                                                                                                                                                            | Note                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                              | [[Data Augmentation]]                                       |
+| ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]                       | [[Performing 2D Convolution]]                     |
 | ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]                                       | [[Bayesian Networks]]                                       |
 | ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Diagram]]                                       |
 | ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Diagram]]                                       |

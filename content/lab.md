@@ -6,3 +6,5 @@ draft: true
 thumbnail:
 ---
 ![[lab-temp-thumb.excalidraw]]
+
+![[lab-logo.excalidraw]]
