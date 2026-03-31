@@ -15,7 +15,7 @@ You want to quickly draw a complete `n-ary` tree of `l` levels, but you keep run
 
 Spoiler alert: you avoid this completely by drawing the tree from the ground up.
 ## Strategy
-1. Draw the deepest level's nodes evenly spaced across your page.    
+1. Draw the deepest level's nodes [[Quickly placing ticks Evenly on a line|evenly spaced]] across your page.    
 	There will be exactly $n^{l-1}$ of them.   
 	![[Drawing a Complete Tree Quickly 2026-03-30 20.21.01.excalidraw.svg]]
 2. Move up one level. Place a parent node centered directly above each group of `n` nodes.   
