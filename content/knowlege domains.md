@@ -13,7 +13,7 @@ I've grouped here notes that belong to the same domain.
 | Thumbnail                                                                                                                                                                                  | Note                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | ![[BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|120]]                                                                         | [[Breadth First Search]]                         |
-| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|120]]                                 | [[Drawing a Complete Tree Quickly]]   |
+| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|120]]                                 | [[Drawing a Complete Tree\|Drawing a Complete Tree Quickly]]           |
 | ![[Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg\|Round-Robin Scheduling 2026-01-26 02.26.55.excalidraw.svg\|120]]                                                   | [[Round-Robin Scheduling]]                   |
 | ![[Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg\|Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg\|120]] | [[Abstracting a Tabular DP algorithm]] |
 | ![[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|120]]                                                     | [[Deletion in a RB Tree]]                     |
@@ -24,12 +24,12 @@ I've grouped here notes that belong to the same domain.
 ## Systems & Architecture
 %%(Operating Systems, Computer Arch, Networks, ...)%%
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM #domain/systems where !draft AND isNote SORT date DESC -->
-<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "-") AS "Thumbnail", link(file.path, title) AS "Note" FROM #domain/systems where !draft AND isNote SORT date DESC -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM #domain/systems where !draft AND isNote SORT date DESC -->
 
-| Thumbnail                                                                                                                                                                                         | Note                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Thumbnail                                                                                                                                                                                        | Note                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
 | ![[Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg\|Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg\|120]]                                                 | [[Single-Cycle Uarch Diagram]]                               |
-| ![[Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|120]]                                                    | [[Multi-Cycle Uarch Diagram]]                                 |
+| ![[Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|120]]                                                   | [[Multi-Cycle Uarch Diagram]]                                 |
 | ![[Convolution Sum 2026-01-24 23.41.52.excalidraw.svg\|Convolution Sum 2026-01-24 23.41.52.excalidraw.svg\|120]]                                                                       | [[Convolution Sum in LTI systems]]                       |
 | ![[Feedback Loops 2026-01-22 00.58.26.excalidraw.svg\|Feedback Loops 2026-01-22 00.58.26.excalidraw.svg\|120]]                                                                         | [[Block Diagram Feedback Connection]]               |
 | ![[Harmonically Related Periodic Complex Exponentials 2026-01-18 17.44.54.excalidraw.svg\|Harmonically Related Periodic Complex Exponentials 2026-01-18 17.44.54.excalidraw.svg\|120]] | [[Harmonically Related Complex Exponentials]] |
@@ -44,8 +44,8 @@ I've grouped here notes that belong to the same domain.
 
 | Thumbnail                                                                                                                                                            | Note                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]                       | [[Performing 2D Convolution]]                     |
 | ![[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|120]]                                       | [[Data Augmentation]]                                       |
+| ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]                       | [[Performing 2D Convolution]]                     |
 | ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]                                       | [[Bayesian Networks]]                                       |
 | ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Diagram]]                                       |
 | ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Diagram]]                                       |
@@ -75,7 +75,7 @@ I've grouped here notes that belong to the same domain.
 | ![[Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg\|Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg\|120]]                                 | [[Matrix Multiplications as Outer Products]]         |
 | ![[Transposing a Matrix 2026-02-24 16.11.14.excalidraw.svg\|Transposing a Matrix 2026-02-24 16.11.14.excalidraw.svg\|120]]                                   | [[Transposing a Matrix]]                                                                     |
 | ![[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg\|Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg\|120]] | [[Matrix Multiplication as Inner Products]]           |
-| ![[Implication 2026-01-19 00.58.19.excalidraw.svg\|Implication 2026-01-19 00.58.19.excalidraw.svg\|120]]                                                    | [[Implication]]                                                                                         |
+| ![[Implication 2026-01-19 00.58.19.excalidraw.svg\|Implication 2026-01-19 00.58.19.excalidraw.svg\|120]]                                                     | [[Implication]]                                                                                         |
 
 <!-- SerializedQuery END -->
 
@@ -84,11 +84,13 @@ I've grouped here notes that belong to the same domain.
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" WHERE econtains(file.etags, "#domain/") AND !draft AND isNote SORT date DESC-->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" WHERE econtains(file.etags, "#domain/") AND !draft AND isNote SORT date DESC -->
 
-| Thumbnail                                                                                                                                                                 | Note                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|120]]                                    | [[Neo4j Knowledge Graph]]                                         |
-| ![[Keys Map 2026-02-07 14.25.06.excalidraw.svg\|Keys Map 2026-02-07 14.25.06.excalidraw.svg\|120]]                                                              | [[Color-Coded Touch Typing]]                             |
+| Thumbnail                                                                                                                                                                | Note                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                  | [[Cognitive Assign 1 Report]]                                 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                  | [[Convolutional Neural Networks]]                     |
+| ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|120]]                                   | [[Neo4j Knowledge Graph]]                                         |
+| ![[Keys Map 2026-02-07 14.25.06.excalidraw.svg\|Keys Map 2026-02-07 14.25.06.excalidraw.svg\|120]]                                                             | [[Color-Coded Touch Typing]]                             |
 | ![[Quickly placing ticks evenly on a line 2026-01-25 16.28.06.excalidraw.svg\|Quickly placing ticks evenly on a line 2026-01-25 16.28.06.excalidraw.svg\|120]] | [[Quickly placing ticks Evenly on a line]] |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                   | [[Signals Book Indexes]]                                           |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                  | [[Signals Book Indexes]]                                           |
 
 <!-- SerializedQuery END -->

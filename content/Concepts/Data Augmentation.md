@@ -5,8 +5,8 @@ date: 2026-04-01
 tags:
   - type/concept
   - topic/
-  - course/AI332
   - domain/ai
+  - course/AI322
 draft: false
 thumbnail: "[[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg]]"
 ---

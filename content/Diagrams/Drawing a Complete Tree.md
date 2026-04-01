@@ -1,6 +1,6 @@
 ---
 isNote: true
-title: Drawing a Complete Tree Quickly
+title: Drawing a Complete Tree
 date: 2026-03-30
 tags:
   - type/strategy

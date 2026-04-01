@@ -13,7 +13,7 @@ draft: false
 thumbnail: "[[BFS and DFS 2026-03-31 19.11.51.excalidraw.svg]]"
 ---
 # Mental Model 
-Imagine you have a [[Drawing a Complete Tree Quickly|tree]] and you want to visit every node *level-by-level*. Naively, you might try to do the following,   
+Imagine you have a [[Drawing a Complete Tree|tree]] and you want to visit every node *level-by-level*. Naively, you might try to do the following,   
 ![[BFS and DFS 2026-03-31 14.58.27.excalidraw.mp4]]   
  You visit every node successfully, but since nodes on the same level (adjacent nodes) usually belong to different subtrees, you end up taking very long, inefficient paths moving back and forth between these subtrees, especially as you reach deeper levels. 
 

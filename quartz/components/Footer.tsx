@@ -17,7 +17,7 @@ export default ((opts?: Options) => {
             Created by Asser © {new Date().getFullYear()}
           </p>
           <p style={{ margin: 0, fontSize: "0.9rem", lineHeight: "1.2"}}>
-            (You may share content here with anyone, just kindly don't claim it as your own)
+            (You may share content here anywhere, just kindly don't claim it as your own)
           </p>
         </div>
         <p>
