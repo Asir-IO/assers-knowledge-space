@@ -228,4 +228,4 @@ I've spent hours upon hours, days upon days, working on this. It's exhausting.
 
 Making a visualization that makes sense and captures what a Bayesian network is and how it operates was extremely challenging, and Asser, I don't like how u pushed through a burnout and spent that much time completing it.
 
-But I still am gald u respected your thoughts this much =)
+But I still am gald u valued your thoughts that much =)
