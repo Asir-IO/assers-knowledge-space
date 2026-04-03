@@ -70,11 +70,11 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 | Thumbnail                                                                                                                                                          | Note                                                                                       | Added          |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------- |
+| ![[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|120]]                               | [[Human vs Rational Agents]]                         | April 03, 2026 |
 | ![[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|120]] | [[Solving a Production System Problem]] | April 03, 2026 |
+| ![[Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|120]]                       | [[Doing a Resolution Proof]]                       | April 03, 2026 |
 | ![[Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|120]]                           | [[Induction vs Deduction]]                             | April 02, 2026 |
 | ![[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|120]]                                     | [[Data Augmentation]]                                       | April 01, 2026 |
-| ![[BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|120]]                                                 | [[Breadth First Search]]                                 | March 31, 2026 |
-| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|120]]         | [[Drawing a Complete Tree]]                         | March 30, 2026 |
 
 <!-- SerializedQuery END -->
 
