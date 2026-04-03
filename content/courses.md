@@ -21,12 +21,13 @@ title: University Courses
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", file.name AS "Course ID", link(file.path, title) AS "Course Name"  from "tags/course" WHERE level = 3 AND semester = 2 SORT file.name ASC -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", file.name AS "Course ID", link(file.path, title) AS "Course Name"  from "tags/course" WHERE level = 3 AND semester = 2 SORT file.name ASC -->
 
-| Thumbnail                                                                                              | Course ID | Course Name                                                |
-| ------------------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------- |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | AI313     | [[AI313\|Autonomous Multiagent Systems]]    |
-| ![[AI322 2026-03-23 15.27.34.excalidraw.svg\|AI322 2026-03-23 15.27.34.excalidraw.svg\|120]] | AI322     | [[AI322\|Supervised Learning]]              |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | AI332     | [[AI332\|Computational Cognitive Sciences]] |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | IT443     | [[IT443\|Image Processing]]                 |
+| Thumbnail                                                                                              | Course ID | Course Name                                                      |
+| ------------------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------- |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | AI312     | [[AI312\|Reasoning and Knowledge Representation]] |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | AI313     | [[AI313\|Autonomous Multiagent Systems]]          |
+| ![[AI322 2026-03-23 15.27.34.excalidraw.svg\|AI322 2026-03-23 15.27.34.excalidraw.svg\|120]] | AI322     | [[AI322\|Supervised Learning]]                    |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | AI332     | [[AI332\|Computational Cognitive Sciences]]       |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                | IT443     | [[IT443\|Image Processing]]                       |
 
 <!-- SerializedQuery END -->
 

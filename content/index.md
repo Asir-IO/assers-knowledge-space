@@ -68,13 +68,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                                                                                                  | Note                                                                   | Added          |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------- |
-| ![[Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|120]]                   | [[Induction vs Deduction]]         | April 02, 2026 |
-| ![[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|120]]                             | [[Data Augmentation]]                   | April 01, 2026 |
-| ![[BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|120]]                                         | [[Breadth First Search]]             | March 31, 2026 |
-| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|120]] | [[Drawing a Complete Tree]]     | March 30, 2026 |
-| ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]             | [[Performing 2D Convolution]] | March 29, 2026 |
+| Thumbnail                                                                                                                                                          | Note                                                                                       | Added          |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------- |
+| ![[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|120]] | [[Solving a Production System Problem]] | April 03, 2026 |
+| ![[Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|120]]                           | [[Induction vs Deduction]]                             | April 02, 2026 |
+| ![[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|120]]                                     | [[Data Augmentation]]                                       | April 01, 2026 |
+| ![[BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|BFS and DFS 2026-03-31 19.11.51.excalidraw.svg\|120]]                                                 | [[Breadth First Search]]                                 | March 31, 2026 |
+| ![[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg\|120]]         | [[Drawing a Complete Tree]]                         | March 30, 2026 |
 
 <!-- SerializedQuery END -->
 

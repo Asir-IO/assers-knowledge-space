@@ -7,7 +7,7 @@ tags:
   - topic/
   - course/
   - domain/
-draft: true
+draft: false
 thumbnail:
 ---
 # Mental Model
