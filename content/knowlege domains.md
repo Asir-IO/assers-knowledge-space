@@ -44,13 +44,14 @@ I've grouped here notes that belong to the same domain.
 
 | Thumbnail                                                                                                                                                            | Note                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| ![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|120]]       | [[Solving a Backpropagation Problem]]     |
 | ![[Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|120]]     | [[Message Passing in Markov Networks]]     |
 | ![[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|120]]                                 | [[Human vs Rational Agents]]                         |
 | ![[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|120]]                                       | [[Data Augmentation]]                                       |
 | ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]                       | [[Performing 2D Convolution]]                     |
 | ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]                                       | [[Bayesian Networks]]                                       |
-| ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Diagram]]                                       |
 | ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Diagram]]                                       |
+| ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Diagram]]                                       |
 | ![[Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg\|Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg\|120]]                     | [[Hypothesis Space Selection]]                     |
 | ![[Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg\|Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg\|120]] | [[Neural Networks as a Squiggle Fitter]] |
 | ![[Neural Networks in Machine Learning 2026-02-24 13.05.35.excalidraw.svg\|Neural Networks in Machine Learning 2026-02-24 13.05.35.excalidraw.svg\|120]]   | [[Neural Networks as an Input Refinery]] |
@@ -60,7 +61,7 @@ I've grouped here notes that belong to the same domain.
 | ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|120]]                                       | [[DataFrame Diagram]]                                       |
 | ![[Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg\|Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg\|120]]                                       | [[DataFrame Selection]]                                 |
 | ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|120]]                             | [[Neural Network Diagram]]                             |
-| ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|120]]                             | [[Backpropagation in a Neural Network]]   |
+| ![[Backprobagation 2026-01-25 19.40.03.excalidraw.svg\|Backprobagation 2026-01-25 19.40.03.excalidraw.svg\|120]]                                           | [[Backpropagation in a Neural Network]]   |
 
 <!-- SerializedQuery END -->
 ## Mathematics
