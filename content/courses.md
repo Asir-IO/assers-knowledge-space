@@ -45,9 +45,10 @@ title: University Courses
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", file.name AS "Course ID", link(file.path, title) AS "Course Name"  from "tags/course" WHERE level = 2 AND semester = 2 SORT file.name ASC -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", file.name AS "Course ID", link(file.path, title) AS "Course Name"  from "tags/course" WHERE level = 2 AND semester = 2 SORT file.name ASC -->
 
-| Thumbnail                               | Course ID | Course Name                               |
-| --------------------------------------- | --------- | ----------------------------------------- |
-| ![[lab-temp-thumb.excalidraw.svg\|120]] | CS214     | [[CS214\|Data Structures]] |
+| Thumbnail                               | Course ID | Course Name                                                |
+| --------------------------------------- | --------- | ---------------------------------------------------------- |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | CS214     | [[CS214\|Data Structures]]                  |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | IS211     | [[IS211\|Introduction to Database Systems]] |
 
 <!-- SerializedQuery END -->
 

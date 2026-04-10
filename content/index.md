@@ -118,4 +118,11 @@ I'm the one who created this (with generous assistance from my buddy Gemmy).
     </a>
     <span>I have a linkedin too (but it's basically dead)</span>
   </div>
+  <div style="display: flex; align-items: right; gap: 12px;">
+    <a href="https://github.com/Asir-IO" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+    <i class="fa-brands fa-github" style="font-size: 26px;"></i> 
+    </a>
+    <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.4;"> <span>You won't find me there, but you'll find projects like this one.</span> 
+    </div>
+  </div>
 </div>
