@@ -14,9 +14,11 @@ thumbnail: "[[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.s
 # What is the problem
 You'll be given,
 - the nodes, connections and weights of a neural network
-- the activation function of the hidden layers.
+- the activation function of the hidden layers.   
+	*(usually is a relu)*
 	![[Solving a Backpropagation Problem 2026-04-09 23.39.30.excalidraw.svg]]
 - the activation function of the o/p layer.
+	*(usually is a sigmoid/softmax)*
 	![[Solving a Backpropagation Problem 2026-04-09 23.43.26.excalidraw.svg]]
 - the error function.
 	![[Solving a Backpropagation Problem 2026-04-09 23.54.17.excalidraw.svg]]
@@ -27,7 +29,7 @@ You'll be given,
 
 ... and asked to perform backpropagation on it.   
 # Before you begin
-1. draw the network, leaving at lease a line's space above every neuron 
+1. draw the network, leaving at lease a line's space above every neuron   
 	*(to later write in it the net and out of the neuron)*
 	![[Solving a Backpropagation Problem 2026-04-09 22.24.22.excalidraw.svg]]
 2. add the target value of every output node next to it, and the input value of every input node also next to it.   
@@ -36,7 +38,6 @@ You'll be given,
 	![[Solving a Backpropagation Problem 2026-04-09 22.32.44.excalidraw.svg]]
 	![[Solving a Backpropagation Problem 2026-04-09 22.32.44.excalidraw.mp4]]
 4. compute the derivative formula for the activation function of both the o/p layer and the hidden layers.   
-	*(it usually is a relu for the hidden layers, and a sigmoid/softmax for the o/p one)*
 	![[Solving a Backpropagation Problem 2026-04-09 23.32.47.excalidraw.svg]]
 5. compute the derivative formula for the error function.
 	![[Solving a Backpropagation Problem 2026-04-09 23.58.00.excalidraw.svg]]
@@ -50,8 +51,8 @@ Starting with the output layer's neurons and moving back, do the following,
 2. update the weight connecting it to every neuron in the previous layer.   
 	![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg]]   
 
-Do this for every neuron within every layer...
-	![[Solving a Backpropagation Problem 2026-04-10 00.22.33.excalidraw.mp4]]
+Do this for every neuron within every layer...   
+![[Solving a Backpropagation Problem 2026-04-10 00.22.33.excalidraw.mp4]]
 	![[Solving a Backpropagation Problem 2026-04-10 00.22.33.excalidraw.svg]]
 
 ---
