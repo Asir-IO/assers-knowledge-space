@@ -4,9 +4,9 @@ title: Inventory Chatbot
 date: 2026-02-26
 tags:
   - topic/
-  - course/
   - type/
   - domain/ai
+  - course/orange-agentic-ai
 draft: false
 ---
 ## Operation Diagram

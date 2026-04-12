@@ -4,9 +4,9 @@ title: System Prompt Schema
 date: 2026-02-21
 tags:
   - topic/
-  - course/
   - domain/ai
   - type/
+  - course/orange-agentic-ai
 draft: false
 thumbnail: "[[Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg]]"
 ---

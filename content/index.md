@@ -68,13 +68,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                                                                                                          | Note                                                                                       | Added          |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------- |
-| ![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|120]]     | [[Solving a Backpropagation Problem]]     | April 09, 2026 |
-| ![[Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|120]]   | [[Message Passing in Markov Networks]]     | April 05, 2026 |
-| ![[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|120]]                               | [[Human vs Rational Agents]]                         | April 03, 2026 |
-| ![[Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|120]]                       | [[Doing a Resolution Proof]]                       | April 03, 2026 |
-| ![[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|120]] | [[Solving a Production System Problem]] | April 03, 2026 |
+| Thumbnail                                                                                                                                                        | Note                                                                                   | Added          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------- |
+| ![[LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|120]]                                                 | [[LLM Memory]]                                                 | April 12, 2026 |
+| ![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|120]]   | [[Solving a Backpropagation Problem]] | April 09, 2026 |
+| ![[Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|120]] | [[Message Passing in Markov Networks]] | April 05, 2026 |
+| ![[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|120]]                             | [[Human vs Rational Agents]]                     | April 03, 2026 |
+| ![[Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|120]]                     | [[Doing a Resolution Proof]]                   | April 03, 2026 |
 
 <!-- SerializedQuery END -->
 

@@ -5,8 +5,8 @@ date: 2026-03-03
 tags:
   - topic/
   - type/diagram
-  - course/
   - domain/ai
+  - course/orange-agentic-ai
 draft: false
 thumbnail: "[[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg]]"
 ---

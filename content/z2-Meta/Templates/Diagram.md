@@ -10,9 +10,9 @@ tags:
 draft: true
 thumbnail:
 ---
-## The Diagram
+# The Diagram
 ...
-## The keys
+# The keys
 > [!abstract] Symbols Key
 > ...
 
@@ -21,7 +21,7 @@ thumbnail:
 
 > [!abstract] Notation Key
 > ...
-## Reference/s used
+# Reference/s used
 (image)
 description.
 
@@ -29,5 +29,5 @@ description.
 ...
 
 ---
-## Connections
+# Connections
 -  [[]]

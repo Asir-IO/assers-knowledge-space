@@ -10,25 +10,13 @@ tags:
 draft: true
 thumbnail:
 ---
-## Mental Model
+# Mental Model
 ...
-
-## Visual
-...
-
-## Keys
-> [!abstract] Symbols Key
-> ...
-
-> [!abstract] Arrows/Lines Key
-> ...
-
-> [!abstract] Notation Key
-> ...
-## Formal Definition
-...
-
 
 ---
-## Connections
+# Example
+...
+
+---
+# Connections
 -  [[]]

@@ -10,12 +10,13 @@ tags:
 draft: true
 thumbnail:
 ---
-## The Trigger
-...
-
-## The Dump
+# The Trigger
 ...
 
 ---
-## Connections
+# The Dump
+...
+
+---
+# Connections
 -  [[]]
