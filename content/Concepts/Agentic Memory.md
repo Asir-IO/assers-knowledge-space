@@ -1,6 +1,6 @@
 ---
 isNote: true
-title: LLM Memory
+title: Agentic Memory
 date: 2026-04-12
 tags:
   - type/concept
@@ -13,7 +13,7 @@ thumbnail: "[[LLM Memory 2026-04-12 18.01.32.excalidraw.svg]]"
 Finn was a human, just like u and me, but he was part of a lab experiment that turned him into an efficient assignment-solving agent,   
 ![[LLM Memory 2026-04-12 16.07.56.excalidraw.svg]]   
 # What happened to Finn
-- his entire knowledge/parametric memory, including: life experience, morals, reasoning frameworks, and etc.. was frozen; he can no longer gain new knowledge.
+- his entire knowledge/parametric memory, including his: life experience, linguistic skills, intuition, reasoning, morals and etc.. was frozen; he can no longer gain new knowledge.
 	![[LLM Memory 2026-04-12 18.33.08.excalidraw.svg]]
 - he now has the ability to <mark style="background: #D2B3FFA6;">recall</mark> his *entire* knowledge/*parametric memory* at any time, but only using a special helmet, the "V helmet", it gives him this power, but it consumes too much energy doing so, and thus cannot run for long.
 	![[LLM Memory 2026-04-12 16.31.56.excalidraw.svg]]    
@@ -27,7 +27,9 @@ Finn works on a desk/*working memory* that the lab provides to him, and it is or
 	this is where he creates the solution to the current assignment.
 
 # Finn gains short-term memory
-The lab noticed that Finn completely <mark style="background: #FF5582A6;">forgets</mark> about an assignment once he finishes it, and they had assignments that were related to each other, so they had to do smth.   they added a *previous assignments area*/*short-term memory*/*context window* to his desk in which he, well, stores finished assignments.
+The lab noticed that Finn completely <mark style="background: #FF5582A6;">forgets</mark> about an assignment once he finishes it, and they had assignments that were related to each other, so they had to do smth.   
+
+They added a *previous assignments area*/*short-term memory*/*context window* to his desk in which he, well, stores finished assignments.
 ![[LLM Memory 2026-04-12 17.54.56.excalidraw.svg]]   
 Now Finn can *access* his solution to the 1st assignment while working on the 2nd one.   
 
