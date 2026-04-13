@@ -15,7 +15,7 @@ Finn was a human, just like u and me, but he was part of a lab experiment that t
 # What happened to Finn
 - his entire knowledge/parametric memory, including his: life experience, linguistic skills, intuition, reasoning, morals and etc.. was frozen; he can no longer gain new knowledge.
 	![[LLM Memory 2026-04-12 18.33.08.excalidraw.svg]]
-- he now has the ability to <mark style="background: #D2B3FFA6;">recall</mark> his *entire* knowledge/*parametric memory* at any time, but only using a special helmet, the "V helmet"/*VRAM*, it gives him this power, but it consumes too much energy doing so, and thus cannot run for long.
+- he now has the ability to <mark style="background: #D2B3FFA6;">recall</mark> his *entire* knowledge/*parametric memory* at once, but only using a special helmet, the "V helmet"/*VRAM*, it gives him this power, but it consumes too much energy doing so, and thus cannot run for long.
 	![[LLM Memory 2026-04-12 16.31.56.excalidraw.svg]]    
 
 ---
