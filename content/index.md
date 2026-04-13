@@ -20,7 +20,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 > 
 > Computer Science concepts are genuinely beautiful; I like to believe they are a form of art that deserves to be truly understood and appreciated.
 > 
-> Unfortunately, most of our University's courses are presented in a "*do this and only this because it's just true. If you didn't, I can't give u the grade*" fashion with very little emphasis on the intuition that makes things actually work. (Maybe they have a point? It takes too much effort to teach intuition).
+> Unfortunately, most of our University's courses are presented in a "*do this and only this because it's just true. If you didn't, I can't give u the grade*" fashion with very little emphasis on the intuition that makes things actually work. (maybe it isn't entirely their fault? It takes too much effort to teach intuition).
 > 
 > This environment makes it easy to shy away from spending time trying to truly "see" how stuff works. It pushes u to compromise your actual learning just to be better at collecting grades.
 > 
@@ -70,7 +70,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 | Thumbnail                                                                                                                                                        | Note                                                                                   | Added          |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| ![[LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|120]]                                                 | [[Agentic Memory\|LLM Memory]]                                             | April 12, 2026 |
+| ![[LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|120]]                                                 | [[Agentic Memory]]                                         | April 12, 2026 |
 | ![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|120]]   | [[Solving a Backpropagation Problem]] | April 09, 2026 |
 | ![[Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg\|120]] | [[Message Passing in Markov Networks]] | April 05, 2026 |
 | ![[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg\|120]]                             | [[Human vs Rational Agents]]                     | April 03, 2026 |

@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "asir-io.github.io/assers-knowledge-space",
+    baseUrl: "asserknowledgespace.vercel.app/", //asir-io.github.io/assers-knowledge-space
     ignorePatterns: ["private", "templates", ".obsidian", "z2-Meta", "**/*.excalidraw.md", "./export"],
     defaultDateType: "modified",
     theme: {
