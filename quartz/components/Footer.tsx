@@ -39,98 +39,41 @@ export default ((opts?: Options) => {
           Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>
 
-      {/* --- DYNAMIC THEME SCRIPT (EXISTENCE CHECKER) --- */}
+      {/* --- svg switch based on theme --- */}
         <script dangerouslySetInnerHTML={{ __html: `
-          if (!window.hasInitializedThemeSwap) {
-            window.hasInitializedThemeSwap = true;
+        document.addEventListener("nav", () => {
+          const lightImages = document.querySelectorAll('img[src$=".excalidraw.svg"]');
 
-            const swapSvgToTheme = () => {
-              const theme = document.documentElement.getAttribute('saved-theme')
-              const isDark = theme === 'dark'
-              
-              // Target ONLY .excalidraw.svg files
-              // (Selector matches anything ending in .svg, we filter inside)
-              document.querySelectorAll('img[src$=".svg"]').forEach(img => {
-                const src = img.getAttribute('src')
-                if (!src || !src.includes('.excalidraw')) return
+          lightImages.forEach(img => {
+            // Skip if already wrapped or marked as failed
+            if (img.parentElement.classList.contains('svg-theme-wrapper') || img.classList.contains('no-dark-variant')) return;
 
-                // 1. Establish the "Base" (Light) Source
-                // If we are already dark, we need to calculate what the light version was
-                let lightSrc = img.getAttribute('data-light-src')
-                if (!lightSrc) {
-                   // Assume current src is light, unless it's already dark
-                   lightSrc = src.includes('.dark.svg') 
-                     ? src.replace('.dark.svg', '.svg') 
-                     : src
-                   img.setAttribute('data-light-src', lightSrc)
-                }
+            const darkSrc = img.src.replace('.excalidraw.svg', '.excalidraw.dark.svg');
+            const darkImg = img.cloneNode(true);
+            darkImg.src = darkSrc;
+            darkImg.classList.add('dark-mode-svg');
+            img.classList.add('has-dark-variant');
 
-                if (isDark) {
-                  // === SWITCH TO DARK (IF EXISTS) ===
-                  const darkSrc = lightSrc.replace('.excalidraw.svg', '.excalidraw.dark.svg')
-                  
-                  // Optimization: If already swapped, do nothing
-                  if (img.src.includes(darkSrc)) return;
+            // --- THE NEW PART: Create the Grid Wrapper ---
+            const wrapper = document.createElement('div');
+            wrapper.className = 'svg-theme-wrapper';
 
-                  // PROBE: Try to load the dark image in memory first
-                  const tester = new Image()
-                  tester.onload = () => {
-                    // Success! The file exists. Perform the swap.
-                    img.setAttribute('src', darkSrc)
-                  }
-                  tester.onerror = () => {
-                    // Failed (404). File doesn't exist.
-                    // Ensure we stick to (or revert to) the light version
-                    img.setAttribute('src', lightSrc)
-                  }
-                  tester.src = darkSrc
-                  
-                } else {
-                  // === SWITCH TO LIGHT ===
-                  // Always safe to revert to light
-                  if (img.src !== lightSrc) {
-                    img.setAttribute('src', lightSrc)
-                  }
-                }
-              })
-            }
+            // Insert wrapper exactly where the image is, then move both images inside it
+            img.parentNode.insertBefore(wrapper, img);
+            wrapper.appendChild(img);
+            wrapper.appendChild(darkImg);
 
-            // Listeners
-            document.addEventListener('nav', swapSvgToTheme)
-            
-            // Observer (Debounced)
-            let timeout;
-            const observer = new MutationObserver(() => {
-              clearTimeout(timeout);
-              timeout = setTimeout(swapSvgToTheme, 20);
-            })
-            observer.observe(document.documentElement, { attributes: true, attributeFilter: ['saved-theme'] })
-            
-            // Initial Run
-            swapSvgToTheme()
-          }
-
-          <!-- --- AUTOPLAY VIDEO ON SCROLL SCRIPT --- -->
-          const observerOptions = {
-            root: null,
-            threshold: 0.5 // 0.5 means 50% of the video must be visible
-          };
-
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.play();
-              } else {
-                entry.target.pause();
-              }
-            });
-          }, observerOptions);
-
-          // Target all videos with our special class
-          document.querySelectorAll('.autoplay-on-scroll').forEach((video) => {
-            observer.observe(video);
+            // Handle 404s cleanly
+            darkImg.onerror = () => {
+              // If dark fails, un-wrap the light image to clean up the DOM
+              img.classList.remove('has-dark-variant');
+              img.classList.add('no-dark-variant');
+              wrapper.parentNode.insertBefore(img, wrapper); // Move light img back out
+              wrapper.remove(); // Delete the grid and the broken dark img
+            };
           });
-        `}} />
+        });
+      `}} />
       </footer>
     )
   }

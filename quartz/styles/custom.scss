@@ -209,3 +209,32 @@
   z-index: 9999;
   pointer-events: none;
 }
+
+/* --- svg switch based on theme --- */
+/* to place both versions on top of one another */
+.svg-theme-wrapper {
+  display: grid;
+  place-items: center;
+}
+.svg-theme-wrapper img {
+  grid-area: 1 / 1 / 2 / 2;
+  transition: opacity 0.15s ease-in-out; /* fades as a switch */
+}
+/* --- LIGHT MODE --- */
+.svg-theme-wrapper img.dark-mode-svg { 
+  opacity: 0; 
+  visibility: hidden; 
+}
+.svg-theme-wrapper img.has-dark-variant { 
+  opacity: 1; 
+  visibility: visible; 
+}
+/* --- DARK MODE --- */
+html[saved-theme="dark"] .svg-theme-wrapper img.dark-mode-svg { 
+  opacity: 1; 
+  visibility: visible; 
+}
+html[saved-theme="dark"] .svg-theme-wrapper img.has-dark-variant { 
+  opacity: 0; 
+  visibility: hidden; 
+}
