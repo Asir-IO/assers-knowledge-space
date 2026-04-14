@@ -1,7 +1,7 @@
 ---
 isNote: false
 title: Problem Strategies
-comments: true
+comments: false
 ---
 *(I still haven't grouped them)*
 

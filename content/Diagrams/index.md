@@ -1,7 +1,7 @@
 ---
 isNote: false
 title: Diagrams
-comments: true
+comments: false
 ---
 *(I still haven't grouped them)*
 
