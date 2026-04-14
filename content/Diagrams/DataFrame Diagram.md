@@ -9,6 +9,7 @@ tags:
   - course/
 draft: false
 thumbnail: "[[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg]]"
+comments: true
 ---
 ## The Diagram
 ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg]]

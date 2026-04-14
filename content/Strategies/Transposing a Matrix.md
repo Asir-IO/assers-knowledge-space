@@ -8,6 +8,7 @@ tags:
   - domain/math
 draft: false
 thumbnail: "[[Transposing a Matrix 2026-02-24 16.11.14.excalidraw.svg]]"
+comments: true
 ---
 ## What is the problem
 Given a Matrix

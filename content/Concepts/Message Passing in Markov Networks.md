@@ -8,7 +8,10 @@ tags:
   - course/AI332
   - domain/ai
 draft: false
+aliases:
+  - concepts/probabillity-calculation-in-markov-networks
 thumbnail: "[[Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg]]"
+comments: true
 ---
 ## Mental Model
 Fully connected nodes in a network (cliques) have their own atomic compatibility table.   

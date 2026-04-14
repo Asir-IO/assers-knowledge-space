@@ -9,6 +9,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg]]"
+comments: true
 ---
 ## Mental Model
 A NN can be thought of as an object that, <mark style="background: #FF5582A6;">builds</mark> squiggles and sequentially combines them into higher-level ones, until finally <mark style="background: #D2B3FFA6;">combining</mark> and *sometimes* squashing the final set of squiggles into surfaces that correctly fit the model's training examples.    

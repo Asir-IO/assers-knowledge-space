@@ -9,6 +9,7 @@ tags:
   - course/
 draft: false
 thumbnail: "[[KNN Algorithm 2026-02-20 23.57.05.excalidraw.svg]]"
+comments: true
 ---
 Or the k-nearest neighbors algorithm.
 ## Mental Model

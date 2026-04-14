@@ -8,6 +8,7 @@ tags:
   - course/orange-agentic-ai
   - domain/ai
 draft: false
+comments: true
 thumbnail: "[[LLM Memory 2026-04-12 18.01.32.excalidraw.svg]]"
 ---
 Finn was a human, just like u and me, but he was part of a lab experiment that turned him into an efficient assignment-solving agent,   

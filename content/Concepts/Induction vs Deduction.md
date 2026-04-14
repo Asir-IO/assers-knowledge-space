@@ -9,6 +9,7 @@ tags:
   - domain/math
 draft: false
 thumbnail: "[[Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg]]"
+comments: true
 ---
 ![[Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg]]
 

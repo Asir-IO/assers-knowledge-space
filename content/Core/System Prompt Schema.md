@@ -9,6 +9,7 @@ tags:
   - course/orange-agentic-ai
 draft: false
 thumbnail: "[[Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg]]"
+comments: true
 ---
 ## ITS COMPONENTS
 ### ROLE

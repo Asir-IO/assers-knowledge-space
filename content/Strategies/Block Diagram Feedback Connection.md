@@ -9,6 +9,7 @@ tags:
   - domain/systems
 draft: false
 thumbnail: "[[Feedback Loops 2026-01-22 00.58.26.excalidraw.svg]]"
+comments: true
 ---
 ## The Strategy
 ### Drawing it

@@ -30,13 +30,13 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",      
+          light: "#fafafa",      
           lightgray: "#e5e5e5",  // PRESERVED DEFAULT (Grey background for code/blocks)
           gray: "#b8b8b8",       // Your Secondary (Blue-ish Grey -> Graph lines & borders)
           darkgray: "#0b140d",   // Your Text (Body text)
           dark: "#0b140d",       // Your Text (Headers)
-          secondary: "hsl(132, 20%, 44%)",  // Your Primary (Green -> Links & Titles)
-          tertiary: "hsl(238, 20%, 64%)",   // Your Accent (Purple -> Hover states)
+          secondary: "hsl(131, 18%, 48%)",  // Your Primary (Green -> Links & Titles)
+          tertiary: "hsl(238, 12%, 50%)",   // Your Accent (Purple -> Hover states)
           highlight: "rgba(103, 176, 117, 0.15)", // Your Primary with transparency
           textHighlight: "#fff23688",
         },

@@ -8,6 +8,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg]]"
+comments: true
 ---
 ## What is the problem 
 U have a DataFrame and u need to select specific slices, maybe: 

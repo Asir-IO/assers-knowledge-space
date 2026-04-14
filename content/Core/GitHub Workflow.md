@@ -8,6 +8,7 @@ tags:
   - domain/
   - type/
 draft: true
+comments: true
 ---
 ![[GitHub Workflow 2026-03-15 16.53.57.excalidraw]]
 

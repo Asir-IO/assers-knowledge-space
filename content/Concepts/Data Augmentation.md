@@ -9,6 +9,7 @@ tags:
   - course/AI322
 draft: false
 thumbnail: "[[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg]]"
+comments: true
 ---
 ## What it is
 Say you have a dataset of pet drawings, but the "_cat_" class is severely under-represented. You've got plenty of examples showing what a frog and a dog look like, but only a _single_ example showing what a cat is.   

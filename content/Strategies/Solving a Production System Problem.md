@@ -9,6 +9,7 @@ tags:
   - domain/math
 draft: false
 thumbnail: "[[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg]]"
+comments: true
 ---
 ## What is the problem
 You'll be given:

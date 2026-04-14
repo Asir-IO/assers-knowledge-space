@@ -9,6 +9,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg]]"
+comments: true
 ---
 ![[Human vs Rational AI 2026-04-03 15.34.45.excalidraw.svg]]
 

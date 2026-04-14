@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/math
 draft: false
+comments: true
 ---
 ## Mental Model
 

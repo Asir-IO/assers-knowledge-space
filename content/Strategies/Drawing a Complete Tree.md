@@ -9,6 +9,7 @@ tags:
   - domain/cs-theory
 draft: false
 thumbnail: "[[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg]]"
+comments: true
 ---
 ## What is the problem
 You want to draw a complete `n-ary` tree of `h` levels, but you keep running out of horizontal space for your nodes as you add deeper levels.   

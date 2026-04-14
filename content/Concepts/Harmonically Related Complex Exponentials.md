@@ -9,6 +9,7 @@ tags:
   - domain/systems
 draft: false
 thumbnail: "[[Harmonically Related Periodic Complex Exponentials 2026-01-18 17.44.54.excalidraw.svg]]"
+comments: true
 ---
 Or actually, Harmonically related Signal building *blocks*.
 

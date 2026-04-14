@@ -9,6 +9,7 @@ tags:
   - domain/math
 draft: false
 thumbnail: "[[Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg]]"
+comments: true
 ---
 # What is the problem
 You'll be given:

@@ -8,6 +8,7 @@ tags:
   - domain/
   - type/
 draft: true
+comments: true
 ---
 ![[Supervised Project 2026-03-15 21.58.06.excalidraw]]
 ---

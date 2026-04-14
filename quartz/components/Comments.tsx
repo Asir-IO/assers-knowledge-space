@@ -28,14 +28,14 @@ function boolToStringBool(b: boolean): string {
 export default ((opts: Options) => {
   const Comments: QuartzComponent = ({ displayClass, fileData, cfg }: QuartzComponentProps) => {
     // check if comments should be displayed according to frontmatter
-    const disableComment: boolean =
-      typeof fileData.frontmatter?.comments !== "undefined" &&
-      (!fileData.frontmatter?.comments || fileData.frontmatter?.comments === "false")
-    if (disableComment) {
+    const enableComments: boolean =
+      fileData.frontmatter?.comments === true
+    if (!enableComments) {
       return <></>
     }
 
     return (
+      <>
       <div
         class={classNames(displayClass, "giscus")}
         data-repo={opts.options.repo}
@@ -52,7 +52,10 @@ export default ((opts: Options) => {
           opts.options.themeUrl ?? `https://${cfg.baseUrl ?? "example.com"}/static/giscus`
         }
         data-lang={opts.options.lang ?? "en"}
-      ></div>
+      >
+      </div>
+      <hr />
+      </>
     )
   }
 

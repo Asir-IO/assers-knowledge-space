@@ -8,6 +8,7 @@ tags:
   - type/
   - domain/ai
 draft: false
+comments: true
 ---
 ## Datasets we Picked
 #### (Categorical) Mushroom

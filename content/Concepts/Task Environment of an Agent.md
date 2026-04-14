@@ -9,6 +9,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail:
+comments: true
 ---
 # Its Pillars
 ![[Task Environment of an Agent 2026-04-03 18.07.50.excalidraw]]   

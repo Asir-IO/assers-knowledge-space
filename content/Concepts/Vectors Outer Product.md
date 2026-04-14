@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/math
 draft: false
+comments: true
 ---
 ## Mental Model
 The *outer product* is a mathematical operation that a column vector performs on a row vector.    

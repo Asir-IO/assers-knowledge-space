@@ -9,6 +9,7 @@ tags:
   - domain/systems
 draft: false
 thumbnail: "[[Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg]]"
+comments: true
 ---
 ## The Diagram
 ![[Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg]]

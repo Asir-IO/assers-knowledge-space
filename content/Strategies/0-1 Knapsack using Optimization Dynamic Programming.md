@@ -8,6 +8,7 @@ tags:
   - course/CS321
   - domain/cs-theory
 draft: true
+comments: true
 ---
 ## What is the problem
 You'll be given a list of itms with their corresponding weight and profit, and a weight-capacity value.

@@ -9,6 +9,7 @@ tags:
   - course/AI332
 draft: false
 thumbnail: "[[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]"
+comments: true
 ---
 # Mental Model
 We have a bunch of events (say, **B**urglary, **A**larm, and **J**ohn Calling), we've run experiments and noted the probability of each event occurring.    

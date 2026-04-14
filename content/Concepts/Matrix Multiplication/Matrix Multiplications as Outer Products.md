@@ -9,6 +9,7 @@ tags:
   - type/concept
 draft: false
 thumbnail: "[[Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg]]"
+comments: true
 ---
 ## What is the problem
 You have a matrix $A$ that u view as a columns matrix, and want to multiply it by a rows matrix $B^T$.    

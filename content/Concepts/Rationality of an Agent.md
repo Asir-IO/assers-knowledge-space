@@ -9,6 +9,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail:
+comments: true
 ---
 ## Its Pillars
 ![[Rationality of an Agent 2026-04-03 17.31.41.excalidraw]]

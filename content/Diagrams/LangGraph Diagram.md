@@ -9,6 +9,7 @@ tags:
   - course/orange-agentic-ai
 draft: false
 thumbnail: "[[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg]]"
+comments: true
 ---
 ## Without Memory
 ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg]]

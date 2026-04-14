@@ -9,6 +9,7 @@ tags:
   - domain/
 draft: true
 thumbnail:
+comments: true
 ---
 Agents communicate for different reasons. u might have an agent that,
 - prefers to split its given task into sub-tasks, delegate it to agents it can trust, 

@@ -9,6 +9,7 @@ tags:
   - course/orange-agentic-ai
 draft: false
 thumbnail: "[[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg]]"
+comments: true
 ---
 ## It's Architecture
 ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg]]

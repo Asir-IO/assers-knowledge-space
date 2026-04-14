@@ -8,6 +8,7 @@ tags:
   - domain/cs-theory
   - course/CS321
 draft: true
+comments: true
 ---
 ## Intuition
 At each step, a greedy algorithm has to choose between either selecting/removing an item or not. It chooses to make an **immediate** local decision and:

@@ -10,6 +10,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg]]"
+comments: true
 ---
 # What is the problem
 You'll be given,

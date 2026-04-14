@@ -8,6 +8,7 @@ tags:
   - course/
   - domain/math
 draft: false
+comments: true
 ---
 ## Mental Model
 Given that A is a Columns matrix and B is a Columns matrix,    

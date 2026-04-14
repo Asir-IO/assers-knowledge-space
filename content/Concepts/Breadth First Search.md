@@ -11,6 +11,7 @@ tags:
   - course/AI313
 draft: false
 thumbnail: "[[BFS and DFS 2026-03-31 19.11.51.excalidraw.svg]]"
+comments: true
 ---
 # Mental Model 
 Imagine you have a [[Drawing a Complete Tree|tree]] and you want to visit every node *level-by-level*. Naively, you might try to do the following,   

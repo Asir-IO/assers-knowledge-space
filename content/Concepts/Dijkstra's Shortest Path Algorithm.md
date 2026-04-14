@@ -8,6 +8,7 @@ tags:
   - course/CS321
   - domain/cs-theory
 draft: true
+comments: true
 ---
 ## Intuition
 ...

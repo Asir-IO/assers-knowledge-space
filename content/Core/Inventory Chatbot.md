@@ -8,6 +8,7 @@ tags:
   - domain/ai
   - course/orange-agentic-ai
 draft: false
+comments: true
 ---
 ## Operation Diagram
 

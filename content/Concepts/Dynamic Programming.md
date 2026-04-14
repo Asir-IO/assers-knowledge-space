@@ -8,6 +8,7 @@ tags:
   - course/CS321
   - domain/cs-theory
 draft: true
+comments: true
 ---
 ## Intuition
 At each step, a DP algorithm has to choose between either picking an item or not. It chooses to **not make** an immediate local decision. Instead, it spawns parallel timelines to simulate both possibilities: 

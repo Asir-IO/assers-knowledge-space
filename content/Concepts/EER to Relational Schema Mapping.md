@@ -9,6 +9,7 @@ tags:
   - domain/systems
 draft: false
 thumbnail:
+comments: true
 ---
 # Types of Mapping
 ![[EER to Relational Schema Mapping 2026-04-10 21.34.59.excalidraw.svg]]   

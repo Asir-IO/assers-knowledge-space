@@ -9,6 +9,7 @@ tags:
   - domain/
 draft: false
 thumbnail:
+comments: true
 ---
 # Mental Model
 You've got visual data (like an image) that u want a neural network to extract features from, but u don't want to use a standard Artificial Neural Network.   

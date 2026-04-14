@@ -9,6 +9,7 @@ tags:
   - course/
 draft: false
 thumbnail: "[[Bias in Machine Learning 2026-02-17 21.41.17.excalidraw.svg]]"
+comments: true
 ---
 ## What is it
 Bias isn't a bad thing, it's the assumptions that follow picking a hypothesis space (type) for a machine learning model, it's what minimizes the model's randomness after training.
