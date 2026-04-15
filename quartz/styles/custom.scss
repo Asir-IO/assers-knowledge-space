@@ -162,6 +162,7 @@
 }
 
 /* Google Symbols Setup (Outlined Version) */
+/* ex: :g-home: */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined' !important; 
   font-weight: normal;
@@ -184,6 +185,14 @@
   font-size: 1.2em;      
   vertical-align: -0.25em; 
   margin-right: 0.1em;   
+  color: inherit;
+}
+/* Font Awesome Icons */
+/* ex: :fa-solid-home: or :fab-github: */
+.custom-fa-symbol {
+  font-size: 0.9em;
+  vertical-align: -0.1em;
+  margin-right: 0.15em;
   color: inherit;
 }
 

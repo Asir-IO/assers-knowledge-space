@@ -1,7 +1,6 @@
 ---
 isNote: false
 title: Asser's Knowledge Space
-layout: page
 displayTitle: Welcome to my Place =)
 ---
 ## What's this

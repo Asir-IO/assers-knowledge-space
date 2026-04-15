@@ -1,5 +1,5 @@
 import { QuartzConfig } from "./quartz/cfg"
-import { GoogleSymbols } from "./quartz/plugins/transformers/googlesymbols"
+import { CustomIcons } from "./quartz/plugins/transformers/customicons"
 import * as Plugin from "./quartz/plugins"
 
 /**
@@ -56,7 +56,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
-      GoogleSymbols(),
+      CustomIcons(),
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
