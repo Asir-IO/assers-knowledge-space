@@ -10,8 +10,11 @@ tags:
 draft: false
 comments: true
 ---
-> [!quote] Dr. Gilbert Strang
+&nbsp;
+> [!quote] 
 > The wonderful thing about matrix multiplication is you can do it alot of ways, it comes out the same every way, and each way tells you something.
+
+---
 ## Mental Model
 If $A$ is a matrix, what do u think it is?    
 
@@ -75,3 +78,5 @@ $A * B =$ Columns matrix \* Rows matrix $= \begin{bmatrix} \uparrow & \uparrow \
 ---
 ## Connections
 -  [[]]
+
+%%add an example%%

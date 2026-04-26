@@ -97,11 +97,62 @@
 
 
 /* grey grp */
-  &[data-callout="quote"] {
+&[data-callout="quote"] {
   --color: var(--secondary);
-  --border: var(--lightgray);
-  --callout-icon: var(--callout-icon-quote);
-  --bg: #80808015;
+  --border: transparent; 
+  --bg: transparent; 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 85%; 
+
+  .callout-icon {
+    display: none;
+  }
+
+  /* The Quote */
+  .callout-content {
+    order: 1;
+    font-family: var(--serif); 
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 0;
+    width: 100%;
+    p {
+      margin-bottom: 0; 
+    }
+  }
+
+  /* The Author */
+  .callout-title {
+    order: 2;
+    margin-top: 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .callout-title-inner {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: var(--gray); 
+      
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem; 
+
+      /* dashes */
+      &::before,
+      &::after {
+        content: "—";
+      }
+    }
+  }
 }
 
   &.is-collapsed {

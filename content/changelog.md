@@ -22,6 +22,11 @@ To type the syntax without it being converted, I can escape it with a `\`.
 - `quartz\styles\custom.scss`
 - `quartz\plugins\transformers\customicons.ts`
 - `quartz.config.ts`
+### Could be added later
+The ability to specify the size of an icon, instead of having it hardcoded.   
+- e.g., `\:g-waves|20:` => renders as a size 20.
+- **Technicalities**   
+	20 of what exactly? (what is the unit)
 ---
 # Timeline Rendering
 Now I can use this obsidian [timeline callout syntax](https://forum.obsidian.md/t/css-snippet-timeline-as-callout/93652) on the website.
@@ -59,4 +64,4 @@ The switching basically fades between the two.
 - `quartz\components\Footer.tsx`
 ---
 # Tab title does NOT need to match a Note's title
-A note can have a tab title that's different from its title, simply by populating its `displayTitle` property.
+A note can have a tab title that's different from its title, simply by populating its `tabTitle` property.

@@ -3,10 +3,10 @@ import { classNames } from "../util/lang"
 
 const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
   const title = fileData.frontmatter?.title
-  const displayTitle = fileData.frontmatter?.displayTitle
+  const tabTitle = fileData.frontmatter?.tabTitle
 
   if (title) {
-    return <h1 class={classNames(displayClass, "article-title")}>{displayTitle || title}</h1>
+    return <h1 class={classNames(displayClass, "article-title")}>{tabTitle || title}</h1>
   } else {
     return null
   }

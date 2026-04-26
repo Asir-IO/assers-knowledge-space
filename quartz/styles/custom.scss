@@ -219,6 +219,30 @@
   pointer-events: none;
 }
 
+/* paper texture */
+[saved-theme="light"] body {
+  position: relative;
+}
+
+[saved-theme="light"] body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-image: url('/static/light-bg.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  mix-blend-mode: multiply; 
+  opacity: 0.6;
+
+  z-index: 9999;
+  pointer-events: none;
+}
+
 /* --- svg switch based on theme --- */
 /* to place both versions on top of one another */
 .svg-theme-wrapper {
