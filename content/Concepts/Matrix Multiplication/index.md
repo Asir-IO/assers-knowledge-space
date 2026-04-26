@@ -10,8 +10,8 @@ tags:
 draft: false
 comments: true
 ---
-&nbsp;
-> [!quote] 
+---
+> [!quote] Dr. Gilbert Strang
 > The wonderful thing about matrix multiplication is you can do it alot of ways, it comes out the same every way, and each way tells you something.
 
 ---

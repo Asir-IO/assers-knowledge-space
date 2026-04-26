@@ -58,4 +58,5 @@ Do this for every neuron within every layer...
 
 ---
 ## Connections
--  [[]]
+-  [[Backpropagation in a Neural Network]]
+- [[Neural Network Diagram]]

@@ -1,5 +1,5 @@
 ---
-isNote: true
+isNote: false
 title: Supervised Project Report
 date: 2026-04-25
 tags:

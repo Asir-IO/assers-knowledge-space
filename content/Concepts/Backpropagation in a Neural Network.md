@@ -46,4 +46,5 @@ $\Delta w$ contains the weight update matrix of every layer.
 
 ---
 ## Connections
--  [[]]
+-  [[Solving a Backpropagation Problem]]
+- [[Neural Network Diagram]]

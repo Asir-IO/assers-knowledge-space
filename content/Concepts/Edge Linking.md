@@ -30,7 +30,9 @@ This was the result,
 Remember the phase feature map you computed alongside the magnitude? this shows the direction the edge is generally moving in   
 ![[Edge Linking 2026-04-21 21.56.42.excalidraw.svg]]   
 You can use it to bring back the outline points that got lost.   
-![[Edge Linking 2026-04-21 22.04.55.excalidraw.svg]]
+![[Edge Linking 2026-04-21 22.04.55.excalidraw.svg]]   
+... now the outline becomes,   
+![[Edge Linking 4.webp]]
 # How it's done
 ...
 

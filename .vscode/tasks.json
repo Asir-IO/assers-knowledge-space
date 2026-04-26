@@ -22,16 +22,21 @@
             "problemMatcher": []
         },
         {
-        "label": "quartz sync",
-        "type": "shell",
-        "command": "$msg=\"${input:commitMessage}\"; if ([string]::IsNullOrWhiteSpace($msg)) { npx quartz sync } else { npx quartz sync -m \"$msg\" }",
-        "group": "build",
-        "presentation": {
-            "reveal": "always",
-            "panel": "shared",
-            "clear": true
-        },
-        "problemMatcher": []
+            "label": "quartz sync",
+            "type": "shell",
+            "command": "if ([string]::IsNullOrWhiteSpace($env:QUARTZ_MSG)) { npx quartz sync } else { npx quartz sync -m `\"$env:QUARTZ_MSG`\" }",
+            "options": {
+                "env": {
+                    "QUARTZ_MSG": "${input:commitMessage}"
+                }
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
         }
     ]
 }
