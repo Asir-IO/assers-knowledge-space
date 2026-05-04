@@ -30,7 +30,7 @@ This is why we need to *fuzzify* the crisp input variables first.
 It also is usually the case that we expect a crisp value as an output (e.g., we're not interested in how <mark style="background: #D2B3FFA6;">High</mark> or <mark style="background: #D2B3FFA6;">Low</mark> the spending is, we want to know how *much* it is).   
 In which case, we *de-fuzzify* the output fuzzy variables into a crisp one.
 
-This diagram shows the entire <mark style="background: #FFF3A3A6;">process</mark>.   
+This diagram shows the entire <mark style="background: #FFB86CA6;">process</mark>.   
 ![[Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg]]
 
 ---
@@ -58,7 +58,7 @@ This way, the only variable that determines the entire shape is its "peak-wise" 
 ![[Fuzzy Logic 2026-05-02 00.38.32.excalidraw.svg]]
 %%include an applet here that shows how the shape stretches and shrinks as the distance changes%%
 %%explain how this simplification usually is good enough%%
-... every linguistic variable has its own "peak-wise distance", denoted as $b^{(i)}$ for the $i$-th variable.   
+... every crisp *input* variable has its own "peak-wise distance", denoted as $b^{(i)}$ for the $i$-th variable.   
 ![[Fuzzy Logic 2026-05-02 01.11.39.excalidraw.svg]]   
 The System uses a neural network to search for its optimal value, within a window that *u specify*   
 $$b^{(i)}_L \le b^{(i)} \le b^{(i)}_U$$
