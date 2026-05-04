@@ -60,8 +60,11 @@ This way, the only variable that determines the entire shape is its "peak-wise" 
 %%explain how this simplification usually is good enough%%
 ... every crisp *input* variable has its own "peak-wise distance", denoted as $b^{(i)}$ for the $i$-th variable.   
 ![[Fuzzy Logic 2026-05-02 01.11.39.excalidraw.svg]]   
-The System uses a neural network to search for its optimal value, within a window that *u specify*   
-$$b^{(i)}_L \le b^{(i)} \le b^{(i)}_U$$
+The System uses a neural network to search for its optimal value, by *interpolating* between values within a window that *u specify*.   
+$$
+b^{(i)} = n \cdot (b^{(i)}_{max} - b^{(i)}_{min}) + b^{(i)}_{min}
+$$   
+![[Neuro-Fuzzy Systems 2026-05-05 02.53.40.excalidraw.svg]]
 
 ---
 # How to combine features
