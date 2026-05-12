@@ -7,10 +7,11 @@ tags:
   - course/
   - domain/
 draft: false
-thumbnail:
+thumbnail: "[[How to Read an Article 2026-05-12 15.53.32.excalidraw.svg]]"
 comments: true
 related-notes:
 ---
+%%![[How to Read an Article 2026-05-12 15.53.32.excalidraw]]%%
 Reading an article while scrolling "passively" and maybe taking a note on paper or whatsapp every now and then was what I always did, but it dawned on me yesterday that the process doesn't have to be like this.   
 
 Taking notes on what I read shouldn't be a secondary consideration, it should be a natural reflex while reading, and taking notes of an article outside it (on paper or on whatsapp or whatever) increases friction greatly.   
