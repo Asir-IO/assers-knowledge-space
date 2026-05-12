@@ -17,13 +17,13 @@ related-notes:
 ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg]]
 
 ---
-# Different Interpretations of what an FNN is
+# Different Interpretations of what a FNN is
 ## [[Neural Networks as an Input Refinery|An Input Refinery]]
 
 ## [[Neural Networks as a Squiggle Fitter|A Squiggle Fitter]]
 
 ---
-# Variations of an FNN
+# Variations of a FNN
 ## [[Convolutional Neural Networks|Convolutional Neural Networks]]
 
 ## [[Recurrent Neural Networks|Recurrent Neural Networks]]
