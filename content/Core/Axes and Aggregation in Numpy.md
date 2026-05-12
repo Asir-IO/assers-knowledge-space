@@ -9,6 +9,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Axis and Aggregation 2026-04-21 19.08.20.excalidraw.svg]]"
+related-notes:
 ---
 An array with 2 axes can be visualized in the following way,   
 ![[Axis and Aggregation 2026-04-21 19.00.37.excalidraw.svg]]
@@ -38,5 +39,11 @@ After aggregating,
 ![[Axis and Aggregation 2026-04-21 19.11.42.excalidraw.svg]]   
 
 ---
-# Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

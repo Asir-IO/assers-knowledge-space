@@ -9,6 +9,8 @@ tags:
   - course/orange-agentic-ai
 draft: false
 comments: true
+related-notes:
+  -  "[[System Prompt Schema]]"
 ---
 ## Operation Diagram
 
@@ -40,5 +42,12 @@ Here is the SQL Server DDL Data Schema:
 {schema_ddl}
 
 ---
-## Connections
--  [[System Prompt Schema]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail                                                                                                                                  | Note                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
+| ![[Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg\|Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg\|120]] | [[System Prompt Schema]] |
+
+<!-- SerializedQuery END -->

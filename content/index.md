@@ -37,7 +37,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
       <a href="/Concepts/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Concepts</a>
-      <span style="font-size: 0.9em; opacity: 0.7;">Concepts that I successfully found a visual form for live here.</span>
+      <span style="font-size: 0.9em; opacity: 0.7;">Concepts that I successfully find a visual form for live here.</span>
     </div>
   </div>
 
@@ -47,7 +47,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
     </div>
     <div style="display: flex; flex-direction: column; line-height: 1.4; align-items: flex-start;">
       <a href="/Strategies/index" class="internal" style="font-weight: bold; font-size: 1.1em;">Problem Strategies</a>
-      <span style="font-size: 0.9em; opacity: 0.7;">I placed here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
+      <span style="font-size: 0.9em; opacity: 0.7;">I place here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
     </div>
   </div>
 
@@ -67,13 +67,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                                                                                                      | Note                                                                                   | Added          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------- |
-| ![[Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|120]]                             | [[Neuro-Fuzzy Systems]]                               | May 02, 2026   |
-| ![[Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|120]]                                           | [[Edge Linking]]                                             | April 21, 2026 |
-| ![[Training vs RAG 2026-04-13 21.46.30.excalidraw.svg\|Training vs RAG 2026-04-13 21.46.30.excalidraw.svg\|120]]                                     | [[Retrieval Augmented Generation]]         | April 13, 2026 |
-| ![[LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|120]]                                               | [[Agentic Memory]]                                         | April 12, 2026 |
-| ![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|120]] | [[Solving a Backpropagation Problem]] | April 09, 2026 |
+| Thumbnail                                                                                                                          | Note                                                                           | Added          |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------- |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                            | [[How to Read an Article]]                | May 12, 2026   |
+| ![[Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|120]] | [[Neuro-Fuzzy Systems]]                       | May 02, 2026   |
+| ![[Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|120]]               | [[Edge Linking]]                                     | April 21, 2026 |
+| ![[Training vs RAG 2026-04-13 21.46.30.excalidraw.svg\|Training vs RAG 2026-04-13 21.46.30.excalidraw.svg\|120]]         | [[Retrieval Augmented Generation]] | April 13, 2026 |
+| ![[LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|120]]                   | [[Agentic Memory]]                                 | April 12, 2026 |
 
 <!-- SerializedQuery END -->
 

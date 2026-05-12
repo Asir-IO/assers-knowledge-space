@@ -11,6 +11,7 @@ tags:
 draft: false
 thumbnail: "[[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What is the problem
 You'll be given an input 2D image and a 2D filter and be asked to show the resulting image after passing the filter over the 2D image (computing the convolution between the two).   
@@ -46,5 +47,11 @@ The following animation shows how the rest of the center pixel values are comput
 ![[Performing 2D Convolution 2026-03-30 00.11.08.excalidraw.mp4]]
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

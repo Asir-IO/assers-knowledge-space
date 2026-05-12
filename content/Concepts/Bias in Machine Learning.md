@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Bias in Machine Learning 2026-02-17 21.41.17.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What is it
 Bias isn't a bad thing, it's the assumptions that follow picking a hypothesis space (type) for a machine learning model, it's what minimizes the model's randomness after training.
@@ -37,5 +38,11 @@ Occurs when u hardly put any thought into picking a fitting hypothesis space to 
 ![[Bias in Machine Learning 2026-02-17 21.41.17.excalidraw.svg]]
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

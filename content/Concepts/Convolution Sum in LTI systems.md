@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Convolution Sum 2026-01-24 23.41.52.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## Mental Model
 You've got a linear system (that given an input signal, spits out an output one), but u don't have an explicit formula to compute the output from the input, the system is like a black box to u.
@@ -68,5 +69,11 @@ An LTI system's total output is its reaction to _each_ individual input sample, 
 This output is obtained by computing the convolution sum between its impulse response and input signal.
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

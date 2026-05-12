@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Harmonically Related Periodic Complex Exponentials 2026-01-18 17.44.54.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 Or actually, Harmonically related Signal building *blocks*.
 
@@ -73,7 +74,7 @@ You can use this tool to actually *"see"* what a signal that you've been solving
 Have fun. 
 
 <div style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 20px; overflow: hidden;">
-    <iframe src="/static/tools/fourier.html" style="width: 100%; aspect-ratio: 1 / 1.2; border: none; display: block;"></iframe>
+    <iframe src="/static/apps/fourier.html" style="width: 100%; aspect-ratio: 1 / 1.2; border: none; display: block;"></iframe>
 </div>
  
  
@@ -87,5 +88,12 @@ Have fun.
 - the [[#^kth-def|kth harmonic ]] of fund freq $\omega$ 
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->
+

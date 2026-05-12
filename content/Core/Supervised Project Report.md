@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail:
 comments: true
+related-notes:
 ---
 # Phase 1
 ## Dataset preparation

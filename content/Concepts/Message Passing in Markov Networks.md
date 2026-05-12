@@ -12,6 +12,7 @@ aliases:
   - concepts/probabillity-calculation-in-markov-networks
 thumbnail: "[[Message Passing in Markov Networks 2026-04-05 21.38.13.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## Mental Model
 Fully connected nodes in a network (cliques) have their own atomic compatibility table.   
@@ -73,5 +74,11 @@ $$
 Z = \sum_{B=0, 1} Z_B = \sum_{B=0, 1}m_{{\color{skyblue}A}\rightarrow B}(B) * m_{{\color{mediumpurple}D, E}\rightarrow B}(B)
 $$
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

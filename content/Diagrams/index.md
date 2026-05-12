@@ -2,6 +2,7 @@
 isNote: false
 title: Diagrams
 comments: false
+related-notes:
 ---
 *(I still haven't grouped them)*
 

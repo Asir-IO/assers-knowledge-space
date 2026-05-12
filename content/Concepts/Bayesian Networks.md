@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 # Mental Model
 We have a bunch of events (say, **B**urglary, **A**larm, and **J**ohn Calling), we've run experiments and noted the probability of each event occurring.    
@@ -221,8 +222,15 @@ it goes up and down... the computations is going up and down... this movement sh
 %%
 
 ---
-# Connections
-- []
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->
+
 ---
 # After-Thoughts
 I've spent hours upon hours, days upon days, working on this. It's exhausting.    

@@ -10,6 +10,8 @@ tags:
 draft: false
 thumbnail: "[[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg]]"
 comments: true
+related-notes:
+-  "[[Insertion in a RB Tree]]"
 ---
 ## What is the problem
 You'll be given a RB Tree and asked to delete a set of (to-be-deleted) nodes from it.
@@ -35,5 +37,13 @@ Going through each to-be-deleted node, u should:
 ![[Deletion in a RB Tree 2026-01-13 18.43.06.excalidraw.svg|100%]]
 
 ---
-## Connections
--  [[Insertion in a RB Tree]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail                                                                                                                                | Note                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|120]] | [[Insertion in a RB Tree]] |
+
+<!-- SerializedQuery END -->
+

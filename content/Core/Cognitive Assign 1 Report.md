@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail:
 comments: true
+related-notes:
 ---
 # Gaussian Naive Bayes
 ## Data Preprocessing

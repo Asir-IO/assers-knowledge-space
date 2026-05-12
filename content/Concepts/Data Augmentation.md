@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What it is
 Say you have a dataset of pet drawings, but the "_cat_" class is severely under-represented. You've got plenty of examples showing what a frog and a dog look like, but only a _single_ example showing what a cat is.   
@@ -56,5 +57,11 @@ Apart from balancing a dataset, it can be used as a:
 - **Generalization Booster**   
 	Makes a model less sensitive to real-world camera noise, lighting changes, and object positioning.
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

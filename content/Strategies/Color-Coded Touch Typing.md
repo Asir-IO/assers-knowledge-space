@@ -9,6 +9,7 @@ tags:
 draft: false
 thumbnail: "[[Keys Map 2026-02-07 14.25.06.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What is the problem
 Getting into touch typing can be frustrating because the cognitive load is too high. You have to map 40+ keys to 8 fingers. It's easy to remember *which hand* to use for a key, but *which finger* to use in that hand? that's much harder.
@@ -52,5 +53,12 @@ I'll demonstrate this on the final left-hand visual.
 ![[Keys Map 2026-01-29 16.39.15.excalidraw.svg]]
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->
+

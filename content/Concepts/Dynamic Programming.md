@@ -9,6 +9,7 @@ tags:
   - domain/cs-theory
 draft: true
 comments: true
+related-notes:
 ---
 ## Intuition
 At each step, a DP algorithm has to choose between either picking an item or not. It chooses to **not make** an immediate local decision. Instead, it spawns parallel timelines to simulate both possibilities: 
@@ -25,5 +26,11 @@ It records both outcomes and eventually decides which decision was the better on
 
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

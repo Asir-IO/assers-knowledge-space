@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## The Trigger
 The formal definition of how a *tabular* DP algorithm operates is clear enough, but what if there is a visual way to quickly abstract it?
@@ -66,5 +67,11 @@ $$
 ![[Abstracting how a tabular DP algorithm operates 2026-01-26 13.57.09.excalidraw.svg]]
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

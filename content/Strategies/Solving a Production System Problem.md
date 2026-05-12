@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What is the problem
 You'll be given:
@@ -65,5 +66,11 @@ The visual form of this process is the exact horizontal mirror image of the forw
 ![[Solving a Production System Problem 2026-04-03 20.55.21.excalidraw.svg]]
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

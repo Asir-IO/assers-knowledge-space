@@ -2,8 +2,9 @@
 isNote: false
 title: Problem Strategies
 comments: false
+related-notes:
 ---
-*(I still haven't grouped them)*
+I place here Strategies that (usually) I devised to solve problems.
 
 ---
 ## General View

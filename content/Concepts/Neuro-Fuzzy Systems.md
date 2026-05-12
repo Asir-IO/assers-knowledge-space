@@ -9,6 +9,8 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg]]"
+comments: true
+related-notes:
 ---
 # Why use it
 A regular neural network is quite capable of learning i/o mappings, but you have no control over the features that it learns per hidden layer.   
@@ -79,5 +81,11 @@ If a fuzzy variable implies another one (e.g., Tall implies Games), the conseque
 ...
 
 ---
-# Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

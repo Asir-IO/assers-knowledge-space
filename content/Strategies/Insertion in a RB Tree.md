@@ -10,6 +10,8 @@ tags:
 draft: false
 thumbnail: "[[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg]]"
 comments: true
+related-notes:
+-  "[[Deletion in a RB Tree]]"
 ---
 ## What is the problem
 You'll either:
@@ -36,5 +38,13 @@ In both cases, going through each given node, u should:
 ![[Insertion in a RB Tree 2026-01-12 15.18.35.excalidraw.svg|100%]]
 
 ---
-## Connections
--  [[Deletion in a RB Tree]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail                                                                                                                              | Note                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| ![[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|120]] | [[Deletion in a RB Tree]] |
+
+<!-- SerializedQuery END -->
+

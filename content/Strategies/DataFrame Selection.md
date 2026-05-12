@@ -9,6 +9,8 @@ tags:
 draft: false
 thumbnail: "[[Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg]]"
 comments: true
+related-notes:
+  - "[[DataFrames]]"
 ---
 ## What is the problem 
 U have a DataFrame and u need to select specific slices, maybe: 
@@ -18,7 +20,7 @@ U have a DataFrame and u need to select specific slices, maybe:
 ## Before you begin
 *Recall the structure of a DataFrame*
 
-![[DataFrame Diagram#The Diagram]]
+![[DataFrames#The Diagram]]
 
 *I'll demonstrate selection on the example below*
 
@@ -120,5 +122,14 @@ rows = df[selector]
 > ```
 
 ---
-## Connections
--  [[DataFrame Diagram]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail                                                                                                                      | Note                                          |
+| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
+| ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|120]] | [[DataFrames\|DataFrame Diagram]] |
+
+<!-- SerializedQuery END -->
+
+

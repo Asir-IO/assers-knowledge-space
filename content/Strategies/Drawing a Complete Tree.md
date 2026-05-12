@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Drawing a Complete Tree Quickly 2026-03-30 20.25.27.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What is the problem
 You want to draw a complete `n-ary` tree of `h` levels, but you keep running out of horizontal space for your nodes as you add deeper levels.   
@@ -26,5 +27,11 @@ Spoiler alert: you avoid this completely by drawing the tree from the ground up.
 	![[Drawing a Complete Tree Quickly 2026-03-30 20.40.10.excalidraw.mp4]]
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

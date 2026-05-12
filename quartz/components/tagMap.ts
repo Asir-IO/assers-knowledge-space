@@ -1,8 +1,8 @@
 // custsom tag page routes
 export const globalTagMap: Record<string, string> = {
-    "type/diagram": "diagrams",
-    "type/concept": "concepts",
+    "type/concept": "diagrams",
     "type/strategy": "strategies",
+    "type/workflow": "workflows",
 }
 
 export function getTagRoute(tag: string): string {

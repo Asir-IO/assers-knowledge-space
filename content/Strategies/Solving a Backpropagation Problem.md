@@ -11,6 +11,10 @@ tags:
 draft: false
 thumbnail: "[[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg]]"
 comments: true
+related-notes:
+  - "[[Backpropagation in a Neural Network]]"
+  - "[[Neural Networks]]"
+  - "[[Signals Book Indexes]]"
 ---
 # What is the problem
 You'll be given,
@@ -57,6 +61,14 @@ Do this for every neuron within every layer...
 	![[Solving a Backpropagation Problem 2026-04-10 00.22.33.excalidraw.svg]]
 
 ---
-## Connections
--  [[Backpropagation in a Neural Network]]
-- [[Neural Network Diagram]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note", choice( file.etags AND length(filter(file.etags, (t) => startswith(string(t), "#type/") AND length(string(t)) > 6)) > 0, join(map(filter(file.etags, (t) => startswith(string(t), "#type/") AND length(string(t)) > 6), (t) => upper(substring(replace(string(t), "#type/", ""), 0, 1)) + substring(replace(string(t), "#type/", ""), 1, 100) ), ", "), "N/A" ) AS "Type" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note", choice( file.etags AND length(filter(file.etags, (t) => startswith(string(t), "#type/") AND length(string(t)) > 6)) > 0, join(map(filter(file.etags, (t) => startswith(string(t), "#type/") AND length(string(t)) > 6), (t) => upper(substring(replace(string(t), "#type/", ""), 0, 1)) + substring(replace(string(t), "#type/", ""), 1, 100) ), ", "), "N/A" ) AS "Type" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail                                                                                                                                | Note                                                                                     | Type    |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------- |
+| ![[Backprobagation 2026-01-25 19.40.03.excalidraw.svg\|Backprobagation 2026-01-25 19.40.03.excalidraw.svg\|120]]               | [[Backpropagation in a Neural Network]] | Concept |
+| ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|120]] | [[Neural Networks\|Neural Network Diagram]]                                  | Diagram |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                  | [[Signals Book Indexes]]                                   | N/A     |
+
+<!-- SerializedQuery END -->

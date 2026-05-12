@@ -9,6 +9,7 @@ tags:
   - domain/math
 draft: false
 comments: true
+related-notes:
 ---
 ---
 > [!quote] Dr. Gilbert Strang
@@ -76,7 +77,14 @@ $A * B =$ Columns matrix \* Rows matrix $= \begin{bmatrix} \uparrow & \uparrow \
 > Every row vector in $A$ multiplies $B$.
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->
+
 
 %%add an example%%

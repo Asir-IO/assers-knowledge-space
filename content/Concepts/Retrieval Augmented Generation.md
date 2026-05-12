@@ -10,6 +10,7 @@ tags:
 draft: false
 thumbnail: "[[Training vs RAG 2026-04-13 21.46.30.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 (*this is quite the simplification*)... but a model *generally* relies only on its learnt parameters and their resulting *assumptions* when operating.   
 ![[Training vs RAG 2026-04-13 21.31.19.excalidraw.svg]]   
@@ -40,5 +41,11 @@ All of these assumptions will be updated if I simply gave Gemini a sample of wha
 ![[Training vs RAG 2026-04-13 22.46.25.excalidraw.svg]]
 
 ---
-# Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

@@ -9,6 +9,7 @@ tags:
   - domain/
 draft: true
 thumbnail:
+related-notes:
 ---
 ### What Meta-Heuristic Search is
 In standard heuristic search, you need to find the *optimal path* from a starting state to a goal one; Because the path itself matters, it naturally,
@@ -38,5 +39,11 @@ It moves towards the optimal state by relying solely on the heuristic value of t
 ...
 
 ---
-# Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

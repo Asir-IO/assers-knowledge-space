@@ -9,6 +9,7 @@ tags:
   - domain/ai
 draft: false
 thumbnail: "[[Edge Linking 2026-04-21 22.04.55.excalidraw.svg]]"
+related-notes:
 ---
 ![[Edge Linking 1.webp]]   
 You took an image of a someone and want to extract his outline.   
@@ -37,5 +38,11 @@ You can use it to bring back the outline points that got lost.
 ...
 
 ---
-# Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->

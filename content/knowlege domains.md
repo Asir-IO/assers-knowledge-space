@@ -18,7 +18,7 @@ I've grouped here notes that belong to the same domain.
 | ![[Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg\|Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg\|120]] | [[Abstracting a Tabular DP algorithm]] |
 | ![[Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|Deletion in a RB Tree 2026-01-13 18.37.35.excalidraw.svg\|120]]                                                     | [[Deletion in a RB Tree]]                     |
 | ![[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg\|120]]                                                   | [[Insertion in a RB Tree]]                   |
-| ![[Linked List Diagram 2026-01-12 00.22.16.excalidraw.svg\|100%\|120]]                                                                                                           | [[Linked List Diagram]]                           |
+| ![[Linked List Diagram 2026-01-12 00.22.16.excalidraw.svg\|100%\|120]]                                                                                                           | [[Linked Lists]]                                         |
 
 <!-- SerializedQuery END -->
 ## Systems & Architecture
@@ -28,8 +28,8 @@ I've grouped here notes that belong to the same domain.
 
 | Thumbnail                                                                                                                                                                                        | Note                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| ![[Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg\|Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg\|120]]                                                 | [[Single-Cycle Uarch Diagram]]                               |
-| ![[Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|120]]                                                   | [[Multi-Cycle Uarch Diagram]]                                 |
+| ![[Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|Multi-Cycle Uarch Diagram 2026-01-25 19.02.00.excalidraw.svg\|120]]                                                   | [[Multi-Cycle Uarchitecture]]                                 |
+| ![[Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg\|Single-cycle Uarch Diagram 2026-01-25 18.44.20.excalidraw.svg\|120]]                                                 | [[Single-Cycle Uarchitecture]]                               |
 | ![[Convolution Sum 2026-01-24 23.41.52.excalidraw.svg\|Convolution Sum 2026-01-24 23.41.52.excalidraw.svg\|120]]                                                                       | [[Convolution Sum in LTI systems]]                       |
 | ![[Feedback Loops 2026-01-22 00.58.26.excalidraw.svg\|Feedback Loops 2026-01-22 00.58.26.excalidraw.svg\|120]]                                                                         | [[Block Diagram Feedback Connection]]               |
 | ![[Harmonically Related Periodic Complex Exponentials 2026-01-18 17.44.54.excalidraw.svg\|Harmonically Related Periodic Complex Exponentials 2026-01-18 17.44.54.excalidraw.svg\|120]] | [[Harmonically Related Complex Exponentials]] |
@@ -44,6 +44,8 @@ I've grouped here notes that belong to the same domain.
 
 | Thumbnail                                                                                                                                                            | Note                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| ![[Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|120]]                                   | [[Neuro-Fuzzy Systems]]                                   |
+| ![[Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|120]]                                                 | [[Edge Linking]]                                                 |
 | ![[Training vs RAG 2026-04-13 21.46.30.excalidraw.svg\|Training vs RAG 2026-04-13 21.46.30.excalidraw.svg\|120]]                                           | [[Retrieval Augmented Generation]]             |
 | ![[LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|LLM Memory 2026-04-12 18.01.32.excalidraw.svg\|120]]                                                     | [[Agentic Memory]]                                             |
 | ![[Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|Solving a Backpropagation Problem 2026-04-10 00.08.13.excalidraw.svg\|120]]       | [[Solving a Backpropagation Problem]]     |
@@ -52,17 +54,17 @@ I've grouped here notes that belong to the same domain.
 | ![[Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|Data Augmentation 2026-04-01 21.35.29.excalidraw.svg\|120]]                                       | [[Data Augmentation]]                                       |
 | ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]                       | [[Performing 2D Convolution]]                     |
 | ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]                                       | [[Bayesian Networks]]                                       |
-| ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Diagram]]                                       |
-| ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Diagram]]                                       |
+| ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Framework]]                                   |
+| ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Framework]]                                   |
 | ![[Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg\|Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg\|120]]                     | [[Hypothesis Space Selection]]                     |
 | ![[Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg\|Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg\|120]] | [[Neural Networks as a Squiggle Fitter]] |
 | ![[Neural Networks in Machine Learning 2026-02-24 13.05.35.excalidraw.svg\|Neural Networks in Machine Learning 2026-02-24 13.05.35.excalidraw.svg\|120]]   | [[Neural Networks as an Input Refinery]] |
 | ![[Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg\|Effective Prompt Schema 2026-02-21 14.44.06.excalidraw.svg\|120]]                           | [[System Prompt Schema]]                                     |
 | ![[KNN Algorithm 2026-02-20 23.57.05.excalidraw.svg\|KNN Algorithm 2026-02-20 23.57.05.excalidraw.svg\|120]]                                               | [[KNN Algorithm]]                                               |
 | ![[Bias in Machine Learning 2026-02-17 21.41.17.excalidraw.svg\|Bias in Machine Learning 2026-02-17 21.41.17.excalidraw.svg\|120]]                         | [[Bias in Machine Learning]]                         |
-| ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|120]]                                       | [[DataFrame Diagram]]                                       |
+| ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|120]]                                       | [[DataFrames]]                                                     |
 | ![[Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg\|Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg\|120]]                                       | [[DataFrame Selection]]                                 |
-| ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|120]]                             | [[Neural Network Diagram]]                             |
+| ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|120]]                             | [[Neural Networks\|Neural Network Diagram]]                                    |
 | ![[Backprobagation 2026-01-25 19.40.03.excalidraw.svg\|Backprobagation 2026-01-25 19.40.03.excalidraw.svg\|120]]                                           | [[Backpropagation in a Neural Network]]   |
 
 <!-- SerializedQuery END -->
@@ -76,8 +78,8 @@ I've grouped here notes that belong to the same domain.
 | ![[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg\|120]]     | [[Solving a Production System Problem]]                                       |
 | ![[Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg\|120]]                           | [[Doing a Resolution Proof]]                                                             |
 | ![[Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|Induction vs Deduction 2026-04-02 22.37.24.excalidraw.svg\|120]]                               | [[Induction vs Deduction]]                                                                   |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                | [[Matrix Multiplication as Row Combinations]]       |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                | [[Concepts/Matrix Multiplication/index.md\|Matrix Multiplication]]                                                               |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                | [[Matrix Multiplication as Row Combinations]]       |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                | [[Matrix Multiplication as Column Combinations]] |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                | [[Vectors Outer Product]]                                                                     |
 | ![[Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg\|Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg\|120]]                                 | [[Matrix Multiplications as Outer Products]]         |
@@ -94,6 +96,7 @@ I've grouped here notes that belong to the same domain.
 
 | Thumbnail                                                                                                                                                                | Note                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                  | [[How to Read an Article]]                                  |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                  | [[Cognitive Assign 1 Report]]                                 |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                                  | [[Convolutional Neural Networks]]                     |
 | ![[Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|Neo4j Knowledge Graph 2026-03-12 17.23.07.excalidraw.svg\|120]]                                   | [[Neo4j Knowledge Graph]]                                         |

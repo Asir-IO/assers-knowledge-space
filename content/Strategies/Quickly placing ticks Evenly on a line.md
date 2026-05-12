@@ -9,6 +9,7 @@ tags:
 draft: false
 thumbnail: "[[Quickly placing ticks evenly on a line 2026-01-25 16.28.06.excalidraw.svg]]"
 comments: true
+related-notes:
 ---
 ## What is the problem
 You need to place $n$ ticks evenly on a line (including the start and end points) but do not have a ruler.
@@ -46,6 +47,14 @@ Placing 7 Ticks ($n=7$)
 3. *(Factor 2)*: Divide each of those regions into *2* equal parts. <br>
 ![[Quickly placing ticks evenly on a line 2026-01-25 16.44.29.excalidraw.svg]]
 4. you're done =) (u now have 7 ticks)
+
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->
+

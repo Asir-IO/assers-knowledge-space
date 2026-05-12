@@ -9,6 +9,9 @@ tags:
 draft: false
 thumbnail: "[[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg]]"
 comments: true
+related-notes:
+  - "[[Transposing a Matrix]]"
+  - "[[Matrix Multiplications as Outer Products]]"
 ---
 ## What is the problem
 You have a matrix $A^T$ that u view as a rows matrix, and want to multiply it by a columns matrix $B$.
@@ -35,6 +38,14 @@ Their <mark style="background: #CACFD9A6;">multiplication</mark> matrix is then 
 ![[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg]]   
 
 ---
-## Connections
-- [[Transposing a Matrix]]
-- [[Matrix Multiplications as Outer Products]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail                                                                                                                              | Note                                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| ![[Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg\|Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg\|120]] | [[Matrix Multiplications as Outer Products]] |
+| ![[Transposing a Matrix 2026-02-24 16.11.14.excalidraw.svg\|Transposing a Matrix 2026-02-24 16.11.14.excalidraw.svg\|120]]   | [[Transposing a Matrix]]                                                             |
+
+<!-- SerializedQuery END -->
+

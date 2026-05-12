@@ -10,6 +10,7 @@ tags:
 draft: false
 comments: true
 thumbnail: "[[LLM Memory 2026-04-12 18.01.32.excalidraw.svg]]"
+related-notes:
 ---
 Finn was a human, just like u and me, but he was part of a lab experiment that turned him into an efficient assignment-solving agent,   
 ![[LLM Memory 2026-04-12 16.07.56.excalidraw.svg]]   
@@ -70,5 +71,11 @@ A scientist noticed that they never really needed to store every assignment on F
 So far, they found this to be the most optimal method to manage the previous assignments, and focused their efforts on improving its bottlenecks: the storing and fetching process. %%it's best to %%
 
 ---
-## Connections
--  [[]]
+# Related Notes
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+<!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
+
+| Thumbnail | Note |
+| --------- | ---- |
+
+<!-- SerializedQuery END -->
