@@ -32,13 +32,13 @@ Taking notes on what I read shouldn't be a secondary consideration, it should be
 > # Comments
 > ```
 > It basically is a blank note, with a section at the bottom for comments (since comments get added to the bottom).
-4. install the [Obsidian Web Clipper](https://obsidian.md/clipper) plugin.
+4. install the [Obsidian Web Clipper](https://obsidian.md/clipper) browser extension.
 
 ---
 # To Read an Article
 1. create an article note inside `Articles/`.
 	![[How to Read an Article-2.mp4]]
-2. within the article's webpage, use the Web Clipper Plugin to capture the webpage.
+2. within the article's webpage, use the Web Clipper extension to capture the webpage.
 3. copy the content to your clipboard.
 	![[How to Read an Article-3.mp4]]
 4. paste it at the top of your article note.
