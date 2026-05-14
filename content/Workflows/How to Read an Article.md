@@ -28,6 +28,7 @@ Taking notes on what I read shouldn't be a secondary consideration, it should be
 	![[How to Read an Article-1.mp4]]
 > [!code] I personally use this template
 > ```md
+> 
 > ---
 > # Comments
 > ```
