@@ -47,13 +47,15 @@ export default (() => {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    margin: 0rem 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   .thumb {
     flex-shrink: 0;
     width: 100px;
     display: flex;
+    margin: 0;
   }
 
   .meta-container {
@@ -64,13 +66,26 @@ export default (() => {
   }
 
   .meta-container .article-title {
+  flex: initial;
   line-height: 1.1;
   margin-bottom: 0.5rem;
   }
 
+  .article-title .h1{
+  flex: initial;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  margin: 0 0 0.5;
+  }
+  
+  .content-meta {
+    margin-bottom: 0;
+}
+
   .thumb-and-meta-container {
     display: flex;
     gap: 1.5rem;
+    align-items: center;
   }
 
   .tags-container {
