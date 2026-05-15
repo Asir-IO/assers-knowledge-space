@@ -2,10 +2,10 @@
     "version": "2.0.0",
     "inputs": [
         {
-        "id": "commitMessage",
-        "type": "promptString",
-        "description": "Enter commit message (Leave blank for Quartz default)",
-        "default": ""
+            "id": "commitMessage",
+            "type": "promptString",
+            "description": "Enter commit message (Leave blank for Quartz default)",
+            "default": ""
         }
     ],
     "tasks": [
@@ -24,7 +24,7 @@
         {
             "label": "quartz sync",
             "type": "shell",
-            "command": "if ([string]::IsNullOrWhiteSpace($env:QUARTZ_MSG)) { npx quartz sync } else { npx quartz sync -m `\"$env:QUARTZ_MSG`\" }",
+            "command": "if ([string]::IsNullOrWhiteSpace($env:QUARTZ_MSG)) { npx quartz sync } else { npx quartz sync -m \"$env:QUARTZ_MSG\" }",
             "options": {
                 "env": {
                     "QUARTZ_MSG": "${input:commitMessage}"

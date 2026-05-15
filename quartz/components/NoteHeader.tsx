@@ -23,19 +23,18 @@ export default (() => {
 
     return (
       <header class={classNames(displayClass, "note-header")}>
-        {/* Left Column: Thumbnail */}
-        <div class="note-thumbnail-container">
+        <div class="thumb-and-meta-container">
           <img 
             src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
             alt={title} 
-            class="note-thumbnail" 
+            class="thumb" 
           />
+          <div class="meta-container">
+            <h1 class="article-title">{title}</h1>
+            <Meta {...props} />
+          </div>
         </div>
-
-        {/* Right Column: Text Block (Native styling preserved) */}
-        <div class="note-header-info">
-          <h1 class="article-title">{title}</h1>
-          <Meta {...props} />
+        <div class="tags-container">
           <Tags {...props} />
         </div>
       </header>
@@ -43,71 +42,39 @@ export default (() => {
   }
 
   NoteHeader.css = `
-  /* 
-   1. WRAPPER: Takes over the native top/bottom margins so the 
-      inner box height perfectly matches the text height. 
-  */
   .note-header {
-    position: relative;
-    padding-left: calc(180px + 1.5rem); /* Make room for the absolute image */
-    margin-top: 2rem;    /* Inherited from native .article-title */
-    margin-bottom: 1rem; /* Inherited from native .tags */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0rem 0;
   }
 
-  /* 
-   2. THUMBNAIL: Absolutely positioned so it NEVER affects the height.
-      It stretches exactly from the top of the title to the bottom of the tags. 
-  */
-  .note-thumbnail-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0; 
-    width: 180px; 
+  .thumb {
+    flex-shrink: 0;
+    width: 100px;
+    display: flex;
   }
 
-  .note-thumbnail {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 8px; 
+  .meta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex-grow: 1;
   }
 
-  /* 
-   3. INNER TEXT BLOCK: Standard block layout.
-  */
-  .note-header-info {
-    display: block; 
+  .meta-container .article-title {
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
   }
 
-  /* 
-   4. MARGIN STRIPPING: Remove the outer margins from the native elements 
-      since we moved them to the parent wrapper. 
-  */
-  .note-header-info .article-title {
-    margin-top: 0 !important; 
+  .thumb-and-meta-container {
+    display: flex;
+    gap: 1.5rem;
   }
 
-  .note-header-info .tags {
-    margin-bottom: 0 !important;
-  }
-
-  /* 
-   5. MOBILE FALLBACK: Stack them normally on small screens.
-  */
-  @media all and (max-width: 600px) {
-    .note-header {
-      padding-left: 0;
-      display: flex;
-      flex-direction: column;
-    }
-    .note-thumbnail-container {
-      position: relative;
-      width: 100%;
-      height: 150px; 
-      margin-bottom: 1rem;
-    }
+  .tags-container {
+    
   }
   ` + (Meta.css ?? "") + (Tags.css ?? "")
 

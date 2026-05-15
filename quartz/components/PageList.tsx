@@ -83,7 +83,6 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>
               <div class="desc">
-                {/* 2. Render the thumbnail (works for both real images and the fallback) */}
                 <div class="thumbnail-container">
                   <img 
                     src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
