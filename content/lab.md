@@ -13,3 +13,6 @@ thumbnail:
 inline drawings...   
 heyy <img src="Retrieval Augmented Generation 2026-04-15 15.48.32.excalidraw.svg" style="height: 1.5em; display: inline-block; vertical-align: middle; margin: 0 4px;" />, this is amaaaaziiingggg.   
 dsldfjd.
+
+Banner
+![[lab 2026-05-18 20.41.18.excalidraw]]
