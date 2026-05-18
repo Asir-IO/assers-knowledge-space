@@ -97,17 +97,19 @@
 
 
 /* grey grp */
+/* grey grp */
 &[data-callout="quote"] {
   --color: var(--secondary);
-  --border: transparent; 
-  --bg: transparent; 
+  --border: #9e9e9e44; /* Replaced transparent with grey (44 alpha) */
+  --bg: #9e9e9e15;     /* Replaced transparent with grey (15 alpha) */
   
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 1rem auto;
-  max-width: 85%; 
+  // max-width: 85%; 
+  padding: 1.2rem;
 
   .callout-icon {
     display: none;
@@ -117,7 +119,7 @@
   .callout-content {
     order: 1;
     font-family: var(--serif); 
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
     font-style: italic;
     line-height: 1.6;
     padding: 0;
@@ -137,9 +139,10 @@
     width: 100%;
 
     .callout-title-inner {
+      font-family: var(--headerFont);
       font-style: normal;
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: var(--gray); 
       
       display: inline-flex;

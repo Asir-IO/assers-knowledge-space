@@ -31,24 +31,24 @@ const config: QuartzConfig = {
       colors: {
         lightMode: {
           light: "#fafafa",      
-          lightgray: "#e5e5e5",  // PRESERVED DEFAULT (Grey background for code/blocks)
-          gray: "#b8b8b8",       // Your Secondary (Blue-ish Grey -> Graph lines & borders)
-          darkgray: "#0b140d",   // Your Text (Body text)
-          dark: "#0b140d",       // Your Text (Headers)
-          secondary: "hsl(131, 18%, 48%)",  // Your Primary (Green -> Links & Titles)
-          tertiary: "hsl(238, 12%, 50%)",   // Your Accent (Purple -> Hover states)
-          highlight: "rgba(103, 176, 117, 0.15)", // Your Primary with transparency
+          lightgray: "#e5e5e5",
+          gray: "#b8b8b8",
+          darkgray: "#0b140d",   // Body text
+          dark: "#0b140d",       // Headers
+          secondary: "hsl(131, 18%, 48%)",
+          tertiary: "hsl(238, 12%, 50%)",   // links and selected text
+          highlight: "rgba(103, 176, 117, 0.15)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#1e1e1e",      // PRESERVED DEFAULT (Dark Mode Background)
-          lightgray: "#393639",  // PRESERVED DEFAULT (Dark Mode block background)
-          gray: "#646464",       // PRESERVED DEFAULT (Dark Mode borders)
-          darkgray: "#d4d4d4",   // PRESERVED DEFAULT (Dark Mode text)
-          dark: "#ebebec",       // PRESERVED DEFAULT (Dark Mode headers)
-          secondary: "hsl(132, 20%, 55%)",  // Your Primary applied to Dark Mode links
-          tertiary: "hsl(238, 20%, 64%)",   // Your Accent applied to Dark Mode hovers
-          highlight: "rgba(103, 176, 117, 0.15)", // Your Primary with transparency
+          light: "#1e1e1e",
+          lightgray: "#393639",
+          gray: "#646464",
+          darkgray: "#d4d4d4",
+          dark: "#ebebec",
+          secondary: "hsl(132, 20%, 55%)",
+          tertiary: "hsl(238, 20%, 64%)",
+          highlight: "rgba(103, 176, 117, 0.15)",
           textHighlight: "#b3aa0288",
         },
       },
