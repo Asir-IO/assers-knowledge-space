@@ -7,7 +7,7 @@ tags:
   - course/
   - domain/
   - type/
-draft: false
+draft: true
 thumbnail:
 comments: true
 related-notes:

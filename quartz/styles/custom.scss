@@ -271,3 +271,42 @@ html[saved-theme="dark"] .svg-theme-wrapper img.has-dark-variant {
   opacity: 0; 
   visibility: hidden; 
 }
+
+/* --- number lists as circles (stolen from gemini) --- */
+article ol {
+  list-style-type: none;
+  counter-reset: step-counter;
+  padding-left: 0.5rem;
+}
+article ol > li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.75rem;
+}
+/* The Circled Number */
+article ol > li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 1.5px solid var(--dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--dark);
+}
+/* The Connecting Dotted Line */
+article ol > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0.7rem;
+  top: 2.2rem;
+  height: calc(100% - 0.8rem);
+  border-left: 1.5px dotted var(--dark);
+  opacity: 0.6;
+}
