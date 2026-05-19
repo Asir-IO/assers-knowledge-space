@@ -54,6 +54,8 @@ export default (() => {
   .thumb {
     flex-shrink: 0;
     width: 100px;
+    min-width: 100px;
+    max-width: 100px;
     display: flex;
     margin: 0;
   }
