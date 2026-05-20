@@ -26,14 +26,14 @@ Taking notes on what I read shouldn't be a secondary consideration, it should be
 	 - this is where an article note (containing a webpage's content) will be added.
 3. create a template for an `article` note.   
 	![[How to Read an Article-1.mp4]]
-> [!code] I personally use this template
-> ```md
-> 
-> ---
-> # Comments
-> ```
-> It basically is a blank note, with a section at the bottom for comments (since comments get added to the bottom).
-4. install the [Obsidian Web Clipper](https://obsidian.md/clipper) browser extension.
+    > [!note] I personally use this template
+    > ```md
+    > 
+    > ---
+    > # Comments
+    > ```
+    > It basically is a blank note, with a section at the bottom for comments (since comments get added to the bottom).
+1. install the [Obsidian Web Clipper](https://obsidian.md/clipper) browser extension.
 
 ---
 # To Read an Article
