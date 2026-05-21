@@ -17,16 +17,17 @@ related-notes:
 
 ---
 # External Sources
-(online tools, articles, or general materials that I found useful for the course)
+(resilience module)
 - **[The Power of "yet"]([Carol Dweck: The power of believing that you can improve | TED Talk](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve))**
 	- a TED talk about building resilience and a growth mindset.
-- **[2D Inverse Fourier Transform Playground](https://monman53.github.io/2dfft/)**   
-	it lets you,   
-	- upload an image and perform DFT on it.
-	- inspect what image a frequency component in the DFT corresponds to.
-	- create a mask, apply it to the DFT, and see how the IDFT changes.   
+- [The Art of Learning](https://www.joshwaitzkin.com/the-art-of-learning)
+	- a book.
 
-	I just :g-favorite: it.   
+(problem solving module)
+- [Five routes to more innovative problem solving | McKinsey](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/five-routes-to-more-innovative-problem-solving)
+- [Structured problem solving strategies can help break down problems to find better insights | McKinsey](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-to-master-the-seven-step-problem-solving-process)
+	- a podcast about the hypothesis led approach.
+
 ---
 # Collected Knowledge
 Below are all the concepts, strategies, and diagrams I've created for this course.
