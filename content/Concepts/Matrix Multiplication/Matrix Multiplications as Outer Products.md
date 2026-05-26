@@ -41,6 +41,10 @@ Their <mark style="background: #CACFD9A6;">multiplication</mark> matrix is then 
 ![[Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg]]   
 
 ---
+# Example
+![[Matrix Multiplications as Outer Products 2026-05-26 19.28.42.excalidraw.svg]]
+
+---
 # Related Notes
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
