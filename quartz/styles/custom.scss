@@ -316,3 +316,44 @@ article ol:not([data-list]) > li:not(:last-child)::after {
   border-left: 1.5px dotted var(--dark);
   opacity: 0.6;
 }
+
+/* 2 column blocks styling */
+.callout[data-callout="two-column"] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.callout[data-callout="two-column"] > .callout-title {
+  display: none;
+}
+
+.callout[data-callout="two-column"] > .callout-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+/* Base styling for the inner columns */
+.callout[data-callout="left"],
+.callout[data-callout="right"] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.callout[data-callout="left"] > .callout-title,
+.callout[data-callout="right"] > .callout-title {
+  display: none;
+}
+.callout[data-callout="left"] {
+  flex: 0 1 60%; /* Can take up to 60% of the space, but won't force-stretch */
+}
+.callout[data-callout="right"] {
+  flex: 0 1 auto; /* Sizes naturally to the image */
+  display: flex;
+  justify-content: flex-end; /* Glues the image/content to the absolute right edge */
+}

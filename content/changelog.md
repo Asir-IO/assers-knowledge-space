@@ -85,3 +85,33 @@ An ordered list doesn't have to be indexed by decimal numbers only anymore; I ma
 ### Related Files
 - `quartz\styles\custom.scss`
 - `quartz\plugins\transformers\liststyle.ts`
+
+---
+# 2-column blocks
+I can now very quickly insert a 2-column block using *templater*, and as a callout.
+### Example
+(renders as)
+> [!two-column]
+>
+> > [!left]
+> > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero leo. Nunc lobortis enim vel metus auctor dictum. Fusce convallis mi non nunc tristique pulvinar.
+>
+> > [!right]
+> > 
+> > ![[lab-temp-thumb.excalidraw.svg|150]]
+> > <center>(an image)</center>
+
+
+(syntax)
+
+```
+> [!two-column]
+>
+> > [!left]
+> > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero leo. Nunc lobortis enim vel metus auctor dictum. Fusce convallis mi non nunc tristique pulvinar.
+>
+> > [!right]
+> > 
+> > ![[lab-temp-thumb.excalidraw.svg|150]]
+> > <center>(an image)</center>
+```
