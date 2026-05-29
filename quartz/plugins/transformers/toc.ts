@@ -38,7 +38,10 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
               slugAnchor.reset()
               const toc: TocEntry[] = []
               let highestDepth: number = opts.maxDepth
-              visit(tree, "heading", (node) => {
+              visit(tree, "heading", (node, _index, parent) => {
+                if (parent?.type === "blockquote") {
+                  return
+                }
                 if (node.depth <= opts.maxDepth) {
                   const text = toString(node)
                   highestDepth = Math.min(highestDepth, node.depth)

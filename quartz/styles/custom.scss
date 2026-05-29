@@ -300,6 +300,7 @@ article ol > li::before {
   font-size: 0.75rem;
   color: var(--dark);
 }
+article ol[data-list] > li {margin-bottom: 0.875rem;}
 article ol[data-list="lower-alpha"] > li::before { content: counter(step-counter, lower-alpha); }
 article ol[data-list="upper-alpha"] > li::before { content: counter(step-counter, upper-alpha); }
 article ol[data-list="lower-roman"] > li::before { content: counter(step-counter, lower-roman); }

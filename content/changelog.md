@@ -52,6 +52,7 @@ Now I can use this obsidian [timeline callout syntax](https://forum.obsidian.md/
 ```
 ### Related Files
 - `quartz\styles\custom.scss`
+- `quartz\plugins\transformers\toc.ts` (to not render as headers in the TOC)
 ---
 # SVG Switch based on Theme
 Now light (`img.svg`) and dark (`img.dark.svg`) versions of a drawing can switch based on the current theme.
