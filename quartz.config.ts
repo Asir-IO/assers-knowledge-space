@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import { CustomIcons } from "./quartz/plugins/transformers/customicons"
+import { ObsidianListStyle } from "./quartz/plugins/transformers/liststyle"
 import * as Plugin from "./quartz/plugins"
 
 /**
@@ -74,6 +75,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      ObsidianListStyle(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

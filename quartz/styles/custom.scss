@@ -274,7 +274,7 @@ html[saved-theme="dark"] .svg-theme-wrapper img.has-dark-variant {
 
 /* --- number lists as circles (stolen from gemini) --- */
 article ol {
-  list-style-type: none;
+  list-style-type: none !important; 
   counter-reset: step-counter;
   padding-left: 0.5rem;
 }
@@ -286,7 +286,7 @@ article ol > li {
 }
 /* The Circled Number */
 article ol > li::before {
-  content: counter(step-counter);
+  content: counter(step-counter, decimal); /* default */
   position: absolute;
   left: 0;
   top: 0.15rem;
@@ -300,8 +300,13 @@ article ol > li::before {
   font-size: 0.75rem;
   color: var(--dark);
 }
+article ol[data-list="lower-alpha"] > li::before { content: counter(step-counter, lower-alpha); }
+article ol[data-list="upper-alpha"] > li::before { content: counter(step-counter, upper-alpha); }
+article ol[data-list="lower-roman"] > li::before { content: counter(step-counter, lower-roman); }
+article ol[data-list="upper-roman"] > li::before { content: counter(step-counter, upper-roman); }
+
 /* The Connecting Dotted Line */
-article ol > li:not(:last-child)::after {
+article ol:not([data-list]) > li:not(:last-child)::after {
   content: '';
   position: absolute;
   left: 0.7rem;

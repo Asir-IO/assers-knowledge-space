@@ -65,3 +65,22 @@ The switching basically fades between the two.
 ---
 # Tab title does NOT need to match a Note's title
 A note can have a tab title that's different from its title, simply by populating its `tabTitle` property.
+
+---
+# Multiple Ordered List Styles
+An ordered list doesn't have to be indexed by decimal numbers only anymore; I made the [obsidian list style](https://github.com/erykwalder/obsidian-list-style) plugin work here.
+### Example
+(renders as)
+1. {i} ...
+2. ...
+3. ...
+
+(syntax)
+```
+1. {i} ...
+2. ...
+3. ...
+```
+### Related Files
+- `quartz\styles\custom.scss`
+- `quartz\plugins\transformers\liststyle.ts`
