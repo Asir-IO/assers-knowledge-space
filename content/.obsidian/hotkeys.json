@@ -1,0 +1,26 @@
+{
+  "obsidian-excalidraw-plugin:Downloaded/Save as Dark SVG": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "O"
+    }
+  ],
+  "obsidian-excalidraw-plugin:Downloaded/Invert Skeleton Color": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "I"
+    }
+  ],
+  "obsidian-excalidraw-plugin:Downloaded/Save as Light SVG": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
+    }
+  ]
+}

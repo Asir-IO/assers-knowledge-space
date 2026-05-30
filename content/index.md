@@ -77,7 +77,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 # The Core
-You may have noticed a folder named [[Core/index|Core]] in the explorer. This is my thoughts dump. You'll find there thoughts that aren't exactly a concept, a strategy, or a diagram. <br>
+You may have noticed a folder named [[Core/index|Core]] in the explorer. This is my thoughts dump. You'll find there thoughts that aren't exactly a concept, a strategy, or a workflow. <br>
 You're welcome to scroll through stuff there ofc, but yeah, you do this at your *own risk* (I'm a highly chaotic being)
 
 ---

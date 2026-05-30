@@ -1,0 +1,56 @@
+{
+  "cascadeColors": false,
+  "colorBackground": true,
+  "palette": [
+    {
+      "id": "pl3H2y-ZY_ueKrKB7wop_",
+      "name": "Purple - should be updated",
+      "value": "#9775fa"
+    },
+    {
+      "id": "IiG3s83CMJpziPHS14sTB",
+      "name": "Green",
+      "value": "#40c057"
+    },
+    {
+      "id": "FxBG4v9eV0ev1JukhzKlv",
+      "name": "Yellow",
+      "value": "#fab005"
+    },
+    {
+      "id": "SMsBncZT9mwvTBgxZ0C8F",
+      "name": "Red - not completed yet",
+      "value": "#e03131"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Concepts",
+      "color": "IiG3s83CMJpziPHS14sTB"
+    },
+    {
+      "path": "Concepts/Matrix Multiplication",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
+    },
+    {
+      "path": "Core",
+      "color": "IiG3s83CMJpziPHS14sTB"
+    },
+    {
+      "path": "Strategies",
+      "color": "IiG3s83CMJpziPHS14sTB"
+    },
+    {
+      "path": "Workflows",
+      "color": "IiG3s83CMJpziPHS14sTB"
+    },
+    {
+      "path": "knowlege domains.md",
+      "color": "pl3H2y-ZY_ueKrKB7wop_"
+    },
+    {
+      "path": "index.md",
+      "color": "pl3H2y-ZY_ueKrKB7wop_"
+    }
+  ]
+}

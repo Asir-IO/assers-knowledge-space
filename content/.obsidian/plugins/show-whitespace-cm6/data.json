@@ -1,0 +1,13 @@
+{
+  "disablePluginStyles": false,
+  "enabled": true,
+  "outlineListMarkers": true,
+  "showAllCodeblockWhitespace": false,
+  "showAllWhitespace": false,
+  "showBlockquoteMarkers": true,
+  "showCodeblockWhitespace": false,
+  "showFrontmatterWhitespace": true,
+  "showLineEndings": true,
+  "showTableWhitespace": true,
+  "cmExtensionEnabled": true
+}

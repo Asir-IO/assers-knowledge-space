@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1780096899172,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1780097307856,
+          "path": "Concepts/Convolution Sum in LTI systems.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1780098622660,
+          "path": "Concepts/Agentic Memory.md"
+        }
+      ],
+      "title": "Good Concept Notes"
+    },
+    {
+      "type": "group",
+      "ctime": 1780096906454,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1780097319079,
+          "path": "Strategies/Insertion in a RB Tree.md"
+        }
+      ],
+      "title": "Good Strategy Notes"
+    }
+  ]
+}

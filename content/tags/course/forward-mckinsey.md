@@ -30,4 +30,4 @@ related-notes:
 
 ---
 # Collected Knowledge
-Below are all the concepts, strategies, and diagrams I've created for this course.
+Below are all the concepts, strategies, and workflows I've created for this course.
