@@ -1,6 +1,7 @@
 {
   "enabledCssSnippets": [
     "2-column-blocks",
-    "timeline"
+    "timeline",
+    "figure-with-caption"
   ]
 }

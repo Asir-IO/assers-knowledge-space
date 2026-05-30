@@ -25,7 +25,7 @@
   }
 }
 
-/* timeline callout */
+/* FEATURE: timeline callout */
 .callout[data-callout="timeline"] {
   background-color: transparent !important;
   border: none !important;
@@ -161,7 +161,7 @@
   }
 }
 
-/* Google Symbols Setup (Outlined Version) */
+/* FEATURE: Google Symbols (Outlined Version) */
 /* ex: :g-home: */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined' !important; 
@@ -187,7 +187,7 @@
   margin-right: 0.1em;   
   color: inherit;
 }
-/* Font Awesome Icons */
+/* FEATURE: Font Awesome Icons */
 /* ex: :fa-solid-home: or :fab-github: */
 .custom-fa-symbol {
   font-size: 0.9em;
@@ -196,7 +196,7 @@
   color: inherit;
 }
 
-/* chalkboard texture */
+/* FEATURE: chalkboard texture */
 [saved-theme="dark"] body {
   position: relative;
 }
@@ -219,7 +219,7 @@
   pointer-events: none;
 }
 
-/* paper texture */
+/* FEATURE: paper texture */
 [saved-theme="light"] body {
   position: relative;
 }
@@ -243,7 +243,7 @@
   pointer-events: none;
 }
 
-/* --- svg switch based on theme --- */
+/* FEATURE: svg switch based on theme */
 /* to place both versions on top of one another */
 .svg-theme-wrapper {
   display: grid;
@@ -272,7 +272,7 @@ html[saved-theme="dark"] .svg-theme-wrapper img.has-dark-variant {
   visibility: hidden; 
 }
 
-/* --- number lists as circles (stolen from gemini) --- */
+/* FEATURE: number lists as circles (stolen from gemini) */
 article ol {
   list-style-type: none !important; 
   counter-reset: step-counter;
@@ -317,7 +317,7 @@ article ol:not([data-list]) > li:not(:last-child)::after {
   opacity: 0.6;
 }
 
-/* 2 column blocks styling */
+/* FEATURE: 2 column blocks styling */
 .callout[data-callout="two-column"] {
   background: transparent;
   border: none;
@@ -356,4 +356,71 @@ article ol:not([data-list]) > li:not(:last-child)::after {
   flex: 0 1 auto; /* Sizes naturally to the image */
   display: flex;
   justify-content: flex-end; /* Glues the image/content to the absolute right edge */
+}
+
+/* FEATURE: with description blocks */
+.callout[data-callout="with-desc"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.callout[data-callout="with-desc"] > .callout-title {
+    display: none;
+}
+
+.callout[data-callout="with-desc"] > .callout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.callout[data-callout="with-desc"] img,
+.callout[data-callout="with-desc"] .internal-embed {
+    margin: 0 !important;
+}
+.callout[data-callout="with-desc"] > .callout-content > p {
+    margin: 0 !important;
+}
+
+.callout[data-callout="with-desc"] > .callout-content > p:empty,
+.callout[data-callout="with-desc"] > .callout-content > br {
+    display: none;
+}
+
+.callout[data-callout="desc"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 8px !important; 
+    box-shadow: none;
+    text-align: center;
+    
+    max-width: 250px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.callout[data-callout="desc"] > .callout-title {
+    display: none;
+}
+.callout[data-callout="desc"] > .callout-content,
+.callout[data-callout="desc"] > p {
+    font-size: 0.85em; 
+    opacity: 0.7;      
+    padding: 0;
+    margin: 0 !important;
+    
+    white-space: nowrap; 
+}
+
+.callout[data-callout="desc"] p {
+    margin: 0 !important;
+    padding: 0 12px 0 0;
 }

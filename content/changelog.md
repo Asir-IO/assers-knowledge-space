@@ -92,26 +92,49 @@ I can now very quickly insert a 2-column block using *templater*, and as a callo
 ### Example
 (renders as)
 > [!two-column]
->
 > > [!left]
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero leo. Nunc lobortis enim vel metus auctor dictum. Fusce convallis mi non nunc tristique pulvinar.
->
+> 
 > > [!right]
-> > 
-> > ![[lab-temp-thumb.excalidraw.svg|150]]
-> > <center>(an image)</center>
-
+> > > [!with-desc]
+> > > 
+> > > ![[lab-temp-thumb.excalidraw.svg|150]]
+> > >
+> > > > [!desc]
+> > > > (an image)
 
 (syntax)
 
 ```
 > [!two-column]
->
 > > [!left]
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero leo. Nunc lobortis enim vel metus auctor dictum. Fusce convallis mi non nunc tristique pulvinar.
->
+> 
 > > [!right]
-> > 
-> > ![[lab-temp-thumb.excalidraw.svg|150]]
-> > <center>(an image)</center>
+> > > [!with-desc]
+> > > 
+> > > ![[lab-temp-thumb.excalidraw.svg|150]]
+> > >
+> > > > [!desc]
+> > > > (an image)
+```
+
+---
+# Adding Description text to a Block
+I can now add a *description text* to any block (another text, an image, etc...).
+### Example
+(renders as)
+> [!with-desc]
+> ![[lab-temp-thumb.excalidraw.svg|150]]
+> 
+> > [!desc]
+> > (some very lo---------------------------------------------------ng  description...)
+
+(syntax)
+```
+> [!with-desc]
+> ![[lab-temp-thumb.excalidraw.svg|150]]
+> 
+> > [!desc]
+> > (some very lo---------------------------------------------------ng  description...)
 ```
