@@ -2,6 +2,7 @@
   "enabledCssSnippets": [
     "2-column-blocks",
     "timeline",
-    "figure-with-caption"
+    "figure-with-caption",
+    "with-desc-block"
   ]
 }

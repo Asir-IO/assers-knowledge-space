@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
       "basename": "changelog",
       "path": "changelog.md"
+    },
+    {
+      "basename": "with description block",
+      "path": "z2-Meta/Templates/with description block.md"
     },
     {
       "basename": "Autoencoders",
@@ -23,10 +31,6 @@
     {
       "basename": "Convolution Sum in LTI systems",
       "path": "Concepts/Convolution Sum in LTI systems.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     },
     {
       "basename": "university courses",

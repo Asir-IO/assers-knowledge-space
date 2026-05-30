@@ -101,7 +101,7 @@ I can now very quickly insert a 2-column block using *templater*, and as a callo
 > > > ![[lab-temp-thumb.excalidraw.svg|150]]
 > > >
 > > > > [!desc]
-> > > > (an image)
+> > > > (this diagram explains why.... did... during...)
 
 (syntax)
 
@@ -138,3 +138,4 @@ I can now add a *description text* to any block (another text, an image, etc...)
 > > [!desc]
 > > (some very lo---------------------------------------------------ng  description...)
 ```
+

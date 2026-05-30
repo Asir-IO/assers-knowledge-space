@@ -402,7 +402,8 @@ article ol:not([data-list]) > li:not(:last-child)::after {
     box-shadow: none;
     text-align: center;
     
-    max-width: 250px;
+    width: 0;
+    min-width: 100%;
     overflow-x: auto;
     scrollbar-width: thin;
 }

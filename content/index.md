@@ -88,8 +88,9 @@ I've grouped [[university courses|here]] content for each FCAI-CU course I exper
 # Who am I
 This is `Asser`, a junior Computer Science student at Cairo University (AI Department).
 
-I'm the one who created this (with generous assistance from my buddy Gemmy).    
-<span style="font-size: 0.9em; opacity: 0.8;"><em> (Gemmy thinks i'm a narcissist for mentioning my name this many times, I sure hope I'm not =`))</em></span> 
+I'm the one who created this (with generous assistance from my buddy Gemmy).
+> [!desc]
+> (Gemmy thinks i'm a narcissist for mentioning my name this many times, I sure hope I'm not =\`))
 # Where to find me
 
 <div style="display: flex; flex-direction: column; gap: 10px;">
