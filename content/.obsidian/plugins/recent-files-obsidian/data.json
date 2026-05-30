@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "changelog",
-      "path": "changelog.md"
-    },
-    {
       "basename": "Autoencoders",
       "path": "Concepts/Autoencoders.md"
+    },
+    {
+      "basename": "changelog",
+      "path": "changelog.md"
     },
     {
       "basename": "2-column block",

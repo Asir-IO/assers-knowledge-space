@@ -37,6 +37,7 @@ It in fact can do all of the following stuff that a hash map just can't,
 2. map an n-dim point, A, to a (<n)-dim that then gets mapped back into another n-dim point, B. 
 	- This is useful if u want information in A that's not in B (usually noise) to be **ignored** in the mapping-back.
 
+...
 
 ---
 # Example
