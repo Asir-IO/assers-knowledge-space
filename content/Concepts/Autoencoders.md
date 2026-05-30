@@ -20,6 +20,7 @@ related-notes:
 > > We have a number of n-dimensional points; Normally, we identify each one of them using n numbers (e.g., the point (0,1) in R^2 is identified using 2 numbers)
 >
 > > [!right]
+> > 
 > > ![[lab-temp-thumb.excalidraw.svg|150]]
 
 But, what if we could give n-dimensional points a lower dimensional (<n) identifier?

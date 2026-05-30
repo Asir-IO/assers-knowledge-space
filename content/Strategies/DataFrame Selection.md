@@ -126,9 +126,9 @@ rows = df[selector]
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), "![[lab-temp-thumb.excalidraw.svg|120]]") AS "Thumbnail", link(file.path, title) AS "Note" FROM "" WHERE contains(this["related-notes"], file.link) AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                                                                      | Note                                          |
-| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
-| ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|120]] | [[DataFrames\|DataFrame Diagram]] |
+| Thumbnail                                                                                                                      | Note                                   |
+| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+| ![[Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|Pandas DataFrames 2026-02-03 15.56.44.excalidraw.svg\|120]] | [[DataFrames]] |
 
 <!-- SerializedQuery END -->
 

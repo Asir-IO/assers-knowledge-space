@@ -38,6 +38,5 @@ Now, how do we construct an equation that represents that surface? it isn't obvi
 | Thumbnail                                                                                                                                                          | Note                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | ![[Neural Networks in Machine Learning 2026-02-24 13.05.35.excalidraw.svg\|Neural Networks in Machine Learning 2026-02-24 13.05.35.excalidraw.svg\|120]] | [[Neural Networks as an Input Refinery]] |
-| ![[Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|Neural Network Diagram 2026-01-25 19.23.44.excalidraw.svg\|120]]                           | [[Neural Networks]]                                                           |
 
 <!-- SerializedQuery END -->

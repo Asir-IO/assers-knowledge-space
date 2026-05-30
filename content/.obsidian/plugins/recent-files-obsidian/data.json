@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "changelog",
+      "path": "changelog.md"
+    },
+    {
+      "basename": "Autoencoders",
+      "path": "Concepts/Autoencoders.md"
+    },
+    {
+      "basename": "2-column block",
+      "path": "z2-Meta/Templates/2-column block.md"
+    },
+    {
+      "basename": "lab-temp-thumb.excalidraw",
+      "path": "z1-Assets/lab-temp-thumb.excalidraw.md"
+    },
+    {
+      "basename": "Insertion in a RB Tree",
+      "path": "Strategies/Insertion in a RB Tree.md"
+    },
+    {
+      "basename": "Convolution Sum in LTI systems",
+      "path": "Concepts/Convolution Sum in LTI systems.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
     },
@@ -15,10 +39,6 @@
     {
       "basename": "AI312",
       "path": "tags/course/AI312.md"
-    },
-    {
-      "basename": "changelog",
-      "path": "changelog.md"
     },
     {
       "basename": "courses 2026-05-18 02.52.37.excalidraw",
@@ -37,14 +57,6 @@
       "path": "Concepts/Agentic Memory.md"
     },
     {
-      "basename": "Autoencoders",
-      "path": "Concepts/Autoencoders.md"
-    },
-    {
-      "basename": "lab-temp-thumb.excalidraw",
-      "path": "z1-Assets/lab-temp-thumb.excalidraw.md"
-    },
-    {
       "basename": "lab-temp-thumb.excalidraw",
       "path": "z1-Assets/lab-temp-thumb.excalidraw.svg"
     },
@@ -55,18 +67,6 @@
     {
       "basename": "lab-logo.excalidraw",
       "path": "z1-Assets/lab-logo.excalidraw.svg"
-    },
-    {
-      "basename": "Insertion in a RB Tree",
-      "path": "Strategies/Insertion in a RB Tree.md"
-    },
-    {
-      "basename": "Convolution Sum in LTI systems",
-      "path": "Concepts/Convolution Sum in LTI systems.md"
-    },
-    {
-      "basename": "2-column block",
-      "path": "z2-Meta/Templates/2-column block.md"
     },
     {
       "basename": "Matrix Multiplications as Outer Products 2026-05-26 19.28.42.excalidraw",
