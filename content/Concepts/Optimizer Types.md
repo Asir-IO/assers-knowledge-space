@@ -1,7 +1,7 @@
 ---
 isNote: true
-title: <% tp.file.title %>
-date: <% tp.date.now('YYYY-MM-DD') %>
+title: Optimizer Types
+date: 2026-05-31
 tags:
   - type/concept
   - topic/
@@ -12,6 +12,7 @@ thumbnail:
 comments: true
 related-notes:
 ---
+# Mental Model
 ...
 
 ---
@@ -30,3 +31,5 @@ related-notes:
 
 ---
 # Sources
+- [Adam Optimizer in 20 min - YouTube](https://www.youtube.com/watch?v=IWvTU6swl_E&si=mU_tNgh8OXbqerh7)
+- [Optimization for Deep Learning (Momentum, RMSprop, AdaGrad, Adam) - YouTube](https://www.youtube.com/watch?si=AZOF-SmzffeEnoq9&v=NE88eqLngkg&feature=youtu.be)

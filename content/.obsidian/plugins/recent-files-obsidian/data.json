@@ -5,20 +5,120 @@
       "path": "index.md"
     },
     {
-      "basename": "changelog",
-      "path": "changelog.md"
+      "basename": "Minimax Algorithm",
+      "path": "Concepts/Minimax Algorithm.md"
     },
     {
-      "basename": "with description block",
-      "path": "z2-Meta/Templates/with description block.md"
+      "basename": "Machine Learning",
+      "path": "Concepts/Machine Learning.md"
     },
     {
-      "basename": "Autoencoders",
-      "path": "Concepts/Autoencoders.md"
+      "basename": "university courses",
+      "path": "university courses.md"
+    },
+    {
+      "basename": "with-description block",
+      "path": "z2-Meta/Templates/with-description block.md"
     },
     {
       "basename": "2-column block",
       "path": "z2-Meta/Templates/2-column block.md"
+    },
+    {
+      "basename": "Concept",
+      "path": "z2-Meta/Templates/Concept.md"
+    },
+    {
+      "basename": "Core",
+      "path": "z2-Meta/Templates/Core.md"
+    },
+    {
+      "basename": "Neo4j Knowledge Graph",
+      "path": "Core/Neo4j Knowledge Graph.md"
+    },
+    {
+      "basename": "Inventory Chatbot",
+      "path": "Core/Inventory Chatbot.md"
+    },
+    {
+      "basename": "Signals Book Indexes",
+      "path": "Core/Signals Book Indexes.md"
+    },
+    {
+      "basename": "Supervised Project",
+      "path": "Core/Supervised Project.md"
+    },
+    {
+      "basename": "System Prompt Schema",
+      "path": "Core/System Prompt Schema.md"
+    },
+    {
+      "basename": "Supervised Project Report",
+      "path": "Core/Supervised Project Report.md"
+    },
+    {
+      "basename": "GitHub Workflow",
+      "path": "Core/GitHub Workflow.md"
+    },
+    {
+      "basename": "Facial Expression Recognition Project Report",
+      "path": "Core/Facial Expression Recognition Project Report.md"
+    },
+    {
+      "basename": "Bender Gestalt Test Tool",
+      "path": "Core/Bender Gestalt Test Tool.md"
+    },
+    {
+      "basename": "Axes and Aggregation in Numpy",
+      "path": "Core/Axes and Aggregation in Numpy.md"
+    },
+    {
+      "basename": "Assignment One Report",
+      "path": "Core/Assignment One Report.md"
+    },
+    {
+      "basename": "APR Method",
+      "path": "Core/APR Method.md"
+    },
+    {
+      "basename": "Abstracting a Tabular DP algorithm",
+      "path": "Core/Abstracting a Tabular DP algorithm.md"
+    },
+    {
+      "basename": "How to Read an Article",
+      "path": "Workflows/How to Read an Article.md"
+    },
+    {
+      "basename": "Course",
+      "path": "z2-Meta/Templates/Course.md"
+    },
+    {
+      "basename": "Strategy",
+      "path": "z2-Meta/Templates/Strategy.md"
+    },
+    {
+      "basename": "Workflow",
+      "path": "z2-Meta/Templates/Workflow.md"
+    },
+    {
+      "basename": "changelog",
+      "path": "changelog.md"
+    },
+    {
+      "basename": "Meta-Heuristic Search",
+      "path": "Concepts/Meta-Heuristic Search.md"
+    },
+    {
+      "basename": "Searching in a Non-Deterministic Environment",
+      "path": "Concepts/Searching in a Non-Deterministic Environment.md"
+    },
+    {
+      "basename": "Optimizer Types",
+      "path": "Concepts/Optimizer Types.md"
+    },
+    {
+      "basename": "Autoencoders",
+      "path": "Concepts/Autoencoders.md"
     },
     {
       "basename": "lab-temp-thumb.excalidraw",
@@ -31,10 +131,6 @@
     {
       "basename": "Convolution Sum in LTI systems",
       "path": "Concepts/Convolution Sum in LTI systems.md"
-    },
-    {
-      "basename": "university courses",
-      "path": "university courses.md"
     },
     {
       "basename": "AI313",

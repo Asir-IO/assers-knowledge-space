@@ -1,13 +1,13 @@
 ---
-isNote: true
-title: <% tp.file.title %>
-date: <% tp.date.now('YYYY-MM-DD') %>
+isNote: false
+title: Minimax Algorithm
+date: 2026-05-31
 tags:
   - type/concept
   - topic/
-  - course/
-  - domain/
-draft: true
+  - course/AI313
+  - domain/ai
+draft: false
 thumbnail:
 comments: true
 related-notes:
@@ -30,3 +30,7 @@ related-notes:
 
 ---
 # Sources
+- [6. Search: Games, Minimax, and Alpha-Beta](https://www.youtube.com/watch?v=STjW3eH0Cik)
+- [Minimax: How Computers Play Games](https://www.youtube.com/watch?v=SLgZhpDsrfc)
+- [Minimax and Alpha-Beta Prunning simulator](https://raphsilva.github.io/utilities/minimax_simulator/#)
+- 

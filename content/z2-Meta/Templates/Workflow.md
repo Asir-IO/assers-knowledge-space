@@ -11,11 +11,14 @@ thumbnail:
 comments: true
 related-notes:
 ---
-# Mental Model
 ...
 
 ---
-# Example
+# Before you begin
+...
+
+---
+# To do ...
 ...
 
 ---
