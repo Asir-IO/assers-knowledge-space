@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import Lightbox from "./quartz/components/Lightbox"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -21,6 +22,7 @@ export const sharedPageComponents: SharedLayout = {
         reactionsEnabled: true,
       }
     }),
+    Lightbox(),
   ],
   footer: Component.Footer({
     links: {

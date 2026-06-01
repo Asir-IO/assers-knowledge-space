@@ -88,29 +88,30 @@ An ordered list doesn't have to be indexed by decimal numbers only anymore; I ma
 
 ---
 # 2-column blocks
-I can now very quickly insert a 2-column block using *templater*, and as a callout.
+I can now very quickly insert a 2-column block using *templater*, and as a callout.   
+Also I can set the width portion of each column (left or right) by adding it as an alt to their respective callout.
 ### Example
 (renders as)
 > [!two-column]
-> > [!left]
+> > [!left|7]
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero leo. Nunc lobortis enim vel metus auctor dictum. Fusce convallis mi non nunc tristique pulvinar.
 > 
-> > [!right]
+> > [!right|3]
 > > > [!with-desc]
 > > > 
 > > > ![[lab-temp-thumb.excalidraw.svg|150]]
 > > >
 > > > > [!desc]
-> > > > (this diagram explains why.... did... during...)
+> > > > (a diagram)
 
 (syntax)
 
 ```
 > [!two-column]
-> > [!left]
+> > [!left|7]
 > > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero leo. Nunc lobortis enim vel metus auctor dictum. Fusce convallis mi non nunc tristique pulvinar.
 > 
-> > [!right]
+> > [!right|3]
 > > > [!with-desc]
 > > > 
 > > > ![[lab-temp-thumb.excalidraw.svg|150]]
@@ -118,6 +119,11 @@ I can now very quickly insert a 2-column block using *templater*, and as a callo
 > > > > [!desc]
 > > > > (an image)
 ```
+
+... the left column has 7 portions, the right one has 3.   
+
+> [!desc]
+> (the default ones are 6 and 4, respectively)
 
 ---
 # Adding Description text to a Block
@@ -127,7 +133,7 @@ I can now add a *description text* to any block (another text, an image, etc...)
 > [!with-desc]
 > ![[lab-temp-thumb.excalidraw.svg|150]]
 > 
-> > [!desc]
+> > [!desc-scroll] 
 > > (some very lo---------------------------------------------------ng  description...)
 
 (syntax)
@@ -135,7 +141,41 @@ I can now add a *description text* to any block (another text, an image, etc...)
 > [!with-desc]
 > ![[lab-temp-thumb.excalidraw.svg|150]]
 > 
-> > [!desc]
+> > [!desc-scroll]
 > > (some very lo---------------------------------------------------ng  description...)
 ```
 
+---
+# Sizing Images by Height
+I can now embed an image by defining its height rather than its width. If the resulting width exceeds the page boundaries, the image will automatically become horizontally scrollable.
+
+This is done by adding an alt (to the embed) formatted as `h-[size]`.
+## Why it is Useful
+By default, embedded images are constrained by the page's width. The image's height adjusts automatically to maintain the aspect ratio.
+
+While this works for most images, <u>extremely wide images</u> shrink their height so much that their content becomes unreadable:
+
+> [!with-desc]
+> 
+> ![[Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.svg]]
+> > [!desc]
+> > 
+> > (an example of a wide image)
+
+**The Solution?** Set the height instead of the width and make it as big as u want.   
+
+Now I have no control over the width,   
+**What if it exceeds the page width?** Make overflowing width scrollable.
+
+![[Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.svg|h-150px]]
+
+> [!desc] 
+> (this image has a larger height and the overflowing width is scrollable)
+## Example
+(renders as)
+![[Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.svg|h-150px]]
+
+(syntax)
+```
+![[Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.svg|h-150px]]
+```

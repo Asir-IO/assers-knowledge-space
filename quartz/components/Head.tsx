@@ -101,6 +101,41 @@ export default (() => {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         {/* font awesome */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener("DOMContentLoaded", () => {
+                function applyDynamicImageHeights() {
+                  const images = document.querySelectorAll('img');
+                  
+                  images.forEach(img => {
+                    const alt = img.getAttribute('alt');
+                    if (alt && alt.startsWith('h-')) {
+                      const size = alt.substring(2); 
+                      img.style.setProperty('height', size, 'important');
+                      img.style.setProperty('width', 'auto', 'important');
+                    }
+                  });
+                }
+
+                // 1. Run once immediately when the page loads
+                applyDynamicImageHeights();
+
+                // 2. Set up the observer for Single Page App navigation
+                const observer = new MutationObserver((mutations) => {
+                  for (const mutation of mutations) {
+                    if (mutation.addedNodes.length > 0) {
+                      applyDynamicImageHeights();
+                    }
+                  }
+                });
+
+                // Start watching the body
+                observer.observe(document.body, { childList: true, subtree: true });
+              });
+            `
+          }}
+        />
       </head>
     )
   }

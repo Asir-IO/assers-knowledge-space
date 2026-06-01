@@ -350,13 +350,25 @@ article ol:not([data-list]) > li:not(:last-child)::after {
   display: none;
 }
 .callout[data-callout="left"] {
-  flex: 0 1 60%; /* Can take up to 60% of the space, but won't force-stretch */
+  flex: 6;
+  min-width: 0;
 }
+
 .callout[data-callout="right"] {
-  flex: 0 1 auto; /* Sizes naturally to the image */
+  flex: 4;
+  min-width: 0;
   display: flex;
-  justify-content: flex-end; /* Glues the image/content to the absolute right edge */
+  justify-content: flex-end;
 }
+.callout[data-callout="left"][data-callout-metadata="1"], .callout[data-callout="right"][data-callout-metadata="1"] { flex: 1; }
+.callout[data-callout="left"][data-callout-metadata="2"], .callout[data-callout="right"][data-callout-metadata="2"] { flex: 2; }
+.callout[data-callout="left"][data-callout-metadata="3"], .callout[data-callout="right"][data-callout-metadata="3"] { flex: 3; }
+.callout[data-callout="left"][data-callout-metadata="4"], .callout[data-callout="right"][data-callout-metadata="4"] { flex: 4; }
+.callout[data-callout="left"][data-callout-metadata="5"], .callout[data-callout="right"][data-callout-metadata="5"] { flex: 5; }
+.callout[data-callout="left"][data-callout-metadata="6"], .callout[data-callout="right"][data-callout-metadata="6"] { flex: 6; }
+.callout[data-callout="left"][data-callout-metadata="7"], .callout[data-callout="right"][data-callout-metadata="7"] { flex: 7; }
+.callout[data-callout="left"][data-callout-metadata="8"], .callout[data-callout="right"][data-callout-metadata="8"] { flex: 8; }
+.callout[data-callout="left"][data-callout-metadata="9"], .callout[data-callout="right"][data-callout-metadata="9"] { flex: 9; }
 
 /* FEATURE: with description blocks */
 .callout[data-callout="with-desc"] {
@@ -394,7 +406,7 @@ article ol:not([data-list]) > li:not(:last-child)::after {
     display: none;
 }
 
-.callout[data-callout="desc"] {
+.callout[data-callout="desc-scroll"] {
     background: transparent;
     border: none;
     padding: 0;
@@ -408,6 +420,35 @@ article ol:not([data-list]) > li:not(:last-child)::after {
     scrollbar-width: thin;
 }
 
+.callout[data-callout="desc-scroll"] > .callout-title {
+    display: none;
+}
+.callout[data-callout="desc-scroll"] > .callout-content,
+.callout[data-callout="desc-scroll"] > p {
+    font-size: 0.85em; 
+    opacity: 0.7;      
+    padding: 0;
+    margin: 0 !important;
+    
+    white-space: nowrap; 
+}
+
+.callout[data-callout="desc-scroll"] p {
+    margin: 0 !important;
+    padding: 0 12px 0 0;
+}
+
+.callout[data-callout="desc"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 8px !important; 
+    box-shadow: none;
+    text-align: center;
+    
+    width: 100%;
+}
+
 .callout[data-callout="desc"] > .callout-title {
     display: none;
 }
@@ -417,11 +458,131 @@ article ol:not([data-list]) > li:not(:last-child)::after {
     opacity: 0.7;      
     padding: 0;
     margin: 0 !important;
-    
-    white-space: nowrap; 
+    text-align: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .callout[data-callout="desc"] p {
     margin: 0 !important;
-    padding: 0 12px 0 0;
+    padding: 0;
+}
+
+p:has(img[alt^="h-"]),
+span:has(img[alt^="h-"]),
+figure:has(img[alt^="h-"]) {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  width: 100%;
+}
+img[alt^="h-"] {
+  max-width: none !important;
+  width: auto !important;
+  display: block;
+  margin:0;
+}
+/* 1. Give your specific images a magnifying glass cursor to hint they are clickable */
+img[alt^="h-"] {
+    cursor: zoom-in !important;
+}
+
+/* 2. The full-screen dark background */
+.custom-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* 85% opacity black */
+    z-index: 999999; /* Forces it over Obsidian's UI */
+    
+    /* Flexbox centers the image perfectly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+/* 3. The zoomed-in image itself */
+.custom-lightbox-overlay img {
+    max-width: 95vw !important; /* Prevents it from touching the screen edges */
+    max-height: 95vh !important;
+    width: auto !important;
+    height: auto !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+/* 1. The Wrapper (anchors the absolute positioned button) */
+.custom-image-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* 2. The Expand Button Styling */
+.custom-expand-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  
+  /* Sleek, semi-transparent dark UI */
+  background: rgba(30, 30, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  color: #e0e0e0;
+  
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  /* Hidden by default, smooth fade in */
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  z-index: 10;
+}
+
+/* Show the button when hovering anywhere over the image wrapper */
+.custom-image-wrapper:hover .custom-expand-btn {
+  opacity: 1;
+}
+
+/* Slight highlight when hovering directly over the button */
+.custom-expand-btn:hover {
+  background: rgba(60, 60, 60, 0.9);
+  color: #ffffff;
+}
+
+/* 3. The Lightbox Background with Blur */
+.custom-lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  /* Reduced black opacity so the blur is visible */
+  background-color: rgba(0, 0, 0, 0.4); 
+  
+  /* THE MAGIC: Frosted glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Required for Safari */
+  
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+/* 4. The Zoomed Image */
+.custom-lightbox-overlay img {
+  max-width: 95vw !important;
+  max-height: 95vh !important;
+  width: auto !important;
+  height: auto !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5); /* Drop shadow to pop off the blur */
+  border-radius: 6px;
 }

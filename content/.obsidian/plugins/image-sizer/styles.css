@@ -1,0 +1,17 @@
+.internal-embed.image-embed:has(img[alt^="h-"]),
+figure:has(img[alt^="h-"]) {
+    display: block !important;
+    width: 100%;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    scrollbar-width: thin;
+}
+
+.internal-embed.image-embed:has(img[alt^="h-"]) img,
+figure:has(img[alt^="h-"]) img {
+    max-width: none !important;
+    width: unset !important; 
+    
+    display: block;
+    margin: 0;
+}

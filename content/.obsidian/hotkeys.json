@@ -30,5 +30,13 @@
       ],
       "key": "U"
     }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "D"
+    }
   ]
 }

@@ -1,3 +1,4 @@
+/* FEATURE: 2 column blocks styling */
 .callout[data-callout="two-column"] {
   background: transparent;
   border: none;
@@ -30,10 +31,24 @@
   display: none;
 }
 .callout[data-callout="left"] {
-  flex: 0 1 60%; /* Can take up to 60% of the space, but won't force-stretch */
+  flex: 7; /* Tells Flexbox to give this 7 "parts" of the available space */
+  min-width: 0; /* Prevents large content from stretching the column */
 }
+
 .callout[data-callout="right"] {
-  flex: 0 1 auto; /* Sizes naturally to the image */
+  flex: 3; /* Tells Flexbox to give this 3 "parts" of the available space */
+  min-width: 0; /* Prevents large content from stretching the column */
   display: flex;
-  justify-content: flex-end; /* Glues the image/content to the absolute right edge */
+  justify-content: flex-end;
 }
+
+/* Custom Flex Proportions via Metadata */
+.callout[data-callout="left"][data-callout-metadata="1"], .callout[data-callout="right"][data-callout-metadata="1"] { flex: 1; }
+.callout[data-callout="left"][data-callout-metadata="2"], .callout[data-callout="right"][data-callout-metadata="2"] { flex: 2; }
+.callout[data-callout="left"][data-callout-metadata="3"], .callout[data-callout="right"][data-callout-metadata="3"] { flex: 3; }
+.callout[data-callout="left"][data-callout-metadata="4"], .callout[data-callout="right"][data-callout-metadata="4"] { flex: 4; }
+.callout[data-callout="left"][data-callout-metadata="5"], .callout[data-callout="right"][data-callout-metadata="5"] { flex: 5; }
+.callout[data-callout="left"][data-callout-metadata="6"], .callout[data-callout="right"][data-callout-metadata="6"] { flex: 6; }
+.callout[data-callout="left"][data-callout-metadata="7"], .callout[data-callout="right"][data-callout-metadata="7"] { flex: 7; }
+.callout[data-callout="left"][data-callout-metadata="8"], .callout[data-callout="right"][data-callout-metadata="8"] { flex: 8; }
+.callout[data-callout="left"][data-callout-metadata="9"], .callout[data-callout="right"][data-callout-metadata="9"] { flex: 9; }
