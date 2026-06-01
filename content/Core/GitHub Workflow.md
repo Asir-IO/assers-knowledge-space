@@ -22,3 +22,8 @@ related-notes:
 | --------- | ---- |
 
 <!-- SerializedQuery END -->
+
+---
+# Sources
+- [Learn Git Branching](https://learngitbranching.js.org/)
+	- an interesting tool that teaches git operations.

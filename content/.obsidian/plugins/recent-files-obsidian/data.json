@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "GitHub Workflow",
+      "path": "Core/GitHub Workflow.md"
+    },
+    {
       "basename": "index",
       "path": "index.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "Supervised Project Report",
       "path": "Core/Supervised Project Report.md"
-    },
-    {
-      "basename": "GitHub Workflow",
-      "path": "Core/GitHub Workflow.md"
     },
     {
       "basename": "Facial Expression Recognition Project Report",
