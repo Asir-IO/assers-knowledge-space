@@ -1,13 +1,13 @@
 ---
-isNote: true
-title: <% tp.file.title %>
-date: <% tp.date.now('YYYY-MM-DD') %>
+isNote: false
+title: Machine Learning
+date: 2026-05-31
 tags:
   - type/concept
   - topic/
   - course/
   - domain/
-draft: true
+draft: false
 thumbnail:
 comments: true
 related-notes:
@@ -30,3 +30,4 @@ related-notes:
 
 ---
 # Sources
+- [Teaching Computers to Learn - YouTube](https://www.youtube.com/playlist?list=PLZErML25eQ-NH9pF6zfcrB06tFT4qFeAJ)

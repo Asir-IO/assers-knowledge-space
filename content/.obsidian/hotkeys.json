@@ -22,5 +22,13 @@
       ],
       "key": "P"
     }
+  ],
+  "obs-text-wrapper:quick-tag-one": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "U"
+    }
   ]
 }

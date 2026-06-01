@@ -12,11 +12,6 @@ thumbnail:
 comments: true
 related-notes:
 ---
-# The Trigger
-...
-
----
-# The Dump
 ...
 
 ---

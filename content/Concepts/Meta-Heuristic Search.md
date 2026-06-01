@@ -5,8 +5,8 @@ date: 2026-05-03
 tags:
   - type/concept
   - topic/
-  - course/
-  - domain/
+  - course/AI313
+  - domain/ai
 draft: true
 thumbnail:
 related-notes:
@@ -33,6 +33,12 @@ It moves towards the optimal state by relying solely on the heuristic value of t
 - **Local Beam Search:** To counteract extreme memory limitations without getting stuck as easily, this algorithm keeps track of $k$ states instead of just one. It generates all successors for all $k$ states, selects the $k$ absolute best successors from that entire pool, and repeats the process.
     
 - **Genetic Algorithms (GAs):** An evolutionary variant of stochastic beam search that utilizes populations of candidate solutions. Instead of just modifying a single state, it generates new states by combining two parent states (Crossover) selected via a Fitness Function (survival of the fittest). It also introduces random changes (Mutation) to maintain diversity in the population.
+
+> [!with-desc]
+> ![[Meta-Heuristic Search-1.png]]
+> > [!desc]
+> > (Abualigah, L., Diabat, A. Advances in Sine Cosine Algorithm: A comprehensive survey. 
+> > Artif Intell Rev 54, 2567–2608 (2021). https://doi.org/10.1007/s10462-020-09909-3)
 
 ---
 # Example

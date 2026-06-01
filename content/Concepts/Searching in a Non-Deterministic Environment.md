@@ -1,7 +1,7 @@
 ---
 isNote: true
-title: <% tp.file.title %>
-date: <% tp.date.now('YYYY-MM-DD') %>
+title: Searching in a Non-Deterministic Space
+date: 2026-05-31
 tags:
   - type/concept
   - topic/
@@ -12,7 +12,12 @@ thumbnail:
 comments: true
 related-notes:
 ---
-...
+# In a non-deterministic environment...
+"Doing" an action does not imply "reaching" its logical outcome anymore.
+
+You now <u>not</u> only need to find an optimal sequence of actions, you also need to <u>have a plan</u> that covers <u>all</u> the outcomes that an optimal non-deterministic action could lead to.
+
+This plan ofc introduces branching (if/then statements), and an *and-or tree* is used to model this.
 
 ---
 # Example
