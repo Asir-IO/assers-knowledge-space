@@ -43,7 +43,7 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
                   return
                 }
                 if (node.depth <= opts.maxDepth) {
-                  const text = toString(node)
+                  const text = toString(node).replace(/<\/?[^>]+(>|$)/g, "") //remove all html tags
                   highestDepth = Math.min(highestDepth, node.depth)
                   toc.push({
                     depth: node.depth,

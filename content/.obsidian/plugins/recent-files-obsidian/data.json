@@ -1,44 +1,108 @@
 {
   "recentFiles": [
     {
+      "basename": "Minimax Algorithm",
+      "path": "Concepts/Minimax Algorithm.md"
+    },
+    {
       "basename": "Meta-Heuristic Search",
       "path": "Concepts/Meta-Heuristic Search.md"
     },
     {
-      "basename": "changelog",
-      "path": "changelog.md"
-    },
-    {
-      "basename": "with-description block",
-      "path": "z2-Meta/Templates/with-description block.md"
-    },
-    {
-      "basename": "2-column block",
-      "path": "z2-Meta/Templates/2-column block.md"
-    },
-    {
-      "basename": "university courses",
-      "path": "university courses.md"
-    },
-    {
-      "basename": "Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.md"
+      "basename": "AI313",
+      "path": "z1-Assets/AI313.canvas"
     },
     {
       "basename": "Meta-Heuristic Search 2026-06-01 16.36.00.excalidraw",
       "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 16.36.00.excalidraw.md"
     },
     {
-      "basename": "Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw.md"
-    },
-    {
-      "basename": "Aggregation in Pandas",
-      "path": "Concepts/Aggregation in Pandas.md"
+      "basename": "Meta-Heuristic Search 2026-06-03 00.06.00.excalidraw",
+      "path": "z1-Assets/Meta-Heuristic Search 2026-06-03 00.06.00.excalidraw.md"
     },
     {
       "basename": "Meta-Heuristic Search 2026-06-01 14.56.58.excalidraw",
       "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.56.58.excalidraw.md"
+    },
+    {
+      "basename": "Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw",
+      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw.md"
+    },
+    {
+      "basename": "Agent Architectures",
+      "path": "Concepts/Agent Architectures.md"
+    },
+    {
+      "basename": "Task Environment of an Agent",
+      "path": "Concepts/Task Environment of an Agent.md"
+    },
+    {
+      "basename": "university courses",
+      "path": "university courses.md"
+    },
+    {
+      "basename": "concept-icon",
+      "path": "z1-Assets/concept-icon.svg"
+    },
+    {
+      "basename": "Feedback Loops 2026-01-22 00.41.03.excalidraw",
+      "path": "z1-Assets/Feedback Loops 2026-01-22 00.41.03.excalidraw.svg"
+    },
+    {
+      "basename": "Block Diagram Feedback Connection",
+      "path": "Strategies/Block Diagram Feedback Connection.md"
+    },
+    {
+      "basename": "Backpropagation in a Neural Network 2026-04-09 21.40.47.excalidraw",
+      "path": "z1-Assets/Backpropagation in a Neural Network 2026-04-09 21.40.47.excalidraw.svg"
+    },
+    {
+      "basename": "Bayesian Networks 2026-03-20 20.54.47.excalidraw",
+      "path": "z1-Assets/Bayesian Networks 2026-03-20 20.54.47.excalidraw.svg"
+    },
+    {
+      "basename": "Workflow",
+      "path": "z2-Meta/Templates/Workflow.md"
+    },
+    {
+      "basename": "Strategy",
+      "path": "z2-Meta/Templates/Strategy.md"
+    },
+    {
+      "basename": "Core",
+      "path": "z2-Meta/Templates/Core.md"
+    },
+    {
+      "basename": "Concept",
+      "path": "z2-Meta/Templates/Concept.md"
+    },
+    {
+      "basename": "changelog",
+      "path": "changelog.md"
+    },
+    {
+      "basename": "far-right text",
+      "path": "z2-Meta/Templates/far-right text.md"
+    },
+    {
+      "basename": "2-column block",
+      "path": "z2-Meta/Templates/2-column block.md"
+    },
+    {
+      "basename": "AI313",
+      "path": "tags/course/AI313.md"
+    },
+    {
+      "basename": "with-description block",
+      "path": "z2-Meta/Templates/with-description block.md"
+    },
+    {
+      "basename": "Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw",
+      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.md"
+    },
+    {
+      "basename": "Aggregation in Pandas",
+      "path": "Concepts/Aggregation in Pandas.md"
     },
     {
       "basename": "Aggregation in Pandas 2026-05-06 23.20.48.excalidraw",
@@ -47,10 +111,6 @@
     {
       "basename": "Neuro-Fuzzy Systems 2026-05-05 02.53.40.excalidraw",
       "path": "z1-Assets/Neuro-Fuzzy Systems 2026-05-05 02.53.40.excalidraw.md"
-    },
-    {
-      "basename": "Minimax Algorithm",
-      "path": "Concepts/Minimax Algorithm.md"
     },
     {
       "basename": "Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw",
@@ -133,72 +193,12 @@
       "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.11.19.excalidraw.md"
     },
     {
-      "basename": "AI313",
-      "path": "tags/course/AI313.md"
-    },
-    {
       "basename": "GitHub Workflow",
       "path": "Core/GitHub Workflow.md"
     },
     {
       "basename": "index",
       "path": "index.md"
-    },
-    {
-      "basename": "Machine Learning",
-      "path": "Concepts/Machine Learning.md"
-    },
-    {
-      "basename": "Concept",
-      "path": "z2-Meta/Templates/Concept.md"
-    },
-    {
-      "basename": "Core",
-      "path": "z2-Meta/Templates/Core.md"
-    },
-    {
-      "basename": "Neo4j Knowledge Graph",
-      "path": "Core/Neo4j Knowledge Graph.md"
-    },
-    {
-      "basename": "Inventory Chatbot",
-      "path": "Core/Inventory Chatbot.md"
-    },
-    {
-      "basename": "Signals Book Indexes",
-      "path": "Core/Signals Book Indexes.md"
-    },
-    {
-      "basename": "Supervised Project",
-      "path": "Core/Supervised Project.md"
-    },
-    {
-      "basename": "System Prompt Schema",
-      "path": "Core/System Prompt Schema.md"
-    },
-    {
-      "basename": "Supervised Project Report",
-      "path": "Core/Supervised Project Report.md"
-    },
-    {
-      "basename": "Facial Expression Recognition Project Report",
-      "path": "Core/Facial Expression Recognition Project Report.md"
-    },
-    {
-      "basename": "Bender Gestalt Test Tool",
-      "path": "Core/Bender Gestalt Test Tool.md"
-    },
-    {
-      "basename": "Axes and Aggregation in Numpy",
-      "path": "Core/Axes and Aggregation in Numpy.md"
-    },
-    {
-      "basename": "Assignment One Report",
-      "path": "Core/Assignment One Report.md"
-    },
-    {
-      "basename": "APR Method",
-      "path": "Core/APR Method.md"
     }
   ],
   "omittedPaths": [],

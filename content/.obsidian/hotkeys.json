@@ -38,5 +38,13 @@
       ],
       "key": "D"
     }
+  ],
+  "obs-text-wrapper:quick-tag-two": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "B"
+    }
   ]
 }
