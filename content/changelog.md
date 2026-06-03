@@ -85,6 +85,7 @@ An ordered list doesn't have to be indexed by decimal numbers only anymore; I ma
 ### Related Files
 - `quartz\styles\custom.scss`
 - `quartz\plugins\transformers\liststyle.ts`
+- `quartz.config.ts`
 
 ---
 # 2-column blocks
@@ -191,3 +192,15 @@ Clicking an Image now expands it as a lightbox.
 ### Related Files
 - `quartz\components\Lightbox.tsx`
 - `quartz\components\styles\lightbox.scss`
+- `quartz.layout.ts`
+
+---
+# Highlight Targeted Headings/Text
+Targeted headings or text are now highlighted by a dotted frame to guide the eyes towards them. The Heading name also gets highlighted in the TOC. ^575d6b
+
+Here, try it [[#^575d6b|=)]]
+### Related Files
+- `quartz\styles\custom.scss`
+- `quartz\components\scripts\target.inline.ts`
+- `quartz\components\TargetHighlight.tsx`
+- `quartz.layout.ts`

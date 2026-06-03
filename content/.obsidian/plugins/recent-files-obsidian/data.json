@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "changelog",
+      "path": "changelog.md"
+    },
+    {
+      "basename": "knowledge domains",
+      "path": "knowledge domains.md"
+    },
+    {
       "basename": "A-Star Search",
       "path": "Concepts/A-Star Search.md"
     },
     {
       "basename": "Autoencoders",
       "path": "Concepts/Autoencoders.md"
-    },
-    {
-      "basename": "knowledge domains",
-      "path": "knowledge domains.md"
     },
     {
       "basename": "EER to Relational Schema Mapping",
@@ -195,10 +199,6 @@
     {
       "basename": "Uniform Cost Search",
       "path": "Concepts/Uniform Cost Search.md"
-    },
-    {
-      "basename": "Transposing a Matrix 2026-02-24 16.26.41.excalidraw.dark",
-      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.26.41.excalidraw.dark.svg"
     }
   ],
   "omittedPaths": [],
