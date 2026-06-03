@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "university courses",
+      "path": "university courses.md"
+    },
+    {
       "basename": "Minimax Algorithm",
       "path": "Concepts/Minimax Algorithm.md"
     },
     {
-      "basename": "Meta-Heuristic Search",
-      "path": "Concepts/Meta-Heuristic Search.md"
+      "basename": "Uniform Cost Search",
+      "path": "Concepts/Uniform Cost Search.md"
     },
     {
       "basename": "AI313",
       "path": "z1-Assets/AI313.canvas"
+    },
+    {
+      "basename": "AI313",
+      "path": "tags/course/AI313.md"
+    },
+    {
+      "basename": "A-Star Search",
+      "path": "Concepts/A-Star Search.md"
+    },
+    {
+      "basename": "Meta-Heuristic Search",
+      "path": "Concepts/Meta-Heuristic Search.md"
     },
     {
       "basename": "Meta-Heuristic Search 2026-06-01 16.36.00.excalidraw",
@@ -35,10 +51,6 @@
     {
       "basename": "Task Environment of an Agent",
       "path": "Concepts/Task Environment of an Agent.md"
-    },
-    {
-      "basename": "university courses",
-      "path": "university courses.md"
     },
     {
       "basename": "concept-icon",
@@ -87,10 +99,6 @@
     {
       "basename": "2-column block",
       "path": "z2-Meta/Templates/2-column block.md"
-    },
-    {
-      "basename": "AI313",
-      "path": "tags/course/AI313.md"
     },
     {
       "basename": "with-description block",
@@ -191,14 +199,6 @@
     {
       "basename": "Fuzzy Logic 2026-05-02 00.11.19.excalidraw",
       "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.11.19.excalidraw.md"
-    },
-    {
-      "basename": "GitHub Workflow",
-      "path": "Core/GitHub Workflow.md"
-    },
-    {
-      "basename": "index",
-      "path": "index.md"
     }
   ],
   "omittedPaths": [],

@@ -1,7 +1,7 @@
 ---
-isNote: false
-title: Minimax Algorithm
-date: 2026-05-31
+isNote: true
+title: A-Star Search
+date: 2026-06-03
 tags:
   - type/concept
   - topic/
@@ -12,7 +12,21 @@ thumbnail:
 comments: true
 related-notes:
 ---
-...
+A\* *attempts* to solve the broad movement issue of UCS and tries to make its movement more directed/biased towards the goal state.
+
+---
+# Adding a Heuristic Value
+It does this by adding a heuristic value to the total cost of a state path.
+
+The Heuristic Value of a state n: $h^*(n)$ should follow the following rules:
+1. {i} $h^*(n)\leq h(n)$ 
+	- it must be at MOST as large as the actual cost to the goal state
+2. Monotonicity
+This heuristic value should generally be 
+
+
+- Admissible heuristics can be derived from exact solution of relaxed problems.
+(Google this)
 
 ---
 # Example
@@ -30,8 +44,5 @@ related-notes:
 
 ---
 # Sources
-- [6. Search: Games, Minimax, and Alpha-Beta](https://www.youtube.com/watch?v=STjW3eH0Cik)
-- [Minimax: How Computers Play Games](https://www.youtube.com/watch?v=SLgZhpDsrfc)
-- [Minimax and Alpha-Beta Prunning simulator](https://raphsilva.github.io/utilities/minimax_simulator/#)
-- https://www.youtube.com/watch?v=l-hh51ncgDI
+
 - 
