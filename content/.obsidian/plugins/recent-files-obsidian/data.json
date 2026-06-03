@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Bayesian Networks",
+      "path": "Concepts/Bayesian Networks.md"
+    },
+    {
       "basename": "changelog",
       "path": "changelog.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "university courses",
       "path": "university courses.md"
-    },
-    {
-      "basename": "Uniform Cost Search",
-      "path": "Concepts/Uniform Cost Search.md"
     }
   ],
   "omittedPaths": [],

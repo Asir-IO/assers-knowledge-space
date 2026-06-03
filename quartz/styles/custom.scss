@@ -499,26 +499,41 @@ img[alt^="h-"] {
   margin:0;
 }
 
-// :target {
-//   border: 2px dotted var(--secondary);
-//   padding: 0.5rem 0.5rem;
-//   // border-radius: 5px;
-//   scroll-margin-top: 80px;
-// }
-/* Highlights the active link in the Table of Contents */
+/* FEATURE: Highlight Targeted Headings/Text */
 .is-targeted {
   border: 2px dotted var(--secondary);
   padding: 0.5rem 0.5rem;
-  border-radius: 5px;
+  // border-radius: 5px;
   scroll-margin-top: 80px;
 }
 .is-targeted-toc {
-  /* Option A: Changes the text to your secondary color and makes it bold (Recommended) */
   color: var(--secondary) !important;
   font-weight: bold;
-  
-  /* Option B: If you prefer the matching dotted frame, uncomment the lines below */
-  /* border: 2px dotted var(--secondary); */
-  /* padding: 0.1rem 0.25rem; */
-  /* border-radius: 4px; */
+}
+
+/* FEATURE: Explorer with better file readability */
+.explorer {
+  ul {
+    li {
+      > a {
+        display: block;          
+        width: 100%;             
+        box-sizing: border-box;
+        padding-right: 12px;
+        white-space: nowrap;     
+        overflow: hidden;        
+        text-overflow: ellipsis; 
+
+        &::before {
+          content: "* ";
+          font-weight: bold;
+          font-size: 1.4em;
+          color: var(--tertiary);
+          margin-right: 4px;     
+          opacity: 0.8;
+          vertical-align: text-top;
+        }
+      }
+    }
+  }
 }
