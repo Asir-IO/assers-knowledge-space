@@ -1,10 +1,9 @@
 ---
-isNote: false
+isNote: true
 title: EER to Relational Schema Mapping
 date: 2026-04-10
 tags:
   - type/concept
-  - topic/
   - course/IS211
   - domain/systems
 draft: false

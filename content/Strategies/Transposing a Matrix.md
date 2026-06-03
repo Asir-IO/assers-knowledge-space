@@ -4,8 +4,7 @@ title: Transposing a Matrix
 date: 2026-02-24
 tags:
   - type/strategy
-  - topic/
-  - domain/math
+  - domain/maths
 draft: false
 thumbnail: "[[Transposing a Matrix 2026-02-24 16.11.14.excalidraw.svg]]"
 comments: true

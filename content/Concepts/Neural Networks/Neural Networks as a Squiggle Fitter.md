@@ -4,7 +4,6 @@ title: Neural Networks as a Squiggle Fitter
 date: 2026-02-26
 tags:
   - type/concept
-  - topic/
   - course/
   - domain/ai
 draft: false

@@ -4,7 +4,6 @@ title: Aggregation in Pandas
 date: 2026-05-06
 tags:
   - type/concept
-  - topic/
   - course/
   - domain/
 draft: true

@@ -4,7 +4,6 @@ title: Neuro-Fuzzy Systems
 date: 2026-05-02
 tags:
   - type/concept
-  - topic/
   - course/AI312
   - domain/ai
 draft: false

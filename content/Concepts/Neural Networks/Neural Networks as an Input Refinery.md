@@ -4,7 +4,6 @@ title: Neural Networks as an Input Refinery
 date: 2026-02-24
 tags:
   - type/concept
-  - topic/
   - domain/ai
   - course/
 draft: false

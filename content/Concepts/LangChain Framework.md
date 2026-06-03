@@ -4,7 +4,6 @@ title: LangChain Framework
 date: 2026-03-03
 tags:
   - type/concept
-  - topic/
   - domain/ai
   - course/orange-agentic-ai
 draft: false

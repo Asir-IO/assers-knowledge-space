@@ -3,7 +3,6 @@ isNote: true
 title: Cognitive Assign 1 Report
 date: 2026-03-28
 tags:
-  - topic/
   - course/
   - domain/
   - type/

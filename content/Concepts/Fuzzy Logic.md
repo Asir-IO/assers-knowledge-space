@@ -4,7 +4,6 @@ title: Fuzzy Logic
 date: 2026-05-01
 tags:
   - type/concept
-  - topic/
   - course/AI312
   - domain/ai
 draft: true

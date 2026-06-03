@@ -4,7 +4,6 @@ title: Recurrent Neural Networks
 date: 2026-05-07
 tags:
   - type/concept
-  - topic/
   - course/
   - domain/
 draft: true

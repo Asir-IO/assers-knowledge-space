@@ -4,10 +4,9 @@ title: Uniform Cost Search
 date: 2026-06-03
 tags:
   - type/concept
-  - topic/
   - course/AI313
   - domain/ai
-draft: true
+draft: false
 thumbnail:
 comments: true
 related-notes:

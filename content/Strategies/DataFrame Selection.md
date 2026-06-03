@@ -4,7 +4,6 @@ title: DataFrame Selection
 date: 2026-02-05
 tags:
   - type/strategy
-  - topic/
   - domain/ai
 draft: false
 thumbnail: "[[Pandas DataFrames 2026-02-04 00.42.58.excalidraw.svg]]"

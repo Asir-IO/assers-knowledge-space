@@ -4,14 +4,13 @@ title: Insertion in a RB Tree
 date: 2026-01-12
 tags:
   - type/strategy
-  - topic/
   - course/CS321
   - domain/cs-theory
 draft: false
 thumbnail: "[[Insertion in a RB Tree 2026-01-12 16.51.58.excalidraw.svg]]"
 comments: true
 related-notes:
--  "[[Deletion in a RB Tree]]"
+  - "[[Deletion in a RB Tree]]"
 ---
 ## What is the problem
 You'll either:

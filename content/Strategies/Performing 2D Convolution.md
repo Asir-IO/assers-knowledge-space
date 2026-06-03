@@ -4,7 +4,6 @@ title: Performing 2D Convolution
 date: 2026-03-29
 tags:
   - type/strategy
-  - topic/
   - course/AI322
   - course/IT443
   - domain/ai

@@ -3,7 +3,6 @@ isNote: true
 title: Linked Lists
 date: 2026-01-11
 tags:
-  - topic/
   - type/concept
   - course/CS214
   - domain/cs-theory

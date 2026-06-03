@@ -4,7 +4,6 @@ title: A-Star Search
 date: 2026-06-03
 tags:
   - type/concept
-  - topic/
   - course/AI313
   - domain/ai
 draft: false
@@ -12,7 +11,7 @@ thumbnail:
 comments: true
 related-notes:
 ---
-A\* *attempts* to solve the broad movement issue of UCS and tries to make its movement more directed/biased towards the goal state.
+A\* *attempts* to solve the broad movement issue of UCS and tries to make its movement more directed/biased towards the goal state. ^8cf1c1
 
 ---
 # Adding a Heuristic Value
@@ -30,7 +29,7 @@ This heuristic value should generally be
 
 ---
 # Example
-...
+... [[#^8cf1c1|1]]
 
 ---
 # Related Notes

@@ -3,7 +3,6 @@ isNote: true
 title: Signals Book Indexes
 date: 2026-01-15
 tags:
-  - topic/
   - course/IT341
   - type/
   - domain/

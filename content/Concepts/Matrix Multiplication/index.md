@@ -1,12 +1,11 @@
 ---
-isNote: true
+isNote: false
 title: Matrix Multiplication
 date: 2026-03-13
 tags:
   - type/concept
-  - topic/
   - course/
-  - domain/math
+  - domain/maths
 draft: false
 comments: true
 related-notes:

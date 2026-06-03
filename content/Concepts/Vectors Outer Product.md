@@ -4,9 +4,8 @@ title: Vectors Outer Product
 date: 2026-03-09
 tags:
   - type/concept
-  - topic/
   - course/
-  - domain/math
+  - domain/maths
 draft: false
 comments: true
 related-notes:

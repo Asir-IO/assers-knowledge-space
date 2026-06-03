@@ -3,7 +3,6 @@ isNote: true
 title: LangGraph Framework
 date: 2026-03-03
 tags:
-  - topic/
   - type/concept
   - domain/ai
   - course/orange-agentic-ai

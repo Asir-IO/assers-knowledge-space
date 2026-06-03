@@ -4,8 +4,7 @@ title: Implication
 date: 2026-01-19
 tags:
   - type/concept
-  - topic/
-  - domain/math
+  - domain/maths
   - course/
 draft: false
 thumbnail: "[[Implication 2026-01-19 00.58.19.excalidraw.svg]]"

@@ -3,7 +3,6 @@ isNote: true
 title: Cool Visualizations I found
 date: 2026-05-11
 tags:
-  - topic/
   - course/
   - domain/
   - type/

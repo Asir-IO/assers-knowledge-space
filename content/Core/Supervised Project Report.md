@@ -1,9 +1,8 @@
 ---
-isNote: false
+isNote: true
 title: Supervised Project Report
 date: 2026-04-25
 tags:
-  - topic/
   - course/
   - domain/ai
   - type/

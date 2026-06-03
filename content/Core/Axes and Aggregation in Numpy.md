@@ -1,9 +1,8 @@
 ---
-isNote: false
+isNote: true
 title: Axes and Aggregation in Numpy
 date: 2026-04-21
 tags:
-  - topic/
   - course/
   - type/
   - domain/ai

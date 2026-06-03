@@ -5,200 +5,200 @@
       "path": "Concepts/A-Star Search.md"
     },
     {
-      "basename": "Uniform Cost Search",
-      "path": "Concepts/Uniform Cost Search.md"
+      "basename": "Autoencoders",
+      "path": "Concepts/Autoencoders.md"
     },
     {
-      "basename": "Agent Architectures",
-      "path": "Concepts/Agent Architectures.md"
+      "basename": "knowledge domains",
+      "path": "knowledge domains.md"
     },
     {
-      "basename": "DataFrame Selection",
-      "path": "Strategies/DataFrame Selection.md"
+      "basename": "EER to Relational Schema Mapping",
+      "path": "Concepts/EER to Relational Schema Mapping.md"
+    },
+    {
+      "basename": "index",
+      "path": "index.md"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.26.41.excalidraw",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.26.41.excalidraw.md"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.26.41.excalidraw",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.26.41.excalidraw.svg"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.24.02.excalidraw.dark",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.24.02.excalidraw.dark.svg"
+    },
+    {
+      "basename": "Matrix Multiplications as Outer Products 2026-03-09 00.53.50.excalidraw",
+      "path": "z1-Assets/Matrix Multiplications as Outer Products 2026-03-09 00.53.50.excalidraw.md"
+    },
+    {
+      "basename": "Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw",
+      "path": "z1-Assets/Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg"
+    },
+    {
+      "basename": "Matrix Multiplications as Outer Products 2026-03-09 00.53.50.excalidraw",
+      "path": "z1-Assets/Matrix Multiplications as Outer Products 2026-03-09 00.53.50.excalidraw.svg"
+    },
+    {
+      "basename": "Matrix Multiplications as Outer Products 2026-03-09 00.55.32.excalidraw",
+      "path": "z1-Assets/Matrix Multiplications as Outer Products 2026-03-09 00.55.32.excalidraw.md"
+    },
+    {
+      "basename": "Matrix Multiplications as Outer Products",
+      "path": "Concepts/Matrix Multiplication/Matrix Multiplications as Outer Products.md"
+    },
+    {
+      "basename": "Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw",
+      "path": "z1-Assets/Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.svg"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.24.02.excalidraw",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.24.02.excalidraw.md"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.21.50.excalidraw",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.21.50.excalidraw.md"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.20.24.excalidraw",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.20.24.excalidraw.md"
+    },
+    {
+      "basename": "Transposing a Matrix 2026-02-24 16.11.14.excalidraw",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.11.14.excalidraw.md"
+    },
+    {
+      "basename": "Transposing a Matrix",
+      "path": "Strategies/Transposing a Matrix.md"
+    },
+    {
+      "basename": "Matrix Multiplication 2026-02-24 17.39.10.excalidraw",
+      "path": "z1-Assets/Matrix Multiplication 2026-02-24 17.39.10.excalidraw.md"
+    },
+    {
+      "basename": "Matrix Multiplication 2026-02-24 17.19.00.excalidraw",
+      "path": "z1-Assets/Matrix Multiplication 2026-02-24 17.19.00.excalidraw.md"
+    },
+    {
+      "basename": "Matrix Multiplication 2026-02-24 17.12.25.excalidraw",
+      "path": "z1-Assets/Matrix Multiplication 2026-02-24 17.12.25.excalidraw.md"
+    },
+    {
+      "basename": "Matrix Multiplication 2026-02-24 01.14.37.excalidraw",
+      "path": "z1-Assets/Matrix Multiplication 2026-02-24 01.14.37.excalidraw.md"
+    },
+    {
+      "basename": "Matrix Multiplication as Inner Products",
+      "path": "Concepts/Matrix Multiplication/Matrix Multiplication as Inner Products.md"
+    },
+    {
+      "basename": "Matrix Multiplications as Outer Products 2026-05-26 19.28.42.excalidraw",
+      "path": "z1-Assets/Matrix Multiplications as Outer Products 2026-05-26 19.28.42.excalidraw.md"
+    },
+    {
+      "basename": "Abstracting how a tabular DP algorithm operates 2026-01-26 14.33.05.excalidraw",
+      "path": "z1-Assets/Abstracting how a tabular DP algorithm operates 2026-01-26 14.33.05.excalidraw.md"
+    },
+    {
+      "basename": "Abstracting how a tabular DP algorithm operates 2026-01-26 13.57.09.excalidraw",
+      "path": "z1-Assets/Abstracting how a tabular DP algorithm operates 2026-01-26 13.57.09.excalidraw.md"
+    },
+    {
+      "basename": "Abstracting how a tabular DP algorithm operates 2026-01-26 13.43.25.excalidraw",
+      "path": "z1-Assets/Abstracting how a tabular DP algorithm operates 2026-01-26 13.43.25.excalidraw.md"
+    },
+    {
+      "basename": "Abstracting how a tabular DP algorithm operates 2026-01-26 13.35.15.excalidraw",
+      "path": "z1-Assets/Abstracting how a tabular DP algorithm operates 2026-01-26 13.35.15.excalidraw.md"
+    },
+    {
+      "basename": "Abstracting a Tabular DP algorithm",
+      "path": "Core/Abstracting a Tabular DP algorithm.md"
+    },
+    {
+      "basename": "Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw",
+      "path": "z1-Assets/Abstracting how a tabular DP algorithm operates 2026-01-26 13.23.58.excalidraw.md"
+    },
+    {
+      "basename": "Color-Coded Touch Typing",
+      "path": "Strategies/Color-Coded Touch Typing.md"
     },
     {
       "basename": "Minimax Algorithm",
       "path": "Concepts/Minimax Algorithm.md"
     },
     {
-      "basename": "changelog",
-      "path": "changelog.md"
+      "basename": "Agent Architectures",
+      "path": "Concepts/Agent Architectures.md"
     },
     {
-      "basename": "AI313",
-      "path": "z1-Assets/AI313.canvas"
+      "basename": "Cognitive Assign 1 Report",
+      "path": "Core/Cognitive Assign 1 Report.md"
     },
     {
-      "basename": "university courses",
-      "path": "university courses.md"
+      "basename": "Machine Learning",
+      "path": "Concepts/Machine Learning.md"
     },
     {
-      "basename": "AI313",
-      "path": "tags/course/AI313.md"
+      "basename": "index",
+      "path": "Strategies/index.md"
     },
     {
-      "basename": "Meta-Heuristic Search",
-      "path": "Concepts/Meta-Heuristic Search.md"
+      "basename": "Assignment One Report",
+      "path": "Core/Assignment One Report.md"
     },
     {
-      "basename": "Meta-Heuristic Search 2026-06-01 16.36.00.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 16.36.00.excalidraw.md"
+      "basename": "index",
+      "path": "Core/index.md"
     },
     {
-      "basename": "Meta-Heuristic Search 2026-06-03 00.06.00.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-03 00.06.00.excalidraw.md"
+      "basename": "index",
+      "path": "Concepts/Dimensionality Reduction/index.md"
     },
     {
-      "basename": "Meta-Heuristic Search 2026-06-01 14.56.58.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.56.58.excalidraw.md"
+      "basename": "index",
+      "path": "Concepts/Matrix Multiplication/index.md"
     },
     {
-      "basename": "Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw.md"
+      "basename": "index",
+      "path": "Concepts/Neural Networks/index.md"
     },
     {
-      "basename": "Task Environment of an Agent",
-      "path": "Concepts/Task Environment of an Agent.md"
+      "basename": "index",
+      "path": "Concepts/index.md"
     },
     {
-      "basename": "concept-icon",
-      "path": "z1-Assets/concept-icon.svg"
-    },
-    {
-      "basename": "Feedback Loops 2026-01-22 00.41.03.excalidraw",
-      "path": "z1-Assets/Feedback Loops 2026-01-22 00.41.03.excalidraw.svg"
-    },
-    {
-      "basename": "Block Diagram Feedback Connection",
-      "path": "Strategies/Block Diagram Feedback Connection.md"
-    },
-    {
-      "basename": "Backpropagation in a Neural Network 2026-04-09 21.40.47.excalidraw",
-      "path": "z1-Assets/Backpropagation in a Neural Network 2026-04-09 21.40.47.excalidraw.svg"
-    },
-    {
-      "basename": "Bayesian Networks 2026-03-20 20.54.47.excalidraw",
-      "path": "z1-Assets/Bayesian Networks 2026-03-20 20.54.47.excalidraw.svg"
-    },
-    {
-      "basename": "Workflow",
-      "path": "z2-Meta/Templates/Workflow.md"
-    },
-    {
-      "basename": "Strategy",
-      "path": "z2-Meta/Templates/Strategy.md"
-    },
-    {
-      "basename": "Core",
-      "path": "z2-Meta/Templates/Core.md"
-    },
-    {
-      "basename": "Concept",
-      "path": "z2-Meta/Templates/Concept.md"
-    },
-    {
-      "basename": "far-right text",
-      "path": "z2-Meta/Templates/far-right text.md"
-    },
-    {
-      "basename": "2-column block",
-      "path": "z2-Meta/Templates/2-column block.md"
-    },
-    {
-      "basename": "with-description block",
-      "path": "z2-Meta/Templates/with-description block.md"
-    },
-    {
-      "basename": "Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw",
-      "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.md"
+      "basename": "Backpropagation in a Neural Network",
+      "path": "Concepts/Backpropagation in a Neural Network.md"
     },
     {
       "basename": "Aggregation in Pandas",
       "path": "Concepts/Aggregation in Pandas.md"
     },
     {
-      "basename": "Aggregation in Pandas 2026-05-06 23.20.48.excalidraw",
-      "path": "z1-Assets/Aggregation in Pandas 2026-05-06 23.20.48.excalidraw.md"
+      "basename": "Task Environment of an Agent",
+      "path": "Concepts/Task Environment of an Agent.md"
     },
     {
-      "basename": "Neuro-Fuzzy Systems 2026-05-05 02.53.40.excalidraw",
-      "path": "z1-Assets/Neuro-Fuzzy Systems 2026-05-05 02.53.40.excalidraw.md"
+      "basename": "Axes and Aggregation in Numpy",
+      "path": "Core/Axes and Aggregation in Numpy.md"
     },
     {
-      "basename": "Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw",
-      "path": "z1-Assets/Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.md"
+      "basename": "university courses",
+      "path": "university courses.md"
     },
     {
-      "basename": "Neuro-Fuzzy Systems",
-      "path": "Concepts/Neuro-Fuzzy Systems.md"
+      "basename": "Uniform Cost Search",
+      "path": "Concepts/Uniform Cost Search.md"
     },
     {
-      "basename": "Fuzzy Logic",
-      "path": "Concepts/Fuzzy Logic.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 01.11.39.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 01.11.39.excalidraw.svg"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 01.11.39.excalidraw.dark",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 01.11.39.excalidraw.dark.svg"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.38.32.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.38.32.excalidraw.svg"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.38.32.excalidraw.dark",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.38.32.excalidraw.dark.svg"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.38.32.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.38.32.excalidraw.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.18.20.excalidraw.dark",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.18.20.excalidraw.dark.svg"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.14.02.excalidraw.dark",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.14.02.excalidraw.dark.svg"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.18.20.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.18.20.excalidraw.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.14.02.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.14.02.excalidraw.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-01 20.08.03.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-01 20.08.03.excalidraw.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-01 15.59.18.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-01 15.59.18.excalidraw.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-01 19.51.37.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-01 19.51.37.excalidraw.md"
-    },
-    {
-      "basename": "Feedback Loops 2026-01-22 00.58.26.excalidraw",
-      "path": "z1-Assets/Feedback Loops 2026-01-22 00.58.26.excalidraw.md"
-    },
-    {
-      "basename": "Feedback Loops 2026-01-22 00.52.01.excalidraw",
-      "path": "z1-Assets/Feedback Loops 2026-01-22 00.52.01.excalidraw.md"
-    },
-    {
-      "basename": "Gemini_Generated_Image_xyhk9uxyhk9uxyhk",
-      "path": "z1-Assets/Gemini_Generated_Image_xyhk9uxyhk9uxyhk.png"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 01.11.39.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 01.11.39.excalidraw.md"
+      "basename": "Transposing a Matrix 2026-02-24 16.26.41.excalidraw.dark",
+      "path": "z1-Assets/Transposing a Matrix 2026-02-24 16.26.41.excalidraw.dark.svg"
     }
   ],
   "omittedPaths": [],

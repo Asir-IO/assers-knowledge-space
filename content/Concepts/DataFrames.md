@@ -4,7 +4,6 @@ title: DataFrames
 date: 2026-02-06
 tags:
   - type/concept
-  - topic/
   - domain/ai
   - course/
 draft: false

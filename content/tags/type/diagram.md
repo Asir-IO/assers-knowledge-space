@@ -1,3 +1,0 @@
----
-isNote: false
----

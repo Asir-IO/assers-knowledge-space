@@ -19,7 +19,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "asserknowledgespace.vercel.app/", //asir-io.github.io/assers-knowledge-space
-    ignorePatterns: ["private", "templates", ".obsidian", "z2-Meta", "**/*.excalidraw.md", "./export"],
+    ignorePatterns: ["private", "templates", ".obsidian", "z2-Meta", "**/*.excalidraw.md", "./export", "Excalidraw/Scripts"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

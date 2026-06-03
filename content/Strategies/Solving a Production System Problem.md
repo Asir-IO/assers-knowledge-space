@@ -4,9 +4,8 @@ title: Solving a Production System Problem
 date: 2026-04-03
 tags:
   - type/strategy
-  - topic/
   - course/AI312
-  - domain/math
+  - domain/maths
 draft: false
 thumbnail: "[[Solving a Production System Problem 2026-04-03 19.51.37.excalidraw.svg]]"
 comments: true

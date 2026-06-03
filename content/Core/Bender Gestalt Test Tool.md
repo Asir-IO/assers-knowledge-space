@@ -3,7 +3,6 @@ isNote: true
 title: Bender Gestalt Test Tool
 date: 2026-05-16
 tags:
-  - topic/
   - course/
   - domain/
   - type/

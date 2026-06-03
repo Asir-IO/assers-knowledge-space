@@ -4,7 +4,6 @@ title: Dynamic Bayesian Networks
 date: 2026-04-29
 tags:
   - type/concept
-  - topic/
   - course/
   - domain/
 draft: true

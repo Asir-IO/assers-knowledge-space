@@ -4,7 +4,6 @@ title: Machine Learning
 date: 2026-05-31
 tags:
   - type/concept
-  - topic/
   - course/
   - domain/
 draft: false

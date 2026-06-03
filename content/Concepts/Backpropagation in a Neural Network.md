@@ -4,7 +4,6 @@ title: Backpropagation in a Neural Network
 date: 2026-01-25
 tags:
   - type/concept
-  - topic/
   - course/AI321
   - domain/ai
 draft: false

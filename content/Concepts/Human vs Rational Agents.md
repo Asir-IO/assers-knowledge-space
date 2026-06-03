@@ -4,7 +4,6 @@ title: Human vs Rational Agents
 date: 2026-04-03
 tags:
   - type/concept
-  - topic/
   - course/AI313
   - domain/ai
 draft: false

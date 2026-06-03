@@ -4,7 +4,6 @@ title: Agentic Memory
 date: 2026-04-12
 tags:
   - type/concept
-  - topic/
   - course/orange-agentic-ai
   - domain/ai
 draft: false

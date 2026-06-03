@@ -4,7 +4,6 @@ title: Block Diagram Feedback Connection
 date: 2026-01-22
 tags:
   - type/strategy
-  - topic/
   - course/IT341
   - domain/systems
 draft: false

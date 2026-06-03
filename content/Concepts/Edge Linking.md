@@ -4,7 +4,6 @@ title: Edge Linking
 date: 2026-04-21
 tags:
   - type/concept
-  - topic/
   - course/IT443
   - domain/ai
 draft: false

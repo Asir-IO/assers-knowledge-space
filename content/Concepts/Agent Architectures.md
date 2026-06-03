@@ -4,7 +4,6 @@ title: Agent Architectures
 date: 2026-06-02
 tags:
   - type/concept
-  - topic/
   - course/AI313
   - domain/ai
 draft: false

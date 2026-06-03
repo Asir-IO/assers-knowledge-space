@@ -3,8 +3,7 @@ isNote: true
 title: Matrix Multiplication as Inner Products
 date: 2026-02-24
 tags:
-  - topic/
-  - domain/math
+  - domain/maths
   - type/concept
 draft: false
 thumbnail: "[[Matrix Multiplication as Dot Products 2026-03-09 01.23.38.excalidraw.svg]]"

@@ -4,7 +4,6 @@ title: Bayesian Networks
 date: 2026-03-18
 tags:
   - type/concept
-  - topic/
   - domain/ai
   - course/AI332
 draft: false

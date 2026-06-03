@@ -4,9 +4,8 @@ title: Doing a Resolution Proof
 date: 2026-04-03
 tags:
   - type/strategy
-  - topic/
   - course/AI312
-  - domain/math
+  - domain/maths
 draft: false
 thumbnail: "[[Doing a Resolution Proof 2026-04-04 00.58.01.excalidraw.svg]]"
 comments: true

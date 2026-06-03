@@ -4,7 +4,6 @@ title: Dynamic Programming
 date: 2026-01-12
 tags:
   - type/concept
-  - topic/
   - course/CS321
   - domain/cs-theory
 draft: true

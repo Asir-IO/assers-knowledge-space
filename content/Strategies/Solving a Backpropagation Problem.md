@@ -4,7 +4,6 @@ title: Solving a Backpropagation Problem
 date: 2026-04-09
 tags:
   - type/strategy
-  - topic/
   - course/AI321
   - course/AI322
   - domain/ai

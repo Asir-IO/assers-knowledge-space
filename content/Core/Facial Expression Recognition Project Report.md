@@ -3,7 +3,6 @@ isNote: true
 title: Facial Expression Recognition Project Report
 date: 2026-05-08
 tags:
-  - topic/
   - course/
   - domain/
   - type/

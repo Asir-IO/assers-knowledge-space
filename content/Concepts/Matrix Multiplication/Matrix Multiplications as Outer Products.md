@@ -3,9 +3,8 @@ isNote: true
 title: Matrix Multiplications as Outer Products
 date: 2026-03-09
 tags:
-  - topic/
   - course/
-  - domain/math
+  - domain/maths
   - type/concept
 draft: false
 thumbnail: "[[Matrix Multiplication 2026-02-24 01.14.37.excalidraw.svg]]"
@@ -14,7 +13,6 @@ related-notes:
   - "[[Vectors Outer Product]]"
   - "[[Transposing a Matrix]]"
   - "[[Matrix Multiplication as Inner Products]]"
-
 ---
 ## What is the problem
 You have a matrix $A$ that u view as a columns matrix, and want to multiply it by a rows matrix $B^T$.    

@@ -1,9 +1,8 @@
 ---
-isNote: true
+isNote: false
 title: Neural Networks
 date: 2026-01-25
 tags:
-  - topic/
   - type/concept
   - course/AI321
   - domain/ai

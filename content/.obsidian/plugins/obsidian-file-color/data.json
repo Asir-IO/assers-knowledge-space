@@ -45,7 +45,7 @@
       "color": "IiG3s83CMJpziPHS14sTB"
     },
     {
-      "path": "knowlege domains.md",
+      "path": "knowledge domains.md",
       "color": "pl3H2y-ZY_ueKrKB7wop_"
     },
     {
@@ -58,6 +58,18 @@
     },
     {
       "path": "Concepts/A-Star Search.md",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
+    },
+    {
+      "path": "Core/Axes and Aggregation in Numpy.md",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
+    },
+    {
+      "path": "Concepts/Machine Learning.md",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
+    },
+    {
+      "path": "Concepts/Autoencoders.md",
       "color": "SMsBncZT9mwvTBgxZ0C8F"
     }
   ]

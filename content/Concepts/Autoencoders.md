@@ -4,10 +4,9 @@ title: Autoencoders
 date: 2026-05-29
 tags:
   - type/concept
-  - topic/
   - course/AI322
   - domain/ai
-  - domain/math
+  - domain/maths
 draft: false
 thumbnail:
 comments: true

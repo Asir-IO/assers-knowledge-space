@@ -65,13 +65,13 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 <!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
-| Thumbnail                                                                                                                                | Note                                                                 | Added          |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------- |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                  | [[Autoencoders]]                           | May 29, 2026   |
-| ![[How to Read an Article 2026-05-12 15.53.32.excalidraw.svg\|How to Read an Article 2026-05-12 15.53.32.excalidraw.svg\|120]] | [[How to Read an Article]]      | May 12, 2026   |
-| ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                  | [[Cool Visualizations I found]] | May 11, 2026   |
-| ![[Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|Neuro-Fuzzy Systems 2026-05-05 01.22.44.excalidraw.svg\|120]]       | [[Neuro-Fuzzy Systems]]             | May 02, 2026   |
-| ![[Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|Edge Linking 2026-04-21 22.04.55.excalidraw.svg\|120]]                     | [[Edge Linking]]                           | April 21, 2026 |
+| Thumbnail                               | Note                                                     | Added         |
+| --------------------------------------- | -------------------------------------------------------- | ------------- |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | [[A-Star Search]]             | June 03, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | [[Uniform Cost Search]] | June 03, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | [[Agent Architectures]] | June 02, 2026 |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | [[Minimax Algorithm]]     | May 31, 2026  |
+| ![[lab-temp-thumb.excalidraw.svg\|120]] | [[Autoencoders]]               | May 29, 2026  |
 
 <!-- SerializedQuery END -->
 

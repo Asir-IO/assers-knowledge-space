@@ -4,7 +4,6 @@ title: Drawing a Complete Tree
 date: 2026-03-30
 tags:
   - type/strategy
-  - topic/
   - course/CS214
   - domain/cs-theory
 draft: false

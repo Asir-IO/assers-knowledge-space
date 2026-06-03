@@ -1,16 +1,15 @@
 ---
-isNote: false
+isNote: true
 title: Inventory Chatbot
 date: 2026-02-26
 tags:
-  - topic/
   - type/
   - domain/ai
   - course/orange-agentic-ai
 draft: false
 comments: true
 related-notes:
-  -  "[[System Prompt Schema]]"
+  - "[[System Prompt Schema]]"
 ---
 ## Operation Diagram
 

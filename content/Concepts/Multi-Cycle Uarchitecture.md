@@ -3,7 +3,6 @@ isNote: true
 title: Multi-Cycle Uarchitecture
 date: 2026-01-25
 tags:
-  - topic/
   - type/concept
   - course/CS331
   - domain/systems

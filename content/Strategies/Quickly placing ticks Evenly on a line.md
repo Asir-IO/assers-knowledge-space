@@ -4,7 +4,6 @@ title: Quickly placing ticks Evenly on a line
 date: 2026-01-25
 tags:
   - type/strategy
-  - topic/
   - domain/
 draft: false
 thumbnail: "[[Quickly placing ticks evenly on a line 2026-01-25 16.28.06.excalidraw.svg]]"

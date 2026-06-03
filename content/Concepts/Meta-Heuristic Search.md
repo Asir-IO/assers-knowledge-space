@@ -4,7 +4,6 @@ title: Meta-Heuristic Search
 date: 2026-05-03
 tags:
   - type/concept
-  - topic/
   - course/AI313
   - domain/ai
 draft: false

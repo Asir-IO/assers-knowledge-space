@@ -3,7 +3,6 @@ isNote: true
 title: Abstracting a Tabular DP algorithm
 date: 2026-01-26
 tags:
-  - topic/
   - course/CS321
   - domain/cs-theory
   - type/

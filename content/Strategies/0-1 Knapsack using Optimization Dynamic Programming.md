@@ -4,7 +4,6 @@ title: 0-1 Knapsack using Optimization Dynamic Programming
 date: 2026-01-13
 tags:
   - type/strategy
-  - topic/
   - course/CS321
   - domain/cs-theory
 draft: true

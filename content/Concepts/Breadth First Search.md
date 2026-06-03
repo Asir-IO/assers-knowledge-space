@@ -4,7 +4,6 @@ title: Breadth First Search
 date: 2026-03-31
 tags:
   - type/concept
-  - topic/
   - course/CS321
   - domain/cs-theory
   - course/CS214

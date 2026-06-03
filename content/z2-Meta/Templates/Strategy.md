@@ -4,7 +4,7 @@ title: <% tp.file.title %>
 date: <% tp.date.now('YYYY-MM-DD') %>
 tags:
   - type/strategy
-  - topic/
+  
   - course/
   - domain/
 draft: true

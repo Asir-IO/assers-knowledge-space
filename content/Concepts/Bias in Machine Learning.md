@@ -4,7 +4,6 @@ title: Bias in Machine Learning
 date: 2026-02-17
 tags:
   - type/concept
-  - topic/
   - domain/ai
   - course/
 draft: false

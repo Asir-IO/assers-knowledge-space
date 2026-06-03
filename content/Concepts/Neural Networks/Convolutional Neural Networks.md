@@ -4,7 +4,6 @@ title: Convolutional Neural Networks
 date: 2026-03-27
 tags:
   - type/concept
-  - topic/
   - course/
   - domain/
 draft: false

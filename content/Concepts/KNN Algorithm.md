@@ -4,7 +4,6 @@ title: KNN Algorithm
 date: 2026-02-20
 tags:
   - type/concept
-  - topic/
   - domain/ai
   - course/
 draft: false
