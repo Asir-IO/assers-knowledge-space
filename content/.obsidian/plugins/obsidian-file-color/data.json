@@ -51,6 +51,14 @@
     {
       "path": "index.md",
       "color": "pl3H2y-ZY_ueKrKB7wop_"
+    },
+    {
+      "path": "Concepts/Uniform Cost Search.md",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
+    },
+    {
+      "path": "Concepts/A-Star Search.md",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
     }
   ]
 }

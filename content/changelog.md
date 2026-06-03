@@ -124,7 +124,8 @@ Also I can set the width portion of each column (left or right) by adding it as 
 
 > [!desc]
 > (the default ones are 6 and 4, respectively)
-
+### Related Files
+- `quartz\styles\custom.scss`
 ---
 # Adding Description text to a Block
 I can now add a *description text* to any block (another text, an image, etc...).
@@ -144,7 +145,8 @@ I can now add a *description text* to any block (another text, an image, etc...)
 > > [!desc-scroll]
 > > (some very lo---------------------------------------------------ng  description...)
 ```
-
+### Related Files
+- `quartz\styles\custom.scss`
 ---
 # Sizing Images by Height
 I can now embed an image by defining its height rather than its width. If the resulting width exceeds the page boundaries, the image will automatically become horizontally scrollable.
@@ -179,3 +181,13 @@ Now I have no control over the width,
 ```
 ![[Meta-Heuristic Search 2026-06-01 14.36.25.excalidraw.svg|h-150px]]
 ```
+### Related Files
+- `quartz\styles\custom.scss`
+- `quartz\components\Head.tsx`
+
+---
+# Expandable Images (as a lightbox)
+Clicking an Image now expands it as a lightbox.
+### Related Files
+- `quartz\components\Lightbox.tsx`
+- `quartz\components\styles\lightbox.scss`

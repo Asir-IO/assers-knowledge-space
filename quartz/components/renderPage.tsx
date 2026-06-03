@@ -104,6 +104,7 @@ function renderTranscludes(
 
         const page = componentData.allFiles.find((f) => f.slug === transcludeTarget)
         if (!page) {
+          visited.delete(transcludeTarget) // to prevent circ. tranc. false positive on other embeds from the same page
           return
         }
 
@@ -207,6 +208,7 @@ function renderTranscludes(
             },
           ]
         }
+        visited.delete(transcludeTarget) // to prevent circ. tranc. false positive on other embeds from the same page
       }
     }
   })

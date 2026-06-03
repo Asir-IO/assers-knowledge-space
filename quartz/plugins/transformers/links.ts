@@ -55,6 +55,8 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                 node.properties &&
                 typeof node.properties.href === "string"
               ) {
+                let cleanHref = node.properties.href.replace(/%5E/g, "").replace(/\^/g, "") // to allow the usage of ^ links in obsidian
+                node.properties.href = cleanHref
                 let dest = node.properties.href as RelativeURL
                 const classes = (node.properties.className ?? []) as string[]
                 const isExternal = isAbsoluteUrl(dest, { httpOnly: false })

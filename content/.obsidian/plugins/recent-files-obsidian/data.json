@@ -1,28 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "university courses",
-      "path": "university courses.md"
-    },
-    {
-      "basename": "Minimax Algorithm",
-      "path": "Concepts/Minimax Algorithm.md"
+      "basename": "A-Star Search",
+      "path": "Concepts/A-Star Search.md"
     },
     {
       "basename": "Uniform Cost Search",
       "path": "Concepts/Uniform Cost Search.md"
     },
     {
+      "basename": "Agent Architectures",
+      "path": "Concepts/Agent Architectures.md"
+    },
+    {
+      "basename": "DataFrame Selection",
+      "path": "Strategies/DataFrame Selection.md"
+    },
+    {
+      "basename": "Minimax Algorithm",
+      "path": "Concepts/Minimax Algorithm.md"
+    },
+    {
+      "basename": "changelog",
+      "path": "changelog.md"
+    },
+    {
       "basename": "AI313",
       "path": "z1-Assets/AI313.canvas"
     },
     {
-      "basename": "AI313",
-      "path": "tags/course/AI313.md"
+      "basename": "university courses",
+      "path": "university courses.md"
     },
     {
-      "basename": "A-Star Search",
-      "path": "Concepts/A-Star Search.md"
+      "basename": "AI313",
+      "path": "tags/course/AI313.md"
     },
     {
       "basename": "Meta-Heuristic Search",
@@ -43,10 +55,6 @@
     {
       "basename": "Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw",
       "path": "z1-Assets/Meta-Heuristic Search 2026-06-01 14.58.31.excalidraw.md"
-    },
-    {
-      "basename": "Agent Architectures",
-      "path": "Concepts/Agent Architectures.md"
     },
     {
       "basename": "Task Environment of an Agent",
@@ -87,10 +95,6 @@
     {
       "basename": "Concept",
       "path": "z2-Meta/Templates/Concept.md"
-    },
-    {
-      "basename": "changelog",
-      "path": "changelog.md"
     },
     {
       "basename": "far-right text",
@@ -195,10 +199,6 @@
     {
       "basename": "Fuzzy Logic 2026-05-02 01.11.39.excalidraw",
       "path": "z1-Assets/Fuzzy Logic 2026-05-02 01.11.39.excalidraw.md"
-    },
-    {
-      "basename": "Fuzzy Logic 2026-05-02 00.11.19.excalidraw",
-      "path": "z1-Assets/Fuzzy Logic 2026-05-02 00.11.19.excalidraw.md"
     }
   ],
   "omittedPaths": [],

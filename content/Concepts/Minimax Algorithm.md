@@ -12,11 +12,11 @@ thumbnail:
 comments: true
 related-notes:
 ---
-...
+abcdefg ^5a18ba
 
 ---
 # Example
-...
+[[#^5a18ba|1]]
 
 ---
 # Related Notes

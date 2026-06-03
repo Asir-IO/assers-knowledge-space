@@ -35,7 +35,7 @@ Only very simple and predictable ones.
 > > [!left|6]
 > > 
 > > ## What it takes to be Rational
-It's enough to just map current percepts to immediate actions using condition-action rules.
+> > It's enough to just map current percepts to immediate actions using condition-action rules.
 >
 > > [!right|4]
 > > 
