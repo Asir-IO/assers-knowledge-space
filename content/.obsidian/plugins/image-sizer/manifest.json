@@ -1,9 +1,0 @@
-{
-  "id": "image-sizer",
-  "name": "Image Sizer",
-  "version": "1.0.0",
-  "minAppVersion": "1.0.0",
-  "description": "Dynamically resizes images based on h- alt tags.",
-  "author": "Asir-IO",
-  "isDesktopOnly": false
-}

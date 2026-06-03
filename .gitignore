@@ -1,5 +1,4 @@
 .DS_Store
-.gitignore
 node_modules
 public
 prof
@@ -9,6 +8,12 @@ content/.obsidian/workspace.json
 content/.obsidian/workspace-mobile.json
 content/.obsidian/workspace-*
 content/.obsidian/graph.json
+
+content/.obsidian/plugins/*
+!content/.obsidian/plugins/*/
+
+content/.obsidian/plugins/*/*
+!content/.obsidian/plugins/*/data.json
 
 .quartz-cache
 private/
