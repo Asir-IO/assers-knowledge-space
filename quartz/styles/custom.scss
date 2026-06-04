@@ -196,6 +196,11 @@
   color: inherit;
 }
 
+.custom-pi-symbol {
+  fill: var(--dark);
+  vertical-align: middle;
+}
+
 /* FEATURE: chalkboard texture */
 [saved-theme="dark"] body {
   position: relative;

@@ -15,13 +15,17 @@ Now I can insert fa or google icons quickly.
 	- e.g., `\:fab-discord:` => :fab-discord:
 - inserting a google icon
 	- e.g., `\:g-waves:` => :g-waves:
+- inserting a pixel icon
+	- e.g., `\:pi-smile:` => :pi-smile:
 
 To type the syntax without it being converted, I can escape it with a `\`.   
 	e.g., `\\:g-waves:` => `\:g-waves:`
 ### Related Files
 - `quartz\styles\custom.scss`
 - `quartz\plugins\transformers\customicons.ts`
+- `quartz\components\Head.tsx`
 - `quartz.config.ts`
+- `quartz\static\pixelarticons`
 ### Could be added later
 The ability to specify the size of an icon, instead of having it hardcoded.   
 - e.g., `\:g-waves|20:` => renders as a size 20.
