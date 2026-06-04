@@ -105,7 +105,7 @@ button.desktop-explorer {
   align-items: center;
 
   & h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: inline-block;
     margin: 0;
   }
@@ -169,7 +169,7 @@ button.desktop-explorer {
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: $semiBoldWeight;
     line-height: 1.5rem;
     display: inline-block;
