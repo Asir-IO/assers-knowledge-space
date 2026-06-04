@@ -47,6 +47,12 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.TagList(),
   ],
   left: [
+    // Component.MobileOnly(
+    //   Component.MobileMenu(
+    //     Component.Explorer(), 
+    //     Component.TableOfContents()
+    //   )
+    // ),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({

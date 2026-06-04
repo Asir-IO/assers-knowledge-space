@@ -53,3 +53,4 @@ export {
 }
 
 export { default as NoteHeader } from "./NoteHeader"
+export { default as MobileMenu } from "./MobileMenu"
