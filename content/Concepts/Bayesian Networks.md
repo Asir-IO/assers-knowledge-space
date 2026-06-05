@@ -88,7 +88,7 @@ This is the network with every connection added.
 To fill out each CPT table, we use methods like Maximum Likelihood Estimation.   
 
 This is the network with every CPT added.
-![[Bayesian Networks 2026-03-20 22.14.47.excalidraw.svg|h-400px]]    
+![[Bayesian Networks 2026-03-20 22.14.47.excalidraw.svg|h-25rem]]    
 
 ---
 # Using the Network
@@ -110,29 +110,30 @@ We basically move from the node that we want to infer towards observed nodes.
 ### One Parent
 Assume that R1 is a far ancestor of B and it was observed.   
 This is how $P(a|r1)$ is computed.
-![[Bayesian Networks 2026-03-24 23.07.32.excalidraw.svg|h-250px]]   
+
+![[Bayesian Networks 2026-03-24 23.07.32.excalidraw.svg|500]]   
 ### Multiple Parents
 Assume that R1, R2 is a far ancestor of B, E, and they were observed.   
 This is how $P(a|r1, r2)$ is computed.   
 
-![[Bayesian Networks 2026-03-24 23.18.14.excalidraw.svg|h-250px]]
+![[Bayesian Networks 2026-03-24 23.18.14.excalidraw.svg|500]]
 ## How Diagnostic Inference is done
 ### One child
 Assume that L1 is a far descendant of J, and it was observed.   
 This is how $P(a|l1)$ is computed.   
 
-![[Bayesian Networks 2026-03-24 23.28.15.excalidraw.svg|h-250px]]
+![[Bayesian Networks 2026-03-24 23.28.15.excalidraw.svg|500]]
 ## Multiple children
 Assume that L1, L2 is a far descendant of J, M, and they were observed.   
 This is how $P(a|l1, l2)$ is computed.   
 
-![[Bayesian Networks 2026-03-24 23.25.13.excalidraw.svg|h-350px]]   
+![[Bayesian Networks 2026-03-24 23.25.13.excalidraw.svg|500]]   
 
 In the diagram below, each node outputs its inference given the current set of observations.   
 
 Before any specific observation combination is given, each node should output its inference given no evidence or the "general" probability of its possible observations.    
 (e.g., Node A outputs P(a) and P($\neg$a))
-![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg|h-300px]]   
+![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg|500]]   
 However, once an observation combination is given, a node's inference may change.   
 It only changes if the observation has an "active" path to it.   
 
@@ -143,42 +144,42 @@ I like to imagine every observed node as an information source that tries its be
 1. {i}
     > [!two-column]
     >
-    > > [!left]
+    > > [!left|4]
     > > 
     > > Information can't flow from one parent to another if the child is *not* observed.
     >
-    > > [!right]
+    > > [!right|6]
     > > 
-    > > ![[Bayesian Networks 2026-03-25 20.34.14.excalidraw.svg|h-200px]]    ^8b579f
+    > > ![[Bayesian Networks 2026-03-25 20.34.14.excalidraw.svg|300]]    ^8b579f
 
 1. 
     > [!two-column]
     >
-    > > [!left]
+    > > [!left|4]
     > > 
     > > Information can’t flow from a sibling to another if the parent is _observed_.
     >
-    > > [!right]
+    > > [!right|6]
     > > 
-    > > ![[Bayesian Networks 2026-03-25 20.39.16.excalidraw.svg|h-200px]] ^c61007
+    > > ![[Bayesian Networks 2026-03-25 20.39.16.excalidraw.svg|300]] ^c61007
 
 1. 
     > [!two-column]
     >
-    > > [!left]
+    > > [!left|4]
     > > 
     > > Information can't cross another observed node.
     >
-    > > [!right]
+    > > [!right|6]
     > > 
-    > > ![[Bayesian Networks 2026-03-25 20.54.12.excalidraw.svg|h-200px]] ^a51978
+    > > ![[Bayesian Networks 2026-03-25 20.54.12.excalidraw.svg|150]] ^a51978
 ## Examples
 1. {i}
 	Say the node B was observed, this will be the diagram, showing the active paths of B.    
 	![[Bayesian Networks 2026-03-20 23.14.39.excalidraw.webm]]
 
 	it affects every single node, [[#^8b579f|except its spouse]].    
-	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg|h-250px]]   
+	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg|400]]   
     
     >[!question]- *Where* did the CPTs go?
     >
@@ -186,21 +187,21 @@ I like to imagine every observed node as an information source that tries its be
 
 2. 
 	Say node M was observed, this will be its active path.    
-	<video src="z1-Assets/Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm" style="height: 250px"></video>
+	![[Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm]]
 	it affects every single node, nothing blocks its path.   
-	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg|h-250px]]
+	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg|400]]
 3. 
 	Say both of them were observed, this will be their active paths.    
 	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.webm]]
 
-	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg|h-250px]]
+	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg|400]]
 4. 
 	Here's an interesting one, say nodes A and M were observed, this will be their active paths.    
-	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg|h-250px]]    
-	![[excalidraw-animate.svg|h-250px]]   
+	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg|400]]    
+	![[excalidraw-animate.svg|400]]   
 	
 	The information stream of M [[#^a51978|can't cross A]] (to B or E) or [[#^c61007|move to its sibling]]. 
-	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg|h-250px]]
+	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg|400]]
 
 
 %%
