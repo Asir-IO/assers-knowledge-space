@@ -44,7 +44,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 ## [[Concepts/index|Concepts]]
 <div style="display: flex; align-items: center; gap: 12px;">
     <div>
-      <img src="z1-Assets/concept-icon.svg" alt="Concepts Icon" style="width: 28px; height: 28px; min-width: 28px; display: block;" />
+      <img src="z1-Assets/concept-icon-2.svg" alt="Concepts Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0" />
     </div>
     <div style="line-height: 1.4;">
       <span style="font-size: 0.9em; opacity: 0.7;">Concepts that I successfully find a visual form for live here.</span>
@@ -54,7 +54,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 ## [[Strategies/index|Strategies]]
   <div style="display: flex; align-items: center; gap: 12px;">
     <div>
-      <img src="z1-Assets/strategy-icon.svg" alt="Strategies Icon" style="width: 28px; height: 28px; min-width: 28px; display: block;" />
+      <img src="z1-Assets/strategy-icon-2.svg" alt="Strategies Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0" />
     </div>
     <div style="line-height: 1.4;">
       <span style="font-size: 0.9em; opacity: 0.7;">I place here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
@@ -64,7 +64,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 ## [[Workflows/index|Workflows]]
   <div style="display: flex; align-items: center; gap: 12px;">
     <div>
-      <img src="z1-Assets/workflow-icon.svg" alt="Workflows Icon" style="width: 28px; height: 28px; min-width: 28px; display: block;" />
+      <img src="z1-Assets/workflow-icon-2.svg" alt="Workflows Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0" />
     </div>
     <div style="line-height: 1.4;">
       <span style="font-size: 0.9em; opacity: 0.7;">You'll find here workflows I developed for tasks that I wanted to do in a smoother way.</span>
