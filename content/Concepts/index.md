@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Concepts
 comments: false
 related-notes:

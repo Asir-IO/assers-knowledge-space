@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Changelog
 ---
 I place here features and tools that I added to the codebase/obsidian/excalidraw to help me create more efficiently.   

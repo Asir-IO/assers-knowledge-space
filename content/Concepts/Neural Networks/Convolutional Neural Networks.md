@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Convolutional Neural Networks
 date: 2026-03-27
 tags:

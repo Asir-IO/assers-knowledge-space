@@ -1,9 +1,8 @@
 ---
-isNote: true
 title: Color-Coded Touch Typing
 date: 2026-01-29
 tags:
-  - type/strategy 
+  - type/strategy
   - domain/
 draft: false
 thumbnail: "[[Keys Map 2026-02-07 14.25.06.excalidraw.svg]]"

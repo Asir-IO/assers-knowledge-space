@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Autoencoders
 date: 2026-05-29
 tags:

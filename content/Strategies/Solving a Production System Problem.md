@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Solving a Production System Problem
 date: 2026-04-03
 tags:

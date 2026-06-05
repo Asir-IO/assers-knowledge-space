@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Transposing a Matrix
 date: 2026-02-24
 tags:

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: How to Read an Article
 date: 2026-05-12
 tags:

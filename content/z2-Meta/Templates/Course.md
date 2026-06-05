@@ -1,5 +1,4 @@
 ---
-isNote: false
 title:
 semester:
 level:

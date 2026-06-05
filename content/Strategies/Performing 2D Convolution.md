@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Performing 2D Convolution
 date: 2026-03-29
 tags:

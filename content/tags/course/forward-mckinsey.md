@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Forward Mckinsey
 semester:
 level:

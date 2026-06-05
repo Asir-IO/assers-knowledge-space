@@ -1,5 +1,5 @@
 ---
-isNote: false
+{}
 ---
 /*
 Connects two lines. Lines may be type of arrow or line. The resulting line will carry the style of the line higher in the drawing layers (bring to front the one you want to control the look and feel). Arrows are connected intelligently.

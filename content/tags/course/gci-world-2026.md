@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: gci-world-2026
 semester:
 level:

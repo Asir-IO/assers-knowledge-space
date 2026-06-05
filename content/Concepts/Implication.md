@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Implication
 date: 2026-01-19
 tags:

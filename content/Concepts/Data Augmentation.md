@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Data Augmentation
 date: 2026-04-01
 tags:

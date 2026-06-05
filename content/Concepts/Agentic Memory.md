@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Agentic Memory
 date: 2026-04-12
 tags:

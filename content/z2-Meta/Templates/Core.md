@@ -1,12 +1,11 @@
 ---
-isNote: true
 title: <% tp.file.title %>
 date: <% tp.date.now('YYYY-MM-DD') %>
 tags:
-  
   - course/
   - domain/
   - type/
+  - baby
 draft: true
 thumbnail:
 comments: true

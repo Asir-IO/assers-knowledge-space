@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: DataFrame Selection
 date: 2026-02-05
 tags:

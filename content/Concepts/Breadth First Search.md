@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Breadth First Search
 date: 2026-03-31
 tags:

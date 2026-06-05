@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Searching in a Non-Deterministic Space
 date: 2026-05-31
 tags:

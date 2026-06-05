@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Neo4j Knowledge Graph
 date: 2026-03-12
 tags:

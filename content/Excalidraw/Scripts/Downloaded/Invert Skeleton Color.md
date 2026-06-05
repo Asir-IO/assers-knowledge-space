@@ -1,3 +1,6 @@
+---
+{}
+---
 /* SCRIPT: SELECTIVE COLOR SWAPPER
    - Reads a dictionary of colors.
    - Generates a custom Obsidian popup with checkboxes and color swatches.

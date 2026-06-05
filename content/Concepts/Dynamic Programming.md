@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Dynamic Programming
 date: 2026-01-12
 tags:

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Solving a Backpropagation Problem
 date: 2026-04-09
 tags:

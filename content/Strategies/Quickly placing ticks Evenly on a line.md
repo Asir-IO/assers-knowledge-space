@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Quickly placing ticks Evenly on a line
 date: 2026-01-25
 tags:

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: APR Method
 date: 2026-05-08
 tags:

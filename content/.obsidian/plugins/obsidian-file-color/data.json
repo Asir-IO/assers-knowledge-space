@@ -4,7 +4,7 @@
   "palette": [
     {
       "id": "pl3H2y-ZY_ueKrKB7wop_",
-      "name": "Purple - should be updated",
+      "name": "Should be updated",
       "value": "#9775fa"
     },
     {
@@ -19,7 +19,7 @@
     },
     {
       "id": "SMsBncZT9mwvTBgxZ0C8F",
-      "name": "Red - not completed yet",
+      "name": "Baby (not mature enough yet)",
       "value": "#e03131"
     }
   ],
@@ -70,6 +70,10 @@
     },
     {
       "path": "Concepts/Autoencoders.md",
+      "color": "SMsBncZT9mwvTBgxZ0C8F"
+    },
+    {
+      "path": "Strategies/How to Draw a Markov Chain.md",
       "color": "SMsBncZT9mwvTBgxZ0C8F"
     }
   ]

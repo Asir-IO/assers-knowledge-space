@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Neuro-Fuzzy Systems
 date: 2026-05-02
 tags:

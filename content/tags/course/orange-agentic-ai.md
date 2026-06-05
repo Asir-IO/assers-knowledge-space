@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Orange Agentic AI
 semester:
 level:

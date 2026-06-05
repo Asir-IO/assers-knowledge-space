@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: DataFrames
 date: 2026-02-06
 tags:

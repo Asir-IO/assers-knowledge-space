@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Bayesian Networks
 date: 2026-03-18
 tags:
@@ -66,26 +65,30 @@ We ran experiments and figured the following connections for each node,
 	- causes: nothing (yet)
 
 This is the network with every connection added.
-![[Bayesian Networks 2026-03-20 20.54.47.excalidraw.svg]]    
+![[Bayesian Networks 2026-03-20 20.54.47.excalidraw.svg|h-250px]]    
 # Measure Connections
 
-> "how much is <mark style="background: #CACFD9A6;">each observation</mark> in node A caused by its parent observations?"   
-
-This is what the CPT of node A tell us.
+> "how much is <mark style="background: #CACFD9A6;">each observation</mark> in node A caused by its parent observations?"
 
 > [!EXAMPLE] 
-> The CPT of A contains the probability of its observations (a, ¬a) given all the possible combinations of its parents' observations.    
-> ![[Bayesian Networks 2026-03-20 22.10.15.excalidraw.svg]]
-> 
+> > [!two-column]
+>>
+> >> [!left|5]
+> > >
+> >> The CPT of A contains the probability of its observations (a, ¬a) given all the possible combinations of its parents' observations.
+>>
+> >> [!right|5]
+> >> 
+> >> ![[Bayesian Networks 2026-03-20 22.10.15.excalidraw.svg|h-250px]]
 
-> [!NOTE] To make the diagram more compact
+> [!NOTE] To make the diagram more compact...
 > I only include entries for the +ve observation of a node (e.g.., a), and this is okay since each node has only 2 possible observations (e.g., a or ¬a); its -ve observation is its complement:    
 > $p(\neg a) = 1 - p(a)$
 
 To fill out each CPT table, we use methods like Maximum Likelihood Estimation.   
 
 This is the network with every CPT added.
-![[Bayesian Networks 2026-03-20 22.14.47.excalidraw.svg]]    
+![[Bayesian Networks 2026-03-20 22.14.47.excalidraw.svg|h-400px]]    
 
 ---
 # Using the Network
@@ -100,32 +103,36 @@ This is called *inference*.
 ![[Bayesian Networks 2026-03-24 22.49.27.excalidraw.svg]]
 Predictive inference is done before diagnostic one.   
 
-Inferring a node usually requires inferring its parent/children nodes first, this is done until reaching nodes that were inferred.   
+Inferring a node usually requires inferring its parent/children nodes first, this is done until reaching nodes that were observed.   
 
 We basically move from the node that we want to infer towards observed nodes.
 ## How Predictive Inference is done
 ### One Parent
 Assume that R1 is a far ancestor of B and it was observed.   
 This is how $P(a|r1)$ is computed.
-![[Bayesian Networks 2026-03-24 23.07.32.excalidraw.svg]]   
+![[Bayesian Networks 2026-03-24 23.07.32.excalidraw.svg|h-250px]]   
 ### Multiple Parents
 Assume that R1, R2 is a far ancestor of B, E, and they were observed.   
 This is how $P(a|r1, r2)$ is computed.   
-![[Bayesian Networks 2026-03-24 23.18.14.excalidraw.svg]]
+
+![[Bayesian Networks 2026-03-24 23.18.14.excalidraw.svg|h-250px]]
 ## How Diagnostic Inference is done
 ### One child
 Assume that L1 is a far descendant of J, and it was observed.   
 This is how $P(a|l1)$ is computed.   
-![[Bayesian Networks 2026-03-24 23.28.15.excalidraw.svg]]
+
+![[Bayesian Networks 2026-03-24 23.28.15.excalidraw.svg|h-250px]]
 ## Multiple children
 Assume that L1, L2 is a far descendant of J, M, and they were observed.   
 This is how $P(a|l1, l2)$ is computed.   
-![[Bayesian Networks 2026-03-24 23.25.13.excalidraw.svg]]   
+
+![[Bayesian Networks 2026-03-24 23.25.13.excalidraw.svg|h-350px]]   
+
 In the diagram below, each node outputs its inference given the current set of observations.   
 
 Before any specific observation combination is given, each node should output its inference given no evidence or the "general" probability of its possible observations.    
 (e.g., Node A outputs P(a) and P($\neg$a))
-![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg]]   
+![[Bayesian Networks 2026-03-20 22.47.37.excalidraw.svg|h-300px]]   
 However, once an observation combination is given, a node's inference may change.   
 It only changes if the observation has an "active" path to it.   
 
@@ -133,64 +140,67 @@ To find what nodes are affected by each observation, we need another diagram tha
 ## How to create an Active Paths diagram
 I like to imagine every observed node as an information source that tries its best to reach as much nodes as possible, but its movement needs to follow the following *rules*,    
 *(suppose that A is the observed node whose active paths we're trying to draw)*
-- Information can't flow from a parent to another if the child is *not* observed.
-	![[Bayesian Networks 2026-03-25 20.34.14.excalidraw.svg]]    ^8b579f
-- Information can't flow from a sibling to another if the parent is *observed*.
-	![[Bayesian Networks 2026-03-25 20.39.16.excalidraw.svg]] ^c61007
-- Information can't cross another observed node.   
-	![[Bayesian Networks 2026-03-25 20.54.12.excalidraw.svg]] ^a51978
+1. {i}
+    > [!two-column]
+    >
+    > > [!left]
+    > > 
+    > > Information can't flow from one parent to another if the child is *not* observed.
+    >
+    > > [!right]
+    > > 
+    > > ![[Bayesian Networks 2026-03-25 20.34.14.excalidraw.svg|h-200px]]    ^8b579f
+
+1. 
+    > [!two-column]
+    >
+    > > [!left]
+    > > 
+    > > Information can’t flow from a sibling to another if the parent is _observed_.
+    >
+    > > [!right]
+    > > 
+    > > ![[Bayesian Networks 2026-03-25 20.39.16.excalidraw.svg|h-200px]] ^c61007
+
+1. 
+    > [!two-column]
+    >
+    > > [!left]
+    > > 
+    > > Information can't cross another observed node.
+    >
+    > > [!right]
+    > > 
+    > > ![[Bayesian Networks 2026-03-25 20.54.12.excalidraw.svg|h-200px]] ^a51978
 ## Examples
-- (*Example #1*)    
+1. {i}
 	Say the node B was observed, this will be the diagram, showing the active paths of B.    
-	<video 
-  src="./z1-assets/Bayesian Networks 2026-03-20 23.14.39.excalidraw.webm" 
-  playsinline 
-  loop 
-  muted 
-  class="autoplay-on-scroll"
-  style="cursor: pointer; max-width: 100%;" 
-  onclick="this.paused ? this.play() : this.pause()">
-</video>   
+	![[Bayesian Networks 2026-03-20 23.14.39.excalidraw.webm]]
 
 	it affects every single node, [[#^8b579f|except its spouse]].    
-	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg]]   
+	![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg|h-250px]]   
     
->[!question] *Where* did the CPTs go?
-> I draw the very final diagram this way, since adding the CPTs would add too much visual clutter.
+    >[!question]- *Where* did the CPTs go?
+    >
+    > I draw the very final diagram this way, since adding the CPTs would add too much visual clutter.
 
-- (*Example #2*)    
+2. 
 	Say node M was observed, this will be its active path.    
-	<video 
-  src="./z1-assets/Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm" 
-  playsinline 
-  loop 
-  muted 
-  class="autoplay-on-scroll"
-  style="cursor: pointer; max-width: 100%;" 
-  onclick="this.paused ? this.play() : this.pause()">
-</video>   
-
+	<video src="z1-Assets/Bayesian Networks 2026-03-20 23.29.35.excalidraw.webm" style="height: 250px"></video>
 	it affects every single node, nothing blocks its path.   
-	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg]]
-- (*Example #3*)    
+	![[Bayesian Networks 2026-03-20 23.31.36.excalidraw.svg|h-250px]]
+3. 
 	Say both of them were observed, this will be their active paths.    
-	<video 
-  src="./z1-assets/Bayesian Networks 2026-03-20 23.36.52.excalidraw.webm" 
-  playsinline 
-  loop 
-  muted 
-  class="autoplay-on-scroll"
-  style="cursor: pointer; max-width: 100%;" 
-  onclick="this.paused ? this.play() : this.pause()">
-</video>   
+	![[Bayesian Networks 2026-03-20 23.36.52.excalidraw.webm]]
 
-	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg]]
-- (*Example #4*)    
+	![[Bayesian Networks 2026-03-20 23.41.35.excalidraw.svg|h-250px]]
+4. 
 	Here's an interesting one, say nodes A and M were observed, this will be their active paths.    
-	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg]]    
-	![[excalidraw-animate.svg]]
+	![[Bayesian Networks 2026-03-20 23.47.36.excalidraw.svg|h-250px]]    
+	![[excalidraw-animate.svg|h-250px]]   
+	
 	The information stream of M [[#^a51978|can't cross A]] (to B or E) or [[#^c61007|move to its sibling]]. 
-	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg]]
+	![[Bayesian Networks 2026-03-20 23.52.37.excalidraw.svg|h-250px]]
 
 
 %%

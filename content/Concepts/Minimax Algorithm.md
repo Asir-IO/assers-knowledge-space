@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Minimax Algorithm
 date: 2026-05-31
 tags:

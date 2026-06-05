@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: University Courses
 thumbnail: "[[courses 2026-05-18 02.52.37.excalidraw.svg]]"
 ---

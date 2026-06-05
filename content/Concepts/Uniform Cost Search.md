@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Uniform Cost Search
 date: 2026-06-03
 tags:

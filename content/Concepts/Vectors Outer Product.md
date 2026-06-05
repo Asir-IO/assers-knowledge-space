@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Vectors Outer Product
 date: 2026-03-09
 tags:

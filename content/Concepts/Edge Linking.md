@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Edge Linking
 date: 2026-04-21
 tags:

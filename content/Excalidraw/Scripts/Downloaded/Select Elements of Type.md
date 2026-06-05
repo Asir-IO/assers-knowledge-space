@@ -1,5 +1,5 @@
 ---
-isNote: false
+{}
 ---
 /*
 ![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-select-element-of-type.jpg)

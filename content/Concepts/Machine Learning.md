@@ -1,12 +1,12 @@
 ---
-isNote: false
 title: Machine Learning
 date: 2026-05-31
 tags:
   - type/concept
   - course/
   - domain/
-draft: false
+  - baby
+draft: true
 thumbnail:
 comments: true
 related-notes:

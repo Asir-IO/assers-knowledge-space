@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Message Passing in Markov Networks
 date: 2026-04-05
 tags:

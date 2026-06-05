@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Principal Components Analysis
 date: 2026-04-19
 tags:

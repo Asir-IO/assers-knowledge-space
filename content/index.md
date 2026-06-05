@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Asser's Knowledge Space
 tabTitle: Welcome to my Place =)
 ---
@@ -74,7 +73,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 
 ---
 # Recent Notes
-<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
+<!-- QueryToSerialize: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND !draft SORT date DESC LIMIT 5 -->
 <!-- SerializedQuery: TABLE WITHOUT ID choice(thumbnail, "!" + replace(string(thumbnail), "]]", "|120]]"), ![[lab-temp-thumb.excalidraw.svg|120]]) AS "Thumbnail", link(file.path, title) AS "Note", date AS "Added" FROM "" WHERE file.ext = "md" AND !contains(file.name, ".excalidraw") AND isNote AND !draft SORT date DESC LIMIT 5 -->
 
 | Thumbnail                               | Note                                                     | Added         |

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Deletion in a RB Tree
 date: 2026-01-13
 tags:

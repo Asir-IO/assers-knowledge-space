@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Problem Strategies
 comments: false
 related-notes:

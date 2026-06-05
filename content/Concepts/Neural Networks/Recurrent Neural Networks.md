@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Recurrent Neural Networks
 date: 2026-05-07
 tags:

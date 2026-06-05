@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Linked Lists
 date: 2026-01-11
 tags:

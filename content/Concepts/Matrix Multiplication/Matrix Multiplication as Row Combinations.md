@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Matrix Multiplication as Row Combinations
 date: 2026-03-13
 tags:

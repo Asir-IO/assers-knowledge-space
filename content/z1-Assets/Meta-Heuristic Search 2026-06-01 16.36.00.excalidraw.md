@@ -1,5 +1,4 @@
 ---
-isNote: false
 excalidraw-plugin: parsed
 tags:
   - excalidraw

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: LangChain Framework
 date: 2026-03-03
 tags:

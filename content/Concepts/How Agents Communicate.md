@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: How Agents Communicate
 date: 2026-04-13
 tags:

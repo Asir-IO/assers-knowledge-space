@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Workflows
 comments: false
 related-notes:

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: 0-1 Knapsack using Optimization Dynamic Programming
 date: 2026-01-13
 tags:

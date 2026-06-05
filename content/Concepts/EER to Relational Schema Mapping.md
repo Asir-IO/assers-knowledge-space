@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: EER to Relational Schema Mapping
 date: 2026-04-10
 tags:

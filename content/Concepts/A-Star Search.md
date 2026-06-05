@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: A-Star Search
 date: 2026-06-03
 tags:

@@ -1,3 +1,6 @@
+---
+{}
+---
 /*
 ![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-text-to-path.jpg)
 

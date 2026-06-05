@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Core
 comments: false
 related-notes:

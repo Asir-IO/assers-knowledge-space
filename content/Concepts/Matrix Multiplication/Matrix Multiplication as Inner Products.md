@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Matrix Multiplication as Inner Products
 date: 2026-02-24
 tags:

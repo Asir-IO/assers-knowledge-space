@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: System Prompt Schema
 date: 2026-02-21
 tags:

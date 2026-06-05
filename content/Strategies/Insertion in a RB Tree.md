@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Insertion in a RB Tree
 date: 2026-01-12
 tags:

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Aggregation in Pandas
 date: 2026-05-06
 tags:

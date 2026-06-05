@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Inventory Chatbot
 date: 2026-02-26
 tags:

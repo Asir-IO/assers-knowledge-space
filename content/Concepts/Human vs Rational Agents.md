@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Human vs Rational Agents
 date: 2026-04-03
 tags:

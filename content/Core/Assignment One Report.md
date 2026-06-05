@@ -1,5 +1,4 @@
 ---
-isNote: false
 title: Assignment One Report
 date: 2026-03-14
 tags:

@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Convolution Sum in LTI systems
 date: 2026-01-24
 tags:

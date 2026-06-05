@@ -2,7 +2,6 @@
   "dataview",
   "dataview-serializer",
   "obsidian-excalidraw-plugin",
-  "obsidian-file-color",
   "obsidian-footnotes",
   "highlightr-plugin",
   "obsidian-html-tags-autocomplete",
@@ -16,5 +15,6 @@
   "templater-obsidian",
   "show-whitespace-cm6",
   "obs-text-wrapper",
-  "image-sizer"
+  "image-sizer",
+  "obsidian-file-color"
 ]

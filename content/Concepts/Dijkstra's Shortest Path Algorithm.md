@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Dijkstra's Shortest Path Algorithm
 date: 2026-01-12
 tags:

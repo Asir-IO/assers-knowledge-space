@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Retrieval Augmented Generation
 date: 2026-04-13
 tags:

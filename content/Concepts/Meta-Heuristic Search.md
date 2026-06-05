@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Meta-Heuristic Search
 date: 2026-05-03
 tags:

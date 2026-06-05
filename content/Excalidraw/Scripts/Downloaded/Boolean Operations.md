@@ -1,5 +1,5 @@
 ---
-isNote: false
+{}
 ---
 /*
 With This Script it is possible to make boolean Operations on Shapes. 

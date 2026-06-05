@@ -1,5 +1,4 @@
 ---
-isNote: true
 title: Induction vs Deduction
 date: 2026-04-02
 tags:
