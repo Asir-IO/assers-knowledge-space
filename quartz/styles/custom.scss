@@ -357,14 +357,16 @@ article ol:not([data-list]) > li:not(:last-child)::after {
 }
 .callout[data-callout="left"] {
   flex: 6;
-  min-width: 0;
 }
 
 .callout[data-callout="right"] {
   flex: 4;
-  min-width: 0;
   display: flex;
   justify-content: flex-end;
+}
+.callout [data-callout="left"],
+.callout[data-callout="right"] {
+  min-width: 64px; /* so that both portions have enough space that fits their width if they're forced to cram (still not sure if 64px is general enough) */
 }
 .callout[data-callout="left"] > .callout-content,
 .callout[data-callout="right"] > .callout-content {
