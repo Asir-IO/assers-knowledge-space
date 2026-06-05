@@ -108,63 +108,10 @@
 
 /* grey grp */
 &[data-callout="quote"] {
-  --color: var(--secondary);
+  --color: var(--gray-color);
+  --callout-icon: var(--callout-icon-quote);
   --border: color-mix(in srgb, var(--gray-color) 26.6%, transparent);
   --bg: color-mix(in srgb, var(--gray-color) 8.2%, transparent);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 1rem auto;
-  // max-width: 85%; 
-  padding: 1.2rem;
-
-  .callout-icon {
-    display: none;
-  }
-
-  /* The Quote */
-  .callout-content {
-    order: 1;
-    // // font-family: var(--serif); 
-    // // // font-size: 1.2rem;
-    // // font-style: italic;
-    // line-height: 1.6;
-    // padding: 0;
-    // width: 100%;
-    p {
-      margin-bottom: 0; 
-    }
-  }
-
-  /* The Author */
-  .callout-title {
-    order: 2;
-    margin-top: 1rem;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    .callout-title-inner {
-      font-family: var(--headerFont);
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.2rem;
-      color: var(--gray); 
-      
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem; 
-
-      /* dashes */
-      &::before,
-      &::after {
-        content: "—";
-      }
-    }
-  }
 }
 
   &.is-collapsed {
@@ -229,7 +176,6 @@
     mask-repeat: no-repeat;
     padding: 0.2rem 0;
   }
-
   .callout-title-inner {
     font-weight: $semiBoldWeight;
   }
