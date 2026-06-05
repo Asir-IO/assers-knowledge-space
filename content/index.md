@@ -42,34 +42,35 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 ---
 # Where everything is
 ## [[Concepts/index|Concepts]]
-<div style="display: flex; align-items: center; gap: 12px;">
-    <div>
-      <img src="z1-Assets/concept-icon-2.svg" alt="Concepts Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0" />
-    </div>
-    <div style="line-height: 1.4;">
-      <span style="font-size: 0.9em; opacity: 0.7;">Concepts that I successfully find a visual form for live here.</span>
-    </div>
-  </div>
-
+> [!two-column]
+>
+> > [!left|1]
+> > 
+> > <img src="z1-Assets/concept-icon-2.svg" alt="Concepts Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0;  max-width: unset" />
+>
+> > [!right|9]
+> > 
+> > <span style="font-size: 0.9em; opacity: 0.7;display: inline-block; margin-top: 15px;">Concepts that I successfully find a visual form for live here.</span>
 ## [[Strategies/index|Strategies]]
-  <div style="display: flex; align-items: center; gap: 12px;">
-    <div>
-      <img src="z1-Assets/strategy-icon-2.svg" alt="Strategies Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0" />
-    </div>
-    <div style="line-height: 1.4;">
-      <span style="font-size: 0.9em; opacity: 0.7;">I place here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
-    </div>
-  </div>
-
+> [!two-column]
+>
+> > [!left|1]
+> > 
+> > <img src="z1-Assets/strategy-icon-2.svg" alt="Strategies Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0; max-width: unset" />
+>
+> > [!right|9]
+> > 
+> > <span style="font-size: 0.9em; opacity: 0.7;display: inline-block; margin-top: 15px;">I place here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
 ## [[Workflows/index|Workflows]]
-  <div style="display: flex; align-items: center; gap: 12px;">
-    <div>
-      <img src="z1-Assets/workflow-icon-2.svg" alt="Workflows Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0" />
-    </div>
-    <div style="line-height: 1.4;">
-      <span style="font-size: 0.9em; opacity: 0.7;">You'll find here workflows I developed for tasks that I wanted to do in a smoother way.</span>
-    </div>
-  </div>
+> [!two-column]
+>
+> > [!left|1]
+> > 
+> > <img src="z1-Assets/workflow-icon-2.svg" alt="Workflows Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0; max-width: unset" />
+>
+> > [!right|9]
+> > 
+> > <span style="font-size: 0.9em; opacity: 0.7;display: inline-block; margin-top: 15px;">You'll find here workflows I developed for tasks that I wanted to do in a smoother way.</span>
 
 ---
 # Recent Notes
@@ -103,35 +104,43 @@ I'm the one who created this (with generous assistance from my buddy Gemmy).
 > [!desc]
 > (Gemmy thinks i'm a narcissist for mentioning my name this many times, I sure hope I'm not =\`))
 # Where to find me
+> [!two-column|0]
+>
+> > [!left|1]
+> > 
+> > <a href="https://discord.com/users/1091021223623925931" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-discord" style="font-size: 26px;"></i></a>
+>
+> > [!right|9]
+> > 
+> > <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.4; margin-bottom: 1rem"> <span style="font-weight: bold; font-size: 0.95em;"> Username: <code style="background: rgba(150, 150, 150, 0.2); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: normal;">itsasir</code></span> <span style="font-size: 0.9em; opacity: 0.8;"> This is my preferred way to connect with humans =) </span></div>
 
-<div style="display: flex; flex-direction: column; gap: 10px;">
-  <div style="display: flex; align-items: right; gap: 12px;">
-    <a href="https://discord.com/users/1091021223623925931" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-    <i class="fa-brands fa-discord" style="font-size: 26px;"></i> 
-    </a>
-    <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.4;"> <span style="font-weight: bold; font-size: 0.95em;"> Username: <code style="background: rgba(150, 150, 150, 0.2); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: normal;">itsasir</code>
-    </span> 
-    <span style="font-size: 0.9em; opacity: 0.8;"> This is my preferred way to connect with humans =) </span> 
-    </div>
-  </div>
+> [!two-column|0]
+>
+> > [!left|1]
+> > 
+> > <a href="https://m.me/asser.ahmed.1614/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-facebook-messenger" style="font-size: 26px;"></i></a>
+>
+> > [!right|9]
+> > 
+> > This is an option too I guess, but bro, be for real.
 
-  <div style="display: flex; align-items: right; gap: 12px;">
-    <a href="https://m.me/asser.ahmed.1614/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-      <i class="fa-brands fa-facebook-messenger" style="font-size: 26px;"></i>
-    </a>
-    <span>This is an option too I guess, but bro, be for real.</span>
-  </div>
-  <div style="display: flex; align-items: right; gap: 12px;">
-    <a href="https://www.linkedin.com/in/asser-ahmed-386329320" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-      <i class="fa-brands fa-linkedin" style="font-size: 26px;"></i>
-    </a>
-    <span>I have a linkedin too (but it's basically dead)</span>
-  </div>
-  <div style="display: flex; align-items: right; gap: 12px;">
-    <a href="https://github.com/Asir-IO" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
-    <i class="fa-brands fa-github" style="font-size: 26px;"></i> 
-    </a>
-    <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.4;"> <span>You won't find me there, but you'll find projects like this one.</span> 
-    </div>
-  </div>
-</div>
+> [!two-column|0]
+>
+> > [!left|1]
+> > 
+> > <a href="https://www.linkedin.com/in/asser-ahmed-386329320" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-linkedin" style="font-size: 26px;"></i></a>
+>
+> > [!right|9]
+> > 
+> > <span>I have a linkedin too (but it's basically dead)</span> 
+
+> [!two-column|0]
+>
+> > [!left|1]
+> > 
+> > <a href="https://github.com/Asir-IO" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;"><i class="fa-brands fa-github" style="font-size: 26px;"></i></a>
+>
+> > [!right|9]
+> > 
+> > <span>You won't find me there, but you'll find projects like this one.</span> 
+

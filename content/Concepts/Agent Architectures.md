@@ -29,11 +29,11 @@ Only very simple and predictable ones.
 - fully observable,
 - deterministic,
 - and episodic.
+## What it takes to be Rational
 > [!two-column]
 >
 > > [!left|6]
 > > 
-> > ## What it takes to be Rational
 > > It's enough to just map current percepts to immediate actions using condition-action rules.
 >
 > > [!right|4]
@@ -47,11 +47,11 @@ Partially observable environments.
 - (e.g., an environment in which their sensors can get obscured)
 
 Which means they needs to track how the world is evolving to constantly have an accurate representation of it.
+## What it takes to be Rational
 > [!two-column]
 >
 > > [!left|6]
 > > 
-> > ## What it takes to be Rational
 >>They must be physically built with a model-based architecture, that is, they must maintain an internal state (a memory of past percepts and actions).
 >
 > > [!right|4]
@@ -63,11 +63,11 @@ Which means they needs to track how the world is evolving to constantly have an 
 Instead of having static condition-action rules that lead to different states, they have an <u>explicit goal state</u> they want to reach and <u>actively</u> navigate their state space to reach it.
 
 They do this navigation by continuously testing (planning ahead) how close taking an action brings them to the goal before taking it.
+## What it takes to be Rational
 > [!two-column]
 >
 > > [!left|6]
 > > 
-> > ## What it takes to be Rational
 > > Having an explicit representation of what a goal is, and how to reach it (using a search tree).  
 >
 > > [!right|4]
@@ -84,12 +84,11 @@ Environments that are,
 	- where actions *don't guarantee* outcomes, forcing the agent to calculate the _expected_ success of a decision.
 2. and require having multiple (often conflicting) factors/utilities that require making trade-offs.
 	- (like navigating a city *quickly* but also *safely*)
-
+## What it takes to be Rational
 > [!two-column]
 >
 > > [!left|6]
 > > 
-> > ## What it takes to be Rational
 > > Not merely reaching a goal state, but reaching the one that best balances between a set of factors (utilities) that must be respected in a problem.   
 > > 
 >

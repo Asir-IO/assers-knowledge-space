@@ -341,6 +341,7 @@ article ol:not([data-list]) > li:not(:last-child)::after {
   align-items: center;
   gap: 20px;
 }
+.callout[data-callout="two-column"][data-callout-metadata="0"] > .callout-content {gap: 0;}
 /* Base styling for the inner columns */
 .callout[data-callout="left"],
 .callout[data-callout="right"] {
