@@ -163,7 +163,7 @@ I like to imagine every observed node as an information source that tries its be
     > > 
     > > ![[Bayesian Networks 2026-03-25 20.39.16.excalidraw.svg|300]] ^c61007
 
-1. 
+2. 
     > [!two-column]
     >
     > > [!left|4]
