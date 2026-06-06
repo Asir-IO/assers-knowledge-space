@@ -8,6 +8,7 @@ tags:
 draft: true
 thumbnail:
 related-notes:
+comments: true
 ---
 # Mental Model
 ...
@@ -25,3 +26,8 @@ related-notes:
 | --------- | ---- |
 
 <!-- SerializedQuery END -->
+
+---
+# Sources
+- https://www.youtube.com/watch?v=c9AuL9JBAHo&list=PLJfkPxtvPxklnUhpYbHWFQlnsEgCpkS4R&index=8&t=1920s
+	- a nice conceptualization of how PCA works (I like the hypotenuse idea).
