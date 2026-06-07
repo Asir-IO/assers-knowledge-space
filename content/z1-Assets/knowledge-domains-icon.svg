@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="var(--color)"
+    viewBox="0 0 42 42">
+    <g transform="translate(9, 9)">
+        <path d="M4 2h2v20H4z" />
+        <path d="M4 4h16v2H4zm12 2h2v2h-2zm-2 2h2v2h-2zm2 2h2v2h-2zM4 12h16v2H4z" />
+    </g>
+    <defs>
+        <style>
+    svg {
+        --color: #1e1e1e;
+    }
+    @media (prefers-color-scheme: dark) {
+        svg {
+            --color: white;
+        }
+    }
+</style>
+    </defs>
+</svg>

@@ -12,8 +12,8 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <div style={{ marginBottom: "1rem", lineHeight: "1.5", opacity: 0.8, textAlign: "center"}}>
-          <p style={{ margin: "0 0 5px 0", fontWeight: "bold"}}>
+        <div style={{ marginBottom: "1rem", lineHeight: "1.5", opacity: 0.8, textAlign: "center" }}>
+          <p style={{ margin: "0 0 5px 0", fontWeight: "bold" }}>
             Created by Asser © {new Date().getFullYear()}
           </p>
           <p style={{ margin: 0, fontSize: "0.9rem", lineHeight: "1.2" }}>
@@ -21,26 +21,78 @@ export default ((opts?: Options) => {
           </p>
         </div>
         {/* links row */}
-        <div style={{ display: "flex", gap: "20px", justifyContent: "center", marginBottom: "1rem", fontSize: "20px" }}>
-          <a href="https://discord.com/users/1091021223623925931" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            justifyContent: "center",
+            marginBottom: "1rem",
+            fontSize: "20px",
+          }}
+        >
+          <a
+            href="https://discord.com/users/1091021223623925931"
+            title="My Discord"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
             <i class="fa-brands fa-discord"></i>
           </a>
-          <a href="https://m.me/asser.ahmed.1614/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
+          <a
+            href="https://m.me/asser.ahmed.1614/"
+            title="My Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
             <i class="fa-brands fa-facebook-messenger"></i>
           </a>
-          <a href="https://www.linkedin.com/in/asser-ahmed-386329320" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
+          <a
+            href="https://www.linkedin.com/in/asser-ahmed-386329320"
+            title="My LinkedIn Profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://github.com/Asir-IO" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
+          <a
+            href="https://github.com/Asir-IO"
+            title="My GitHub Profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
             <i class="fa-brands fa-github"></i>
           </a>
+          <span style="transform: translateY(-0.4rem);">...</span>
+          <a
+            href="/attributions"
+            title="Attributions & Credits"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
+            <i class="fa-solid fa-circle-info"></i>
+          </a>
         </div>
-        <p style={{ lineHeight: "1.5", opacity: 0.8, margin: "0 0 5px 0", fontWeight: "bold", textAlign: "center" }}>
+        <p
+          style={{
+            lineHeight: "1.5",
+            opacity: 0.8,
+            margin: "0 0 5px 0",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}
+        >
           Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
         </p>
 
-      {/* --- svg switch based on theme --- */}
-        <script dangerouslySetInnerHTML={{ __html: `
+        {/* --- svg switch based on theme --- */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
         document.addEventListener("nav", () => {
           const lightImages = document.querySelectorAll('img[src$=".excalidraw.svg"]');
 
@@ -73,7 +125,9 @@ export default ((opts?: Options) => {
             };
           });
         });
-      `}} />
+      `,
+          }}
+        />
       </footer>
     )
   }

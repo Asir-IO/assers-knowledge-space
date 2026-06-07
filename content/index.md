@@ -2,7 +2,7 @@
 title: Asser's Knowledge Space
 tabTitle: Welcome to my Place =)
 ---
-<div style="border: 4px solid var(--dark); background-color: var(--light); padding: 6px;">
+<div id="banner" style="border: 4px solid var(--dark); background-color: var(--light); padding: 6px;">
   <div style="width: 100%; height: auto; overflow: hidden; border-radius: 4px; filter: brightness(1.4);">
     <iframe 
       src="static\apps\home-animation.html" 
