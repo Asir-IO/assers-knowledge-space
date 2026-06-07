@@ -17,23 +17,43 @@ dsldfjd.
 ![[lab 2026-05-18 20.41.18.excalidraw]]
 
 # Callouts
-> [!NOTE] Title
+> [!NOTE]
 > Contents
 
-
-> [!abstract] Title
+> [!abstract]
 > Contents
 
-
-> [!tip] Title
+> [!info]
 > Contents
 
-
-> [!question] Title
+> [!todo]
 > Contents
 
+> [!tip]
+> Contents
 
-> [!bug] Title
+> [!success]
+> Contents
+
+> [!question]
+> Contents
+
+> [!warning]
+> Contents
+
+> [!failure]
+> Contents
+
+> [!danger]+
+> Contents
+
+> [!bug]
+> Contents
+
+> [!example]
+> Contents
+
+> [!quote]
 > Contents
 
 

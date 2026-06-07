@@ -3,6 +3,8 @@
     "2-column-blocks",
     "timeline",
     "figure-with-caption",
-    "with-desc-block"
-  ]
+    "with-desc-block",
+    "callouts"
+  ],
+  "theme": "system"
 }
