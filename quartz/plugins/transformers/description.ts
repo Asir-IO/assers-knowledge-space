@@ -1,5 +1,4 @@
 import { Root as HTMLRoot } from "hast"
-import { toString } from "hast-util-to-string"
 import { QuartzTransformerPlugin } from "../types"
 import { escapeHTML } from "../../util/escape"
 
@@ -19,6 +18,22 @@ const urlRegex = new RegExp(
   /(https?:\/\/)?(?<domain>([\da-z\.-]+)\.([a-z\.]{2,6})(:\d+)?)(?<path>[\/\w\.-]*)(\?[\/\w\.=&;-]*)?/,
   "g",
 )
+function extractTextWithoutHeaders(node: any): string {
+  if (!node) {
+    return ""
+  }
+  if (node.type === "text") {
+    return node.value
+  }
+  if (node.type === "element" && /^h[1-6]$/.test(node.tagName)) {
+    return ""
+  }
+  const children = node.children
+  if (!Array.isArray(children) || children.length === 0) {
+    return ""
+  }
+  return children.map(extractTextWithoutHeaders).filter(Boolean).join(" ")
+}
 
 export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
@@ -29,7 +44,7 @@ export const Description: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
         () => {
           return async (tree: HTMLRoot, file) => {
             let frontMatterDescription = file.data.frontmatter?.description
-            let text = escapeHTML(toString(tree))
+            let text = escapeHTML(extractTextWithoutHeaders(tree))
 
             if (opts.replaceExternalLinks) {
               frontMatterDescription = frontMatterDescription?.replace(

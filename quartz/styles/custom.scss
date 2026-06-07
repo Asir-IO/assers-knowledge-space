@@ -187,6 +187,7 @@
   vertical-align: -0.25em; 
   margin-right: 0.1em;   
   color: inherit;
+  margin: 0;
 }
 /* FEATURE: Font Awesome Icons */
 /* ex: :fa-solid-home: or :fab-github: */
@@ -195,11 +196,15 @@
   vertical-align: -0.1em;
   margin-right: 0.15em;
   color: inherit;
+  margin: 0;
 }
 
 .custom-pi-symbol {
-  fill: var(--dark);
-  vertical-align: middle;
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+  vertical-align: -0.16em;
 }
 
 /* FEATURE: chalkboard texture */

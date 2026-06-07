@@ -26,14 +26,16 @@ export const CustomIcons: QuartzTransformerPlugin = () => {
           let svgContent = fs.readFileSync(iconPath, "utf8")
           svgContent = svgContent.replace(
             "<svg",
-            `<svg class="custom-pi-symbol" width="18" height="auto"`,
+            `<svg class="custom-pi-symbol" width="1em" height="1em" aria-hidden="true" focusable="false"`,
           )
           svgContent = svgContent.replace(/fill="[^"]*"/g, "")
+          svgContent = svgContent.replace(/\r?\n\s*/g, " ").trim()
+          svgContent = svgContent.replace(/<path([^>]*)\/>/g, "<path$1></path>")
 
           return svgContent
         } catch (e) {
           console.warn(`Could not find pixelarticon: ${iconName}`)
-          return `Could not find pixelarticon: ${iconName}`
+          return `${iconName}`
         }
       })
 

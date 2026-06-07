@@ -27,4 +27,3 @@ Below is the complete list.
 	-  Every single drawing or diagram is created using this Obsidian plugin.
 3. [Quartz](https://quartz.jzhao.xyz/) by [Jacky Zhao](https://github.com/jackyzha0)
 	- this is the static-site generator that helped me build the website and not worry about dealing with frontend code.
-
