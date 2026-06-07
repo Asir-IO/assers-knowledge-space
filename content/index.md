@@ -45,7 +45,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 >
 > > [!left|1]
 > > 
-> > <img src="z1-Assets/concept-icon-2.svg" alt="Concepts Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0;  max-width: unset" />
+> > <img src="z1-Assets/icons/concept-icon-2.svg" alt="Concepts Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0;  max-width: unset" />
 >
 > > [!right|9]
 > > 
@@ -55,7 +55,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 >
 > > [!left|1]
 > > 
-> > <img src="z1-Assets/strategy-icon-2.svg" alt="Strategies Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0; max-width: unset" />
+> > <img src="z1-Assets/icons/strategy-icon-2.svg" alt="Strategies Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0; max-width: unset" />
 >
 > > [!right|9]
 > > 
@@ -65,7 +65,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 >
 > > [!left|1]
 > > 
-> > <img src="z1-Assets/workflow-icon-2.svg" alt="Workflows Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0; max-width: unset" />
+> > <img src="z1-Assets/icons/workflow-icon-2.svg" alt="Workflows Icon" style="width: 64px; height: 64px; min-width: 28px; display: block; margin: 0; max-width: unset" />
 >
 > > [!right|9]
 > > 

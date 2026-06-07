@@ -1,11 +1,11 @@
 @use "./base.scss";
 
-// // put your custom CSS here!
+// put your custom CSS here!
 @use "./variables.scss" as *;
 // @use "themes";
 
-@media all and (max-width: 600px) {
-  /* 1. Position the whole title block */
+// Website Name adjustment for mobile screens
+@media all and ($mobile) {
   .page-title {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -15,14 +15,14 @@
 
   /* 2. Shrink "Asser's" specifically for mobile */
   .title-first {
-    font-size: 1.6rem; /* Much smaller than the Desktop 2.75rem */
+    font-size: 1.4rem; /* Much smaller than the Desktop 2.75rem */
     line-height: 1;
   }
 
   /* 3. Shrink "Knowledge Space" */
   .title-rest {
-    font-size: 0.9rem; /* Small subtitle size */
-    line-height: 1.2;
+    font-size: 0.7rem; /* Small subtitle size */
+    line-height: 1;
   }
 }
 
@@ -550,4 +550,20 @@ img[alt^="h-"] {
       }
     }
   }
+}
+
+// FEATURE: Custom Fonts
+@font-face {
+  font-family: 'INET';
+  src: url('/static/cc-red-alert-INET.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  size-adjust: 125%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'LAN';
+  src: url('/static/cc-red-alert-LAN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

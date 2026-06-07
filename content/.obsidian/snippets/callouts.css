@@ -77,16 +77,6 @@
   -webkit-mask-repeat: no-repeat;
 }
 
-/* 4. Group Class Mappings and Color Mix Rules */
-
-/* Default/Note fallback */
-.callout[data-callout] {
-  --color: var(--quartz-yellow);
-  --border: color-mix(in srgb, var(--quartz-yellow) 50%, transparent);
-  --bg: color-mix(in srgb, var(--quartz-yellow) 8.2%, transparent);
-  --callout-custom-icon: var(--callout-icon-note);
-}
-
 /* Blue Group */
 .callout[data-callout="example"],
 .callout[data-callout="todo"] {

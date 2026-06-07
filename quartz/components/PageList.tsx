@@ -73,42 +73,45 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 
         // add the thumbnail
         const rawThumbnail = page.frontmatter?.thumbnail as string | undefined
-        const cleanName = rawThumbnail ? rawThumbnail.replace(/[\[\]]/g, '').split('|')[0].trim() : null
+        const cleanName = rawThumbnail
+          ? rawThumbnail
+              .replace(/[\[\]]/g, "")
+              .split("|")[0]
+              .trim()
+          : null
 
-        const thumbnailSlug = cleanName ? slugifyFilePath(cleanName as any) : "lab-temp-thumb.excalidraw.svg"
+        const thumbnailSlug = cleanName
+          ? slugifyFilePath(cleanName as any)
+          : "lab-temp-thumb.excalidraw.svg"
         return (
           <li class="section-li">
             <div class="section">
               <p class="meta">
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>
-              <div class="desc">
-                <div class="thumbnail-container">
-                  <img 
-                    src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
-                    alt={title} 
-                    class="note-thumbnail" 
-                  />
-                </div>
-                <h3>
-                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                    {title}
-                  </a>
-                </h3>
-              </div>
+              <img
+                src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
+                alt={title}
+                class="note-thumbnail"
+              />
+              <h3>
+                <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                  {title}
+                </a>
+              </h3>
               <ul class="tags">
                 {tags.map((tag) => {
-                return (
-                  <li>
-                    <a
-                      class="internal tag-link"
-                      href={resolveRelative(fileData.slug!, getTagRoute(tag) as FullSlug)}
-                    >
-                      {tag}
-                    </a>
-                  </li>
-                )
-              })}
+                  return (
+                    <li>
+                      <a
+                        class="internal tag-link"
+                        href={resolveRelative(fileData.slug!, getTagRoute(tag) as FullSlug)}
+                      >
+                        {tag}
+                      </a>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           </li>
@@ -119,30 +122,41 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 }
 
 PageList.css = `
-.section h3 {
+.section {
+  border-radius: 8px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center; 
+  gap: 1rem; 
+  width: 100%;
+}
+
+.section > .meta {
   margin: 0;
+  flex: 0 0 15%;
+}
+
+.section > img,
+.section > .svg-theme-wrapper {
+  flex-shrink: 0 !important;
+  width: 100px !important;
+}
+.section > .svg-theme-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.section > h3 {
+  margin: 0;
+  flex: 1 1 50%;
+  hyphens: auto;
+  word-break: break-word;
 }
 
 .section > .tags {
   margin: 0;
-}
-
-.desc {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  gap: 1rem; 
-}
-.section {
-  align-items: center; /* Forces the date, desc, and tags to center vertically */
-}
-.thumbnail-container {
-  flex-shrink: 0;
-  width: 100px; 
-  height: auto; /* Lets the image scale naturally */
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
+  flex: 0 0 25%;
 }
 `
-

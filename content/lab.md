@@ -15,6 +15,7 @@ dsldfjd.
 
 # Banner
 ![[lab 2026-05-18 20.41.18.excalidraw]]
+![[lab 2026-06-07 20.02.50.excalidraw]]
 
 # Callouts
 > [!NOTE]
