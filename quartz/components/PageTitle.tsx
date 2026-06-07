@@ -38,7 +38,6 @@ PageTitle.css = `
   flex-direction: column;
   align-items: flex-start;
   line-height: 1.1;
-  margin-right: 1rem;
 }
 
 .title-first {

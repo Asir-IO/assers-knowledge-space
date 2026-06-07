@@ -132,8 +132,8 @@ PageList.css = `
 }
 
 .section > .meta {
-  margin: 0;
-  flex: 0 0 15%;
+  margin: 0 !important;
+  flex: 0 0 16%;
 }
 
 .section > img,

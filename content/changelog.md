@@ -1,6 +1,6 @@
 ---
 title: Changelog
-thumbnail: "[[changelog-icon.svg]]"
+thumbnail: "[[icons/changelog-icon.svg]]"
 ---
 I place here features and tools that I added to the codebase/obsidian/excalidraw to help me create more efficiently.   
 

@@ -1,6 +1,6 @@
 ---
 title: Attributions
-thumbnail: "[[attributions-icon.svg]]"
+thumbnail: "[[icons/attributions-icon.svg]]"
 ---
 I can confidently say that this Knowledge Space wouldn't have been possible if not for the open-source projects/assets that I had access to; I'm grateful for every human being who made each of them possible :pi-smile:.
 

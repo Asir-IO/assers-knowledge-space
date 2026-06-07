@@ -2,7 +2,7 @@
 title: Concepts
 comments: false
 related-notes:
-thumbnail: "[[concept-icon-2.svg]]"
+thumbnail: "[[icons/concept-icon-2.svg]]"
 ---
 %% ![[index 2026-05-15 17.09.32.excalidraw]] %%
 I believe any concept can have a visual form; I haven't fully proven it yet.  <br>

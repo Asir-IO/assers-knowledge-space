@@ -1,6 +1,6 @@
 ---
 title: Knowledge Domains
-thumbnail: "[[knowledge-domains-icon.svg]]"
+thumbnail: "[[icons/knowledge-domains-icon.svg]]"
 ---
 I've grouped here notes that belong to the same domain.
 
@@ -66,8 +66,8 @@ I've grouped here notes that belong to the same domain.
 | ![[Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|Performing 2D Convolution 2026-03-29 23.41.19.excalidraw.svg\|120]]                       | [[Performing 2D Convolution]]                                     |
 | ![[Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|Bayesian Networks 2026-03-20 23.18.34.excalidraw.svg\|120]]                                       | [[Bayesian Networks]]                                                       |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                              | [[Assignment One Report]]                                                   |
-| ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Framework]]                                                   |
 | ![[LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|LangChain Operation 2026-03-03 01.47.01.excalidraw.svg\|120]]                                   | [[LangChain Framework]]                                                   |
+| ![[LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|LangGraph Operation 2026-03-03 15.35.05.excalidraw.svg\|120]]                                   | [[LangGraph Framework]]                                                   |
 | ![[Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg\|Hypothesis Space Selection 2026-03-01 00.10.48.excalidraw.svg\|120]]                     | [[Hypothesis Space Selection]]                                     |
 | ![[lab-temp-thumb.excalidraw.svg\|120]]                                                                                                                              | [[Inventory Chatbot]]                                                           |
 | ![[Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg\|Neural Networks as a Squiggle Fitter 2026-02-26 14.43.34.excalidraw.svg\|120]] | [[Neural Networks as a Squiggle Fitter]] |
