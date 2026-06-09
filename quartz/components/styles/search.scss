@@ -33,11 +33,11 @@
       width: 18px;
       min-width: 18px;
       margin: 0 0.5rem;
+      image-rendering: pixelated;
 
       .search-path {
-        stroke: var(--darkgray);
-        stroke-width: 1.5px;
-        transition: stroke 0.5s ease;
+        fill: var(--darkgray);
+        transition: fill 0.5s ease;
       }
     }
   }

@@ -23,8 +23,7 @@ export default ((userOpts?: Partial<SearchOptions>) => {
           <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
             <title>Search</title>
             <g class="search-path" fill="none">
-              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
-              <circle cx="8" cy="8" r="7" />
+              <path d="M22 22h-2v-2h2v2Zm-2-2h-2v-2h2v2Zm-6-2H6v-2h8v2Zm4 0h-2v-2h2v2ZM6 16H4v-2h2v2Zm10 0h-2v-2h2v2ZM4 14H2V6h2v8Zm14 0h-2V6h2v8ZM6 6H4V4h2v2Zm10 0h-2V4h2v2Zm-2-2H6V2h8v2Z" />
             </g>
           </svg>
           <p>{i18n(cfg.locale).components.search.title}</p>

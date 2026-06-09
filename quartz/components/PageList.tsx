@@ -157,6 +157,6 @@ PageList.css = `
 
 .section > .tags {
   margin: 0;
-  flex: 0 0 25%;
+  flex: 0 0 20%;
 }
 `

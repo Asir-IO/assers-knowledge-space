@@ -34,12 +34,14 @@
   }
   & > .nightIcon {
     display: inline;
+    image-rendering: pixelated;
   }
 }
 
 :root .darkmode {
   & > .dayIcon {
     display: inline;
+    image-rendering: pixelated;
   }
   & > .nightIcon {
     display: none;
