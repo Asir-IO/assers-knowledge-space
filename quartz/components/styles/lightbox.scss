@@ -6,9 +6,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  
+
   backdrop-filter: blur(4px);
-  
+
   align-items: center;
   justify-content: center;
 
@@ -21,9 +21,10 @@
     border-radius: 5px;
     background-color: var(--light);
     box-shadow:
-          0 14px 50px rgba(27, 33, 48, 0.12),
-          0 10px 30px rgba(27, 33, 48, 0.16);
-    
+      0 0 0 0.15rem #1b21301f,
+      0 0 0 0.4rem #1b213014,
+      0 0 0 0.75rem #1b21300a;
+
     overflow: hidden;
     display: flex;
     justify-content: center;

@@ -16,7 +16,7 @@
 }
 
 .callout {
-  border: 2px solid var(--border);
+  border: 0.15rem solid var(--border);
   background-color: var(--bg);
   border-radius: 5px;
   padding: 0 1rem;
@@ -45,7 +45,7 @@
   --callout-icon-danger: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> ');
   --callout-icon-bug: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M2 5h2v4H2zm20 0h-2v4h2zM4 9h2v2H4zm16 0h-2v2h2zM2 13h4v2H2zm20 0h-4v2h4zM4 17h2v2H4zm16 0h-2v2h2zM2 19h2v2H2zm20 0h-2v2h2zM6 11h12v2H6z'/%3E%3Cpath d='M6 7h2v12H6zm10 0h2v12h-2zM8 19h8v2H8zM8 5h8v2H8z'/%3E%3Cpath d='M11 15h2v6h-2zM8 1h2v6H8zm6 0h2v6h-2z'/%3E%3C/svg%3E");
   --callout-icon-example: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M10 5h12v2H10zm0 4h8v2h-8zm0 4h12v2H10zm0 4h8v2h-8zm-4-6H4V9h2v2ZM4 9H2V7h2v2Zm4 0H6V7h2v2ZM6 7H4V5h2v2Zm-2 6h2v2H4zm0 4h2v2H4zm-2 0v-2h2v2zm4 0v-2h2v2z'/%3E%3C/svg%3E");
-  --callout-icon-quote: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 14' %3E%3Cmetadata%3EMade with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj%3C/metadata%3E%3Cpath fill='currentColor' d='M2 0h8v1h-8ZM16 0h8v1h-8ZM1 1h10v1h-10ZM15 1h10v1h-10ZM0 2h12v1h-12ZM14 2h12v1h-12ZM0 3h12v1h-12ZM14 3h12v1h-12ZM0 4h12v1h-12ZM14 4h12v1h-12ZM0 5h12v1h-12ZM14 5h12v1h-12ZM0 6h12v1h-12ZM14 6h12v1h-12ZM0 7h12v1h-12ZM14 7h12v1h-12ZM1 8h10v1h-10ZM15 8h10v1h-10ZM2 9h8v1h-8ZM16 9h8v1h-8ZM5 10h4v1h-4ZM19 10h4v1h-4ZM5 11h3v1h-3ZM19 11h3v1h-3ZM4 12h4v1h-4ZM18 12h4v1h-4ZM3 13h4v1h-4ZM17 13h4v1h-4Z' /%3E%3C/svg%3E");
+  --callout-icon-quote: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M22 20H2v-2h20v2Zm0-4H2v-2h20v2ZM4 8h2v4H2V6h2v2Zm6 0h2v4H8V6h2v2Zm12 4h-8v-2h8v2Zm0-4h-8V6h8v2ZM6 6H4V4h2v2Zm6 0h-2V4h2v2Z'/%3E%3C/svg%3E");
   --callout-icon-fold: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24'%3E%3Cpath d='M13 16h-2v-2h2v2Zm-2-2H9v-2h2v2Zm4 0h-2v-2h2v2Zm-6-2H7v-2h2v2Zm8 0h-2v-2h2v2ZM7 10H5V8h2v2Zm12 0h-2V8h2v2Z'/%3E%3C/svg%3E");
 
 &[data-callout] {

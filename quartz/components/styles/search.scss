@@ -73,8 +73,9 @@
         border-radius: 7px;
         background: var(--light);
         box-shadow:
-          0 14px 50px rgba(27, 33, 48, 0.12),
-          0 10px 30px rgba(27, 33, 48, 0.16);
+          0 0 0 0.15rem #1b21301f,
+          0 0 0 0.4rem #1b213014,
+          0 0 0 0.75rem #1b21300a;
         margin-bottom: 2em;
       }
 
