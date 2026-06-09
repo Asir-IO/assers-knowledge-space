@@ -16,11 +16,12 @@
 }
 
 .callout {
-  border: 0.15rem solid var(--border);
+  border: 2.4px solid var(--border);
   background-color: var(--bg);
   border-radius: 5px;
   padding: 0 1rem;
   overflow-y: hidden;
+  
   box-sizing: border-box;
 
   & > .callout-content {
