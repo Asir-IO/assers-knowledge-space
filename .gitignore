@@ -23,3 +23,5 @@ private/
 replit.nix
 
 content/.export/
+
+.env

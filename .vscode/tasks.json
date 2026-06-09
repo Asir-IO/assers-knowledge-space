@@ -1,42 +1,63 @@
 {
-    "version": "2.0.0",
-    "inputs": [
-        {
-            "id": "commitMessage",
-            "type": "promptString",
-            "description": "Enter commit message (Leave blank for Quartz default)",
-            "default": ""
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Enter commit message (Leave blank for Quartz default)",
+      "default": ""
+    }
+  ],
+  "tasks": [
+    {
+      "label": "quartz run",
+      "type": "shell",
+      "command": "npx",
+      "args": ["quartz", "build", "--serve"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "quartz sync",
+      "type": "shell",
+      "command": "if ([string]::IsNullOrWhiteSpace($env:QUARTZ_MSG)) { npx quartz sync } else { npx quartz sync -m \"$env:QUARTZ_MSG\" }",
+      "options": {
+        "env": {
+          "QUARTZ_MSG": "${input:commitMessage}"
         }
-    ],
-    "tasks": [
-        {
-            "label": "quartz run",
-            "type": "shell",
-            "command": "npx",
-            "args": [
-                "quartz",
-                "build",
-                "--serve"
-            ],
-            "group": "build",
-            "problemMatcher": []
-        },
-        {
-            "label": "quartz sync",
-            "type": "shell",
-            "command": "if ([string]::IsNullOrWhiteSpace($env:QUARTZ_MSG)) { npx quartz sync } else { npx quartz sync -m \"$env:QUARTZ_MSG\" }",
-            "options": {
-                "env": {
-                    "QUARTZ_MSG": "${input:commitMessage}"
-                }
-            },
-            "group": "build",
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared",
-                "clear": true
-            },
-            "problemMatcher": []
-        }
-    ]
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sync to R2: z1-Assets",
+      "type": "shell",
+      "command": "powershell -File .vscode/sync-and-purge.ps1",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Check for differences: local vs R2",
+      "type": "shell",
+      "command": "rclone",
+      "args": ["check", "content\\z1-Assets", "R2:knowledge-space/z1-Assets/"],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
 }

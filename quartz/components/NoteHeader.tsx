@@ -1,9 +1,9 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { resolveRelative, FullSlug, slugifyFilePath } from "../util/path"
 
 import ContentMeta from "./ContentMeta"
 import TagList from "./TagList"
+const R2_BASE = "https://assets.asser.md"
 
 export default (() => {
   const Meta = ContentMeta()
@@ -18,17 +18,18 @@ export default (() => {
     }
 
     const rawThumbnail = fileData.frontmatter?.thumbnail as string | undefined
-    const cleanName = rawThumbnail ? rawThumbnail.replace(/[\[\]]/g, '').split('|')[0].trim() : null
-    const thumbnailSlug = cleanName ? slugifyFilePath(cleanName as any) : "lab-temp-thumb.excalidraw.svg"
-
+    const cleanName = rawThumbnail
+      ? rawThumbnail
+          .replace(/[\[\]]/g, "")
+          .split("|")[0]
+          .trim()
+      : null
+    const thumbnailSlug = cleanName ? cleanName : "lab-temp-thumb.excalidraw.svg"
+    
     return (
       <header class={classNames(displayClass, "note-header")}>
         <div class="thumb-and-meta-container">
-          <img 
-            src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
-            alt={title} 
-            class="thumb" 
-          />
+          <img src={encodeURI(`${R2_BASE}/z1-Assets/${thumbnailSlug}`)} class="thumb" />
           <div class="meta-container">
             <h1 class="article-title">{title}</h1>
             <Meta {...props} />
@@ -41,7 +42,8 @@ export default (() => {
     )
   }
 
-  NoteHeader.css = `
+  NoteHeader.css =
+    `
   .note-header {
     display: flex;
     flex-direction: column;
@@ -93,7 +95,9 @@ export default (() => {
   .tags-container {
     
   }
-  ` + (Meta.css ?? "") + (Tags.css ?? "")
+  ` +
+    (Meta.css ?? "") +
+    (Tags.css ?? "")
 
   return NoteHeader
 }) satisfies QuartzComponentConstructor

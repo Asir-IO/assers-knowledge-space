@@ -1,12 +1,14 @@
 import { QuartzConfig } from "./quartz/cfg"
 import { CustomIcons } from "./quartz/plugins/transformers/customicons"
 import { ObsidianListStyle } from "./quartz/plugins/transformers/liststyle"
+import { CdnLinks } from "./quartz/plugins/transformers/cdnLinks"
 import * as Plugin from "./quartz/plugins"
 
 /**
  * Quartz 4 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
+ * 
  */
 const config: QuartzConfig = {
   configuration: {
@@ -76,6 +78,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
       ObsidianListStyle(),
+      CdnLinks({ r2Url: "https://assets.asser.md" }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
@@ -88,7 +91,7 @@ const config: QuartzConfig = {
         enableSiteMap: true,
         enableRSS: true,
       }),
-      Plugin.Assets(),
+      // Plugin.Assets(),
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),

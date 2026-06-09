@@ -111,31 +111,19 @@ export default (() => {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              document.addEventListener("DOMContentLoaded", () => {
-                function applyDynamicImageHeights() {
-                  const images = document.querySelectorAll('img');
-                  
-                  images.forEach(img => {
-                    const alt = img.getAttribute('alt');
-                    if (alt && alt.startsWith('h-')) {
-                      const size = alt.substring(2); 
-                      img.style.setProperty('height', size, 'important');
-                      img.style.setProperty('width', 'auto', 'important');
-                    }
-                  });
-                }
-                applyDynamicImageHeights();
-                const observer = new MutationObserver((mutations) => {
-                  for (const mutation of mutations) {
-                    if (mutation.addedNodes.length > 0) {
-                      applyDynamicImageHeights();
-                    }
-                  }
-                });
-
-                observer.observe(document.body, { childList: true, subtree: true });
-              });
-            `,
+      document.addEventListener("nav", () => {
+        const images = document.querySelectorAll('img');
+        
+        images.forEach(img => {
+          const alt = img.getAttribute('alt');
+          if (alt && alt.startsWith('h-')) {
+            const size = alt.substring(2); 
+            img.style.setProperty('height', size, 'important');
+            img.style.setProperty('width', 'auto', 'important');
+          }
+        });
+      });
+    `,
           }}
         />
       </head>

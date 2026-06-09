@@ -4,6 +4,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
+const R2_BASE = "https://assets.asser.md"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
@@ -81,7 +82,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
           : null
 
         const thumbnailSlug = cleanName
-          ? slugifyFilePath(cleanName as any)
+          ? cleanName
           : "lab-temp-thumb.excalidraw.svg"
         return (
           <li class="section-li">
@@ -90,7 +91,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>
               <img
-                src={resolveRelative(fileData.slug!, `z1-assets/${thumbnailSlug}` as FullSlug)}
+                src={encodeURI(`${R2_BASE}/z1-Assets/${thumbnailSlug}`)}
                 alt={title}
                 class="note-thumbnail"
               />
