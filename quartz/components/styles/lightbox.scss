@@ -21,10 +21,9 @@
     border-radius: 5px;
     background-color: var(--light);
     box-shadow:
-      0 0 0 0.15rem #1b21301f,
-      0 0 0 0.4rem #1b213014,
-      0 0 0 0.75rem #1b21300a;
-
+      0 0 0 1px #1b21301f,
+      0 0 0 5px #1b213014,
+      0 0 0 9px #1b21300a;
     overflow: hidden;
     display: flex;
     justify-content: center;

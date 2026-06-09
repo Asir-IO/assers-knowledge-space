@@ -1,6 +1,6 @@
 ---
 title: University Courses
-thumbnail: "[[courses 2026-05-18 02.52.37.excalidraw.svg]]"
+thumbnail: "[[icons/university-courses-icon.svg]]"
 ---
 %% ![[courses 2026-05-18 02.52.37.excalidraw]] %%
 ## Level 3
