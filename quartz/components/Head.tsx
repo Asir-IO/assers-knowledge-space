@@ -50,6 +50,7 @@ export default (() => {
             )}
           </>
         )}
+        <link rel="preload" href="/static/cc-red-alert-INET.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 

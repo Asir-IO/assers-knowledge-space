@@ -209,5 +209,9 @@ Here, try it [[#^575d6b|=)]]
 - `quartz\components\TargetHighlight.tsx`
 - `quartz.layout.ts`
 
+---
+# Used a Custom Local Font
 
-**\***
+### Related Files
+- `quartz\styles\custom.scss`
+- `quartz\util\theme.ts`

@@ -567,3 +567,17 @@ img[alt^="h-"] {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'VT323';
+  src: url('/static/VT323-Regular.ttf.woff2') format('truetype');
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/static/BricolageGrotesque-Variable.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/static/IBMPlexMono-Regular.ttf') format('truetype');
+  font-style: normal;
+}

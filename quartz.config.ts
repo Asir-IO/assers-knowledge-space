@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  * Quartz 4 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
- * 
+ *
  */
 const config: QuartzConfig = {
   configuration: {
@@ -21,25 +21,33 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "knowledgespace.asser.md/", //asir-io.github.io/assers-knowledge-space
-    ignorePatterns: ["private", "templates", ".obsidian", "z2-Meta", "**/*.excalidraw.md", "./export", "Excalidraw/Scripts"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "z2-Meta",
+      "**/*.excalidraw.md",
+      "./export",
+      "Excalidraw/Scripts",
+    ],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
+      fontOrigin: "local",
+      cdnCaching: false,
       typography: {
-        header: "VT323",
+        header: { name: "VT323", weights: [400] },
         body: "Bricolage Grotesque",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#fafafa",      
+          light: "#fafafa",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
-          darkgray: "#0b140d",   // Body text
-          dark: "#0b140d",       // Headers
+          darkgray: "#0b140d", // Body text
+          dark: "#0b140d", // Headers
           secondary: "hsl(131, 18%, 48%)",
-          tertiary: "hsl(238, 12%, 50%)",   // links and selected text
+          tertiary: "hsl(238, 12%, 50%)", // links and selected text
           highlight: "rgba(103, 176, 117, 0.15)",
           textHighlight: "#fff23688",
         },
