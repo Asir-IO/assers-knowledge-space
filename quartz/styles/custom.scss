@@ -515,7 +515,7 @@ img[alt^="h-"] {
 
 /* FEATURE: Highlight Targeted Headings/Text */
 .is-targeted {
-  border: 2px dotted var(--secondary);
+  border: 2px dashed var(--secondary);
   padding: 0.5rem 0.5rem;
   // border-radius: 5px;
   scroll-margin-top: 80px;

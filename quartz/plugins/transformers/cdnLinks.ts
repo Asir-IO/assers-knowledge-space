@@ -3,13 +3,7 @@ import { visit } from "unist-util-visit"
 import { Element } from "hast"
 import fs from "fs"
 import path from "path"
-
-interface Options {
-  r2Url: string
-}
-
-export const CdnLinks: QuartzTransformerPlugin<Options> = (userOpts) => {
-  let r2Base = userOpts?.r2Url.replace(/\/$/, "");
+export const CdnLinks: QuartzTransformerPlugin = () => {
 
   const assetMap: Record<string, string> = {}
   const contentDir = path.join(process.cwd(), "content")
@@ -41,7 +35,9 @@ export const CdnLinks: QuartzTransformerPlugin<Options> = (userOpts) => {
 
   return {
     name: "CdnLinks",
-    htmlPlugins() {
+    htmlPlugins(ctx) {
+      const r2Base = ctx.cfg.configuration.r2Bucket.replace(/\/$/, "")
+
       return [
         () => (tree) => {
           visit(tree, "element", (node: Element) => {

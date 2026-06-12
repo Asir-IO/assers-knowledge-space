@@ -1,10 +1,9 @@
-import { FullSlug, isFolderPath, resolveRelative, slugifyFilePath } from "../util/path"
+import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
 import { getTagRoute } from "./tagMap"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
-const R2_BASE = "https://assets.asser.md"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
@@ -81,9 +80,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
               .trim()
           : null
 
-        const thumbnailSlug = cleanName
-          ? cleanName
-          : "lab-temp-thumb.excalidraw.svg"
+        const thumbnailSlug = cleanName ? cleanName : "lab-temp-thumb.excalidraw.svg"
         return (
           <li class="section-li">
             <div class="section">
@@ -91,7 +88,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>
               <img
-                src={encodeURI(`${R2_BASE}/z1-Assets/${thumbnailSlug}`)}
+                src={encodeURI(`${cfg.r2Bucket}/z1-Assets/${thumbnailSlug}`)}
                 alt={title}
                 class="note-thumbnail"
               />

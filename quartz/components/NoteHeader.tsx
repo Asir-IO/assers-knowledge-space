@@ -3,14 +3,13 @@ import { classNames } from "../util/lang"
 
 import ContentMeta from "./ContentMeta"
 import TagList from "./TagList"
-const R2_BASE = "https://assets.asser.md"
 
 export default (() => {
   const Meta = ContentMeta()
   const Tags = TagList()
 
   const NoteHeader: QuartzComponent = (props: QuartzComponentProps) => {
-    const { fileData, displayClass } = props
+    const { cfg, fileData, displayClass } = props
     const title = fileData.frontmatter?.title
 
     if (!title) {
@@ -25,11 +24,11 @@ export default (() => {
           .trim()
       : null
     const thumbnailSlug = cleanName ? cleanName : "lab-temp-thumb.excalidraw.svg"
-    
+
     return (
       <header class={classNames(displayClass, "note-header")}>
         <div class="thumb-and-meta-container">
-          <img src={encodeURI(`${R2_BASE}/z1-Assets/${thumbnailSlug}`)} class="thumb" />
+          <img src={encodeURI(`${cfg.r2Bucket}/z1-Assets/${thumbnailSlug}`)} class="thumb" />
           <div class="meta-container">
             <h1 class="article-title">{title}</h1>
             <Meta {...props} />

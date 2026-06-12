@@ -2,6 +2,7 @@
 title: Changelog
 thumbnail: "[[icons/changelog-icon.svg]]"
 ---
+%% the only build files that contain information about this specific website are: quartz\components\tagMap.ts, quartz.config.ts, quartz.layout.ts%%
 I place here features and tools that I added to the codebase/obsidian/excalidraw to help me create more efficiently.   
 
 I did this to remind myself *how* to use them.

@@ -14,6 +14,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "Asser's Knowledge Space",
     pageTitleSuffix: "",
+    r2Bucket: "https://assets.asser.md/knowledgespace",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -86,7 +87,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
       ObsidianListStyle(),
-      CdnLinks({ r2Url: "https://assets.asser.md" }),
+      CdnLinks(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

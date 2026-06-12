@@ -12,7 +12,7 @@ $ZONE_ID   = $env:ZONE_ID
 $R2_BASE   = $env:R2_BASE
 
 # Sync and capture which files were transferred
-$output = rclone sync content\z1-Assets R2:knowledge-space/z1-Assets/ -v 2>&1
+$output = rclone sync content\z1-Assets R2:knowledge-space/knowledgespace/z1-Assets/ -v 2>&1
 
 # Extract copied/updated files from rclone output
 $changed = $output | Select-String "Copied|Updated" | ForEach-Object {

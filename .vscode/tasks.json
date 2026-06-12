@@ -50,7 +50,7 @@
       "label": "Check for differences: local vs R2",
       "type": "shell",
       "command": "rclone",
-      "args": ["check", "content\\z1-Assets", "R2:knowledge-space/z1-Assets/"],
+      "args": ["check", "content\\z1-Assets", "R2:knowledge-space/knowledgespace/z1-Assets/"],
       "group": "build",
       "presentation": {
         "reveal": "always",
