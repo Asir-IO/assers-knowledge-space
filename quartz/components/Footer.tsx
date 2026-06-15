@@ -93,39 +93,50 @@ export default ((opts?: Options) => {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-        document.addEventListener("nav", () => {
-          const lightImages = document.querySelectorAll('img[src$=".excalidraw.svg"]');
+document.addEventListener("nav", () => {
+  // 1. Select both imgs (by src) and objects (by data)
+  const excalidrawElements = document.querySelectorAll('img[src$=".excalidraw.svg"], object[data$=".excalidraw.svg"]');
 
-          lightImages.forEach(img => {
-            // Skip if already wrapped or marked as failed
-            if (img.parentElement.classList.contains('svg-theme-wrapper') || img.classList.contains('no-dark-variant')) return;
+  excalidrawElements.forEach(el => {
+    // Skip if already wrapped or marked as failed
+    if (el.parentElement?.classList.contains('svg-theme-wrapper') || el.classList.contains('no-dark-variant')) return;
 
-            const darkSrc = img.src.replace('.excalidraw.svg', '.excalidraw.dark.svg');
-            const darkImg = img.cloneNode(true);
-            darkImg.src = darkSrc;
-            darkImg.classList.add('dark-mode-svg');
-            img.classList.add('has-dark-variant');
+    // 2. Check the tag name to read/write the correct attribute
+    const isImg = el.tagName.toLowerCase() === 'img';
+    const sourceAttr = isImg ? 'src' : 'data';
+    
+    // 3. Extract the original URL and generate the dark URL
+    const originalUrl = el[sourceAttr];
+    const darkUrl = originalUrl.replace('.excalidraw.svg', '.excalidraw.dark.svg');
+    
+    // Create the dark variant clone
+    const darkEl = el.cloneNode(true);
+    darkEl[sourceAttr] = darkUrl;
+    darkEl.classList.add('dark-mode-svg');
+    el.classList.add('has-dark-variant');
 
-            // --- THE NEW PART: Create the Grid Wrapper ---
-            const wrapper = document.createElement('div');
-            wrapper.className = 'svg-theme-wrapper';
+    // Create the Grid Wrapper
+    const wrapper = document.createElement('div');
+    wrapper.className = 'svg-theme-wrapper';
 
-            // Insert wrapper exactly where the image is, then move both images inside it
-            img.parentNode.insertBefore(wrapper, img);
-            wrapper.appendChild(img);
-            wrapper.appendChild(darkImg);
+    // Insert wrapper and append both elements
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+    wrapper.appendChild(darkEl);
 
-            // Handle 404s cleanly
-            darkImg.onerror = () => {
-              // If dark fails, un-wrap the light image to clean up the DOM
-              img.classList.remove('has-dark-variant');
-              img.classList.add('no-dark-variant');
-              wrapper.parentNode.insertBefore(img, wrapper); // Move light img back out
-              wrapper.remove(); // Delete the grid and the broken dark img
-            };
-          });
-        });
-      `,
+    // 4. Handle 404s cleanly using a hidden Image tester
+    const tester = new Image();
+    tester.onerror = () => {
+      // If dark fails to load, simply remove the broken dark variant.
+      // We keep the wrapper and the original light element intact.
+      el.classList.remove('has-dark-variant');
+      el.classList.add('no-dark-variant');
+      darkEl.remove(); 
+    };
+    tester.src = darkUrl; // Triggers the background network request
+  });
+});
+`,
           }}
         />
       </footer>

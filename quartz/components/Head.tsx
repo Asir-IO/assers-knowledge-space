@@ -50,7 +50,13 @@ export default (() => {
             )}
           </>
         )}
-        <link rel="preload" href="/static/cc-red-alert-INET.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+        <link
+          rel="preload"
+          href="/static/cc-red-alert-INET.ttf"
+          as="font"
+          type="font/ttf"
+          crossorigin="anonymous"
+        />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -108,19 +114,22 @@ export default (() => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
-        {/* Feature: Sizing Images by Height */}
+        {/* Feature: Sizing Images and SVGs by Height */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
       document.addEventListener("nav", () => {
-        const images = document.querySelectorAll('img');
+        // Target both images and objects
+        const elements = document.querySelectorAll('img, object');
         
-        images.forEach(img => {
-          const alt = img.getAttribute('alt');
-          if (alt && alt.startsWith('h-')) {
-            const size = alt.substring(2); 
-            img.style.setProperty('height', size, 'important');
-            img.style.setProperty('width', 'auto', 'important');
+        elements.forEach(el => {
+          // Check 'alt', but also fallback to 'aria-label' or 'title' for valid <object> attributes
+          const identifier = el.getAttribute('alt') || el.getAttribute('aria-label') || el.getAttribute('title');
+          
+          if (identifier && identifier.startsWith('h-')) {
+            const size = identifier.substring(2); 
+            el.style.setProperty('height', size, 'important');
+            el.style.setProperty('width', 'auto', 'important');
           }
         });
       });

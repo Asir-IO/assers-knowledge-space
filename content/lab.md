@@ -1,7 +1,7 @@
 ---
 title: lab
 date: 2026-03-25
-draft: true
+draft: false
 thumbnail:
 ---
 ![[lab-temp-thumb.excalidraw]]
@@ -56,5 +56,16 @@ dsldfjd.
 
 > [!quote]
 > Contents
+
+
+<div>
+  <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" fill="var(--accent)" />
+  </svg>
+</div>
+
+<object type="image/svg+xml" data="https://assets.asser.md/knowledgespace/z1-Assets/Neural%20Networks%20as%20a%20Squiggle%20Fitter%202026-02-26%2014.43.34.excalidraw.dark.svg" class="inline-svg" style="max-width: 100%; color-scheme: light;"></object>
+
+<img src="https://assets.asser.md/knowledgespace/z1-Assets/Neural%20Networks%20as%20a%20Squiggle%20Fitter%202026-02-26%2014.43.34.excalidraw.dark.svg" alt="My Custom Graphic" />
 
 

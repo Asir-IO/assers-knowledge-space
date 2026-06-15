@@ -4,7 +4,6 @@ import { Element } from "hast"
 import fs from "fs"
 import path from "path"
 export const CdnLinks: QuartzTransformerPlugin = () => {
-
   const assetMap: Record<string, string> = {}
   const contentDir = path.join(process.cwd(), "content")
 
@@ -41,24 +40,61 @@ export const CdnLinks: QuartzTransformerPlugin = () => {
       return [
         () => (tree) => {
           visit(tree, "element", (node: Element) => {
-            if (
-              (node.tagName === "img" || node.tagName === "source" || node.tagName === "video" || node.tagName === "audio") &&
+            let srcLikeProp =
+              (node.tagName === "img" ||
+                node.tagName === "source" ||
+                node.tagName === "video" ||
+                node.tagName === "audio") &&
               node.properties?.src
-            ) {
-              const src = String(node.properties.src)
-              
-              if (!src.startsWith("http") && !src.startsWith("data:")) {
-                let cleanSrc = decodeURI(src).replace(/^[\.\/]+/, "")
-                
-                // Revert Quartz's structural .excalidraw.svg extension change back to .md to find it in our vault index
-                let lookupSrc = cleanSrc
+                ? "src"
+                : node.tagName === "object" && node.properties?.data
+                  ? "data"
+                  : undefined
 
-                // Find the exact original vault file path using our loose lookup key
-                const lookupKey = toLookupKey(lookupSrc)
-                let realPath = assetMap[lookupKey] || cleanSrc
+            if (!srcLikeProp) return
 
-                // Construct the final R2 URL, encoding original spaces back to valid HTML (%20)
-                node.properties.src = encodeURI(`${r2Base}/${realPath}`)
+            const rawUrl = String(node.properties[srcLikeProp])
+
+            // 1. Resolve to the CDN URL
+            if (!rawUrl.startsWith("http") && !rawUrl.startsWith("data:")) {
+              const cleanSrc = decodeURI(rawUrl).replace(/^[\.\/]+/, "")
+              const lookupSrc = cleanSrc
+
+              // Find the exact original vault file path using our loose lookup key
+              const lookupKey = toLookupKey(lookupSrc)
+              const realPath = assetMap[lookupKey] || cleanSrc
+
+              // Construct the final R2 URL
+              node.properties[srcLikeProp] = encodeURI(`${r2Base}/${realPath}`)
+            }
+
+            // 2. Morph the tag from <img> to <object> for SVGs
+            const finalUrl = String(node.properties[srcLikeProp])
+
+            if (node.tagName === "img" && finalUrl.split("?")[0].toLowerCase().endsWith(".svg")) {
+              let isThumbnail = false
+              if (node.properties.width) {
+                // Parse the width safely (handles "120", "120px", etc.)
+                const widthVal = parseInt(String(node.properties.width).replace(/\D/g, ""), 10)
+                if (!isNaN(widthVal) && widthVal <= 120) {
+                  isThumbnail = true
+                }
+              }
+              if (!isThumbnail) {
+                node.tagName = "object"
+                node.properties.data = node.properties[srcLikeProp] // Move url to 'data'
+                delete node.properties.src // Clean up 'src'
+                node.properties.type = "image/svg+xml"
+
+                // Preserve Obsidian alt-text as aria-label
+                if (node.properties.alt) {
+                  node.properties["aria-label"] = node.properties.alt
+                  delete node.properties.alt
+                }
+
+                // Apply the custom styles you originally had in ofm.ts
+                const existingStyle = node.properties.style ? `${node.properties.style} ` : ""
+                node.properties.style = existingStyle + "max-width: 100%;"
               }
             }
           })

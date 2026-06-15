@@ -12,6 +12,7 @@
             --color: white;
         }
     }
+    :root { color-scheme: light dark; }
 </style>
 </defs>
 </svg>

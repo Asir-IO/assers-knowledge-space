@@ -35,14 +35,26 @@
       "problemMatcher": []
     },
     {
-      "label": "Sync to R2: z1-Assets",
+      "label": "Fix SVGs",
       "type": "shell",
-      "command": "powershell -File .vscode/sync-and-purge.ps1",
-      "group": "build",
+      "command": "py .vscode/fix_svgs.py",
       "presentation": {
         "reveal": "always",
         "panel": "shared",
         "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Sync to R2: z1-Assets",
+      "type": "shell",
+      "command": "powershell -File .vscode/sync-and-purge.ps1",
+      "group": "build",
+      "dependsOn": "Fix SVGs",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
       },
       "problemMatcher": []
     },

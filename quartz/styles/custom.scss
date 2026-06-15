@@ -260,25 +260,29 @@
   display: grid;
   place-items: center;
 }
-.svg-theme-wrapper img {
+
+/* Targets both img and object tags inside the wrapper */
+.svg-theme-wrapper > * {
   grid-area: 1 / 1 / 2 / 2;
   transition: opacity 0.15s ease-in-out; /* fades as a switch */
 }
+
 /* --- LIGHT MODE --- */
-.svg-theme-wrapper img.dark-mode-svg { 
+.svg-theme-wrapper > *.dark-mode-svg { 
   opacity: 0; 
   visibility: hidden; 
 }
-.svg-theme-wrapper img.has-dark-variant { 
+.svg-theme-wrapper > *.has-dark-variant { 
   opacity: 1; 
   visibility: visible; 
 }
+
 /* --- DARK MODE --- */
-html[saved-theme="dark"] .svg-theme-wrapper img.dark-mode-svg { 
+html[saved-theme="dark"] .svg-theme-wrapper > *.dark-mode-svg { 
   opacity: 1; 
   visibility: visible; 
 }
-html[saved-theme="dark"] .svg-theme-wrapper img.has-dark-variant { 
+html[saved-theme="dark"] .svg-theme-wrapper > *.has-dark-variant { 
   opacity: 0; 
   visibility: hidden; 
 }
@@ -498,19 +502,24 @@ article ol:not([data-list]) > li:not(:last-child)::after {
     padding: 0;
 }
 
-/* FEATURE: sizing images by height */
-p:has(img[alt^="h-"]),
-span:has(img[alt^="h-"]),
-figure:has(img[alt^="h-"]) {
+/* FEATURE: sizing images and objects by height */
+p:has(img[alt^="h-"], object[alt^="h-"], object[aria-label^="h-"], object[title^="h-"]),
+span:has(img[alt^="h-"], object[alt^="h-"], object[aria-label^="h-"], object[title^="h-"]),
+figure:has(img[alt^="h-"], object[alt^="h-"], object[aria-label^="h-"], object[title^="h-"]),
+.svg-theme-wrapper:has(img[alt^="h-"], object[alt^="h-"], object[aria-label^="h-"], object[title^="h-"]) {
   overflow-x: auto;
   scrollbar-width: thin;
   width: 100%;
 }
-img[alt^="h-"] {
+
+img[alt^="h-"],
+object[alt^="h-"],
+object[aria-label^="h-"],
+object[title^="h-"] {
   max-width: none !important;
   width: auto !important;
   display: block;
-  margin:0;
+  margin: 0;
 }
 
 /* FEATURE: Highlight Targeted Headings/Text */
