@@ -25,7 +25,7 @@
   box-sizing: border-box;
 
   & > .callout-content {
-    display: grid;
+    display: block;
     transition: grid-template-rows 0.1s cubic-bezier(0.02, 0.01, 0.47, 1);
     overflow: hidden;
 
@@ -144,12 +144,15 @@
 
 .callout-title {
   display: flex;
-  align-items: flex-start;
-  gap: 5px;
+  align-items: center;
+  gap: 12px;
   padding: 1rem 0;
   color: var(--color);
 
   --icon-size: 18px;
+  & > .fold-callout-icon {
+  margin-left: auto;
+}
 
   & .fold-callout-icon {
     transition: transform 0.15s ease;
@@ -160,6 +163,8 @@
 
   & > .callout-title-inner > p {
     color: var(--color);
+    font-family: var(--titleFont);
+    line-height: normal;
     margin: 0;
   }
 

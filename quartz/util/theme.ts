@@ -155,10 +155,10 @@ ${stylesheet.join("\n\n")}
   --highlight: ${theme.colors.lightMode.highlight};
   --textHighlight: ${theme.colors.lightMode.textHighlight};
 
-  --titleFont: "INET", "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
-  --headerFont: "INET", "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
+  --titleFont: "MC", "${getFontSpecificationName(theme.typography.title || theme.typography.header)}", ${DEFAULT_SANS_SERIF};
+  --headerFont: "MC", "${getFontSpecificationName(theme.typography.header)}", ${DEFAULT_SANS_SERIF};
   --bodyFont: "${getFontSpecificationName(theme.typography.body)}", ${DEFAULT_SANS_SERIF};
-  --codeFont: "${getFontSpecificationName(theme.typography.code)}", ${DEFAULT_MONO};
+  --codeFont: "MC MONO", "${getFontSpecificationName(theme.typography.code)}", ${DEFAULT_MONO};
 }
 
 :root[saved-theme="dark"] {

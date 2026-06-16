@@ -6,5 +6,7 @@
     "with-desc-block",
     "callouts"
   ],
-  "theme": "system"
+  "theme": "system",
+  "textFontFamily": "Bricolage Grotesque 14pt",
+  "monospaceFontFamily": "Monocraft"
 }

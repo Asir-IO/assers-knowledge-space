@@ -10,7 +10,7 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     /* This pushes the text right so it doesn't hit the menu button */
-    margin-left: 1rem; 
+    margin-left: 0.5rem; 
   }
 
   /* 2. Shrink "Asser's" specifically for mobile */
@@ -589,4 +589,13 @@ object[title^="h-"] {
   font-family: 'IBM Plex Mono';
   src: url('/static/IBMPlexMono-Regular.ttf') format('truetype');
   font-style: normal;
+}
+@font-face {
+  font-family: 'MC MONO';
+  src: url('/static/Monocraft.ttc') format('truetype');
+}
+@font-face {
+  font-family: 'MC';
+  src: url('/static/Minecraft.otf') format('truetype');
+  size-adjust: 85%;
 }

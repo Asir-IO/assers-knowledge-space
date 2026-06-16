@@ -14,6 +14,8 @@ Below is the complete list.
 	- (**License**): [Apache](https://www.apache.org/licenses/LICENSE-2.0.txt)
 3.  [Iconify Icons Set](https://icon-sets.iconify.design/)
 	- (**License**): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+4.  Idrees's [Monocraft](https://github.com/IdreesInc/Monocraft) and [Minecraft](https://github.com/IdreesInc/Minecraft-Font) fonts
+	- (**License**): [OFL-1.1](https://github.com/IdreesInc/Monocraft?tab=OFL-1.1-1-ov-file)
 # Code Snippets
 1. {A} [Terrain XOR, Limited Gradient](https://openprocessing.org/@u594485/2939122) by [qp91mn64](https://openprocessing.org/@u594485/#sketches)
 	- (**License**): [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)

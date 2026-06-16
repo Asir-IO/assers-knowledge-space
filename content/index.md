@@ -49,7 +49,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 >
 > > [!right|9]
 > > 
-> > <span style="font-size: 0.9em; opacity: 0.7;display: inline-block; margin-top: 15px;">Concepts that I successfully find a visual form for live here.</span>
+> > <span style="display: inline-block; margin-top: 15px;">Concepts that I successfully find a visual form for live here.</span>
 ## [[Strategies/index|Strategies]]
 > [!two-column]
 >
@@ -59,7 +59,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 >
 > > [!right|9]
 > > 
-> > <span style="font-size: 0.9em; opacity: 0.7;display: inline-block; margin-top: 15px;">I place here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
+> > <span style="display: inline-block; margin-top: 15px;">I place here Strategies that I devised/borrowed to help me survive exams/solve problems in general.</span>
 ## [[Workflows/index|Workflows]]
 > [!two-column]
 >
@@ -69,7 +69,7 @@ This is *(mostly)* a living collection of the work that usually gets lost after 
 >
 > > [!right|9]
 > > 
-> > <span style="font-size: 0.9em; opacity: 0.7;display: inline-block; margin-top: 15px;">You'll find here workflows I developed for tasks that I wanted to do in a smoother way.</span>
+> > <span style="display: inline-block; margin-top: 15px;">You'll find here workflows I developed for tasks that I wanted to do in a smoother way.</span>
 
 ---
 # Recent Notes
@@ -111,7 +111,7 @@ I'm the one who created this (with generous assistance from my buddy Gemmy).
 >
 > > [!right|9]
 > > 
-> > <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.4; margin-bottom: 1rem"> <span style="font-weight: bold; font-size: 0.95em;"> Username: <code style="background: rgba(150, 150, 150, 0.2); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: normal;">itsasir</code></span> <span style="font-size: 0.9em; opacity: 0.8;"> This is my preferred way to connect with humans =) </span></div>
+> > <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.4; margin-bottom: 1rem"> <span><code>itsasir</code> (username)</span><span style="font-size: 0.9em; opacity: 0.8;"> This is my preferred way to connect with humans =) </span></div>
 
 > [!two-column|0]
 >
