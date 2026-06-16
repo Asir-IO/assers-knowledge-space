@@ -64,8 +64,9 @@ dsldfjd.
   </svg>
 </div>
 
-<object type="image/svg+xml" data="https://assets.asser.md/knowledgespace/z1-Assets/Neural%20Networks%20as%20a%20Squiggle%20Fitter%202026-02-26%2014.43.34.excalidraw.dark.svg" class="inline-svg" style="max-width: 100%; color-scheme: light;"></object>
-
-<img src="https://assets.asser.md/knowledgespace/z1-Assets/Neural%20Networks%20as%20a%20Squiggle%20Fitter%202026-02-26%2014.43.34.excalidraw.dark.svg" alt="My Custom Graphic" />
-
-
+<mark style="background: #6cffac28;">Omnicampus</mark>
+<mark style="background: #ff685c3d;">abc</mark>
+<mark style="background: #876CFF28;">abc</mark>
+<mark style="background: #B0C5E8A6;">abc</mark>
+<mark style="background: #5C9CEF28;">abc</mark>
+abc
