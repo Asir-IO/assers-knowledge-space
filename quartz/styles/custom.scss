@@ -592,7 +592,7 @@ object[title^="h-"] {
 }
 @font-face {
   font-family: 'MC MONO';
-  src: url('/static/Monocraft.ttc') format('truetype');
+  src: url('/static/Monocraft.ttf') format('truetype');
 }
 @font-face {
   font-family: 'MC';
@@ -607,10 +607,7 @@ object[title^="h-"] {
 }
 
 :root {
-  /* This changes the main UI background to white */
   --birb-background-color: #ffffff !important; 
   
-  /* Optional: If you also want to remove the pink borders/highlights, 
-     you can change this to a neutral gray or your site's accent color */
-  --birb-highlight: #cccccc; 
+  // --birb-highlight: #cccccc; 
 }
