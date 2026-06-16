@@ -139,6 +139,8 @@ document.addEventListener("nav", () => {
 `,
           }}
         />
+        {/* FEATURE: Pocket Bird =) */}
+        <script src="https://cdn.jsdelivr.net/gh/IdreesInc/Pocket-Bird@main/dist/web/birb.embed.js"></script>
       </footer>
     )
   }

@@ -599,3 +599,18 @@ object[title^="h-"] {
   src: url('/static/Minecraft.otf') format('truetype');
   size-adjust: 85%;
 }
+
+#birb-menu, 
+.birb-ui-container, 
+.birb-panel {
+  background-color: #ffffff !important;
+}
+
+:root {
+  /* This changes the main UI background to white */
+  --birb-background-color: #ffffff !important; 
+  
+  /* Optional: If you also want to remove the pink borders/highlights, 
+     you can change this to a neutral gray or your site's accent color */
+  --birb-highlight: #cccccc; 
+}
