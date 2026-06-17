@@ -50,6 +50,7 @@ export default (() => {
             )}
           </>
         )}
+        <link rel="me" href="https://mathstodon.xyz/@asser" />
         <link
           rel="preload"
           href="/static/cc-red-alert-INET.ttf"
