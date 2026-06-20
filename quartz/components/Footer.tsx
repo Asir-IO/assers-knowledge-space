@@ -66,7 +66,15 @@ export default ((opts?: Options) => {
           >
             <i class="fa-brands fa-github"></i>
           </a>
-          <span style="transform: translateY(-0.4rem);">...</span>
+          <a
+            href="/index.xml"
+            title="RSS Feed"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
+            <i class="fa-solid fa-rss"></i>
+          </a>
           <a
             href="/attributions"
             title="Attributions & Credits"

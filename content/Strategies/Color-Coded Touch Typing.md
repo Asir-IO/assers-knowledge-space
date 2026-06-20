@@ -12,7 +12,7 @@ related-notes:
 ## What is the problem
 Getting into touch typing can be frustrating because the cognitive load is too high. You have to map 40+ keys to 8 fingers. It's easy to remember *which hand* to use for a key, but *which finger* to use in that hand? that's much harder.
 
-Instead of mapping each key to the hand that types it and then *directly* to the specific finger (by its position within that hand).
+Instead of mapping each key to the hand that types it and then *directly* to a specific finger.
 >[!example] Example
 >![[Keys Map 2026-02-07 13.52.37.excalidraw.svg]]
 
@@ -29,7 +29,7 @@ Now, when I'm trying to type a key, I can use its *color* to infer which finger 
 >[!example] Example
 >![[Keys Map 2026-02-07 14.08.24.excalidraw.svg]]
 
-However, some keys are in different rows, that's why i also memorize another piece of info. with each key: 
+However, some keys are in different rows, this is why i also memorize another piece of info. with each key: 
 
 *how to reach it from the home row*.
 
